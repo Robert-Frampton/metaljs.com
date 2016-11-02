@@ -1,14 +1,15 @@
-{namespace main}
+{namespace base}
 
 /**
  * @param content
+ * @param site
  */
-{template .layout}
+{template .render}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Metal.js</title>
+	<title>{$site.title}</title>
 	<meta name="theme-color" content="#9552ef">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 

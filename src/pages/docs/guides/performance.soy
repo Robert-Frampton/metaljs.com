@@ -1,3 +1,8 @@
+---
+title: "Performance"
+weight: 13
+---
+
 {namespace docsPerformance}
 
 /**
@@ -5,8 +10,8 @@
  * It deliberately includes dummy data so the designer can get a feel for how
  * the task list will appear with real data rather with minimal copy and paste.
  */
-{template .soyweb}
-{call docs.layout}
+{template .render}
+{call docs.render data="all"}
 	{param content kind="html"}
 		<h1>Performance</h1>
 
@@ -22,7 +27,7 @@
 
 		<p>The chart below shows the results we obtained on Chrome (the higher the bar, the faster it runs):</p>
 
-		<img src="../images/docs/perf.png" width="400" alt="Performance Test - List">
+		<img src="/images/docs/perf.png" width="400" alt="Performance Test - List">
 	{/param}
 {/call}
 {/template}

@@ -1,3 +1,8 @@
+---
+title: "Tutorial: Modal - Testing"
+weight: 6
+---
+
 {namespace docsModalTesting}
 
 /**
@@ -5,8 +10,8 @@
  * It deliberately includes dummy data so the designer can get a feel for how
  * the task list will appear with real data rather with minimal copy and paste.
  */
-{template .soyweb}
-{call docs.layout}
+{template .render}
+{call docs.render data="all"}
 	{param content kind="html"}
 		<h1>Tutorial: Modal - Testing</h1>
 
@@ -75,7 +80,7 @@ describe('Modal', function() {
 			your terminal. You'll see something like this:
 		</p>
 
-		<img src="../images/docs/test.png" width="100%">
+		<img src="/images/docs/test.png" width="100%">
 
 		<h2>Test environment</h2>
 

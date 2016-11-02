@@ -1,3 +1,8 @@
+---
+title: "JSX Components"
+weight: 9
+---
+
 {namespace docsJSXComponents}
 
 /**
@@ -5,8 +10,8 @@
  * It deliberately includes dummy data so the designer can get a feel for how
  * the task list will appear with real data rather with minimal copy and paste.
  */
-{template .soyweb}
-{call docs.layout}
+{template .render}
+{call docs.render data="all"}
 	{param content kind="html"}
 		<h1>JSX Components</h1>
 

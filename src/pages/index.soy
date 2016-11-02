@@ -1,3 +1,7 @@
+---
+title: "Metal.js"
+---
+
 {namespace index}
 
 /**
@@ -5,22 +9,20 @@
  * It deliberately includes dummy data so the designer can get a feel for how
  * the task list will appear with real data rather with minimal copy and paste.
  */
-{template .soyweb}
-{call main.layout}
-	{param content kind="html"}
+{template .render}
+	<div>
 		<header class="header">
 			<div class="container">
 				<div class="header-bg"></div>
-				{call main.topbar}{/call}
-				{call index.tagline}{/call}
+				{call main.topbar data="all" /}
+				{call index.tagline /}
 			</div>
 		</header>
 		<main>
-			{call index.features}{/call}
-			{call index.architecture}{/call}
-			{call index.calltoaction}{/call}
+			{call index.features /}
+			{call index.architecture /}
+			{call index.calltoaction /}
 		</main>
-		{call main.footer}{/call}
-	{/param}
-{/call}
+		{call main.footer /}
+	</div>
 {/template}

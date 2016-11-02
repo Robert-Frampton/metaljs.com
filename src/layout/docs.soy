@@ -2,22 +2,26 @@
 
 /**
  * @param content
+ * @param site
  */
-{template .layout}
-{call main.layout}
-	{param content kind="html"}
+{template .render}
+	<div>
 		<header class="header">
 			<div class="container">
 				<div class="header-bg"></div>
-				{call main.topbar}{/call}
+				{call main.topbar data="all" /}
 			</div>
 		</header>
 		<main class="docs">
 			<div class="container">
 				<div class="row">
 					<nav class="docs-nav col-md-3">
-						{call docs.navIntro}{/call}
-						{call docs.navGuides}{/call}
+						{call SSGNavigation.render}
+							{param elementClasses: 'docs-nav-list' /}
+							{param linkClasses: 'docs-nav-link' /}
+							{param listItemClasses: 'docs-nav-item' /}
+							{param section: $site.index.children[0] /}
+						{/call}
 					</nav>
 					<article class="docs-content col-md-6 col-md-offset-1">
 						{$content}
@@ -26,6 +30,5 @@
 			</div>
 		</main>
 		{call main.footer}{/call}
-	{/param}
-{/call}
+	</div>
 {/template}

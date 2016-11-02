@@ -2,6 +2,7 @@
 
 /**
  * Topbar
+ @param site
  */
 {template .topbar}
 	<nav class="topbar">
@@ -9,16 +10,19 @@
 			<img class="topbar-logo-image" src="/images/logo_signature@2x.png" alt="Metal.js Logo" width="35" height="28">
 			<h1 class="topbar-logo-text">Metal.js</h1>
 		</a>
-		<ul class="topbar-menu">
-			<li class="topbar-menu-item">
-				<a class="topbar-menu-link" href="/docs/">Documentation</a>
-			</li>
-			<li class="topbar-menu-item">
-				<a class="rounded-icon topbar-icon-github" target="_blank" href="https://github.com/metal/metal">
-					<img src="/images/github_icon.svg" alt="GitHub Icon" width="16">
-				</a>
-			</li>
-		</ul>
+
+		<div class="topbar-menu">
+			{call SSGNavigation.render}
+				{param depth: 1 /}
+				{param linkClasses: 'topbar-menu-link' /}
+				{param listItemClasses: 'topbar-menu-item' /}
+				{param section: $site.index /}
+			{/call}
+
+			<a class="rounded-icon topbar-icon-github" target="_blank" href="https://github.com/metal/metal">
+				<img src="/images/github_icon.svg" alt="GitHub Icon" width="16">
+			</a>
+		</div>
 	</nav>
 {/template}
 

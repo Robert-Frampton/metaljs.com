@@ -5,76 +5,82 @@ var compass = require('gulp-compass');
 var connect = require('gulp-connect');
 var ghpages = require('gulp-gh-pages');
 var soynode = require('gulp-soynode');
+var ssg = require('metal-ssg');
+
+var runSequence = require('run-sequence').use(gulp);
+
+ssg.registerTasks({
+	gulp: gulp,
+	taskPrefix: 'ssg:'
+});
 
 gulp.task('connect', function() {
 	connect.server({
-		root: 'dist/public'
+		port: 8888,
+		root: 'dist'
 	});
 });
 
 gulp.task('cname', function() {
-	return gulp.src('src/public/CNAME')
-		.pipe(gulp.dest('dist/public'));
+	return gulp.src('src/CNAME')
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('container', function() {
-	return gulp.src('src/public/container.json')
-		.pipe(gulp.dest('dist/public'));
+	return gulp.src('src/container.json')
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('deploy', ['cname', 'container', 'build'], function() {
-	return gulp.src('dist/public/**/*')
+	return gulp.src('dist/**/*')
 		.pipe(ghpages({
 			branch: 'wedeploy'
 		}));
 });
 
 gulp.task('downloads', function() {
-	return gulp.src('src/public/downloads/**')
-		.pipe(gulp.dest('dist/public/downloads'));
+	return gulp.src('src/downloads/**')
+		.pipe(gulp.dest('dist/downloads'));
 });
 
 gulp.task('images', function() {
-	return gulp.src('src/public/images/**')
-		.pipe(gulp.dest('dist/public/images'));
+	return gulp.src('src/images/**')
+		.pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('scripts', function() {
-	return gulp.src('src/public/scripts/**')
-		.pipe(gulp.dest('dist/public/scripts'));
+	return gulp.src('src/scripts/**')
+		.pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('styles', function() {
-	return gulp.src('src/public/styles/*.scss')
+	return gulp.src('src/styles/*.scss')
 		.pipe(compass({
-			css: 'dist/public/styles',
-			sass: 'src/public/styles',
-			image: 'dist/public/images'
+			css: 'dist/styles',
+			sass: 'src/styles',
+			image: 'dist/images'
 		}))
-		.pipe(gulp.dest('dist/public/styles'));
-});
-
-gulp.task('soy', function() {
-	return gulp.src('src/**/*.soy')
-		.pipe(soynode({
-			renderSoyWeb: true
-		}))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist/styles'));
 });
 
 gulp.task('vendor', function() {
-	return gulp.src('src/public/vendor/**')
-		.pipe(gulp.dest('dist/public/vendor'));
+	return gulp.src('src/vendor/**')
+		.pipe(gulp.dest('dist/vendor'));
 });
 
 gulp.task('watch', function () {
-	gulp.watch('src/public/downloads/**', ['downloads']);
-	gulp.watch('src/public/images/**', ['images']);
-	gulp.watch('src/public/scripts/**', ['scripts']);
-	gulp.watch('src/public/vendor/**', ['vendor']);
-	gulp.watch('src/public/styles/*.scss', ['styles']);
-	gulp.watch('src/**/*.soy', ['soy']);
+	gulp.watch('src/downloads/**', ['downloads']);
+	gulp.watch('src/images/**', ['images']);
+	gulp.watch('src/scripts/**', ['scripts']);
+	gulp.watch('src/vendor/**', ['vendor']);
+	gulp.watch('src/styles/*.scss', ['styles']);
+	gulp.watch('src/**/*.+(soy|md|fm)', function() {
+		runSequence('ssg:front-matter', 'ssg:soyweb');
+	});
 });
 
-gulp.task('build', ['images', 'downloads', 'scripts', 'vendor', 'soy', 'styles']);
+gulp.task('build', function(cb) {
+	runSequence('ssg:front-matter', 'ssg:soyweb', 'images', 'downloads', 'scripts', 'vendor', 'styles', cb);
+});
+
 gulp.task('default', ['build', 'connect', 'watch']);

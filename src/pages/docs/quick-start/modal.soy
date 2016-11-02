@@ -1,3 +1,8 @@
+---
+title: "Tutorial: Modal"
+weight: 2
+---
+
 {namespace docsModal}
 
 /**
@@ -5,8 +10,8 @@
  * It deliberately includes dummy data so the designer can get a feel for how
  * the task list will appear with real data rather with minimal copy and paste.
  */
-{template .soyweb}
-{call docs.layout}
+{template .render}
+{call docs.render data="all"}
 	{param content kind="html"}
 		<h1>Tutorial: Modal</h1>
 
@@ -117,7 +122,7 @@ export default Modal;{/literal}
 			Now compile your code with <code>npm run build</code> and open the demo
 			on a browser, and you should be seeing this:
 		</p>
-		<img src="../images/docs/modal.png" width="100%">
+		<img src="/images/docs/modal.png" width="100%">
 
 		<h2>Next steps</h2>
 

@@ -23,17 +23,22 @@
 
 .docs-nav-item {
 	list-style: none;
-	margin-bottom: 10px;
+
+	&.active .docs-nav-link {
+		color: $primaryColor;
+	}
 }
 
 .docs-nav-link {
 	@include anim(color);
 	color: rgba($secondaryColor, 0.4);
+	display: inline-block;
 	font-size: 14px;
 	font-weight: 600;
+	padding: 5px 0;
 }
 
-.docs-nav-link:hover {
+.docs-nav-link[href]:hover {
 	color: $primaryColor;
 	text-decoration: none;
 }

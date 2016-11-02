@@ -1,12 +1,15 @@
-{namespace docsIndex}
+---
+title: "Getting Started"
+weight: 1
+---
+
+{namespace docsGettingStarted}
 
 /**
- * This template will be rendered by SoyWeb when the user loads static.soy.
- * It deliberately includes dummy data so the designer can get a feel for how
- * the task list will appear with real data rather with minimal copy and paste.
+ *
  */
-{template .soyweb}
-{call docs.layout}
+{template .render}
+{call docs.render data="all"}
 	{param content kind="html"}
 		<h1>Getting Started</h1>
 		<p>
@@ -131,7 +134,7 @@
 			<strong> demos/index.html</strong> file on your browser. It should display
 			a nice <strong>Hello World</strong> message, like this:
 			<br><br>
-			<img src="../images/docs/hello_world.png" width="100">
+			<img src="/images/docs/hello_world.png" width="100">
 		</p>
 
 		<p>

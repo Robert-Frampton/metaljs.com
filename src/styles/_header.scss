@@ -76,10 +76,14 @@
 }
 
 .topbar-menu {
-	float: right;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .topbar-menu-item {
@@ -120,6 +124,7 @@
 
 .topbar-icon-github {
 	background: $primaryColor;
+	margin-left: 40px;
 }
 
 @media (max-width: $screen-xs-min) {

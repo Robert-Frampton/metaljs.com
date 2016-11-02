@@ -1,3 +1,8 @@
+---
+title: "Yeoman Generator"
+weight: 11
+---
+
 {namespace docsYeomanGenerator}
 
 /**
@@ -5,8 +10,8 @@
  * It deliberately includes dummy data so the designer can get a feel for how
  * the task list will appear with real data rather with minimal copy and paste.
  */
-{template .soyweb}
-{call docs.layout}
+{template .render}
+{call docs.render data="all"}
 	{param content kind="html"}
 		<h1>Yeoman generator</h1>
 
@@ -38,7 +43,7 @@
 			</li>
 			<li>
 				<p>Answer the generator prompts:</p>
-				<img src="../images/docs/prompts.png" width="500"><br>
+				<img src="/images/docs/prompts.png" width="500"><br>
 			</li>
 			<li><p>Wait for the generator to finish fetching dependencies</p></li>
 		</ol>
