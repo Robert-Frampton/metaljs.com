@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([33,35,36],[
+webpackJsonppageComponent([9,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27166,200 +27166,7 @@ exports.default = parseFromAnchor;
 /* 210 */,
 /* 211 */,
 /* 212 */,
-/* 213 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kulpe", function() { return kulpe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from modal.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace kulpe.
- * @public
- */
-
-goog.module('kulpe.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param266 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('In the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/');
-          itext('previous section');
-        ie_close('a');
-        itext(' you learned how to build a simple project using Metal.js that just renders ');
-        ie_open('strong');
-          itext('Hello World');
-        ie_close('strong');
-        itext(' on the screen. Let\'s enhance what we already have to render a modal dialog instead.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'rendering');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#rendering');
-          itext('Rendering');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Our generated project already includes ');
-        ie_open('a', null, null,
-            'href', 'http://getbootstrap.com/');
-          itext('Bootstrap\'s CSS');
-        ie_close('a');
-        itext(', so let\'s use its markup for our modal. Let\'s update the component\'s template to do that then:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n&#123;namespace Modal&#125;\n\n/**\n * This renders the component\'s whole content.\n * Note: has to be called ".render".\n */\n&#123;template .render&#125;\n    {@param body: string}\n    {@param header: string}\n\n    <div class="modal show">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <header class="modal-header">\n                    <button type="button" class="close">\n                        <span>\u00D7</span>\n                    </button>\n                    <h4>{$header}</h4>\n                </header>\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass Modal extends JSXComponent {\n    /**\n     * Renders the component\'s content.\n     * Note that data can be accessed via the `props` property.\n     */\n    render() {\n        return <div class="modal show">\n            <div class="modal-dialog">\n                <div class="modal-content">\n                    <header class="modal-header">\n                        <button type="button" class="close">\n                            <span>\u00D7</span>\n                        </button>\n                        <h4>{this.props.header}</h4>\n                    </header>\n                    <section class="modal-body">\n                        {this.props.body}\n                    </section>\n                    <footer class="modal-footer">\n                        <button type="button" class="btn btn-primary">OK</button>\n                    </footer>\n                </div>\n            </div>\n        </div>;\n    }\n}\n\nexport default Modal;', mode: 'jsx'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'passing_data');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#passing_data');
-          itext('Passing Data');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Note that the template is accessing data to determine the content of the modal\'s ');
-        ie_open('code');
-          itext('header');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('body');
-        ie_close('code');
-        itext('. How can the component receive this data though?');
-      ie_close('p');
-      ie_open('p');
-        itext('One way is through the component\'s constructor. When creating component instances directly, you can pass them a data object as its first param. So let\'s update our demo to pass it some data:');
-      ie_close('p');
-      $templateAlias2({code: 'new metal.Modal({\n    header: \'My Modal\',\n    body: \'Built using Metal.js\'\n});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'run_the_demo');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#run_the_demo');
-          itext('Run the Demo');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now compile your code with ');
-        ie_open('code');
-          itext('npm run build');
-        ie_close('code');
-        itext(' and open the demo on a browser, and you should be seeing this:');
-      ie_close('p');
-      ie_open('p');
-        ie_open('img', null, null,
-            'src', '../../images/docs/modal.png',
-            'alt', 'Modal screenshot');
-        ie_close('img');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'next_steps');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next Steps');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('We\'ve taken care of the rendering, but you\'ll notice that clicking the ');
-        ie_open('strong');
-          itext('x');
-        ie_close('strong');
-        itext(' button doesn\'t do anything yet though. Let\'s make that work.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/docs/getting-started/modal_events.html');
-            itext('\u21AA Tutorial: Modal - Events');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('p');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param266}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'kulpe.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class kulpe extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kulpe, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 213 */,
 /* 214 */,
 /* 215 */,
 /* 216 */,
@@ -27383,7 +27190,156 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kulpe, templates);
 /* 234 */,
 /* 235 */,
 /* 236 */,
-/* 237 */,
+/* 237 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bEfYC", function() { return bEfYC; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from adding-todos.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace bEfYC.
+ * @public
+ */
+
+goog.module('bEfYC.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param879 = function() {
+    ie_open('h2');
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+    ie_close('h2');
+    ie_open('p');
+      itext('You almost have a fully functioning Todo App! The only missing feature is the ability to add new todos to the list. This is where the ');
+      ie_open('code');
+        itext('TodoForm');
+      ie_close('code');
+      itext(' component will come into play.');
+    ie_close('p');
+    ie_open('p');
+      itext('First, go ahead and add a couple of event listeners, one for the form submission (onsubmit), and the other for when the input value changes (onkeyup).');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    handleSubmit(event) {\n        // Prevent default browser functionality\n        event.preventDefault();\n    }\n\n    handleChange(event) {\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now you can use the ');
+      ie_open('code');
+        itext('value');
+      ie_close('code');
+      itext(' property from STATE to keep track of the changes made to the input value.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                        value={this.state.value}\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    ...\n\n    handleChange(event) {\n        this.state.value = event.target.value;\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('The value of ');
+      ie_open('code');
+        itext('this.state.value');
+      ie_close('code');
+      itext(' will now match the value in the input.');
+    ie_close('p');
+    ie_open('p');
+      itext('You can also emit a custom event when the form is submitted, similarly to what ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' does to notify the parent component that something happened.');
+    ie_close('p');
+    $templateAlias2({code: 'handleSubmit(event) {\n    event.preventDefault();\n\n    if (this.state.value) {\n        this.emit(\'todoAdd\', {\n            title: this.state.value\n        });\n\n        // Clears the input value\n        this.state.value = \'\';\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Then in the ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' component, you can listen to this event and add a new todo.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                ...\n\n                <TodoForm\n                    events={{\n                        todoAdd: this.handleTodoAdd.bind(this)\n                    }}\n                 />\n            </div>\n        );\n    }\n\n    addTodo(title) {\n        // Creates a new array with all of the elements\n        // from the previous array, with the newly added item\n        this.state.todos = [...this.state.todos, {\n            done: false,\n            title\n        }];\n    }\n\n    handleTodoAdd(event) {\n        this.addTodo(event.title);\n    }\n\n    ...\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now when you add some text to the input and submit the form, a new todo will automatically be added to the list.');
+    ie_close('p');
+    ie_open('p');
+      itext('That\'s it! You\'ve successfully created a simple Todo App with Metal.js. Now that you are comfortable with the basics, check out the guides for more advanced documentation.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('img', null, null,
+          'src', '/images/tutorials/todo-app/finished_todo_anim.gif',
+          'alt', 'Finished GIF',
+          'title', 'Finished GIF');
+      ie_close('img');
+    ie_close('p');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param879}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'bEfYC.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class bEfYC extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(bEfYC, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 238 */,
 /* 239 */,
 /* 240 */,
@@ -27429,7 +27385,31 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kulpe, templates);
 /* 280 */,
 /* 281 */,
 /* 282 */,
-/* 283 */
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27461,9 +27441,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _modalSoy = __webpack_require__(213);
+var _addingTodosSoy = __webpack_require__(237);
 
-var _modalSoy2 = _interopRequireDefault(_modalSoy);
+var _addingTodosSoy2 = _interopRequireDefault(_addingTodosSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27473,23 +27453,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var kulpe = function (_Component) {
-  _inherits(kulpe, _Component);
+var bEfYC = function (_Component) {
+  _inherits(bEfYC, _Component);
 
-  function kulpe() {
-    _classCallCheck(this, kulpe);
+  function bEfYC() {
+    _classCallCheck(this, bEfYC);
 
-    return _possibleConstructorReturn(this, (kulpe.__proto__ || Object.getPrototypeOf(kulpe)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bEfYC.__proto__ || Object.getPrototypeOf(bEfYC)).apply(this, arguments));
   }
 
-  return kulpe;
+  return bEfYC;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(kulpe, _modalSoy2.default);
+_metalSoy2.default.register(bEfYC, _addingTodosSoy2.default);
 
-exports.default = kulpe;
+exports.default = bEfYC;
 
 /***/ })
-],[283]);
+],[307]);

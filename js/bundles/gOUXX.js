@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([20,35,36],[
+webpackJsonppageComponent([2,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27179,12 +27179,30 @@ exports.default = parseFromAnchor;
 /* 223 */,
 /* 224 */,
 /* 225 */,
-/* 226 */
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fwjDt", function() { return fwjDt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gOUXX", function() { return gOUXX; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27196,15 +27214,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from nested-components.soy.
+// This file was automatically generated from rendering-data.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace fwjDt.
+ * @fileoverview Templates in namespace gOUXX.
  * @public
  */
 
-goog.module('fwjDt.incrementaldom');
+goog.module('gOUXX.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27227,7 +27245,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27238,69 +27256,35 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param684 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('The ability to reference components inside templates can be very useful. It enables the developer to correctly place the child component at the right position inside the parent in an intuitive way.');
-      ie_close('p');
-      ie_open('p');
-        itext('This can certainly be done with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' components. For example, let\'s say we\'ve already built a simple component called ');
-        ie_open('strong');
-          itext('Button');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('Now we\'re building a ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' component, and we want it to render some buttons inside the footer. In ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('\'s template file we could do the following:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n<div class="footer">\n    {foreach $button in $buttons}\n        {call Button.render}\n            {param label: $button /}\n        {/call}\n    {/foreach}\n</div>', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map(button => {\n  return <Button label={button} />;\n});\n\nreturn <div class="footer">{buttons}</div>;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('When Modal is rendered, the buttons also will be, at the specified position. Besides this, ');
-        ie_open('strong');
-          itext('Button');
-        ie_close('strong');
-        itext(' components will be automatically instantiated for these elements.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'accessing_sub_component_instances');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#accessing_sub_component_instances');
-          itext('Accessing Sub Component Instances');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('But what if we need to access the created instances? That\'s possible by using ');
-        ie_open('strong');
-          itext('ref');
-        ie_close('strong');
-        itext('. Let\'s add one to the previous example and see what happens:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n{foreach $button as $buttons}\n    {call Button.render}\n        {param label: $button /}\n        {param ref: \'button\' + index($button) /}\n    {/call}\n{/foreach}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map((button, index) => {\n    return <Button label={button} ref={\'button\' + index} />;\n});', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now you\'ll be able to access your sub components through your instance\'s ');
-        ie_open('code');
-          itext('refs');
-        ie_close('code');
-        itext(' property, like this:');
-      ie_close('p');
-      $templateAlias2({code: 'modal.refs.button0 // The instance for first button\nmodal.refs.button1 // The instance for second button', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
+  var param1046 = function() {
+    ie_open('h2');
+      var dyn22 = opt_data.page.title;
+      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+    ie_close('h2');
+    ie_open('p');
+      itext('First let\'s prepare the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' for consuming the data being passed from ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        // Conditionally adding the \'todo-item-done\' class if\n        // the todo is done\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now that you have some data that needs rendering, and the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' is ready to consume it, you need to iterate over the todos and pass them to the child components.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('This will result in the following markup.');
+    ie_close('p');
+    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27310,11 +27294,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param684}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'fwjDt.render';
+  $render.soyTemplateName = 'gOUXX.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27324,32 +27308,14 @@ return exports;
 
 });
 
-class fwjDt extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fwjDt, templates);
+class gOUXX extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gOUXX, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -27397,7 +27363,23 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fwjDt, templates);
 /* 289 */,
 /* 290 */,
 /* 291 */,
-/* 292 */
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27429,9 +27411,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _nestedComponentsSoy = __webpack_require__(226);
+var _renderingDataSoy = __webpack_require__(244);
 
-var _nestedComponentsSoy2 = _interopRequireDefault(_nestedComponentsSoy);
+var _renderingDataSoy2 = _interopRequireDefault(_renderingDataSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27441,23 +27423,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var fwjDt = function (_Component) {
-  _inherits(fwjDt, _Component);
+var gOUXX = function (_Component) {
+  _inherits(gOUXX, _Component);
 
-  function fwjDt() {
-    _classCallCheck(this, fwjDt);
+  function gOUXX() {
+    _classCallCheck(this, gOUXX);
 
-    return _possibleConstructorReturn(this, (fwjDt.__proto__ || Object.getPrototypeOf(fwjDt)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gOUXX.__proto__ || Object.getPrototypeOf(gOUXX)).apply(this, arguments));
   }
 
-  return fwjDt;
+  return gOUXX;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(fwjDt, _nestedComponentsSoy2.default);
+_metalSoy2.default.register(gOUXX, _renderingDataSoy2.default);
 
-exports.default = fwjDt;
+exports.default = gOUXX;
 
 /***/ })
-],[292]);
+],[308]);

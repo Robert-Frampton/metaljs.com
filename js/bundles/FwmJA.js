@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([32,35,36],[
+webpackJsonppageComponent([7,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27167,240 +27167,7 @@ exports.default = parseFromAnchor;
 /* 211 */,
 /* 212 */,
 /* 213 */,
-/* 214 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GQDMP", function() { return GQDMP; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from modal_events.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace GQDMP.
- * @public
- */
-
-goog.module('GQDMP.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param289 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('In the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/modal.html');
-          itext('previous section');
-        ie_close('a');
-        itext(' we\'ve created a component that renders a ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('. Its close button doesn\'t do anything yet though. This section will teach you how to handle DOM events on your components.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'inline_listeners_via_function_name');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#inline_listeners_via_function_name');
-          itext('Inline Listeners - via Function Name');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You can add DOM event listeners easily through your templates, like this:');
-      ie_close('p');
-      $templateAlias2({code: '<button onClick="close" type="button" class="close">', mode: 'text/html'}, null, opt_ijData);
-      ie_open('p');
-        itext('The above code declares that whenever the ');
-        ie_open('strong');
-          itext('x');
-        ie_close('strong');
-        itext(' button is clicked, the ');
-        ie_open('code');
-          itext('close');
-        ie_close('code');
-        itext(' function from the component should be called.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'inline_listeners_via_function_reference');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#inline_listeners_via_function_reference');
-          itext('Inline Listeners - via Function Reference');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('If you prefer though, you can also pass the actual function reference (instead of just its name) as an inline listener.');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n/**\n * In the "render" template, Soy params that match a\n * component\'s function name will be that function\n * (automatically bound to the component instance).\n */\n&#123;template .render&#125;\n    {@param close: any}\n\n    // ...\n    <button onClick="{$close}" type="button" class="close">\n    // ...\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\n<button onClick={this.close.bind(this)} type="button" class="close">', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('That will work exactly the same way as the previous example.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'listener_implementation');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#listener_implementation');
-          itext('Listener Implementation');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('All you need to do now is to implement the ');
-        ie_open('code');
-          itext('close');
-        ie_close('code');
-        itext(' function in your ');
-        ie_open('code');
-          itext('src/Modal.js');
-        ie_close('code');
-        itext(' file:');
-      ie_close('p');
-      $templateAlias2({code: 'close() {\n    this.dispose();\n}', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('All components have this ');
-        ie_open('code');
-          itext('dispose');
-        ie_close('code');
-        itext(' function, which basically destroys it and removes its content from the DOM. Check the guide about ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/component-lifecycle.html');
-          itext('Lifecycle functions');
-        ie_close('a');
-        itext(' for more details.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'run_the_demo');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#run_the_demo');
-          itext('Run the Demo');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now compile your code with ');
-        ie_open('code');
-          itext('npm run build');
-        ie_close('code');
-        itext(' and open the demo on a browser. Clicking the ');
-        ie_open('strong');
-          itext('x');
-        ie_close('strong');
-        itext(' button will close the modal as expected.');
-      ie_close('p');
-      ie_open('p');
-        itext('For more details on inline listeners check ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/inline-events.html');
-          itext('this guide');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'next_steps');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next Steps');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Our modal now properly closes itself when the ');
-        ie_open('strong');
-          itext('x');
-        ie_close('strong');
-        itext(' button is clicked. To do this we\'re disposing of it completely though, so we\'ll need to create a new Modal instance whenever we need to show it again.');
-      ie_close('p');
-      ie_open('p');
-        itext('Ideally, instead of disposing it, we should just hide it instead, while also having a way to show it back. The next section will explain how to do this by having data changes update the modal accordingly.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/docs/getting-started/modal_updates.html');
-            itext('\u21AA Tutorial: Modal - Updates');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('p');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param289}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'GQDMP.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class GQDMP extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GQDMP, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 214 */,
 /* 215 */,
 /* 216 */,
 /* 217 */,
@@ -27425,7 +27192,144 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GQDMP, templates);
 /* 236 */,
 /* 237 */,
 /* 238 */,
-/* 239 */,
+/* 239 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FwmJA", function() { return FwmJA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from components.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace FwmJA.
+ * @public
+ */
+
+goog.module('FwmJA.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param921 = function() {
+    ie_open('h2');
+      var dyn18 = opt_data.page.title;
+      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
+    ie_close('h2');
+    ie_open('p');
+      itext('In the ');
+      ie_open('code');
+        itext('metal-todo-app');
+      ie_close('code');
+      itext(' boilerplate, there are already three components defined to help get you started. Each component is defined as an ES6 class that extends from Metal\'s ');
+      ie_open('code');
+        itext('JSXComponent');
+      ie_close('code');
+      itext(' class.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Each component has a render function where the JSX template is defined. This will create the HTML you see in the demo page.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    return (\n        <div>Hello, World</div>\n    );\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' component will be the root level component. It will handle storing the todo data, and the rendering of the other two components.');
+    ie_close('p');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component will render each item in the list of todos.');
+    ie_close('p');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component will render a form for adding new todo items to the list. It will consist of a text input and add button.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Why more than one?');
+    ie_close('h3');
+    ie_open('p');
+      itext('It might seem more trouble than it\'s worth splitting up the Todo App into multiple components, but it\'s absolutely necessary when creating larger applications. This tutorial aims to teach you how to handle nested components for more complex use cases.');
+    ie_close('p');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param921}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'FwmJA.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class FwmJA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(FwmJA, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 240 */,
 /* 241 */,
 /* 242 */,
@@ -27464,7 +27368,33 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GQDMP, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27496,9 +27426,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _modal_eventsSoy = __webpack_require__(214);
+var _componentsSoy = __webpack_require__(239);
 
-var _modal_eventsSoy2 = _interopRequireDefault(_modal_eventsSoy);
+var _componentsSoy2 = _interopRequireDefault(_componentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27508,23 +27438,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GQDMP = function (_Component) {
-  _inherits(GQDMP, _Component);
+var FwmJA = function (_Component) {
+  _inherits(FwmJA, _Component);
 
-  function GQDMP() {
-    _classCallCheck(this, GQDMP);
+  function FwmJA() {
+    _classCallCheck(this, FwmJA);
 
-    return _possibleConstructorReturn(this, (GQDMP.__proto__ || Object.getPrototypeOf(GQDMP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FwmJA.__proto__ || Object.getPrototypeOf(FwmJA)).apply(this, arguments));
   }
 
-  return GQDMP;
+  return FwmJA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(GQDMP, _modal_eventsSoy2.default);
+_metalSoy2.default.register(FwmJA, _componentsSoy2.default);
 
-exports.default = GQDMP;
+exports.default = FwmJA;
 
 /***/ })
-],[278]);
+],[304]);

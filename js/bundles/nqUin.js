@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([23,35,36],[
+webpackJsonppageComponent([5,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27176,12 +27176,30 @@ exports.default = parseFromAnchor;
 /* 220 */,
 /* 221 */,
 /* 222 */,
-/* 223 */
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GgNZU", function() { return GgNZU; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nqUin", function() { return nqUin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27193,15 +27211,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from inline-events.soy.
+// This file was automatically generated from dependencies.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace GgNZU.
+ * @fileoverview Templates in namespace nqUin.
  * @public
  */
 
-goog.module('GgNZU.incrementaldom');
+goog.module('nqUin.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27224,7 +27242,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27235,134 +27253,93 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param541 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('Another feature Metal.js has that can be very useful is the ability to declare events inside templates, directly on the desired element. Besides being simple and intuitive, this feature allows Metal.js to handle attaching events itself, and so this can be done in the best way possible, with ');
-        ie_open('a', null, null,
-            'href', 'https://learn.jquery.com/events/event-delegation/');
-          itext('delegates');
-        ie_close('a');
-        itext(' for example, without the user having worry about that at all. These events are also automatically detached when the component is disposed.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'inline_listeners_via_function_name');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#inline_listeners_via_function_name');
-          itext('Inline Listeners - via Function Name');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You can add DOM event listeners easily through your templates, like this:');
-      ie_close('p');
-      $templateAlias2({code: '<button onClick="close" type="button" class="close">', mode: 'text/html'}, null, opt_ijData);
-      ie_open('p');
-        itext('The above code declares that whenever the ');
-        ie_open('strong');
-          itext('x');
-        ie_close('strong');
-        itext(' button is clicked, the ');
-        ie_open('code');
-          itext('close');
-        ie_close('code');
-        itext(' function from the component should be called.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'inline_listeners_via_function_reference');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#inline_listeners_via_function_reference');
-          itext('Inline Listeners - via Function Reference');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('If you prefer though, you can also pass the actual function reference (instead of just its name) as an inline listener.');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n/**\n * In the "render" template, soy params that match a\n * component\'s function name will be that function\n * (automatically bound to the component instance).\n */\n&#123;template .render&#125;\n  {@param close: any}\n\n  // ...\n  <button onClick="{$close}" type="button" class="close">\n  // ...\n&#123;/template}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\n<button onClick={this.close.bind(this)} type="button" class="close">', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('That will work exactly the same way as the previous example.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'inline_listeners_nested_components');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#inline_listeners_nested_components');
-          itext('Inline Listeners - Nested Components');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('When using ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/nested-components.html');
-          itext('nested components');
-        ie_close('a');
-        itext(' it\'s also possible to inline events by using the ');
-        ie_open('strong');
-          itext('events');
-        ie_close('strong');
-        itext(' property:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n{call Button.render}\n  {param events: [\'click\': [\'selector\': \'button\', \'fn\': \'close\']] /}\n  {param label: \'Ok\' /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar events = {click: {\n  selector: \'button\',\n  fn: \'close\'\n}};\n\n<Button events={events} label="Ok" />', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('This will cause the ');
-        ie_open('code');
-          itext('close');
-        ie_close('code');
-        itext(' function from the sub component to be called whenever a click event triggers for the elements that match the given selector.');
-      ie_close('p');
-      ie_open('p');
-        itext('In case you want to listen to the event with a function from the parent component, just pass the function reference instead of a string, like this:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n{call Button.render}\n  {param events: [\'click\': [\'selector\': \'button\', \'fn\': $close]] /}\n  {param label: \'Ok\' /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar events = {click: {\n  selector: \'button\',\n  fn: this.close.bind(this)\n}};\n\n<Button events={events} label="Ok" />', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Besides DOM events, you can also listen to custom events from the sub component in this same way:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n{call Button.render}\n  {param events: [\'labelChanged\': $handleLabelChanged] /}\n  {param label: \'Ok\' /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar events = {labelChanged: this.handleLabelChanged.bind(this)};\n\n<Button events={events} label="Ok" />', mode: 'jsx'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'inline_listeners_alternative_usage');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#inline_listeners_alternative_usage');
-          itext('Inline Listeners - Alternative Usage');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Besides the ');
-        ie_open('code');
-          itext('on[EventName]');
-        ie_close('code');
-        itext(' format you can also use ');
-        ie_open('code');
-          itext('data-on[eventname]');
-        ie_close('code');
-        itext(' for adding inline listeners. For example:');
-      ie_close('p');
-      $templateAlias2({code: '<button data-onclick="close" type="button" class="close">', mode: 'text/html'}, null, opt_ijData);
-      ie_open('p');
-        itext('Note that this format is supported mainly to enable doing ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/progressive-enhancement.html');
-          itext('progressive enhancement');
-        ie_close('a');
-        itext(', when running Soy templates via Java for example. When templates using the ');
-        ie_open('code');
-          itext('on[EventName]');
-        ie_close('code');
-        itext(' format run in Java they will output elements with these as actual attributes, which can cause errors in the browser. In JavaScript these are used as element properties instead, so this problem doesn\'t occur.');
-      ie_close('p');
-      ie_open('p');
-        itext('So feel free to use the format you like best, or that better fits your needs.');
-      ie_close('p');
-    ie_close('article');
+  var param978 = function() {
+    ie_open('h2');
+      var dyn20 = opt_data.page.title;
+      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
+    ie_close('h2');
+    ie_open('p');
+      itext('In order to follow along with this tutorial, you\'ll need ');
+      ie_open('a', null, null,
+          'href', 'https://git-scm.com/');
+        itext('Git');
+      ie_close('a');
+      itext(', and a recent version of ');
+      ie_open('a', null, null,
+          'href', 'https://nodejs.org/');
+        itext('Node.js/npm');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Todo Boilerplate');
+    ie_close('h3');
+    ie_open('p');
+      itext('Start by cloning the boilerplate respository.');
+    ie_close('p');
+    $templateAlias2({code: 'git clone https://github.com/Robert-Frampton/metal-todo-app.git', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('Then navigate to the root of the project in your terminal and install the local npm dependencies.');
+    ie_close('p');
+    $templateAlias2({code: 'cd metal-todo-app && npm install', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('The boilerplate that you will be building off of is located in the ');
+      ie_open('strong');
+        itext('src/jsx');
+      ie_close('strong');
+      itext(' directory. You can also view the finished product in the ');
+      ie_open('strong');
+        itext('src/jsx/final');
+      ie_close('strong');
+      itext(' directory.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Building');
+    ie_close('h3');
+    ie_open('p');
+      itext('In order to test drive the boilerplate located in the ');
+      ie_open('strong');
+        itext('src/jsx');
+      ie_close('strong');
+      itext(' directory, you\'ll need to run the provided build script:');
+    ie_close('p');
+    $templateAlias2({code: 'npm run build:jsx', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('This will run babel + webpack to transpile and bundle the JavaScript into something consumable by web browsers.');
+    ie_close('p');
+    ie_open('p');
+      itext('Everything you\'ll be writing in this tutorial will be using ES6 syntax, if you\'re unfamiliar with it, take a look at ');
+      ie_open('a', null, null,
+          'href', '#');
+        itext('this guide');
+      ie_close('a');
+      itext(' first.');
+    ie_close('p');
+    ie_open('p');
+      itext('To build the finished product, run the following script:');
+    ie_close('p');
+    $templateAlias2({code: 'npm run build:jsx:final', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('h3');
+      itext('Demo');
+    ie_close('h3');
+    ie_open('p');
+      itext('Now that you\'ve built the project, go ahead and open the demo page located at ');
+      ie_open('code');
+        itext('demos/index.html');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    ie_open('p');
+      itext('If you take a look at the file you\'ll see that the component is already being invoked.');
+    ie_close('p');
+    $templateAlias2({code: '<script type="text/javascript">\n    new metal.TodoApp();\n<\/script>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('p');
+      itext('When invoking a component this way, the component is rendered to the ');
+      ie_open('code');
+        itext('body');
+      ie_close('code');
+      itext(' element.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27372,11 +27349,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param541}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param978}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'GgNZU.render';
+  $render.soyTemplateName = 'nqUin.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27386,32 +27363,14 @@ return exports;
 
 });
 
-class GgNZU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GgNZU, templates);
+class nqUin extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(nqUin, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
 /* 242 */,
 /* 243 */,
 /* 244 */,
@@ -27455,7 +27414,31 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GgNZU, templates);
 /* 282 */,
 /* 283 */,
 /* 284 */,
-/* 285 */
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27487,9 +27470,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _inlineEventsSoy = __webpack_require__(223);
+var _dependenciesSoy = __webpack_require__(241);
 
-var _inlineEventsSoy2 = _interopRequireDefault(_inlineEventsSoy);
+var _dependenciesSoy2 = _interopRequireDefault(_dependenciesSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27499,23 +27482,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GgNZU = function (_Component) {
-  _inherits(GgNZU, _Component);
+var nqUin = function (_Component) {
+  _inherits(nqUin, _Component);
 
-  function GgNZU() {
-    _classCallCheck(this, GgNZU);
+  function nqUin() {
+    _classCallCheck(this, nqUin);
 
-    return _possibleConstructorReturn(this, (GgNZU.__proto__ || Object.getPrototypeOf(GgNZU)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nqUin.__proto__ || Object.getPrototypeOf(nqUin)).apply(this, arguments));
   }
 
-  return GgNZU;
+  return nqUin;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(GgNZU, _inlineEventsSoy2.default);
+_metalSoy2.default.register(nqUin, _dependenciesSoy2.default);
 
-exports.default = GgNZU;
+exports.default = nqUin;
 
 /***/ })
-],[285]);
+],[309]);

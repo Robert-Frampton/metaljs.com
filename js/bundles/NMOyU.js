@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([26,35,36],[
+webpackJsonppageComponent([8,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27173,12 +27173,30 @@ exports.default = parseFromAnchor;
 /* 217 */,
 /* 218 */,
 /* 219 */,
-/* 220 */
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cpgNz", function() { return cpgNz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NMOyU", function() { return NMOyU; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27190,15 +27208,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from component-lifecycle.soy.
+// This file was automatically generated from before-we-start.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace cpgNz.
+ * @fileoverview Templates in namespace NMOyU.
  * @public
  */
 
-goog.module('cpgNz.incrementaldom');
+goog.module('NMOyU.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27219,9 +27237,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27232,79 +27248,58 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param453 = function() {
-    ie_open('article', null, null,
-        'id', 'component_lifecycle');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#component_lifecycle');
-          itext('Component Lifecycle');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Components built with Metal.js provide lifecycle methods that can be called when needed. The following example lists all available lifecycle methods, in the order in which they\'re called');
-      ie_close('p');
-      $templateAlias2({code: 'class MyComponent extends Component {\n    /**\n     * Called when the component is first created,\n     * but before it\'s first rendered.\n     */\n    created() {\n    }\n\n    /**\n     * Called whenever the component is rendered.\n     * @param {boolean} firstRender Flag indicating if\n     * this was the component\'s first render.\n     */\n    rendered(firstRender) {\n    }\n\n    /**\n     * Called before the component is about to attach\n     * to the DOM.\n     */\n    willAttach() {\n    }\n\n    /**\n     * Called when the component is attached to the\n     * DOM. The component will automatically be\n     * attached when first rendered, but can also\n     * be attached (without rerendering the\n     * component) by calling the `attach` method\n     * directly. This is a good place to attach event\n     * listeners, since the component is available\n     * in the page.\n     */\n    attached() {\n    }\n\n    /**\n     * Soy components only.\n     *\n     * Called when state data is about to be passed\n     * to the component\'s renderer.\n     * @param {!object} changes object literal with\n     * info on state changes.\n     */\n    willReceiveState(changes) {\n    }\n\n    /**\n     * JSX components only.\n     *\n     * Called when props data is about to be passed to\n     * the component\'s renderer.\n     * @param {!object} propsChanges object literal\n     * with info on props changes.\n     */\n    willReceiveProps(propsChanges) {\n    }\n\n    /**\n     * Called when the renderer is about to rerender\n     * the component. If it returns false it will not\n     * rerender.\n     * @param {!object} changes object literal with\n     * info on state changes.\n     * @param {?object} propsChanges object literal\n     * with info on props changes.\n     * Note: `propsChanges` is only applicable for\n     * JSX components.\n     */\n    shouldUpdate(changes, propsChanges) {\n        return true;\n    }\n\n    /**\n     * Called before the component will rerender.\n     * @param {!object} changes object literal with\n     * info on state changes.\n     * @param {?object} propsChanges object literal\n     * with info on props changes.\n     * Note: `propsChanges` is only applicable for\n     * JSX components.\n     */\n    willUpdate(changes, propsChanges) {\n    }\n\n    /**\n     * Called before the component is about to detach\n     * from the DOM.\n     */\n    willDetach() {\n    }\n\n    /**\n     * Called when the component is detached from the\n     * DOM. The component will automatically be\n     * detached when disposed, but can also be\n     * detached (without disposing the component)\n     * by calling the `detach` method directly. This\n     * is a good place to detach event listeners,\n     * since the component is not available in the\n     * page anymore.\n     */\n    detached() {\n    }\n\n    /**\n     * Called when the component is disposed. This\n     * should contain any necessary cleanup, like\n     * detaching any remaining events and disposing\n     * of sub components and local variables.\n     */\n    disposed() {\n    }\n\n    /**\n     * Called when the component is about to render.\n     * It takes the component state as an argument\n     * and you can massage the data before it is passed\n     * down to the template.\n     * This is only available for Soy Components.\n     */\n    prepareStateForRender(states) {\n        return Object.assign({}, states);\n    }\n}', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'will_receive_state');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#will_receive_state');
-          itext('willReceiveState - Soy');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('The ');
-        ie_open('code');
-          itext('willReceiveState');
-        ie_close('code');
-        itext(' lifecycle method allows for hooking into the state lifecycle of Soy components. Let\'s take the following component for example.');
-      ie_close('p');
-      $templateAlias2({code: 'import Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nimport templates from \'./MySoyComponent.soy\';\n\nclass MySoyComponent extends Component {\n    willReceiveState(changes) {\n        if (changes.foo && changes.foo.newVal !== changes.foo.prevVal) {\n            // This will available in the next render\n            this.bar = \'bar1\';\n        }\n    }\n}\n\nMySoyComponent.STATE = {\n    foo: {\n        value: \'foo\'\n    },\n\n    bar: {\n        value: \'bar\'\n    }\n};\n\nSoy.register(MySoyComponent, templates);\nexport default MySoyComponent;', mode: 'javascript'}, null, opt_ijData);
-      $templateAlias2({code: '&#123;namespace MySoyComponent&#125;\n\n/**\n *\n */\n&#123;template. render&#125;\n    {@param foo: string}\n    {@param bar: string}\n\n    <div>{$foo}:{$bar}</div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      ie_open('p');
-        itext('If we render this component and change the value of the ');
-        ie_open('code');
-          itext('foo');
-        ie_close('code');
-        itext(' state, the');
-        ie_open('code');
-          itext('willReceiveState');
-        ie_close('code');
-        itext(' method will be invoked before the component renders allowing us to also set the value of other state values that will also be passed to the next render.');
-      ie_close('p');
-      $templateAlias2({code: 'import MySoyComponent from \'./MySoyComponent\';\n\nconst component = new MySoyComponnet();\n\ncomponent.foo = \'foo1\';\n\ncomponent.once(\'rendered\', function() {\n    console.log(component.element.innerHTML);\n\n    // component.element.innerHTML === \'foo1:bar1\';\n});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'will_receive_props');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#will_receive_props');
-          itext('willReceiveProps - JSX');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('The ');
-        ie_open('code');
-          itext('willReceiveProps');
-        ie_close('code');
-        itext(' lifecycle method allows for hooking into the props lifecycle of JSX components. Let\'s take the following JSX component for example.');
-      ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyJSXComponent extends JSXComponent {\n    render() {\n        return <div>{this.props.foo}:{this.state.bar}</div>\n    }\n\n    willReceiveProps(changes) {\n        if (changes.foo && changes.foo.newVal !== changes.foo.prevVal) {\n            // This will available in the next render\n            this.state.bar = \'bar1\';\n        }\n    }\n}\n\nMyJSXComponent.STATE = {\n    bar: {\n        value: \'bar\'\n    }\n};\n\nMyJSXComponent.PROPS = {\n    foo: {\n        value: \'foo\'\n    }\n};\n\nexport default MyJSXComponent;', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('If we render this component and change the value of the ');
-        ie_open('code');
-          itext('foo');
-        ie_close('code');
-        itext(' prop, the');
-        ie_open('code');
-          itext('willReceiveProps');
-        ie_close('code');
-        itext(' method will be invoked before the component renders allowing us to also set the value of internal state values that will also be passed to the next render.');
-      ie_close('p');
-      $templateAlias2({code: 'import MyJSXComponent from \'./MyJSXComponent\';\n\nconst component = new MyJSXComponent();\n\ncomponent.props.foo = \'foo1\';\n\ncomponent.once(\'rendered\', function() {\n    console.log(component.element.innerHTML);\n\n    // component.element.innerHTML === \'foo1:bar1\';\n});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
+  var param910 = function() {
+    ie_open('h2');
+      var dyn17 = opt_data.page.title;
+      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
+    ie_close('h2');
+    ie_open('p');
+      itext('Before we actually make anything, let\'s discuss what Metal.js is, and what it\'s intended for.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Data flow');
+    ie_close('h3');
+    ie_open('p');
+      itext('If you\'re familiar with React, you\'ll feel right at home. Metal.js is a foundation for creating UI components that automatically respond to data when it\'s updated. In other words, it\'s a framework for creating one-way data binding components.');
+    ie_close('p');
+    ie_open('p');
+      itext('This is different than frameworks like Angular, which provide a two-way data binding solution.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Templating');
+    ie_close('h3');
+    ie_open('p');
+      itext('Metal.js is template agnostic, and comes with out of the box support for two templating languages, Soy (Google Closure) and JSX (React).');
+    ie_close('p');
+    ie_open('p');
+      itext('When the data being passed to your component changes, your component\'s template will be used to rerender just the parts of your component that need to be updated. Therefore, you don\'t need to worry about manual DOM manipulation.');
+    ie_close('p');
+    ie_open('p');
+      itext('Behind the scenes Metal.js is using Google\'s ');
+      ie_open('a', null, null,
+          'href', 'https://google.github.io/incremental-dom');
+        itext('Incremental DOM');
+      ie_close('a');
+      itext(' for updating DOM elements.');
+    ie_close('p');
+    ie_open('h3');
+      itext('What are we making?');
+    ie_close('h3');
+    ie_open('p');
+      itext('In this tutorial we\'ll be making a simple Todo App that let\'s you mark items as completed, and add new items to the list. If you would like to see the finished product check out the ');
+      ie_open('a', null, null,
+          'href', '#');
+        itext('metal-todo-app repsitory');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('img', null, null,
+          'src', '/images/tutorials/todo-app/finished_todo_app.png',
+          'alt', 'Finished Todo App',
+          'title', 'Finished Todo App');
+      ie_close('img');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27314,11 +27309,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param453}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param910}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'cpgNz.render';
+  $render.soyTemplateName = 'NMOyU.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27328,32 +27323,14 @@ return exports;
 
 });
 
-class cpgNz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(cpgNz, templates);
+class NMOyU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(NMOyU, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
@@ -27405,7 +27382,23 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(cpgNz, templates);
 /* 287 */,
 /* 288 */,
 /* 289 */,
-/* 290 */
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27437,9 +27430,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _componentLifecycleSoy = __webpack_require__(220);
+var _beforeWeStartSoy = __webpack_require__(238);
 
-var _componentLifecycleSoy2 = _interopRequireDefault(_componentLifecycleSoy);
+var _beforeWeStartSoy2 = _interopRequireDefault(_beforeWeStartSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27449,23 +27442,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var cpgNz = function (_Component) {
-  _inherits(cpgNz, _Component);
+var NMOyU = function (_Component) {
+  _inherits(NMOyU, _Component);
 
-  function cpgNz() {
-    _classCallCheck(this, cpgNz);
+  function NMOyU() {
+    _classCallCheck(this, NMOyU);
 
-    return _possibleConstructorReturn(this, (cpgNz.__proto__ || Object.getPrototypeOf(cpgNz)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NMOyU.__proto__ || Object.getPrototypeOf(NMOyU)).apply(this, arguments));
   }
 
-  return cpgNz;
+  return NMOyU;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(cpgNz, _componentLifecycleSoy2.default);
+_metalSoy2.default.register(NMOyU, _beforeWeStartSoy2.default);
 
-exports.default = cpgNz;
+exports.default = NMOyU;
 
 /***/ })
-],[290]);
+],[306]);

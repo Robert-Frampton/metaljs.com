@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([25,35,36],[
+webpackJsonppageComponent([15,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27174,12 +27174,22 @@ exports.default = parseFromAnchor;
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SwfBQ", function() { return SwfBQ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eyMKf", function() { return eyMKf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27191,15 +27201,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from importing.soy.
+// This file was automatically generated from state.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace SwfBQ.
+ * @fileoverview Templates in namespace eyMKf.
  * @public
  */
 
-goog.module('SwfBQ.incrementaldom');
+goog.module('eyMKf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27233,122 +27243,176 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param491 = function() {
+  var param771 = function() {
     ie_open('article');
       ie_open('p');
-        itext('There are now more libraries and frameworks available for front-end development than ever before. It\'s not uncommon to have five or more of these libraries involved in a single project. But keeping track of all these libraries and making sure they\'re up-to-date can be tricky. To solve this we can use npm, a package manager that makes it easy to manage all your application\'s dependencies.');
+        itext('The ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' class provides a way of defining state properties for the classes that extend it, as well as watching these properties for value changes.');
       ie_close('p');
       ie_open('p');
-        itext('In this guide you are going to learn how to get up and running with npm. You\'ll start by installing the npm command-line utility and then go on to learn about the various commands that are available for managing Metal.js components.');
+        itext('The ');
+        ie_open('strong');
+          itext('Component');
+        ie_close('strong');
+        itext(' class already extends from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' by default, besides automatically rerendering when there is a change.');
       ie_close('p');
       ie_open('p');
-        itext('Lets get started!');
+        itext('If your class doesn\'t need to render anything it\'s best to extend from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' directly though. That way you\'ll have access to its features without also inheriting logic you won\'t need.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'installing_node_js_npm');
+        'id', 'configuring_state');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#installing_node_js_npm');
-          itext('Installing Node.js/NPM');
+            'href', '#configuring_state');
+          itext('Configuring State');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('If you don\'t already have Node.js or npm installed, head over to the ');
-        ie_open('a', null, null,
-            'href', 'https://nodejs.org/en/download/');
-          itext('Node.js');
-        ie_close('a');
-        itext(' website and download the relevant copy of Node.js for your system. The npm program is included with the install of Node.js.');
+        itext('The following example is a class that extends directly from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' and defines a state property named ');
+        ie_open('code');
+          itext('number');
+        ie_close('code');
+        itext(' on itself:');
       ie_close('p');
+      $templateAlias2({code: 'import core from \'metal\';\nimport State from \'metal-state\';\n\nclass Calculator extends State {\n    /**\n     * Coverts string numbers to the number type.\n     */\n    setNumber(val) {\n        if (core.isString(val)) {\n            val = parseInt(val, 10);\n        }\n        return val;\n    }\n}\n\nCalculator.STATE = {\n    number: {\n        // Called whenever a new value is set. Useful when normalizing your\n        // state data.\n        setter: \'setNumber\',\n\n        // Accepts either number or string types. If the validator check fails,\n        // the new value is discarded, and the current value kept.\n        validator: val => core.isNumber(val) || core.isString(val),\n\n        // Initial value\n        value: 0,\n\n        // You can, instead of the `value` option above, use a function to \n        // return the initial value for the state.\n        valueFn: val => 0,\n\n        // It\'s also possible to define that a property can only receive a \n        // value once, and later behave as read-only.\n        writeOnce: false\n    }\n}', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('Now that you have npm installed, we can start looking at the commands that are used to manage packages.');
+        itext('If you\'re familiar with ');
+        ie_open('a', null, null,
+            'href', 'http://yuilibrary.com/');
+          itext('YUI');
+        ie_close('a');
+        itext(', you may recognize this feature and notice that it\'s very similar to how attributes are defined there. You basically just need to list all attributes you\'ll be using on the ');
+        ie_open('strong');
+          itext('STATE');
+        ie_close('strong');
+        itext(' static variable (on YUI it would be on ');
+        ie_open('strong');
+          itext('ATTRS');
+        ie_close('strong');
+        itext('), and provide their configuration options, like initial value and validator. For a list of all valid options, take a look at ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext('\'s ');
+        ie_open('a', null, null,
+            'href', 'http://github.com/metal/metal-state/blob/c87ac15b8a9fa3ee64c421f22411f97cd376024a/src/State.js#L61');
+          itext('docs');
+        ie_close('a');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'finding_components');
+        'id', 'internal_states');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#finding_components');
-          itext('Finding components');
+            'href', '#internal_states');
+          itext('Internal States');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('There are two different ways that you can find npm packages. Either using the online component directory, or using the command line utility.');
+        itext('You can define a state as internal, for use in your component only. Just add the attribute ');
+        ie_open('code');
+          itext('internal');
+        ie_close('code');
+        itext(' to the configuration object.');
       ie_close('p');
       ie_open('p');
-        itext('To search for packages on the command line you use the search command. This should be followed by your search query.');
+        itext('By doing this, the state will behave exactly as expected, including re-rendering the component. The only difference being, internal states can not be accessed by parent components.');
       ie_close('p');
-      $templateAlias2({code: 'npm search <query>', mode: 'shell'}, null, opt_ijData);
       ie_open('p');
-        itext('For example to search for packages that contain the word \u2018metal\u2019 you could do the following:');
+        itext('This is not necessary for JSX components, since Metal.js JSX components have their own State Manager implementation. For that reason, two static properties are used, ');
+        ie_open('code');
+          itext('STATE');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('PROPS');
+        ie_close('code');
+        itext(', that behave much closer to React\'s ');
+        ie_open('code');
+          itext('state');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('props');
+        ie_close('code');
+        itext('.');
       ie_close('p');
-      $templateAlias2({code: 'npm search metal', mode: 'shell'}, null, opt_ijData);
       ie_open('p');
-        itext('This command would return a whole bunch of results, with information about each matched module so you can pick the one you wish.');
+        itext('To see exactly how it works read ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/jsx-components.html');
+          itext('JSX components section');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      $templateAlias2({code: 'Calculator.STATE = {\n  number: {\n    ...\n    internal: true\n  }\n}', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'accessing_and_updating_state');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#accessing_and_updating_state');
+          itext('Accessing and Updating State');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('The constructor can receive a configuration object with initial values to use for its state properties. You can access or change an object\'s state in the same way you\'d access or change any object property. Or you can also call the ');
+        ie_open('code');
+          itext('setState');
+        ie_close('code');
+        itext(' function, which updates the properties specified by the given object.');
+      ie_close('p');
+      $templateAlias2({code: 'var obj = new Calculator();\nconsole.log(obj.number); // Prints 0\n\nobj.number = \'1\';\nconsole.log(obj.number); // Prints 1\n\nobj.setState({number: 2});\nconsole.log(obj.number); // Prints 2', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('You can also track state value changes by listening to the appropriate event.');
+      ie_close('p');
+      $templateAlias2({code: 'obj.on(\'numberChanged\', function(event) {\n    // event.prevVal has the previous value.\n    // event.newVal has the new value.\n});', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('To see all features of the ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' class take a look at its ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/metal/metal-state/blob/master/test/State.js');
+          itext('unit tests');
+        ie_close('a');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'installing_components');
+        'id', 'configuration_data');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#installing_components');
-          itext('Installing Components');
+            'href', '#configuration_data');
+          itext('Configuration Data');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('To add a new npm package to your project you use the install command. This should be passed the name of the package you wish to install.');
-      ie_close('p');
-      $templateAlias2({code: 'npm install <package>', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('In this example, we\'re going to install the ');
+        itext('Any data passed to the constructor that has not been configured as a state property can still be accessed via ');
         ie_open('code');
-          itext('metal-position');
+          itext('config');
         ie_close('code');
-        itext(' component.');
+        itext('. Changes to these properties won\'t be tracked, so it\'s usually intended for your component\'s options, which are only set from the outside.');
       ie_close('p');
-      $templateAlias2({code: 'npm install metal-position', mode: 'shell'}, null, opt_ijData);
-      ie_open('p');
-        itext('Installed packages will be placed in a ');
-        ie_open('code');
-          itext('node_modules');
-        ie_close('code');
-        itext(' directory. This is created in the folder which the bower program was executed.');
-      ie_close('p');
-      $templateAlias2({code: '\u2514\u2500\u2500 node_modules\n    \u251C\u2500\u2500 metal\n    \u251C\u2500\u2500 metal-position', mode: 'text'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'importing_a_component');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#importing_a_component');
-          itext('Importing a Component');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('With the code already available, let\'s create a ');
-        ie_open('code');
-          itext('main.js');
-        ie_close('code');
-        itext(' file that will import the ');
-        ie_open('code');
-          itext('metal-position');
-        ie_close('code');
-        itext(' module. Note that we\'re using an ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/alias.html');
-          itext('alias');
-        ie_close('a');
-        itext(' to easily import npm files.');
-      ie_close('p');
-      $templateAlias2({code: 'import position from \'metal-position\';', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('This means that you can now call any function from that module, in this example we\'ll get the viewport height.');
-      ie_close('p');
-      $templateAlias2({code: 'var viewportHeight = position.getClientHeight(window);\n\nconsole.log(viewportHeight);', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Metal.js components are written in ES6 (a.k.a ECMAScript 2015), so you can also use ES6 on your code like we did on the example. Since ES6 isn\'t fully implemented on browsers yet though, either a polyfill or a build process is necessary before using Metal on a website.');
-      ie_close('p');
+      $templateAlias2({code: 'var obj = new Calculator({\n    number: 10,\n    foo: \'foo\'\n});\n\nconsole.log(obj.number); // Prints 2\nconsole.log(obj.foo); // Prints undefined\nconsole.log(obj.config.foo); // Prints \'foo\'', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27359,11 +27423,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param491}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param771}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'SwfBQ.render';
+  $render.soyTemplateName = 'eyMKf.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27373,24 +27437,14 @@ return exports;
 
 });
 
-class SwfBQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SwfBQ, templates);
+class eyMKf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eyMKf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
 /* 232 */,
 /* 233 */,
 /* 234 */,
@@ -27446,7 +27500,14 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SwfBQ, templates);
 /* 284 */,
 /* 285 */,
 /* 286 */,
-/* 287 */
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27478,9 +27539,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _importingSoy = __webpack_require__(221);
+var _stateSoy = __webpack_require__(231);
 
-var _importingSoy2 = _interopRequireDefault(_importingSoy);
+var _stateSoy2 = _interopRequireDefault(_stateSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27490,23 +27551,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var SwfBQ = function (_Component) {
-  _inherits(SwfBQ, _Component);
+var eyMKf = function (_Component) {
+  _inherits(eyMKf, _Component);
 
-  function SwfBQ() {
-    _classCallCheck(this, SwfBQ);
+  function eyMKf() {
+    _classCallCheck(this, eyMKf);
 
-    return _possibleConstructorReturn(this, (SwfBQ.__proto__ || Object.getPrototypeOf(SwfBQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (eyMKf.__proto__ || Object.getPrototypeOf(eyMKf)).apply(this, arguments));
   }
 
-  return SwfBQ;
+  return eyMKf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(SwfBQ, _importingSoy2.default);
+_metalSoy2.default.register(eyMKf, _stateSoy2.default);
 
-exports.default = SwfBQ;
+exports.default = eyMKf;
 
 /***/ })
-],[287]);
+],[294]);

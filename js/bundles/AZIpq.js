@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([15,35,36],[
+webpackJsonppageComponent([29,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27170,26 +27170,12 @@ exports.default = parseFromAnchor;
 /* 214 */,
 /* 215 */,
 /* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dPYLS", function() { return dPYLS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AZIpq", function() { return AZIpq; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27201,15 +27187,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from state.soy.
+// This file was automatically generated from modal_updates.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace dPYLS.
+ * @fileoverview Templates in namespace AZIpq.
  * @public
  */
 
-goog.module('dPYLS.incrementaldom');
+goog.module('AZIpq.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27243,176 +27229,256 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param777 = function() {
+  var param372 = function() {
     ie_open('article');
       ie_open('p');
-        itext('The ');
+        itext('In the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/modal_events.html');
+          itext('previous section');
+        ie_close('a');
+        itext(' we learned how to add inline listeners, by making the ');
         ie_open('strong');
-          itext('State');
+          itext('Modal');
         ie_close('strong');
-        itext(' class provides a way of defining state properties for the classes that extend it, as well as watching these properties for value changes.');
+        itext('\'s close button work.');
       ie_close('p');
       ie_open('p');
-        itext('The ');
+        itext('We first implemented this feature by disposing of the entire ');
         ie_open('strong');
-          itext('Component');
+          itext('Modal');
         ie_close('strong');
-        itext(' class already extends from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' by default, besides automatically rerendering when there is a change.');
-      ie_close('p');
-      ie_open('p');
-        itext('If your class doesn\'t need to render anything it\'s best to extend from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' directly though. That way you\'ll have access to its features without also inheriting logic you won\'t need.');
+        itext(' instance when it was closed. It\'d be best to have the modal just hide itself so it could be shown again afterwards though.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'configuring_state');
+        'id', 'state');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#configuring_state');
-          itext('Configuring State');
+            'href', '#state');
+          itext('State');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('The following example is a class that extends directly from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' and defines a state property named ');
-        ie_open('code');
-          itext('number');
-        ie_close('code');
-        itext(' on itself:');
-      ie_close('p');
-      $templateAlias2({code: 'import core from \'metal\';\nimport State from \'metal-state\';\n\nclass Calculator extends State {\n    /**\n     * Coverts string numbers to the number type.\n     */\n    setNumber(val) {\n        if (core.isString(val)) {\n            val = parseInt(val, 10);\n        }\n        return val;\n    }\n}\n\nCalculator.STATE = {\n    number: {\n        // Called whenever a new value is set. Useful when normalizing your\n        // state data.\n        setter: \'setNumber\',\n\n        // Accepts either number or string types. If the validator check fails,\n        // the new value is discarded, and the current value kept.\n        validator: val => core.isNumber(val) || core.isString(val),\n\n        // Initial value\n        value: 0,\n\n        // You can, instead of the `value` option above, use a function to \n        // return the initial value for the state.\n        valueFn: val => 0,\n\n        // It\'s also possible to define that a property can only receive a \n        // value once, and later behave as read-only.\n        writeOnce: false\n    }\n}', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('If you\'re familiar with ');
-        ie_open('a', null, null,
-            'href', 'http://yuilibrary.com/');
-          itext('YUI');
-        ie_close('a');
-        itext(', you may recognize this feature and notice that it\'s very similar to how attributes are defined there. You basically just need to list all attributes you\'ll be using on the ');
-        ie_open('strong');
-          itext('STATE');
-        ie_close('strong');
-        itext(' static variable (on YUI it would be on ');
-        ie_open('strong');
-          itext('ATTRS');
-        ie_close('strong');
-        itext('), and provide their configuration options, like initial value and validator. For a list of all valid options, take a look at ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext('\'s ');
-        ie_open('a', null, null,
-            'href', 'http://github.com/metal/metal-state/blob/c87ac15b8a9fa3ee64c421f22411f97cd376024a/src/State.js#L61');
-          itext('docs');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'internal_states');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#internal_states');
-          itext('Internal States');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You can define a state as internal, for use in your component only. Just add the attribute ');
-        ie_open('code');
-          itext('internal');
-        ie_close('code');
-        itext(' to the configuration object.');
+        itext('We\'ve seen that it\'s possible to pass data to components via the constructor. By default this kind of data is read-only for the component though, that is, it can be received from the outside but not changed from the inside.');
       ie_close('p');
       ie_open('p');
-        itext('By doing this, the state will behave exactly as expected, including re-rendering the component. The only difference being, internal states can not be accessed by parent components.');
+        itext('When you need to be able to change a component\'s data, as well as have that change cause its HTML contents to update, you should indicate that it\'ll be part of the component\'s state.');
       ie_close('p');
       ie_open('p');
-        itext('This is not necessary for JSX components, since Metal.js JSX components have their own State Manager implementation. For that reason, two static properties are used, ');
+        itext('This can be done by using your component\'s ');
         ie_open('code');
           itext('STATE');
         ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('PROPS');
-        ie_close('code');
-        itext(', that behave much closer to React\'s ');
-        ie_open('code');
-          itext('state');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('props');
-        ie_close('code');
-        itext('.');
+        itext(' static variable, where you an also configure state properties, specifying initial values and validators for example.');
       ie_close('p');
       ie_open('p');
-        itext('To see exactly how it works read ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/jsx-components.html');
-          itext('JSX components section');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'Calculator.STATE = {\n  number: {\n    ...\n    internal: true\n  }\n}', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'accessing_and_updating_state');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#accessing_and_updating_state');
-          itext('Accessing and Updating State');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('The constructor can receive a configuration object with initial values to use for its state properties. You can access or change an object\'s state in the same way you\'d access or change any object property. Or you can also call the ');
+        itext('So let\'s add a ');
         ie_open('code');
-          itext('setState');
+          itext('shown');
         ie_close('code');
-        itext(' function, which updates the properties specified by the given object.');
-      ie_close('p');
-      $templateAlias2({code: 'var obj = new Calculator();\nconsole.log(obj.number); // Prints 0\n\nobj.number = \'1\';\nconsole.log(obj.number); // Prints 1\n\nobj.setState({number: 2});\nconsole.log(obj.number); // Prints 2', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('You can also track state value changes by listening to the appropriate event.');
-      ie_close('p');
-      $templateAlias2({code: 'obj.on(\'numberChanged\', function(event) {\n    // event.prevVal has the previous value.\n    // event.newVal has the new value.\n});', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('To see all features of the ');
+        itext(' property to our ');
         ie_open('strong');
-          itext('State');
+          itext('Modal');
         ie_close('strong');
-        itext(' class take a look at its ');
+        itext(' state, in ');
+        ie_open('strong');
+          itext('src/Modal.js');
+        ie_close('strong');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: 'Modal.STATE = {\n    shown: {\n        // The default value will be: `true`.\n        value: true\n    }\n};', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('For more details about configuring state, check out ');
         ie_open('a', null, null,
-            'href', 'https://github.com/metal/metal-state/blob/master/test/State.js');
-          itext('unit tests');
+            'href', '/docs/guides/state.html');
+          itext('this guide');
         ie_close('a');
         itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'configuration_data');
+        'id', 'updating_the_template');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#configuration_data');
-          itext('Configuration Data');
+            'href', '#updating_the_template');
+          itext('Updating the Template');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('Any data passed to the constructor that has not been configured as a state property can still be accessed via ');
+        itext('Now we need to update our template to only show the modal when ');
         ie_open('code');
-          itext('config');
+          itext('shown');
         ie_close('code');
-        itext('. Changes to these properties won\'t be tracked, so it\'s usually intended for your component\'s options, which are only set from the outside.');
+        itext(' is true.');
       ie_close('p');
-      $templateAlias2({code: 'var obj = new Calculator({\n    number: 10,\n    foo: \'foo\'\n});\n\nconsole.log(obj.number); // Prints 2\nconsole.log(obj.foo); // Prints undefined\nconsole.log(obj.config.foo); // Prints \'foo\'', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.soy\n\n/**\n * State properties are passed to the "render" template in the same way as\n * config properties.\n */\n&#123;template .render&#125;\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        ...\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\n/**\n * State properties are accessed from `this.state`.\n */\nrender() {\n    var cssClass = \'modal\';\n\n    if (this.state.shown) {\n        cssClass += \'show\';\n    }\n\n    return <div class={cssClass}>\n        ...\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'updating_the_close_function');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#updating_the_close_function');
+          itext('Updating the ');
+          ie_open('code');
+            itext('close');
+          ie_close('code');
+          itext(' Function');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Now we can change our ');
+        ie_open('code');
+          itext('close');
+        ie_close('code');
+        itext(' function to just update the state property.');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\nclose() {\n  this.shown = false;\n}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nclose() {\n  this.state.shown = false;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('State changes are automatically detected by ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(', causing the component to be rerendered. Since ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' uses ');
+        ie_open('a', null, null,
+            'href', 'http://google.github.io/incremental-dom/');
+          itext('Incremental DOM');
+        ie_close('a');
+        itext(', rerendering will cause minimal DOM updates. In this case, the ');
+        ie_open('code');
+          itext('shown');
+        ie_close('code');
+        itext(' CSS class will be removed from the modal element.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'run_the_demo');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#run_the_demo');
+          itext('Run the Demo');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Now compile your code with ');
+        ie_open('code');
+          itext('npm run build');
+        ie_close('code');
+        itext(' and open the demo on a browser. Clicking the ');
+        ie_open('strong');
+          itext('x');
+        ie_close('strong');
+        itext(' button will close the modal as before, but inspecting the DOM you\'ll notice that it\'s just hidden, not removed from the DOM.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'playing_with_state_data');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#playing_with_state_data');
+          itext('Playing With State Data');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('State data makes it very easy to update a component\'s contents. If you want to quickly see it working you can make some experiments on your browser\'s JavaScript console for example.');
+      ie_close('p');
+      ie_open('p');
+        itext('First let\'s hold the ');
+        ie_open('code');
+          itext('Modal(jsx)');
+        ie_close('code');
+        itext(' instance somewhere so we can access it:');
+      ie_close('p');
+      $templateAlias2({code: 'window.modal = new metal.Modal({\n    header: \'My Modal\',\n    body: \'Built using Metal.js\'\n});', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now run the demo again, go to the browser\'s console and type: ');
+        ie_open('code');
+          itext('modal.shown = false');
+        ie_close('code');
+        itext('. You\'ll notice that the modal will be hidden as expected. If you now type ');
+        ie_open('code');
+          itext('modal.shown = true');
+        ie_close('code');
+        itext(', it will show up again.');
+      ie_close('p');
+      ie_open('p');
+        itext('If you want you can also turn ');
+        ie_open('code');
+          itext('header');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('body');
+        ie_close('code');
+        itext(' into state properties as well. All you have to do is:');
+      ie_close('p');
+      ie_open('ol');
+        ie_open('li');
+          ie_open('p');
+            itext('Add them to ');
+            ie_open('code');
+              itext('STATE');
+            ie_close('code');
+            itext(', like this:');
+          ie_close('p');
+          $templateAlias2({code: 'Modal.STATE = {\n    body: {\n        value: \'Default body\'\n    },\n    header: {\n        value: \'Default header\'\n    },\n    shown: {\n        value: true\n    }\n};', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('If you\'re using JSX templates, change the calls to ');
+            ie_open('code');
+              itext('this.props');
+            ie_close('code');
+            itext(' from ');
+            ie_open('code');
+              itext('this');
+            ie_close('code');
+            itext(' instead. You will also need to change your config from ');
+            ie_open('code');
+              itext('Modal.STATE = {...}');
+            ie_close('code');
+            itext(' to ');
+            ie_open('code');
+              itext('Modal.PROPS = {...}');
+            ie_close('code');
+            itext(' like this:');
+          ie_close('p');
+          $templateAlias2({code: 'render() {\n    var cssClass = \'modal\';\n    \n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    \n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <header class="modal-header">\n                    <button onClick={this.close.bind(this)} type="button" class="close">\n                        <span>\u00D7</span>\n                    </button>\n                    <h4>{this.props.header}</h4>\n                </header>\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}\n\nModal.PROPS = {\n    body: {\n        value: \'Default body\'\n    },\n    header: {\n        value: \'Default header\'\n    },\n    shown: {\n        value: true\n    }\n};', mode: 'jsx'}, null, opt_ijData);
+        ie_close('li');
+      ie_close('ol');
+      ie_open('p');
+        itext('Now if you type something like ');
+        ie_open('code');
+          itext('modal.props.header = \'New Header\'');
+        ie_close('code');
+        itext(' on the console, the contents will also be updated automatically.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'next_steps');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#next_steps');
+          itext('Next Steps');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Our modal is working as expected now. But what if you want to split it into multiple components? How would we use them together? Check it out in the next section.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('strong');
+          ie_open('a', null, null,
+              'href', '/docs/getting-started/modal_nested.html');
+            itext('\u21AA Tutorial: Modal - Nested Components');
+          ie_close('a');
+        ie_close('strong');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27423,11 +27489,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param777}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param372}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'dPYLS.render';
+  $render.soyTemplateName = 'AZIpq.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27437,14 +27503,28 @@ return exports;
 
 });
 
-class dPYLS extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dPYLS, templates);
+class AZIpq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AZIpq, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
 /* 232 */,
 /* 233 */,
 /* 234 */,
@@ -27491,20 +27571,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dPYLS, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27536,9 +27603,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _stateSoy = __webpack_require__(231);
+var _modal_updatesSoy = __webpack_require__(217);
 
-var _stateSoy2 = _interopRequireDefault(_stateSoy);
+var _modal_updatesSoy2 = _interopRequireDefault(_modal_updatesSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27548,23 +27615,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var dPYLS = function (_Component) {
-  _inherits(dPYLS, _Component);
+var AZIpq = function (_Component) {
+  _inherits(AZIpq, _Component);
 
-  function dPYLS() {
-    _classCallCheck(this, dPYLS);
+  function AZIpq() {
+    _classCallCheck(this, AZIpq);
 
-    return _possibleConstructorReturn(this, (dPYLS.__proto__ || Object.getPrototypeOf(dPYLS)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AZIpq.__proto__ || Object.getPrototypeOf(AZIpq)).apply(this, arguments));
   }
 
-  return dPYLS;
+  return AZIpq;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(dPYLS, _stateSoy2.default);
+_metalSoy2.default.register(AZIpq, _modal_updatesSoy2.default);
 
-exports.default = dPYLS;
+exports.default = AZIpq;
 
 /***/ })
-],[291]);
+],[278]);

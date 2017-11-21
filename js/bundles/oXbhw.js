@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,35,36],[
+webpackJsonppageComponent([6,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27193,16 +27193,12 @@ exports.default = parseFromAnchor;
 /* 237 */,
 /* 238 */,
 /* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */
+/* 240 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GPjqc", function() { return GPjqc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "oXbhw", function() { return oXbhw; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27214,15 +27210,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from rendering-data.soy.
+// This file was automatically generated from configurating-state.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace GPjqc.
+ * @fileoverview Templates in namespace oXbhw.
  * @public
  */
 
-goog.module('GPjqc.incrementaldom');
+goog.module('oXbhw.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27256,35 +27252,79 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1046 = function() {
+  var param942 = function() {
     ie_open('h2');
-      var dyn22 = opt_data.page.title;
-      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+      var dyn19 = opt_data.page.title;
+      if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
     ie_close('h2');
     ie_open('p');
-      itext('First let\'s prepare the ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' for consuming the data being passed from ');
+      itext('As previously mentioned, Metal components automatically respond to the data passed to them and rerender. However, in order for a component to take advantage of this behavior, it needs to be told what data to respond to. This is where state comes in.');
+    ie_close('p');
+    ie_open('p');
+      itext('JSX components have two state managers, one for internal state (STATE), and one for external properties that are passed down to it (PROPS).');
+    ie_close('p');
+    ie_open('p');
+      itext('Soy components on the other hand only have one state manager that is used for both internal and external properties (STATE).');
+    ie_close('p');
+    ie_open('h3');
+      itext('Storing The Todos');
+    ie_close('h3');
+    ie_open('p');
+      itext('Let\'s configure the ');
       ie_open('code');
         itext('TodoApp');
       ie_close('code');
+      itext(' component to store an array of todos with a default value.');
+    ie_close('p');
+    $templateAlias2({code: 'TodoApp.STATE = {\n    todos: {\n        // Default value\n        value: [\n            {\n                done: false,\n                title: \'Todo 1\'\n            },\n            {\n                done: false,\n                title: \'Todo 2\'\n            }\n        ]\n    }\n};', mode: 'text/javascript'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now that there is a default value set, you can access the value in the render function using ');
+      ie_open('code');
+        itext('this.props');
+      ie_close('code');
       itext('.');
     ie_close('p');
-    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        // Conditionally adding the \'todo-item-done\' class if\n        // the todo is done\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    $templateAlias2({code: 'render() {\n    return (\n        <div>Todo: {this.props.todos[0].title}</div>\n    );\n}', mode: 'text/javascript'}, null, opt_ijData);
     ie_open('p');
-      itext('Now that you have some data that needs rendering, and the ');
+      itext('Which would result in the following markup.');
+    ie_close('p');
+    $templateAlias2({code: '<div>Todo: Todo 1</div>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('p');
+      itext('Obviously this markup isn\'t very useful, we\'ll get to rendering the entire list in a minute.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Item');
+    ie_close('h3');
+    ie_open('p');
+      itext('The ');
       ie_open('code');
         itext('TodoItem');
       ie_close('code');
-      itext(' is ready to consume it, you need to iterate over the todos and pass them to the child components.');
+      itext(' component will need two PROPS, one for keeping track of it\'s index inside the list, and one for containing the todo data itself.');
     ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    $templateAlias2({code: 'TodoItem.PROPS = {\n    index: {\n        value: null\n    },\n\n    todo: {\n        value: null\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('This will result in the following markup.');
+      itext('Remember that PROPS are used for external data, or data that is passed to the component from a parent. Therefore these values will be read-only for the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component.');
     ie_close('p');
-    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('h3');
+      itext('Form');
+    ie_close('h3');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoForm');
+      ie_close('code');
+      itext(' only needs one property that will only ever be set internally, therefore it\'s set on ');
+      ie_open('code');
+        itext('STATE');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'TodoForm.STATE = {\n    value: {\n        value: \'\'\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27294,11 +27334,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param942}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'GPjqc.render';
+  $render.soyTemplateName = 'oXbhw.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27308,14 +27348,18 @@ return exports;
 
 });
 
-class GPjqc extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GPjqc, templates);
+class oXbhw extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(oXbhw, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -27375,7 +27419,13 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GPjqc, templates);
 /* 301 */,
 /* 302 */,
 /* 303 */,
-/* 304 */
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27407,9 +27457,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _renderingDataSoy = __webpack_require__(244);
+var _configuratingStateSoy = __webpack_require__(240);
 
-var _renderingDataSoy2 = _interopRequireDefault(_renderingDataSoy);
+var _configuratingStateSoy2 = _interopRequireDefault(_configuratingStateSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27419,23 +27469,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GPjqc = function (_Component) {
-  _inherits(GPjqc, _Component);
+var oXbhw = function (_Component) {
+  _inherits(oXbhw, _Component);
 
-  function GPjqc() {
-    _classCallCheck(this, GPjqc);
+  function oXbhw() {
+    _classCallCheck(this, oXbhw);
 
-    return _possibleConstructorReturn(this, (GPjqc.__proto__ || Object.getPrototypeOf(GPjqc)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (oXbhw.__proto__ || Object.getPrototypeOf(oXbhw)).apply(this, arguments));
   }
 
-  return GPjqc;
+  return oXbhw;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(GPjqc, _renderingDataSoy2.default);
+_metalSoy2.default.register(oXbhw, _configuratingStateSoy2.default);
 
-exports.default = GPjqc;
+exports.default = oXbhw;
 
 /***/ })
-],[304]);
+],[310]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([13,35,36],[
+webpackJsonppageComponent([4,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27186,12 +27186,21 @@ exports.default = parseFromAnchor;
 /* 230 */,
 /* 231 */,
 /* 232 */,
-/* 233 */
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hESbU", function() { return hESbU; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BiZbW", function() { return BiZbW; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27203,15 +27212,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from yeoman-generator.soy.
+// This file was automatically generated from event-listeners.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace hESbU.
+ * @fileoverview Templates in namespace BiZbW.
  * @public
  */
 
-goog.module('hESbU.incrementaldom');
+goog.module('BiZbW.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27234,7 +27243,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27245,98 +27254,45 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param865 = function() {
-    ie_open('article', null, null,
-        'id', 'yeoman_generator');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#yeoman_generator');
-          itext('Yeoman Generator');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You can organize your ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' project in any way you want, but to start out we recommend using the ');
-        ie_open('a', null, null,
-            'href', 'http://npmjs.com/package/generator-metal');
-          itext('Yeoman generator');
-        ie_close('a');
-        itext(' we\'ve created, which prepares both the project structure as well as a basic development workflow for you.');
-      ie_close('p');
-      ie_open('p');
-        itext('To use it:');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          itext('Install ');
-          ie_open('a', null, null,
-              'href', 'https://nodejs.org');
-            itext('npm');
-          ie_close('a');
-          itext(' v3.0.0 or newer (if you don\'t have it yet)');
-        ie_close('li');
-        ie_open('li');
-          itext('Install ');
-          ie_open('strong');
-            itext('Yeoman');
-          ie_close('strong');
-          itext(' and ');
-          ie_open('strong');
-            itext('generator-metal');
-          ie_close('strong');
-          itext(': ');
-          ie_open('code');
-            itext('[sudo] npm i -g yo generator-metal');
-          ie_close('code');
-        ie_close('li');
-        ie_open('li');
-          itext('Open the folder that you want to use on your terminal and type: ');
-          ie_open('code');
-            itext('yo metal');
-          ie_close('code');
-        ie_close('li');
-        ie_open('li');
-          itext('Answer the generator prompts: ');
-          ie_open('img', null, null,
-              'src', '../../images/docs/prompts.png',
-              'alt', 'Generator prompts');
-          ie_close('img');
-        ie_close('li');
-        ie_open('li');
-          itext('Wait for the generator to finish fetching dependencies');
-        ie_close('li');
-      ie_close('ul');
-      ie_open('p');
-        itext('After those steps you\'ll get a directory tree similar to this:');
-      ie_close('p');
-      $templateAlias2({code: '\u2514\u2500\u2500 metal-modal\n    \u251C\u2500\u2500 demos\n    \u2502   \u2514\u2500\u2500 index.html\n    \u251C\u2500\u2500 node_modules\n    \u251C\u2500\u2500 package.json\n    \u251C\u2500\u2500 src\n    \u2502   \u251C\u2500\u2500 Modal.js\n    \u2502   \u251C\u2500\u2500 Modal.soy // Only if Soy was chosen\n    \u2502   \u2514\u2500\u2500 modal.scss\n    \u2514\u2500\u2500 test\n        \u2514\u2500\u2500 Modal.js', mode: 'text'}, null, opt_ijData);
-      ie_open('p');
-        ie_open('code');
-          itext('generator-metal');
-        ie_close('code');
-        itext(' will already include some npm scripts to help you build and test your code, as well as many gulp tasks via ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/building.html#gulp_metal');
-          itext('gulp-metal');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('By the way, the boilerplate zip provided by the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/#boilerplate');
-          itext('getting started guide');
-        ie_close('a');
-        itext(' was created using ');
-        ie_open('strong');
-          itext('generator-metal');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
+  var param1014 = function() {
+    ie_open('h2');
+      var dyn21 = opt_data.page.title;
+      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
+    ie_close('h2');
+    ie_open('p');
+      itext('So now you should have a static list of todo items, what now? Remember the end goal is to be able to click the todos to mark them as completed, so let\'s start with adding a click event listener to the list items.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n                data-onclick={this.handleClick.bind(this)}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n\n    handleClick(event) {\n        alert(this.props.todo.title);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now you should see an alert with the title of the clicked todo. Now you must notify ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' that a todo was marked as completed so that it can update the data.');
+    ie_close('p');
+    ie_open('p');
+      itext('This can be done by emitting a custom event with the info needed to make the change. In this case we\'ll use the index value from PROPS.');
+    ie_close('p');
+    $templateAlias2({code: 'handleClick(event) {\n    this.emit(\'todoClick\', {\n        index: this.props.index\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now that the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' is emitting an event, you must add a listener from the parent component ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                events={{\n                                    todoClick: this.handleTodoClick.bind(this)\n                                }}\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n\n    handleTodoClick(event) {\n        alert(event.index);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('At this point you should have an event handler that fires every time a todo item is clicked on. Next you will use this data to update the state in ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27346,11 +27302,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param865}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param1014}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'hESbU.render';
+  $render.soyTemplateName = 'BiZbW.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27360,23 +27316,14 @@ return exports;
 
 });
 
-class hESbU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hESbU, templates);
+class BiZbW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BiZbW, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -27427,7 +27374,17 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hESbU, templates);
 /* 290 */,
 /* 291 */,
 /* 292 */,
-/* 293 */
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27459,9 +27416,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _yeomanGeneratorSoy = __webpack_require__(233);
+var _eventListenersSoy = __webpack_require__(242);
 
-var _yeomanGeneratorSoy2 = _interopRequireDefault(_yeomanGeneratorSoy);
+var _eventListenersSoy2 = _interopRequireDefault(_eventListenersSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27471,23 +27428,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hESbU = function (_Component) {
-  _inherits(hESbU, _Component);
+var BiZbW = function (_Component) {
+  _inherits(BiZbW, _Component);
 
-  function hESbU() {
-    _classCallCheck(this, hESbU);
+  function BiZbW() {
+    _classCallCheck(this, BiZbW);
 
-    return _possibleConstructorReturn(this, (hESbU.__proto__ || Object.getPrototypeOf(hESbU)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (BiZbW.__proto__ || Object.getPrototypeOf(BiZbW)).apply(this, arguments));
   }
 
-  return hESbU;
+  return BiZbW;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hESbU, _yeomanGeneratorSoy2.default);
+_metalSoy2.default.register(BiZbW, _eventListenersSoy2.default);
 
-exports.default = hESbU;
+exports.default = BiZbW;
 
 /***/ })
-],[293]);
+],[303]);

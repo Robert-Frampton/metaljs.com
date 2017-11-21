@@ -27369,7 +27369,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageTutorialTodo, tem
 /* 307 */,
 /* 308 */,
 /* 309 */,
-/* 310 */
+/* 310 */,
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27432,4 +27433,4 @@ _metalSoy2.default.register(pageTutorialTodo, _indexSoy2.default);
 exports.default = pageTutorialTodo;
 
 /***/ })
-],[310]);
+],[311]);

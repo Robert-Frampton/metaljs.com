@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([28,35,36],[
+webpackJsonppageComponent([19,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27171,12 +27171,21 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ldGfE", function() { return ldGfE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsUVm", function() { return AsUVm; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27188,15 +27197,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from alias.soy.
+// This file was automatically generated from performance.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace ldGfE.
+ * @fileoverview Templates in namespace AsUVm.
  * @public
  */
 
-goog.module('ldGfE.incrementaldom');
+goog.module('AsUVm.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27217,8 +27226,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -27230,39 +27237,65 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param425 = function() {
+  var param710 = function() {
     ie_open('article', null, null,
-        'id', 'alias');
+        'id', 'performance');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#alias');
-          itext('Alias');
+            'href', '#performance');
+          itext('Performance');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('A straightforward way to import npm dependencies into your module is to use their relative paths, like we do for any other code. For example:');
-      ie_close('p');
-      $templateAlias2({code: 'import core from \'../node_modules/metal/src/core\';', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Having to supply the relative path to node_modules is not cool though and, besides that, it may cause problems when a module doing that is imported later as an npm dependency of another project, since the paths will change.');
-      ie_close('p');
-      ie_open('p');
-        itext('Knowing that, Metal.js allows importing npm dependencies like you would from a regular node module, just by referencing their names. Note that this will only work when using Metal.js\'s ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/building.html');
-          itext('build tools');
-        ie_close('a');
-        itext(' or adding a similar logic to your build process yourself (though we provide a ');
-        ie_open('a', null, null,
-            'href', 'https://npmjs.com/package/babel-preset-metal');
-          itext('babel preset');
-        ie_close('a');
-        itext(' with this logic that you can use separately too).');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' was built from the first with performance in mind. We\'ve run performance tests to compare it with other libraries and got really good results that show the benefits of using it.');
       ie_close('p');
       ie_open('p');
-        itext('With aliases, the previous example can be rewritten like this:');
+        itext('In one of the tests we made, we built a simple list widget on three different libraries: ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(', ');
+        ie_open('strong');
+          itext('YUI');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('strong');
+          itext('React');
+        ie_close('strong');
+        itext('. We then measured the time it took to render those widgets with 1000 items each on three different situations:');
       ie_close('p');
-      $templateAlias2({code: 'import core from \'metal\';', mode: 'javascript'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('First Render -');
+          ie_close('strong');
+          itext(' Creating and rendering the list for the first time, on a blank element.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Decorate -');
+          ie_close('strong');
+          itext(' Creating and decorating a list that was previously rendered on the DOM.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Update -');
+          ie_close('strong');
+          itext(' Changing the contents of the first item of the list, causing a rerender.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('The chart below shows the results we obtained on Chrome (the higher the bar, the faster it runs):');
+      ie_close('p');
+      ie_open('p');
+        ie_open('img', null, null,
+            'src', '../../images/docs/perf.png',
+            'alt', 'Performance Test - List');
+        ie_close('img');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27273,11 +27306,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param425}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param710}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'ldGfE.render';
+  $render.soyTemplateName = 'AsUVm.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27287,23 +27320,14 @@ return exports;
 
 });
 
-class ldGfE extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ldGfE, templates);
+class AsUVm extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AsUVm, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
 /* 228 */,
 /* 229 */,
 /* 230 */,
@@ -27360,18 +27384,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ldGfE, templates);
 /* 281 */,
 /* 282 */,
 /* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27403,9 +27416,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _aliasSoy = __webpack_require__(218);
+var _performanceSoy = __webpack_require__(227);
 
-var _aliasSoy2 = _interopRequireDefault(_aliasSoy);
+var _performanceSoy2 = _interopRequireDefault(_performanceSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27415,23 +27428,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ldGfE = function (_Component) {
-  _inherits(ldGfE, _Component);
+var AsUVm = function (_Component) {
+  _inherits(AsUVm, _Component);
 
-  function ldGfE() {
-    _classCallCheck(this, ldGfE);
+  function AsUVm() {
+    _classCallCheck(this, AsUVm);
 
-    return _possibleConstructorReturn(this, (ldGfE.__proto__ || Object.getPrototypeOf(ldGfE)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AsUVm.__proto__ || Object.getPrototypeOf(AsUVm)).apply(this, arguments));
   }
 
-  return ldGfE;
+  return AsUVm;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ldGfE, _aliasSoy2.default);
+_metalSoy2.default.register(AsUVm, _performanceSoy2.default);
 
-exports.default = ldGfE;
+exports.default = AsUVm;
 
 /***/ })
-],[295]);
+],[284]);

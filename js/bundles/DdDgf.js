@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,35,36],[
+webpackJsonppageComponent([16,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27183,19 +27183,12 @@ exports.default = parseFromAnchor;
 /* 227 */,
 /* 228 */,
 /* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */
+/* 230 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ferdq", function() { return Ferdq; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DdDgf", function() { return DdDgf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27207,15 +27200,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from adding-todos.soy.
+// This file was automatically generated from soy-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace Ferdq.
+ * @fileoverview Templates in namespace DdDgf.
  * @public
  */
 
-goog.module('Ferdq.incrementaldom');
+goog.module('DdDgf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27238,7 +27231,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -27249,66 +27242,194 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param879 = function() {
-    ie_open('h2');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
-    ie_close('h2');
-    ie_open('p');
-      itext('You almost have a fully functioning Todo App! The only missing feature is the ability to add new todos to the list. This is where the ');
-      ie_open('code');
-        itext('TodoForm');
-      ie_close('code');
-      itext(' component will come into play.');
-    ie_close('p');
-    ie_open('p');
-      itext('First, go ahead and add a couple of event listeners, one for the form submission (onsubmit), and the other for when the input value changes (onkeyup).');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    handleSubmit(event) {\n        // Prevent default browser functionality\n        event.preventDefault();\n    }\n\n    handleChange(event) {\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now you can use the ');
-      ie_open('code');
-        itext('value');
-      ie_close('code');
-      itext(' property from STATE to keep track of the changes made to the input value.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                        value={this.state.value}\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    ...\n\n    handleChange(event) {\n        this.state.value = event.target.value;\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('The value of ');
-      ie_open('code');
-        itext('this.state.value');
-      ie_close('code');
-      itext(' will now match the value in the input.');
-    ie_close('p');
-    ie_open('p');
-      itext('You can also emit a custom event when the form is submitted, similarly to what ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' does to notify the parent component that something happened.');
-    ie_close('p');
-    $templateAlias2({code: 'handleSubmit(event) {\n    event.preventDefault();\n\n    if (this.state.value) {\n        this.emit(\'todoAdd\', {\n            title: this.state.value\n        });\n\n        // Clears the input value\n        this.state.value = \'\';\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Then in the ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext(' component, you can listen to this event and add a new todo.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                ...\n\n                <TodoForm\n                    events={{\n                        todoAdd: this.handleTodoAdd.bind(this)\n                    }}\n                 />\n            </div>\n        );\n    }\n\n    addTodo(title) {\n        // Creates a new array with all of the elements\n        // from the previous array, with the newly added item\n        this.state.todos = [...this.state.todos, {\n            done: false,\n            title\n        }];\n    }\n\n    handleTodoAdd(event) {\n        this.addTodo(event.title);\n    }\n\n    ...\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now when you add some text to the input and submit the form, a new todo will automatically be added to the list.');
-    ie_close('p');
-    ie_open('p');
-      itext('That\'s it! You\'ve successfully created a simple Todo App with Metal.js. Now that you are comfortable with the basics, check out the guides for more advanced documentation.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('img', null, null,
-          'src', '/images/tutorials/todo-app/finished_todo_anim.gif',
-          'alt', 'Finished GIF',
-          'title', 'Finished GIF');
-      ie_close('img');
-    ie_close('p');
+  var param747 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('For a full tutorial on how to build components using Soy templates, make sure to follow the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/modal.html');
+          itext('Modal tutorial');
+        ie_close('a');
+        itext(' section.');
+      ie_close('p');
+      ie_open('p');
+        itext('This guide will explain some details about the integration between ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components and ');
+        ie_open('a', null, null,
+            'href', 'http://developers.google.com/closure/templates/');
+          itext('Soy templates');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Note that ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' is template agnostic, so it\'s not necessary to use Soy at all. That said, we already provide a very good integration between Metal.js components and Soy, so if you like this template language you should give it a try.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'soy_register');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#soy_register');
+          itext('Soy.register');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('The only thing you need to do to use Soy templates in your ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' component is to call ');
+        ie_open('code');
+          itext('Soy.register');
+        ie_close('code');
+        itext(', passing it your component class and the Soy templates you\'re going to use, like this:');
+      ie_close('p');
+      $templateAlias2({code: 'import templates from \'./MyComponent.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass MyComponent extends Component {\n}\n\nSoy.register(MyComponent, templates);\n\nexport default MyComponent;', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('By default, ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' will use the Soy template called ');
+        ie_open('strong');
+          itext('render');
+        ie_close('strong');
+        itext(' as the entry point for rendering. But you can tell us to use a different one if you prefer by passing the name as the last param to the ');
+        ie_open('code');
+          itext('Soy.register');
+        ie_close('code');
+        itext(' call, like this:');
+      ie_close('p');
+      $templateAlias2({code: 'Soy.register(MyComponent, templates, \'templateName\');', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'template_file');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#template_file');
+          itext('Template File');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Make sure that your Soy file has the entry point template (');
+        ie_open('strong');
+          itext('render');
+        ie_close('strong');
+        itext(' by default), otherwise nothing will be rendered.');
+      ie_close('p');
+      ie_open('p');
+        itext('This main template will receive as data a combination of:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '/docs/guides/state.html');
+            itext('State data');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '/docs/guides/state.html#configuring_state');
+            itext('Configuration data');
+          ie_close('a');
+          itext(' (accessed through ');
+          ie_open('code');
+            itext('this.config');
+          ie_close('code');
+          itext(')');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '/docs/guides/inline-events.html#inline_listeners_via_function_reference');
+            itext('Component functions');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('Note that by default all params declared on the component\'s main Soy template are automatically configured as state properties as well, but without any special configurations (like initial value or validators). If they\'re ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/state.html');
+          itext('manually defined');
+        ie_close('a');
+        itext(' through the ');
+        ie_open('code');
+          itext('STATE');
+        ie_close('code');
+        itext(' property they will retain the setup specified there though.');
+      ie_close('p');
+      ie_open('p');
+        itext('Any params passed to the component but not directly declared on its main Soy template will be treated as basic configuration data, meaning that changes to them will not automatically rerender the component. They can still be passed down to other templates using ');
+        ie_open('code');
+          itext('data="all"');
+        ie_close('code');
+        itext(', as well be accessed via the');
+        ie_open('code');
+          itext('config');
+        ie_close('code');
+        itext(' property in the JavaScript file.');
+      ie_close('p');
+      $templateAlias2({code: '// Contains all the data received by the component.\nthis.config', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'soy_compilation');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#soy_compilation');
+          itext('Soy Compilation');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('For the integration between ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('strong');
+          itext('soy');
+        ie_close('strong');
+        itext(' to work, the Soy files need to be compiled via one of our available build tools. That\'s because they don\'t just compile the code, but also add some information that help with the integration (like export declarations).');
+      ie_close('p');
+      ie_open('p');
+        itext('The available build tools that correctly compile Soy for ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' are:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://npmjs.com/package/gulp-metal');
+            itext('gulp-metal');
+          ie_close('a');
+          itext(' (already included when creating project via ');
+          ie_open('a', null, null,
+              'href', '/docs/guides/yeoman-generator.html');
+            itext('generator-metal');
+          ie_close('a');
+          itext(').');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://npmjs.com/package/metal-cli');
+            itext('metal-cli');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://npmjs.com/package/metal-tools-soy');
+            itext('metal-tools-soy');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27318,11 +27439,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param879}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param747}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'Ferdq.render';
+  $render.soyTemplateName = 'DdDgf.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27332,14 +27453,21 @@ return exports;
 
 });
 
-class Ferdq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Ferdq, templates);
+class DdDgf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DdDgf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
 /* 238 */,
 /* 239 */,
 /* 240 */,
@@ -27389,23 +27517,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Ferdq, templates);
 /* 284 */,
 /* 285 */,
 /* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27437,9 +27549,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _addingTodosSoy = __webpack_require__(237);
+var _soyComponentsSoy = __webpack_require__(230);
 
-var _addingTodosSoy2 = _interopRequireDefault(_addingTodosSoy);
+var _soyComponentsSoy2 = _interopRequireDefault(_soyComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27449,23 +27561,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Ferdq = function (_Component) {
-  _inherits(Ferdq, _Component);
+var DdDgf = function (_Component) {
+  _inherits(DdDgf, _Component);
 
-  function Ferdq() {
-    _classCallCheck(this, Ferdq);
+  function DdDgf() {
+    _classCallCheck(this, DdDgf);
 
-    return _possibleConstructorReturn(this, (Ferdq.__proto__ || Object.getPrototypeOf(Ferdq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DdDgf.__proto__ || Object.getPrototypeOf(DdDgf)).apply(this, arguments));
   }
 
-  return Ferdq;
+  return DdDgf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(Ferdq, _addingTodosSoy2.default);
+_metalSoy2.default.register(DdDgf, _soyComponentsSoy2.default);
 
-exports.default = Ferdq;
+exports.default = DdDgf;
 
 /***/ })
-],[303]);
+],[287]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([14,35,36],[
+webpackJsonppageComponent([31,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27168,29 +27168,12 @@ exports.default = parseFromAnchor;
 /* 212 */,
 /* 213 */,
 /* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SZtYo", function() { return SZtYo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eCQmG", function() { return eCQmG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27202,15 +27185,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from web-components.soy.
+// This file was automatically generated from modal_nested.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace SZtYo.
+ * @fileoverview Templates in namespace eCQmG.
  * @public
  */
 
-goog.module('SZtYo.incrementaldom');
+goog.module('eCQmG.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27244,115 +27227,116 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param811 = function() {
-    ie_open('article', null, null,
-        'id', 'web_components');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#web_components');
-          itext('Web Components');
-        ie_close('a');
-      ie_close('h2');
+  var param317 = function() {
+    ie_open('article');
       ie_open('p');
-        itext('Metal components are generally invoked in one of three ways:');
+        itext('In the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/modal_updates.html');
+          itext('previous section');
+        ie_close('a');
+        itext(' we finished working on our component\'s behavior.');
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          itext('JavaScript');
-        ie_close('li');
-      ie_close('ul');
-      $templateAlias2({code: 'new metal.MyComponent({\n    title: \'Hello, World!\'\n}, \'#element\');', mode: 'javascript'}, null, opt_ijData);
-      ie_open('ul');
-        ie_open('li');
-          itext('Soy');
-        ie_close('li');
-      ie_close('ul');
-      $templateAlias2({code: '{call MyComponent.render}\n    {param title: "Hello, World!" /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      ie_open('ul');
-        ie_open('li');
-          itext('JSX');
-        ie_close('li');
-      ie_close('ul');
-      $templateAlias2({code: '<MyComponent title="Hello, World" />', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('However, with the help of the ');
-        ie_open('a', null, null,
-            'href', 'https://www.npmjs.com/package/metal-web-component');
-          itext('metal-web-component');
-        ie_close('a');
-        itext(' package, Metal components can be invoked as ');
-        ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements');
-          itext('Custom Elements');
-        ie_close('a');
-        itext(' in plain HTML.');
-      ie_close('p');
-      $templateAlias2({code: '<my-component title="Hello, World"></my-component>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'install');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#install');
-          itext('Install');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('First you must install the ');
-        ie_open('code');
-          itext('metal-web-component');
-        ie_close('code');
-        itext(' package:');
-      ie_close('p');
-      $templateAlias2({code: 'npm i --save metal-web-component', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Currently, web components don\'t work on every browser, so a polyfill must be used. Include the ');
-        ie_open('a', null, null,
-            'href', 'https://www.webcomponents.org/polyfills');
-          itext('webcomponents-lite polyfill');
-        ie_close('a');
-        itext(' if you intend to use web components on Firefox, Edge, or IE11.');
+        itext('But what if our ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(' header\'s markup was very similar to one that is used in other places though? Ideally we\'d move it into a separate component that can be reused. That\'s what we\'ll be doing in this section.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'define_web_components');
+        'id', 'creating_closeheader');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#define_web_components');
-          itext('Define web components');
+            'href', '#creating_closeheader');
+          itext('Creating ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('This package exposes a single helper function that can be used to wrap any Metal component in a web component. It receives two arguments: the tag name you want the web component to receive, and the constructor of the Metal component:');
-      ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\nimport defineWebComponent from \'metal-web-component\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return <h1>{this.props.message}</h1>\n    }\n}\n\nMyComponent.PROPS = {\n    message: {\n        value: \'\'\n    }\n};\n\ndefineWebComponent(\'my-component\', MyComponent);', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now that the web component is defined, it can be invoked in plain html:');
-      ie_close('p');
-      $templateAlias2({code: '<my-component message="This is a web component"></my-component>', mode: 'xml'}, null, opt_ijData);
-      ie_open('p');
-        itext('This results in the following HTML on the page:');
-      ie_close('p');
-      $templateAlias2({code: '<h1>This is a web component</h1>', mode: 'xml'}, null, opt_ijData);
-      ie_open('p');
-        itext('If you would like the component\'s markup to be rendered using the Shadow DOM, simply set the ');
+        itext('First let\'s create the new component. Add a ');
         ie_open('code');
-          itext('useshadowdom');
+          itext('src/CloseHeader.js');
         ie_close('code');
-        itext(' attribute to ');
-        ie_open('code');
-          itext('true');
-        ie_close('code');
-        itext(' when calling the web component:');
+        itext(' file to your project:');
       ie_close('p');
-      $templateAlias2({code: '<my-component message="This is a web component" useshadowdom="true"></my-component>', mode: 'xml'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport templates from \'./CloseHeader.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass CloseHeader extends Component {\n}\n\nSoy.register(CloseHeader, templates);\n\nexport default CloseHeader;', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass CloseHeader extends JSXComponent {\n    render() {\n    }\n}\n\nexport default CloseHeader;', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('This means that any styling on the page will not cascade to your component\'s markup. See ');
+        itext('Now let\'s prepare the template to be similar to the one used by ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '// src/CloseHeader.soy\n\n&#123;namespace CloseHeader&#125;\n\n&#123;template .render&#125;\n    {@param cssClass: string}\n    {@param onClick: any}\n    {@param title: string}\n\n    <header class="{$cssClass}">\n        <button onClick="{$onClick}" type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{$title}</h4>\n    </header>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nrender() {\n    return <header class={this.props.cssClass}>\n        <button onClick={this.props.onClick} type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{this.props.title}</h4>\n    </header>;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Done! Our new component is ready to be used by ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'using_closeheader');
+      ie_open('h2');
         ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM');
-          itext('MDN\'s documentation');
+            'href', '#using_closeheader');
+          itext('Using ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
         ie_close('a');
-        itext(' for more info.');
+      ie_close('h2');
+      ie_open('p');
+        itext('All we have to do is to replace the header markup from ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('\'s template with a call to ');
+        ie_open('strong');
+          itext('CloseHeader');
+        ie_close('strong');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n&#123;template .render&#125;\n    {@param body: string}\n    {@param close: string}\n    {@param header: string}\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                {call CloseHeader.render}\n                    {param cssClass: \'modal-header\' /}\n                    {param onClick: $close /}\n                    {param title: $header /}\n                {/call}\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nrender() {\n    var cssClass = \'modal\';\n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <CloseHeader\n                    cssClass="modal-header"\n                    onClick={this.close.bind(this)}\n                    title={this.props.header}\n                />\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('This will not only render ');
+        ie_open('strong');
+          itext('CloseHeader');
+        ie_close('strong');
+        itext(' at the right position, but also instantiate it for you. For more details on nested components, check out the ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/nested-components.html');
+          itext('guide about it');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'next_steps');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#next_steps');
+          itext('Next Steps');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Now that we have learned how to properly create a new component, it\'d good to also know how to test it. The next section will focus on that.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('strong');
+          ie_open('a', null, null,
+              'href', '/docs/getting-started/modal_testing.html');
+            itext('\u21AA Tutorial: Modal - Testing');
+          ie_close('a');
+        ie_close('strong');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -27364,28 +27348,45 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param811}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param317}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'SZtYo.render';
+  $render.soyTemplateName = 'eCQmG.render';
 }
 
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
+exports.render.params = ["cssClass","onClick","title","body","close","header","shown","page","site"];
+exports.render.types = {"cssClass":"string","onClick":"any","title":"string","body":"string","close":"string","header":"string","shown":"bool","page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class SZtYo extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SZtYo, templates);
+class eCQmG extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eCQmG, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
@@ -27434,12 +27435,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SZtYo, templates);
 /* 278 */,
 /* 279 */,
 /* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27471,9 +27467,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _webComponentsSoy = __webpack_require__(232);
+var _modal_nestedSoy = __webpack_require__(215);
 
-var _webComponentsSoy2 = _interopRequireDefault(_webComponentsSoy);
+var _modal_nestedSoy2 = _interopRequireDefault(_modal_nestedSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27483,23 +27479,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var SZtYo = function (_Component) {
-  _inherits(SZtYo, _Component);
+var eCQmG = function (_Component) {
+  _inherits(eCQmG, _Component);
 
-  function SZtYo() {
-    _classCallCheck(this, SZtYo);
+  function eCQmG() {
+    _classCallCheck(this, eCQmG);
 
-    return _possibleConstructorReturn(this, (SZtYo.__proto__ || Object.getPrototypeOf(SZtYo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (eCQmG.__proto__ || Object.getPrototypeOf(eCQmG)).apply(this, arguments));
   }
 
-  return SZtYo;
+  return eCQmG;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(SZtYo, _webComponentsSoy2.default);
+_metalSoy2.default.register(eCQmG, _modal_nestedSoy2.default);
 
-exports.default = SZtYo;
+exports.default = eCQmG;
 
 /***/ })
-],[286]);
+],[281]);
