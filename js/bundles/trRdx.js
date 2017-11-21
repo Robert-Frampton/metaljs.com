@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([13,35,36],[
+webpackJsonppageComponent([28,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28596,27 +28596,12 @@ exports.default = parseFromAnchor;
 /* 240 */,
 /* 241 */,
 /* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */
+/* 243 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PVJBT", function() { return PVJBT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "trRdx", function() { return trRdx; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28628,15 +28613,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from yeoman-generator.soy.
+// This file was automatically generated from alias.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace PVJBT.
+ * @fileoverview Templates in namespace trRdx.
  * @public
  */
 
-goog.module('PVJBT.incrementaldom');
+goog.module('trRdx.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28670,97 +28655,39 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param859 = function() {
+  var param419 = function() {
     ie_open('article', null, null,
-        'id', 'yeoman_generator');
+        'id', 'alias');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#yeoman_generator');
-          itext('Yeoman Generator');
+            'href', '#alias');
+          itext('Alias');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('You can organize your ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' project in any way you want, but to start out we recommend using the ');
+        itext('A straightforward way to import npm dependencies into your module is to use their relative paths, like we do for any other code. For example:');
+      ie_close('p');
+      $templateAlias2({code: 'import core from \'../node_modules/metal/src/core\';', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Having to supply the relative path to node_modules is not cool though and, besides that, it may cause problems when a module doing that is imported later as an npm dependency of another project, since the paths will change.');
+      ie_close('p');
+      ie_open('p');
+        itext('Knowing that, Metal.js allows importing npm dependencies like you would from a regular node module, just by referencing their names. Note that this will only work when using Metal.js\'s ');
         ie_open('a', null, null,
-            'href', 'http://npmjs.com/package/generator-metal');
-          itext('Yeoman generator');
+            'href', '/docs/guides/building.html');
+          itext('build tools');
         ie_close('a');
-        itext(' we\'ve created, which prepares both the project structure as well as a basic development workflow for you.');
-      ie_close('p');
-      ie_open('p');
-        itext('To use it:');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          itext('Install ');
-          ie_open('a', null, null,
-              'href', 'https://nodejs.org');
-            itext('npm');
-          ie_close('a');
-          itext(' v3.0.0 or newer (if you don\'t have it yet)');
-        ie_close('li');
-        ie_open('li');
-          itext('Install ');
-          ie_open('strong');
-            itext('Yeoman');
-          ie_close('strong');
-          itext(' and ');
-          ie_open('strong');
-            itext('generator-metal');
-          ie_close('strong');
-          itext(': ');
-          ie_open('code');
-            itext('[sudo] npm i -g yo generator-metal');
-          ie_close('code');
-        ie_close('li');
-        ie_open('li');
-          itext('Open the folder that you want to use on your terminal and type: ');
-          ie_open('code');
-            itext('yo metal');
-          ie_close('code');
-        ie_close('li');
-        ie_open('li');
-          itext('Answer the generator prompts: ');
-          ie_open('img', null, null,
-              'src', '../../images/docs/prompts.png',
-              'alt', 'Generator prompts');
-          ie_close('img');
-        ie_close('li');
-        ie_open('li');
-          itext('Wait for the generator to finish fetching dependencies');
-        ie_close('li');
-      ie_close('ul');
-      ie_open('p');
-        itext('After those steps you\'ll get a directory tree similar to this:');
-      ie_close('p');
-      $templateAlias2({code: '\u2514\u2500\u2500 metal-modal\n    \u251C\u2500\u2500 demos\n    \u2502   \u2514\u2500\u2500 index.html\n    \u251C\u2500\u2500 node_modules\n    \u251C\u2500\u2500 package.json\n    \u251C\u2500\u2500 src\n    \u2502   \u251C\u2500\u2500 Modal.js\n    \u2502   \u251C\u2500\u2500 Modal.soy // Only if Soy was chosen\n    \u2502   \u2514\u2500\u2500 modal.scss\n    \u2514\u2500\u2500 test\n        \u2514\u2500\u2500 Modal.js', mode: 'text'}, null, opt_ijData);
-      ie_open('p');
-        ie_open('code');
-          itext('generator-metal');
-        ie_close('code');
-        itext(' will already include some npm scripts to help you build and test your code, as well as many gulp tasks via ');
+        itext(' or adding a similar logic to your build process yourself (though we provide a ');
         ie_open('a', null, null,
-            'href', '/docs/guides/building.html#gulp_metal');
-          itext('gulp-metal');
+            'href', 'https://npmjs.com/package/babel-preset-metal');
+          itext('babel preset');
         ie_close('a');
-        itext('.');
+        itext(' with this logic that you can use separately too).');
       ie_close('p');
       ie_open('p');
-        itext('By the way, the boilerplate zip provided by the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/#boilerplate');
-          itext('getting started guide');
-        ie_close('a');
-        itext(' was created using ');
-        ie_open('strong');
-          itext('generator-metal');
-        ie_close('strong');
-        itext('.');
+        itext('With aliases, the previous example can be rewritten like this:');
       ie_close('p');
+      $templateAlias2({code: 'import core from \'metal\';', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28771,11 +28698,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param859}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param419}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'PVJBT.render';
+  $render.soyTemplateName = 'trRdx.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28785,14 +28712,29 @@ return exports;
 
 });
 
-class PVJBT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PVJBT, templates);
+class trRdx extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(trRdx, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
 /* 259 */,
 /* 260 */,
 /* 261 */,
@@ -28891,7 +28833,16 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PVJBT, templates);
 /* 354 */,
 /* 355 */,
 /* 356 */,
-/* 357 */
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28923,9 +28874,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _yeomanGeneratorSoy = __webpack_require__(258);
+var _aliasSoy = __webpack_require__(243);
 
-var _yeomanGeneratorSoy2 = _interopRequireDefault(_yeomanGeneratorSoy);
+var _aliasSoy2 = _interopRequireDefault(_aliasSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28935,23 +28886,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PVJBT = function (_Component) {
-  _inherits(PVJBT, _Component);
+var trRdx = function (_Component) {
+  _inherits(trRdx, _Component);
 
-  function PVJBT() {
-    _classCallCheck(this, PVJBT);
+  function trRdx() {
+    _classCallCheck(this, trRdx);
 
-    return _possibleConstructorReturn(this, (PVJBT.__proto__ || Object.getPrototypeOf(PVJBT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (trRdx.__proto__ || Object.getPrototypeOf(trRdx)).apply(this, arguments));
   }
 
-  return PVJBT;
+  return trRdx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(PVJBT, _yeomanGeneratorSoy2.default);
+_metalSoy2.default.register(trRdx, _aliasSoy2.default);
 
-exports.default = PVJBT;
+exports.default = trRdx;
 
 /***/ })
-],[357]);
+],[366]);

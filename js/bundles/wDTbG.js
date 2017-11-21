@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([30,35,36],[
+webpackJsonppageComponent([22,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28594,12 +28594,20 @@ exports.default = parseFromAnchor;
 /* 238 */,
 /* 239 */,
 /* 240 */,
-/* 241 */
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KEbuG", function() { return KEbuG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wDTbG", function() { return wDTbG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28611,15 +28619,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from modal_testing.soy.
+// This file was automatically generated from isomorphic.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace KEbuG.
+ * @fileoverview Templates in namespace wDTbG.
  * @public
  */
 
-goog.module('KEbuG.incrementaldom');
+goog.module('wDTbG.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28653,152 +28661,40 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param353 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('In the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/modal_nested.html');
-          itext('previous section');
-        ie_close('a');
-        itext(' we\'ve completed our ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' component. The last thing we\'d like to show is how to use the tools that ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' offers to help you test your code.');
-      ie_close('p');
-    ie_close('article');
+  var param590 = function() {
     ie_open('article', null, null,
-        'id', 'test_script');
+        'id', 'server_rendering');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#test_script');
-          itext('Test Script');
+            'href', '#server_rendering');
+          itext('Server Side Rendering');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('If you look at your ');
+        itext('In most cases Metal components will be rendered client side. Let\'s take the following component for example:');
+      ie_close('p');
+      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return <div>{this.props.message}</div>\n    }\n}\n\nMyComponent.PROPS = {\n    message: {\n        value: \'\'\n    }\n};\n\nexport default MyComponent;', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('After transpiling/bundling this component, it can be invoked in client side JavaScript:');
+      ie_close('p');
+      $templateAlias2({code: 'const component = new metal.MyComponent({\n    message: \'Hello, World!\'\n});\n\n// component.element.innerHTML === \'<div>Hello, World!</div>\'', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Rendering a component this way requires DOM manipulation, and the existence of various global variables/utilities that are provided by web browsers. Therefore there is no way to render the HTML of this component in a Node.js environment without the help of libraries, such as ');
         ie_open('code');
-          itext('package.json');
+          itext('JSDom');
         ie_close('code');
-        itext(' file you\'ll notice that it already contains a test script that you can use:');
+        itext(', that emulate client functionality.');
       ie_close('p');
-      $templateAlias2({code: '{\n    "scripts": {\n        "test": "gulp test"\n    }\n}', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('If you\'re building a project without the generator, you can still get ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext('\'s test tools by using ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/building.html#gulp-metal');
-          itext('gulp-metal');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'adding_a_test');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#adding_a_test');
-          itext('Adding a Test');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Also note that your generated project directory also has a file called ');
+        itext('However, thanks to the ');
         ie_open('code');
-          itext('test/Modal.js');
+          itext('Component.renderToString');
         ie_close('code');
-        itext(', with a failing assertion. As you can imagine, all you need to do is add your tests to this file.');
+        itext(' method, out of the box server side rendering of Metal components is possible in Node.js environments:');
       ie_close('p');
+      $templateAlias2({code: 'const Component = require(\'metal-component\').Component;\nconst MyComponent = require(\'./MyComponent\').MyComponent;\n\nconst htmlString = Component.renderToString(MyComponent, {\n    message: \'Hello, World!\'\n});\n\n// htmlString === \'<div>Hello, World!</div>\'', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('To illustrate this let\'s start by replacing the existing test with one that checks that the given ');
-        ie_open('code');
-          itext('body');
-        ie_close('code');
-        itext(' data is being rendered correctly:');
-      ie_close('p');
-      $templateAlias2({code: 'import Modal from \'../src/Modal\';\n\ndescribe(\'Modal\', function() {\n    it(\'should render the body\', function() {\n        var component = new Modal({\n            body: \'Test Body\'\n        });\n\n        var bodyElement = component.element.querySelector(\'.modal-body\');\n\n        assert.ok(bodyElement);\n        assert.strictEqual(\'Test Body\', bodyElement.textContent);\n    });\n});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'running_the_tests');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#running_the_tests');
-          itext('Running the Tests');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('To run our tests all you need to do is type ');
-        ie_open('code');
-          itext('npm test');
-        ie_close('code');
-        itext(' on your terminal. You\'ll see something like this:');
-      ie_close('p');
-      ie_open('p');
-        ie_open('img', null, null,
-            'src', '../../images/docs/test.png',
-            'alt', 'Terminal screenshot');
-        ie_close('img');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'test_environment');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#test_environment');
-          itext('Test Environment');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('This test file we wrote uses ');
-        ie_open('a', null, null,
-            'href', 'http://mochajs.org');
-          itext('Mocha');
-        ie_close('a');
-        itext(' and ');
-        ie_open('a', null, null,
-            'href', 'http://chaijs.com/');
-          itext('Chai');
-        ie_close('a');
-        itext(' for describing tests, and ');
-        ie_open('a', null, null,
-            'href', 'http://karma-runner.github.io/0.12/index.html');
-          itext('Karma');
-        ie_close('a');
-        itext(' as the test runner. That\'s the default setup used by ');
-        ie_open('strong');
-          itext('gulp-metal');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('It\'s important to note that you don\'t have to use ');
-        ie_open('strong');
-          itext('gulp-metal');
-        ie_close('strong');
-        itext(' for you tests though. It\'s just an easy way that\'s already provided for you, but you can certainly setup your own environment if you wish.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'next_steps');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next steps');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You should now have a good knowledge of ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' basics. If you want to dive into more details and advanced topics, go ahead and check some of our guides.');
+        itext('Now all of your custom Metal components can be rendered directly to HTML on the server.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28810,11 +28706,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param353}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param590}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'KEbuG.render';
+  $render.soyTemplateName = 'wDTbG.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28824,22 +28720,14 @@ return exports;
 
 });
 
-class KEbuG extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KEbuG, templates);
+class wDTbG extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wDTbG, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
 /* 250 */,
 /* 251 */,
 /* 252 */,
@@ -28938,7 +28826,28 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KEbuG, templates);
 /* 345 */,
 /* 346 */,
 /* 347 */,
-/* 348 */
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28970,9 +28879,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _modal_testingSoy = __webpack_require__(241);
+var _isomorphicSoy = __webpack_require__(249);
 
-var _modal_testingSoy2 = _interopRequireDefault(_modal_testingSoy);
+var _isomorphicSoy2 = _interopRequireDefault(_isomorphicSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28982,23 +28891,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var KEbuG = function (_Component) {
-  _inherits(KEbuG, _Component);
+var wDTbG = function (_Component) {
+  _inherits(wDTbG, _Component);
 
-  function KEbuG() {
-    _classCallCheck(this, KEbuG);
+  function wDTbG() {
+    _classCallCheck(this, wDTbG);
 
-    return _possibleConstructorReturn(this, (KEbuG.__proto__ || Object.getPrototypeOf(KEbuG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wDTbG.__proto__ || Object.getPrototypeOf(wDTbG)).apply(this, arguments));
   }
 
-  return KEbuG;
+  return wDTbG;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(KEbuG, _modal_testingSoy2.default);
+_metalSoy2.default.register(wDTbG, _isomorphicSoy2.default);
 
-exports.default = KEbuG;
+exports.default = wDTbG;
 
 /***/ })
-],[348]);
+],[369]);

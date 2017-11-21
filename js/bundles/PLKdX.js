@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,35,36],[
+webpackJsonppageComponent([14,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28610,19 +28610,12 @@ exports.default = parseFromAnchor;
 /* 254 */,
 /* 255 */,
 /* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */
+/* 257 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyDQn", function() { return MyDQn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PLKdX", function() { return PLKdX; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28634,15 +28627,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from components.soy.
+// This file was automatically generated from web-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace MyDQn.
+ * @fileoverview Templates in namespace PLKdX.
  * @public
  */
 
-goog.module('MyDQn.incrementaldom');
+goog.module('PLKdX.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28665,7 +28658,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28676,54 +28669,117 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param921 = function() {
-    ie_open('h2');
-      var dyn18 = opt_data.page.title;
-      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
-    ie_close('h2');
-    ie_open('p');
-      itext('In the ');
-      ie_open('code');
-        itext('metal-todo-app');
-      ie_close('code');
-      itext(' boilerplate, there are already three components defined to help get you started. Each component is defined as an ES6 class that extends from Metal\'s ');
-      ie_open('code');
-        itext('JSXComponent');
-      ie_close('code');
-      itext(' class.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Each component has a render function where the JSX template is defined. This will create the HTML you see in the demo page.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    return (\n        <div>Hello, World</div>\n    );\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext(' component will be the root level component. It will handle storing the todo data, and the rendering of the other two components.');
-    ie_close('p');
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' component will render each item in the list of todos.');
-    ie_close('p');
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' component will render a form for adding new todo items to the list. It will consist of a text input and add button.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Why more than one?');
-    ie_close('h3');
-    ie_open('p');
-      itext('It might seem more trouble than it\'s worth splitting up the Todo App into multiple components, but it\'s absolutely necessary when creating larger applications. This tutorial aims to teach you how to handle nested components for more complex use cases.');
-    ie_close('p');
+  var param805 = function() {
+    ie_open('article', null, null,
+        'id', 'web_components');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#web_components');
+          itext('Web Components');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Metal components are generally invoked in one of three ways:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          itext('JavaScript');
+        ie_close('li');
+      ie_close('ul');
+      $templateAlias2({code: 'new metal.MyComponent({\n    title: \'Hello, World!\'\n}, \'#element\');', mode: 'javascript'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          itext('Soy');
+        ie_close('li');
+      ie_close('ul');
+      $templateAlias2({code: '{call MyComponent.render}\n    {param title: "Hello, World!" /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          itext('JSX');
+        ie_close('li');
+      ie_close('ul');
+      $templateAlias2({code: '<MyComponent title="Hello, World" />', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('However, with the help of the ');
+        ie_open('a', null, null,
+            'href', 'https://www.npmjs.com/package/metal-web-component');
+          itext('metal-web-component');
+        ie_close('a');
+        itext(' package, Metal components can be invoked as ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements');
+          itext('Custom Elements');
+        ie_close('a');
+        itext(' in plain HTML.');
+      ie_close('p');
+      $templateAlias2({code: '<my-component title="Hello, World"></my-component>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'install');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#install');
+          itext('Install');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('First you must install the ');
+        ie_open('code');
+          itext('metal-web-component');
+        ie_close('code');
+        itext(' package:');
+      ie_close('p');
+      $templateAlias2({code: 'npm i --save metal-web-component', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Currently, web components don\'t work on every browser, so a polyfill must be used. Include the ');
+        ie_open('a', null, null,
+            'href', 'https://www.webcomponents.org/polyfills');
+          itext('webcomponents-lite polyfill');
+        ie_close('a');
+        itext(' if you intend to use web components on Firefox, Edge, or IE11.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'define_web_components');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#define_web_components');
+          itext('Define web components');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('This package exposes a single helper function that can be used to wrap any Metal component in a web component. It receives two arguments: the tag name you want the web component to receive, and the constructor of the Metal component:');
+      ie_close('p');
+      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\nimport defineWebComponent from \'metal-web-component\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return <h1>{this.props.message}</h1>\n    }\n}\n\nMyComponent.PROPS = {\n    message: {\n        value: \'\'\n    }\n};\n\ndefineWebComponent(\'my-component\', MyComponent);', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now that the web component is defined, it can be invoked in plain html:');
+      ie_close('p');
+      $templateAlias2({code: '<my-component message="This is a web component"></my-component>', mode: 'xml'}, null, opt_ijData);
+      ie_open('p');
+        itext('This results in the following HTML on the page:');
+      ie_close('p');
+      $templateAlias2({code: '<h1>This is a web component</h1>', mode: 'xml'}, null, opt_ijData);
+      ie_open('p');
+        itext('If you would like the component\'s markup to be rendered using the Shadow DOM, simply set the ');
+        ie_open('code');
+          itext('useshadowdom');
+        ie_close('code');
+        itext(' attribute to ');
+        ie_open('code');
+          itext('true');
+        ie_close('code');
+        itext(' when calling the web component:');
+      ie_close('p');
+      $templateAlias2({code: '<my-component message="This is a web component" useshadowdom="true"></my-component>', mode: 'xml'}, null, opt_ijData);
+      ie_open('p');
+        itext('This means that any styling on the page will not cascade to your component\'s markup. See ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM');
+          itext('MDN\'s documentation');
+        ie_close('a');
+        itext(' for more info.');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28733,11 +28789,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param921}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param805}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'MyDQn.render';
+  $render.soyTemplateName = 'PLKdX.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28747,14 +28803,21 @@ return exports;
 
 });
 
-class MyDQn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MyDQn, templates);
+class PLKdX extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PLKdX, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
 /* 265 */,
 /* 266 */,
 /* 267 */,
@@ -28848,24 +28911,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MyDQn, templates);
 /* 355 */,
 /* 356 */,
 /* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28897,9 +28943,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _componentsSoy = __webpack_require__(264);
+var _webComponentsSoy = __webpack_require__(257);
 
-var _componentsSoy2 = _interopRequireDefault(_componentsSoy);
+var _webComponentsSoy2 = _interopRequireDefault(_webComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28909,23 +28955,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MyDQn = function (_Component) {
-  _inherits(MyDQn, _Component);
+var PLKdX = function (_Component) {
+  _inherits(PLKdX, _Component);
 
-  function MyDQn() {
-    _classCallCheck(this, MyDQn);
+  function PLKdX() {
+    _classCallCheck(this, PLKdX);
 
-    return _possibleConstructorReturn(this, (MyDQn.__proto__ || Object.getPrototypeOf(MyDQn)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PLKdX.__proto__ || Object.getPrototypeOf(PLKdX)).apply(this, arguments));
   }
 
-  return MyDQn;
+  return PLKdX;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MyDQn, _componentsSoy2.default);
+_metalSoy2.default.register(PLKdX, _webComponentsSoy2.default);
 
-exports.default = MyDQn;
+exports.default = PLKdX;
 
 /***/ })
-],[375]);
+],[358]);

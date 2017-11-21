@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([28,35,36],[
+webpackJsonppageComponent([1,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28596,130 +28596,7 @@ exports.default = parseFromAnchor;
 /* 240 */,
 /* 241 */,
 /* 242 */,
-/* 243 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lShaK", function() { return lShaK; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from alias.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace lShaK.
- * @public
- */
-
-goog.module('lShaK.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param419 = function() {
-    ie_open('article', null, null,
-        'id', 'alias');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#alias');
-          itext('Alias');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('A straightforward way to import npm dependencies into your module is to use their relative paths, like we do for any other code. For example:');
-      ie_close('p');
-      $templateAlias2({code: 'import core from \'../node_modules/metal/src/core\';', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Having to supply the relative path to node_modules is not cool though and, besides that, it may cause problems when a module doing that is imported later as an npm dependency of another project, since the paths will change.');
-      ie_close('p');
-      ie_open('p');
-        itext('Knowing that, Metal.js allows importing npm dependencies like you would from a regular node module, just by referencing their names. Note that this will only work when using Metal.js\'s ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/building.html');
-          itext('build tools');
-        ie_close('a');
-        itext(' or adding a similar logic to your build process yourself (though we provide a ');
-        ie_open('a', null, null,
-            'href', 'https://npmjs.com/package/babel-preset-metal');
-          itext('babel preset');
-        ie_close('a');
-        itext(' with this logic that you can use separately too).');
-      ie_close('p');
-      ie_open('p');
-        itext('With aliases, the previous example can be rewritten like this:');
-      ie_close('p');
-      $templateAlias2({code: 'import core from \'metal\';', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param419}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'lShaK.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class lShaK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lShaK, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 243 */,
 /* 244 */,
 /* 245 */,
 /* 246 */,
@@ -28746,7 +28623,132 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lShaK, templates);
 /* 267 */,
 /* 268 */,
 /* 269 */,
-/* 270 */,
+/* 270 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dGWvP", function() { return dGWvP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from updating-state.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace dGWvP.
+ * @public
+ */
+
+goog.module('dGWvP.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param1072 = function() {
+    ie_open('h2');
+      var dyn23 = opt_data.page.title;
+      if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
+    ie_close('h2');
+    ie_open('p');
+      itext('You are now ready to update the state in ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('. From the last step you added an event listener.');
+    ie_close('p');
+    $templateAlias2({code: 'handleTodoClick(event) {\n    alert(event.index);\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now all you need to do is update the state so that the template rerenders.');
+    ie_close('p');
+    $templateAlias2({code: 'handleTodoClick(event) {\n    this.toggleTodo(event.index);\n}\n\ntoggleTodo(clickedIndex) {\n    this.state.todos = this.state.todos.map((todo, index) => {\n        if (clickedIndex === index) {\n            todo.done = !todo.done;\n        }\n        return todo;\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('This will toggle the ');
+      ie_open('code');
+        itext('done');
+      ie_close('code');
+      itext(' property of the todo that was clicked. Simply setting the ');
+      ie_open('code');
+        itext('this.state.todos');
+      ie_close('code');
+      itext(' property to a new array of todos will trigger a rerender, passing the data to the child components. Now your markup should look something like this.');
+    ie_close('p');
+    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item todo-item-done">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('p');
+      ie_open('img', null, null,
+          'src', '/images/tutorials/todo-app/completed_todo.png',
+          'alt', 'Completed Todo',
+          'title', 'Completed Todo');
+      ie_close('img');
+    ie_close('p');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param1072}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'dGWvP.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class dGWvP extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dGWvP, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 271 */,
 /* 272 */,
 /* 273 */,
@@ -28839,7 +28841,19 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lShaK, templates);
 /* 360 */,
 /* 361 */,
 /* 362 */,
-/* 363 */
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28871,9 +28885,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _aliasSoy = __webpack_require__(243);
+var _updatingStateSoy = __webpack_require__(270);
 
-var _aliasSoy2 = _interopRequireDefault(_aliasSoy);
+var _updatingStateSoy2 = _interopRequireDefault(_updatingStateSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28883,23 +28897,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var lShaK = function (_Component) {
-  _inherits(lShaK, _Component);
+var dGWvP = function (_Component) {
+  _inherits(dGWvP, _Component);
 
-  function lShaK() {
-    _classCallCheck(this, lShaK);
+  function dGWvP() {
+    _classCallCheck(this, dGWvP);
 
-    return _possibleConstructorReturn(this, (lShaK.__proto__ || Object.getPrototypeOf(lShaK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (dGWvP.__proto__ || Object.getPrototypeOf(dGWvP)).apply(this, arguments));
   }
 
-  return lShaK;
+  return dGWvP;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(lShaK, _aliasSoy2.default);
+_metalSoy2.default.register(dGWvP, _updatingStateSoy2.default);
 
-exports.default = lShaK;
+exports.default = dGWvP;
 
 /***/ })
-],[363]);
+],[375]);

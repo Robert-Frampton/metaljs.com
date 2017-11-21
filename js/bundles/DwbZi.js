@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([1,35,36],[
+webpackJsonppageComponent([6,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28618,17 +28618,12 @@ exports.default = parseFromAnchor;
 /* 262 */,
 /* 263 */,
 /* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */
+/* 265 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GCafA", function() { return GCafA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DwbZi", function() { return DwbZi; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28640,15 +28635,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from updating-state.soy.
+// This file was automatically generated from configurating-state.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace GCafA.
+ * @fileoverview Templates in namespace DwbZi.
  * @public
  */
 
-goog.module('GCafA.incrementaldom');
+goog.module('DwbZi.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28682,42 +28677,79 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1072 = function() {
+  var param942 = function() {
     ie_open('h2');
-      var dyn23 = opt_data.page.title;
-      if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
+      var dyn19 = opt_data.page.title;
+      if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
     ie_close('h2');
     ie_open('p');
-      itext('You are now ready to update the state in ');
+      itext('As previously mentioned, Metal components automatically respond to the data passed to them and rerender. However, in order for a component to take advantage of this behavior, it needs to be told what data to respond to. This is where state comes in.');
+    ie_close('p');
+    ie_open('p');
+      itext('JSX components have two state managers, one for internal state (STATE), and one for external properties that are passed down to it (PROPS).');
+    ie_close('p');
+    ie_open('p');
+      itext('Soy components on the other hand only have one state manager that is used for both internal and external properties (STATE).');
+    ie_close('p');
+    ie_open('h3');
+      itext('Storing The Todos');
+    ie_close('h3');
+    ie_open('p');
+      itext('Let\'s configure the ');
       ie_open('code');
         itext('TodoApp');
       ie_close('code');
-      itext('. From the last step you added an event listener.');
+      itext(' component to store an array of todos with a default value.');
     ie_close('p');
-    $templateAlias2({code: 'handleTodoClick(event) {\n    alert(event.index);\n}', mode: 'text/jsx'}, null, opt_ijData);
+    $templateAlias2({code: 'TodoApp.STATE = {\n    todos: {\n        // Default value\n        value: [\n            {\n                done: false,\n                title: \'Todo 1\'\n            },\n            {\n                done: false,\n                title: \'Todo 2\'\n            }\n        ]\n    }\n};', mode: 'text/javascript'}, null, opt_ijData);
     ie_open('p');
-      itext('Now all you need to do is update the state so that the template rerenders.');
-    ie_close('p');
-    $templateAlias2({code: 'handleTodoClick(event) {\n    this.toggleTodo(event.index);\n}\n\ntoggleTodo(clickedIndex) {\n    this.state.todos = this.state.todos.map((todo, index) => {\n        if (clickedIndex === index) {\n            todo.done = !todo.done;\n        }\n        return todo;\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('This will toggle the ');
+      itext('Now that there is a default value set, you can access the value in the render function using ');
       ie_open('code');
-        itext('done');
+        itext('this.props');
       ie_close('code');
-      itext(' property of the todo that was clicked. Simply setting the ');
-      ie_open('code');
-        itext('this.state.todos');
-      ie_close('code');
-      itext(' property to a new array of todos will trigger a rerender, passing the data to the child components. Now your markup should look something like this.');
+      itext('.');
     ie_close('p');
-    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item todo-item-done">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
+    $templateAlias2({code: 'render() {\n    return (\n        <div>Todo: {this.props.todos[0].title}</div>\n    );\n}', mode: 'text/javascript'}, null, opt_ijData);
     ie_open('p');
-      ie_open('img', null, null,
-          'src', '/images/tutorials/todo-app/completed_todo.png',
-          'alt', 'Completed Todo',
-          'title', 'Completed Todo');
-      ie_close('img');
+      itext('Which would result in the following markup.');
     ie_close('p');
+    $templateAlias2({code: '<div>Todo: Todo 1</div>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('p');
+      itext('Obviously this markup isn\'t very useful, we\'ll get to rendering the entire list in a minute.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Item');
+    ie_close('h3');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component will need two PROPS, one for keeping track of it\'s index inside the list, and one for containing the todo data itself.');
+    ie_close('p');
+    $templateAlias2({code: 'TodoItem.PROPS = {\n    index: {\n        value: null\n    },\n\n    todo: {\n        value: null\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Remember that PROPS are used for external data, or data that is passed to the component from a parent. Therefore these values will be read-only for the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Form');
+    ie_close('h3');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoForm');
+      ie_close('code');
+      itext(' only needs one property that will only ever be set internally, therefore it\'s set on ');
+      ie_open('code');
+        itext('STATE');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'TodoForm.STATE = {\n    value: {\n        value: \'\'\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28727,11 +28759,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param1072}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param942}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'GCafA.render';
+  $render.soyTemplateName = 'DwbZi.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28741,14 +28773,19 @@ return exports;
 
 });
 
-class GCafA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GCafA, templates);
+class DwbZi extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DwbZi, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
 /* 271 */,
 /* 272 */,
 /* 273 */,
@@ -28883,9 +28920,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _updatingStateSoy = __webpack_require__(270);
+var _configuratingStateSoy = __webpack_require__(265);
 
-var _updatingStateSoy2 = _interopRequireDefault(_updatingStateSoy);
+var _configuratingStateSoy2 = _interopRequireDefault(_configuratingStateSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28895,23 +28932,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GCafA = function (_Component) {
-  _inherits(GCafA, _Component);
+var DwbZi = function (_Component) {
+  _inherits(DwbZi, _Component);
 
-  function GCafA() {
-    _classCallCheck(this, GCafA);
+  function DwbZi() {
+    _classCallCheck(this, DwbZi);
 
-    return _possibleConstructorReturn(this, (GCafA.__proto__ || Object.getPrototypeOf(GCafA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DwbZi.__proto__ || Object.getPrototypeOf(DwbZi)).apply(this, arguments));
   }
 
-  return GCafA;
+  return DwbZi;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(GCafA, _updatingStateSoy2.default);
+_metalSoy2.default.register(DwbZi, _configuratingStateSoy2.default);
 
-exports.default = GCafA;
+exports.default = DwbZi;
 
 /***/ })
 ],[373]);

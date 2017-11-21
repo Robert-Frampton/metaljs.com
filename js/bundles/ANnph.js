@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([27,35,36],[
+webpackJsonppageComponent([15,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28597,12 +28597,24 @@ exports.default = parseFromAnchor;
 /* 241 */,
 /* 242 */,
 /* 243 */,
-/* 244 */
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CYbLS", function() { return CYbLS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ANnph", function() { return ANnph; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28614,15 +28626,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from building.soy.
+// This file was automatically generated from state.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace CYbLS.
+ * @fileoverview Templates in namespace ANnph.
  * @public
  */
 
-goog.module('CYbLS.incrementaldom');
+goog.module('ANnph.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28643,6 +28655,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -28654,123 +28668,176 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param438 = function() {
+  var param771 = function() {
     ie_open('article');
       ie_open('p');
-        itext('As we mentioned before, ');
+        itext('The ');
         ie_open('strong');
-          itext('Metal.js');
+          itext('State');
         ie_close('strong');
-        itext(' components are written in ES6, which means that we need a transpiling process before using it on a website.');
-      ie_close('p');
-      ie_open('p');
-        itext('This can be done via any tools that you prefer, like ');
-        ie_open('a', null, null,
-            'href', 'http://webpack.github.io/');
-          itext('webpack');
-        ie_close('a');
-        itext(' or ');
-        ie_open('a', null, null,
-            'href', 'http://browserify.org/');
-          itext('browserify');
-        ie_close('a');
-        itext(', but we\'ve also published a few tools of our own, which focuses on ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' projects, which we\'ll talk about here.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'gulp_metal');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#gulp_metal');
-          itext('gulp-metal');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('What this package offers is a a bunch of ');
-        ie_open('a', null, null,
-            'href', 'http://gulpjs.com/');
-          itext('gulp');
-        ie_close('a');
-        itext(' tasks. There are tasks that can handle not only building JavaScript, as well as Soy compilation, testing, linting and many other things.');
+        itext(' class provides a way of defining state properties for the classes that extend it, as well as watching these properties for value changes.');
       ie_close('p');
       ie_open('p');
         itext('The ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/');
-          itext('tutorials');
-        ie_close('a');
-        itext(' we\'ve provided are all using it, though indirectly, through some npm scripts. To learn how to use ');
         ie_open('strong');
-          itext('gulp-metal');
+          itext('Component');
         ie_close('strong');
-        itext(' directly take a look at its ');
+        itext(' class already extends from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' by default, besides automatically rerendering when there is a change.');
+      ie_close('p');
+      ie_open('p');
+        itext('If your class doesn\'t need to render anything it\'s best to extend from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' directly though. That way you\'ll have access to its features without also inheriting logic you won\'t need.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'configuring_state');
+      ie_open('h2');
         ie_open('a', null, null,
-            'href', 'http://www.npmjs.com/package/gulp-metal');
-          itext('npm page');
+            'href', '#configuring_state');
+          itext('Configuring State');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('The following example is a class that extends directly from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' and defines a state property named ');
+        ie_open('code');
+          itext('number');
+        ie_close('code');
+        itext(' on itself:');
+      ie_close('p');
+      $templateAlias2({code: 'import core from \'metal\';\nimport State from \'metal-state\';\n\nclass Calculator extends State {\n    /**\n     * Coverts string numbers to the number type.\n     */\n    setNumber(val) {\n        if (core.isString(val)) {\n            val = parseInt(val, 10);\n        }\n        return val;\n    }\n}\n\nCalculator.STATE = {\n    number: {\n        // Called whenever a new value is set. Useful when normalizing your\n        // state data.\n        setter: \'setNumber\',\n\n        // Accepts either number or string types. If the validator check fails,\n        // the new value is discarded, and the current value kept.\n        validator: val => core.isNumber(val) || core.isString(val),\n\n        // Initial value\n        value: 0,\n\n        // You can, instead of the `value` option above, use a function to \n        // return the initial value for the state.\n        valueFn: val => 0,\n\n        // It\'s also possible to define that a property can only receive a \n        // value once, and later behave as read-only.\n        writeOnce: false\n    }\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('If you\'re familiar with ');
+        ie_open('a', null, null,
+            'href', 'http://yuilibrary.com/');
+          itext('YUI');
+        ie_close('a');
+        itext(', you may recognize this feature and notice that it\'s very similar to how attributes are defined there. You basically just need to list all attributes you\'ll be using on the ');
+        ie_open('strong');
+          itext('STATE');
+        ie_close('strong');
+        itext(' static variable (on YUI it would be on ');
+        ie_open('strong');
+          itext('ATTRS');
+        ie_close('strong');
+        itext('), and provide their configuration options, like initial value and validator. For a list of all valid options, take a look at ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext('\'s ');
+        ie_open('a', null, null,
+            'href', 'http://github.com/metal/metal-state/blob/c87ac15b8a9fa3ee64c421f22411f97cd376024a/src/State.js#L61');
+          itext('docs');
         ie_close('a');
         itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'metal_cli');
+        'id', 'internal_states');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#metal_cli');
-          itext('metal-cli');
+            'href', '#internal_states');
+          itext('Internal States');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('If you\'re not a fan of ');
-        ie_open('strong');
-          itext('gulp');
-        ie_close('strong');
-        itext(' you can still use ');
+        itext('You can define a state as internal, for use in your component only. Just add the attribute ');
+        ie_open('code');
+          itext('internal');
+        ie_close('code');
+        itext(' to the configuration object.');
+      ie_close('p');
+      ie_open('p');
+        itext('By doing this, the state will behave exactly as expected, including re-rendering the component. The only difference being, internal states can not be accessed by parent components.');
+      ie_close('p');
+      ie_open('p');
+        itext('This is not necessary for JSX components, since Metal.js JSX components have their own State Manager implementation. For that reason, two static properties are used, ');
+        ie_open('code');
+          itext('STATE');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('PROPS');
+        ie_close('code');
+        itext(', that behave much closer to React\'s ');
+        ie_open('code');
+          itext('state');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('props');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('To see exactly how it works read ');
         ie_open('a', null, null,
-            'href', 'http://www.npmjs.com/package/metal-cli');
-          itext('metal-cli');
+            'href', '/docs/guides/jsx-components.html');
+          itext('JSX components section');
         ie_close('a');
-        itext(', which offers almost the same tools, but through the command line.');
+        itext('.');
+      ie_close('p');
+      $templateAlias2({code: 'Calculator.STATE = {\n  number: {\n    ...\n    internal: true\n  }\n}', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'accessing_and_updating_state');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#accessing_and_updating_state');
+          itext('Accessing and Updating State');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('The constructor can receive a configuration object with initial values to use for its state properties. You can access or change an object\'s state in the same way you\'d access or change any object property. Or you can also call the ');
+        ie_open('code');
+          itext('setState');
+        ie_close('code');
+        itext(' function, which updates the properties specified by the given object.');
+      ie_close('p');
+      $templateAlias2({code: 'var obj = new Calculator();\nconsole.log(obj.number); // Prints 0\n\nobj.number = \'1\';\nconsole.log(obj.number); // Prints 1\n\nobj.setState({number: 2});\nconsole.log(obj.number); // Prints 2', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('You can also track state value changes by listening to the appropriate event.');
+      ie_close('p');
+      $templateAlias2({code: 'obj.on(\'numberChanged\', function(event) {\n    // event.prevVal has the previous value.\n    // event.newVal has the new value.\n});', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('To see all features of the ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' class take a look at its ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/metal/metal-state/blob/master/test/State.js');
+          itext('unit tests');
+        ie_close('a');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'examples_using_other_tools');
+        'id', 'configuration_data');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#examples_using_other_tools');
-          itext('Examples Using Other Tools');
+            'href', '#configuration_data');
+          itext('Configuration Data');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('As was mentioned before, using ');
-        ie_open('strong');
-          itext('gulp-metal');
-        ie_close('strong');
-        itext(' or ');
-        ie_open('strong');
-          itext('metal-cli');
-        ie_close('strong');
-        itext(' is not required. You can use your favorite build tool with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' as well.');
+        itext('Any data passed to the constructor that has not been configured as a state property can still be accessed via ');
+        ie_open('code');
+          itext('config');
+        ie_close('code');
+        itext('. Changes to these properties won\'t be tracked, so it\'s usually intended for your component\'s options, which are only set from the outside.');
       ie_close('p');
-      ie_open('p');
-        itext('We\'ve created a Github repository full of different examples on how to work with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(', and among other things it has a bunch of examples showing how to use different build tools. ');
-        ie_open('a', null, null,
-            'href', 'http://github.com/metal/metal-examples');
-          itext('Check it out');
-        ie_close('a');
-        itext(', and feel free to create an issue or send a pull request for other tools that it may be missing.');
-      ie_close('p');
+      $templateAlias2({code: 'var obj = new Calculator({\n    number: 10,\n    foo: \'foo\'\n});\n\nconsole.log(obj.number); // Prints 2\nconsole.log(obj.foo); // Prints undefined\nconsole.log(obj.config.foo); // Prints \'foo\'', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28781,11 +28848,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param438}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param771}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'CYbLS.render';
+  $render.soyTemplateName = 'ANnph.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28795,26 +28862,14 @@ return exports;
 
 });
 
-class CYbLS extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CYbLS, templates);
+class ANnph extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ANnph, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
 /* 257 */,
 /* 258 */,
 /* 259 */,
@@ -28912,8 +28967,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CYbLS, templates);
 /* 351 */,
 /* 352 */,
 /* 353 */,
-/* 354 */,
-/* 355 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28945,9 +28999,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _buildingSoy = __webpack_require__(244);
+var _stateSoy = __webpack_require__(256);
 
-var _buildingSoy2 = _interopRequireDefault(_buildingSoy);
+var _stateSoy2 = _interopRequireDefault(_stateSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28957,23 +29011,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var CYbLS = function (_Component) {
-  _inherits(CYbLS, _Component);
+var ANnph = function (_Component) {
+  _inherits(ANnph, _Component);
 
-  function CYbLS() {
-    _classCallCheck(this, CYbLS);
+  function ANnph() {
+    _classCallCheck(this, ANnph);
 
-    return _possibleConstructorReturn(this, (CYbLS.__proto__ || Object.getPrototypeOf(CYbLS)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ANnph.__proto__ || Object.getPrototypeOf(ANnph)).apply(this, arguments));
   }
 
-  return CYbLS;
+  return ANnph;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(CYbLS, _buildingSoy2.default);
+_metalSoy2.default.register(ANnph, _stateSoy2.default);
 
-exports.default = CYbLS;
+exports.default = ANnph;
 
 /***/ })
-],[355]);
+],[354]);

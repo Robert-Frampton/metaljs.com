@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([33,35,36],[
+webpackJsonppageComponent([27,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28591,12 +28591,18 @@ exports.default = parseFromAnchor;
 /* 235 */,
 /* 236 */,
 /* 237 */,
-/* 238 */
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UklGW", function() { return UklGW; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JkcNw", function() { return JkcNw; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28608,15 +28614,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from modal.soy.
+// This file was automatically generated from building.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace UklGW.
+ * @fileoverview Templates in namespace JkcNw.
  * @public
  */
 
-goog.module('UklGW.incrementaldom');
+goog.module('JkcNw.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28637,8 +28643,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -28650,108 +28654,122 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param266 = function() {
+  var param438 = function() {
     ie_open('article');
       ie_open('p');
-        itext('In the ');
+        itext('As we mentioned before, ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components are written in ES6, which means that we need a transpiling process before using it on a website.');
+      ie_close('p');
+      ie_open('p');
+        itext('This can be done via any tools that you prefer, like ');
+        ie_open('a', null, null,
+            'href', 'http://webpack.github.io/');
+          itext('webpack');
+        ie_close('a');
+        itext(' or ');
+        ie_open('a', null, null,
+            'href', 'http://browserify.org/');
+          itext('browserify');
+        ie_close('a');
+        itext(', but we\'ve also published a few tools of our own, which focuses on ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' projects, which we\'ll talk about here.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'gulp_metal');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#gulp_metal');
+          itext('gulp-metal');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('What this package offers is a a bunch of ');
+        ie_open('a', null, null,
+            'href', 'http://gulpjs.com/');
+          itext('gulp');
+        ie_close('a');
+        itext(' tasks. There are tasks that can handle not only building JavaScript, as well as Soy compilation, testing, linting and many other things.');
+      ie_close('p');
+      ie_open('p');
+        itext('The ');
         ie_open('a', null, null,
             'href', '/docs/getting-started/');
-          itext('previous section');
+          itext('tutorials');
         ie_close('a');
-        itext(' you learned how to build a simple project using Metal.js that just renders ');
+        itext(' we\'ve provided are all using it, though indirectly, through some npm scripts. To learn how to use ');
         ie_open('strong');
-          itext('Hello World');
+          itext('gulp-metal');
         ie_close('strong');
-        itext(' on the screen. Let\'s enhance what we already have to render a modal dialog instead.');
+        itext(' directly take a look at its ');
+        ie_open('a', null, null,
+            'href', 'http://www.npmjs.com/package/gulp-metal');
+          itext('npm page');
+        ie_close('a');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'rendering');
+        'id', 'metal_cli');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#rendering');
-          itext('Rendering');
+            'href', '#metal_cli');
+          itext('metal-cli');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('Our generated project already includes ');
-        ie_open('a', null, null,
-            'href', 'http://getbootstrap.com/');
-          itext('Bootstrap\'s CSS');
-        ie_close('a');
-        itext(', so let\'s use its markup for our modal. Let\'s update the component\'s template to do that then:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n&#123;namespace Modal&#125;\n\n/**\n * This renders the component\'s whole content.\n * Note: has to be called ".render".\n */\n&#123;template .render&#125;\n    {@param body: string}\n    {@param header: string}\n\n    <div class="modal show">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <header class="modal-header">\n                    <button type="button" class="close">\n                        <span>\u00D7</span>\n                    </button>\n                    <h4>{$header}</h4>\n                </header>\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass Modal extends JSXComponent {\n    /**\n     * Renders the component\'s content.\n     * Note that data can be accessed via the `props` property.\n     */\n    render() {\n        return <div class="modal show">\n            <div class="modal-dialog">\n                <div class="modal-content">\n                    <header class="modal-header">\n                        <button type="button" class="close">\n                            <span>\u00D7</span>\n                        </button>\n                        <h4>{this.props.header}</h4>\n                    </header>\n                    <section class="modal-body">\n                        {this.props.body}\n                    </section>\n                    <footer class="modal-footer">\n                        <button type="button" class="btn btn-primary">OK</button>\n                    </footer>\n                </div>\n            </div>\n        </div>;\n    }\n}\n\nexport default Modal;', mode: 'jsx'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'passing_data');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#passing_data');
-          itext('Passing Data');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Note that the template is accessing data to determine the content of the modal\'s ');
-        ie_open('code');
-          itext('header');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('body');
-        ie_close('code');
-        itext('. How can the component receive this data though?');
-      ie_close('p');
-      ie_open('p');
-        itext('One way is through the component\'s constructor. When creating component instances directly, you can pass them a data object as its first param. So let\'s update our demo to pass it some data:');
-      ie_close('p');
-      $templateAlias2({code: 'new metal.Modal({\n    header: \'My Modal\',\n    body: \'Built using Metal.js\'\n});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'run_the_demo');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#run_the_demo');
-          itext('Run the Demo');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now compile your code with ');
-        ie_open('code');
-          itext('npm run build');
-        ie_close('code');
-        itext(' and open the demo on a browser, and you should be seeing this:');
-      ie_close('p');
-      ie_open('p');
-        ie_open('img', null, null,
-            'src', '../../images/docs/modal.png',
-            'alt', 'Modal screenshot');
-        ie_close('img');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'next_steps');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next Steps');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('We\'ve taken care of the rendering, but you\'ll notice that clicking the ');
+        itext('If you\'re not a fan of ');
         ie_open('strong');
-          itext('x');
+          itext('gulp');
         ie_close('strong');
-        itext(' button doesn\'t do anything yet though. Let\'s make that work.');
+        itext(' you can still use ');
+        ie_open('a', null, null,
+            'href', 'http://www.npmjs.com/package/metal-cli');
+          itext('metal-cli');
+        ie_close('a');
+        itext(', which offers almost the same tools, but through the command line.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'examples_using_other_tools');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#examples_using_other_tools');
+          itext('Examples Using Other Tools');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('As was mentioned before, using ');
+        ie_open('strong');
+          itext('gulp-metal');
+        ie_close('strong');
+        itext(' or ');
+        ie_open('strong');
+          itext('metal-cli');
+        ie_close('strong');
+        itext(' is not required. You can use your favorite build tool with ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' as well.');
       ie_close('p');
       ie_open('p');
+        itext('We\'ve created a Github repository full of different examples on how to work with ');
         ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/docs/getting-started/modal_events.html');
-            itext('\u21AA Tutorial: Modal - Events');
-          ie_close('a');
+          itext('Metal.js');
         ie_close('strong');
+        itext(', and among other things it has a bunch of examples showing how to use different build tools. ');
+        ie_open('a', null, null,
+            'href', 'http://github.com/metal/metal-examples');
+          itext('Check it out');
+        ie_close('a');
+        itext(', and feel free to create an issue or send a pull request for other tools that it may be missing.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28763,11 +28781,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param266}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param438}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'UklGW.render';
+  $render.soyTemplateName = 'JkcNw.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28777,20 +28795,14 @@ return exports;
 
 });
 
-class UklGW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UklGW, templates);
+class JkcNw extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(JkcNw, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -28896,7 +28908,13 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UklGW, templates);
 /* 347 */,
 /* 348 */,
 /* 349 */,
-/* 350 */
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28928,9 +28946,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _modalSoy = __webpack_require__(238);
+var _buildingSoy = __webpack_require__(244);
 
-var _modalSoy2 = _interopRequireDefault(_modalSoy);
+var _buildingSoy2 = _interopRequireDefault(_buildingSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28940,23 +28958,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UklGW = function (_Component) {
-  _inherits(UklGW, _Component);
+var JkcNw = function (_Component) {
+  _inherits(JkcNw, _Component);
 
-  function UklGW() {
-    _classCallCheck(this, UklGW);
+  function JkcNw() {
+    _classCallCheck(this, JkcNw);
 
-    return _possibleConstructorReturn(this, (UklGW.__proto__ || Object.getPrototypeOf(UklGW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (JkcNw.__proto__ || Object.getPrototypeOf(JkcNw)).apply(this, arguments));
   }
 
-  return UklGW;
+  return JkcNw;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(UklGW, _modalSoy2.default);
+_metalSoy2.default.register(JkcNw, _buildingSoy2.default);
 
-exports.default = UklGW;
+exports.default = JkcNw;
 
 /***/ })
-],[350]);
+],[356]);

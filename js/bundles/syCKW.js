@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([31,35,36],[
+webpackJsonppageComponent([30,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28593,12 +28593,13 @@ exports.default = parseFromAnchor;
 /* 237 */,
 /* 238 */,
 /* 239 */,
-/* 240 */
+/* 240 */,
+/* 241 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "qERta", function() { return qERta; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "syCKW", function() { return syCKW; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28610,15 +28611,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from modal_nested.soy.
+// This file was automatically generated from modal_testing.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace qERta.
+ * @fileoverview Templates in namespace syCKW.
  * @public
  */
 
-goog.module('qERta.incrementaldom');
+goog.module('syCKW.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28652,96 +28653,136 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param317 = function() {
+  var param353 = function() {
     ie_open('article');
       ie_open('p');
         itext('In the ');
         ie_open('a', null, null,
-            'href', '/docs/getting-started/modal_updates.html');
+            'href', '/docs/getting-started/modal_nested.html');
           itext('previous section');
         ie_close('a');
-        itext(' we finished working on our component\'s behavior.');
-      ie_close('p');
-      ie_open('p');
-        itext('But what if our ');
+        itext(' we\'ve completed our ');
         ie_open('strong');
           itext('Modal');
         ie_close('strong');
-        itext(' header\'s markup was very similar to one that is used in other places though? Ideally we\'d move it into a separate component that can be reused. That\'s what we\'ll be doing in this section.');
+        itext(' component. The last thing we\'d like to show is how to use the tools that ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' offers to help you test your code.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'creating_closeheader');
+        'id', 'test_script');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#creating_closeheader');
-          itext('Creating ');
-          ie_open('strong');
-            itext('CloseHeader');
-          ie_close('strong');
+            'href', '#test_script');
+          itext('Test Script');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('First let\'s create the new component. Add a ');
+        itext('If you look at your ');
         ie_open('code');
-          itext('src/CloseHeader.js');
+          itext('package.json');
         ie_close('code');
-        itext(' file to your project:');
+        itext(' file you\'ll notice that it already contains a test script that you can use:');
       ie_close('p');
-      $templateAlias2({code: '// src/CloseHeader.js\n\nimport templates from \'./CloseHeader.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass CloseHeader extends Component {\n}\n\nSoy.register(CloseHeader, templates);\n\nexport default CloseHeader;', mode: 'javascript'}, null, opt_ijData);
-      $templateAlias2({code: '// src/CloseHeader.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass CloseHeader extends JSXComponent {\n    render() {\n    }\n}\n\nexport default CloseHeader;', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias2({code: '{\n    "scripts": {\n        "test": "gulp test"\n    }\n}', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('Now let\'s prepare the template to be similar to the one used by ');
+        itext('If you\'re building a project without the generator, you can still get ');
         ie_open('strong');
-          itext('Modal');
+          itext('Metal.js');
         ie_close('strong');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: '// src/CloseHeader.soy\n\n&#123;namespace CloseHeader&#125;\n\n&#123;template .render&#125;\n    {@param cssClass: string}\n    {@param onClick: any}\n    {@param title: string}\n\n    <header class="{$cssClass}">\n        <button onClick="{$onClick}" type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{$title}</h4>\n    </header>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/CloseHeader.js\n\nrender() {\n    return <header class={this.props.cssClass}>\n        <button onClick={this.props.onClick} type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{this.props.title}</h4>\n    </header>;\n}', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Done! Our new component is ready to be used by ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
+        itext('\'s test tools by using ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/building.html#gulp-metal');
+          itext('gulp-metal');
+        ie_close('a');
         itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'using_closeheader');
+        'id', 'adding_a_test');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#using_closeheader');
-          itext('Using ');
-          ie_open('strong');
-            itext('CloseHeader');
-          ie_close('strong');
+            'href', '#adding_a_test');
+          itext('Adding a Test');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('All we have to do is to replace the header markup from ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('\'s template with a call to ');
-        ie_open('strong');
-          itext('CloseHeader');
-        ie_close('strong');
-        itext(':');
+        itext('Also note that your generated project directory also has a file called ');
+        ie_open('code');
+          itext('test/Modal.js');
+        ie_close('code');
+        itext(', with a failing assertion. As you can imagine, all you need to do is add your tests to this file.');
       ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n&#123;template .render&#125;\n    {@param body: string}\n    {@param close: string}\n    {@param header: string}\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                {call CloseHeader.render}\n                    {param cssClass: \'modal-header\' /}\n                    {param onClick: $close /}\n                    {param title: $header /}\n                {/call}\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nrender() {\n    var cssClass = \'modal\';\n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <CloseHeader\n                    cssClass="modal-header"\n                    onClick={this.close.bind(this)}\n                    title={this.props.header}\n                />\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('This will not only render ');
-        ie_open('strong');
-          itext('CloseHeader');
-        ie_close('strong');
-        itext(' at the right position, but also instantiate it for you. For more details on nested components, check out the ');
+        itext('To illustrate this let\'s start by replacing the existing test with one that checks that the given ');
+        ie_open('code');
+          itext('body');
+        ie_close('code');
+        itext(' data is being rendered correctly:');
+      ie_close('p');
+      $templateAlias2({code: 'import Modal from \'../src/Modal\';\n\ndescribe(\'Modal\', function() {\n    it(\'should render the body\', function() {\n        var component = new Modal({\n            body: \'Test Body\'\n        });\n\n        var bodyElement = component.element.querySelector(\'.modal-body\');\n\n        assert.ok(bodyElement);\n        assert.strictEqual(\'Test Body\', bodyElement.textContent);\n    });\n});', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'running_the_tests');
+      ie_open('h2');
         ie_open('a', null, null,
-            'href', '/docs/guides/nested-components.html');
-          itext('guide about it');
+            'href', '#running_the_tests');
+          itext('Running the Tests');
         ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('To run our tests all you need to do is type ');
+        ie_open('code');
+          itext('npm test');
+        ie_close('code');
+        itext(' on your terminal. You\'ll see something like this:');
+      ie_close('p');
+      ie_open('p');
+        ie_open('img', null, null,
+            'src', '../../images/docs/test.png',
+            'alt', 'Terminal screenshot');
+        ie_close('img');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'test_environment');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#test_environment');
+          itext('Test Environment');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('This test file we wrote uses ');
+        ie_open('a', null, null,
+            'href', 'http://mochajs.org');
+          itext('Mocha');
+        ie_close('a');
+        itext(' and ');
+        ie_open('a', null, null,
+            'href', 'http://chaijs.com/');
+          itext('Chai');
+        ie_close('a');
+        itext(' for describing tests, and ');
+        ie_open('a', null, null,
+            'href', 'http://karma-runner.github.io/0.12/index.html');
+          itext('Karma');
+        ie_close('a');
+        itext(' as the test runner. That\'s the default setup used by ');
+        ie_open('strong');
+          itext('gulp-metal');
+        ie_close('strong');
         itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('It\'s important to note that you don\'t have to use ');
+        ie_open('strong');
+          itext('gulp-metal');
+        ie_close('strong');
+        itext(' for you tests though. It\'s just an easy way that\'s already provided for you, but you can certainly setup your own environment if you wish.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
@@ -28749,19 +28790,15 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('h2');
         ie_open('a', null, null,
             'href', '#next_steps');
-          itext('Next Steps');
+          itext('Next steps');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('Now that we have learned how to properly create a new component, it\'d good to also know how to test it. The next section will focus on that.');
-      ie_close('p');
-      ie_open('p');
+        itext('You should now have a good knowledge of ');
         ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/docs/getting-started/modal_testing.html');
-            itext('\u21AA Tutorial: Modal - Testing');
-          ie_close('a');
+          itext('Metal.js');
         ie_close('strong');
+        itext(' basics. If you want to dive into more details and advanced topics, go ahead and check some of our guides.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28773,29 +28810,28 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param317}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param353}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'qERta.render';
+  $render.soyTemplateName = 'syCKW.render';
 }
 
-exports.render.params = ["cssClass","onClick","title","body","close","header","shown","page","site"];
-exports.render.types = {"cssClass":"string","onClick":"any","title":"string","body":"string","close":"string","header":"string","shown":"bool","page":"any","site":"any"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class qERta extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qERta, templates);
+class syCKW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(syCKW, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 241 */,
 /* 242 */,
 /* 243 */,
 /* 244 */,
@@ -28906,7 +28942,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qERta, templates);
 /* 349 */,
 /* 350 */,
 /* 351 */,
-/* 352 */
+/* 352 */,
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28938,9 +28975,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _modal_nestedSoy = __webpack_require__(240);
+var _modal_testingSoy = __webpack_require__(241);
 
-var _modal_nestedSoy2 = _interopRequireDefault(_modal_nestedSoy);
+var _modal_testingSoy2 = _interopRequireDefault(_modal_testingSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28950,23 +28987,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var qERta = function (_Component) {
-  _inherits(qERta, _Component);
+var syCKW = function (_Component) {
+  _inherits(syCKW, _Component);
 
-  function qERta() {
-    _classCallCheck(this, qERta);
+  function syCKW() {
+    _classCallCheck(this, syCKW);
 
-    return _possibleConstructorReturn(this, (qERta.__proto__ || Object.getPrototypeOf(qERta)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (syCKW.__proto__ || Object.getPrototypeOf(syCKW)).apply(this, arguments));
   }
 
-  return qERta;
+  return syCKW;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(qERta, _modal_nestedSoy2.default);
+_metalSoy2.default.register(syCKW, _modal_testingSoy2.default);
 
-exports.default = qERta;
+exports.default = syCKW;
 
 /***/ })
-],[352]);
+],[353]);

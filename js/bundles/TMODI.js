@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([17,35,36],[
+webpackJsonppageComponent([20,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn11 = opt_data.site.title;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn12 = opt_data.time;
-      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+      var dyn10 = opt_data.time;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     }
   ie_close('p');
 }
@@ -28604,15 +28604,12 @@ exports.default = parseFromAnchor;
 /* 248 */,
 /* 249 */,
 /* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */
+/* 251 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cTFGs", function() { return cTFGs; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TMODI", function() { return TMODI; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28624,15 +28621,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from rendering-components.soy.
+// This file was automatically generated from nested-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace cTFGs.
+ * @fileoverview Templates in namespace TMODI.
  * @public
  */
 
-goog.module('cTFGs.incrementaldom');
+goog.module('TMODI.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28666,46 +28663,68 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param728 = function() {
+  var param678 = function() {
     ie_open('article');
       ie_open('p');
-        itext('The ');
-        ie_open('a', null, null,
-            'href', '/docs');
-          itext('quick start tutorial');
-        ie_close('a');
-        itext(' explains how to create and render a new component. In its examples components are always being appended directly to the document\'s body though, but what\'s usually necessary is to render in a specific position.');
+        itext('The ability to reference components inside templates can be very useful. It enables the developer to correctly place the child component at the right position inside the parent in an intuitive way.');
+      ie_close('p');
+      ie_open('p');
+        itext('This can certainly be done with ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components. For example, let\'s say we\'ve already built a simple component called ');
+        ie_open('strong');
+          itext('Button');
+        ie_close('strong');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Now we\'re building a ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(' component, and we want it to render some buttons inside the footer. In ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('\'s template file we could do the following:');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n<div class="footer">\n    {foreach $button in $buttons}\n        {call Button.render}\n            {param label: $button /}\n        {/call}\n    {/foreach}\n</div>', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map(button => {\n  return <Button label={button} />;\n});\n\nreturn <div class="footer">{buttons}</div>;', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('When Modal is rendered, the buttons also will be, at the specified position. Besides this, ');
+        ie_open('strong');
+          itext('Button');
+        ie_close('strong');
+        itext(' components will be automatically instantiated for these elements.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'replacing_an_existing_element');
+        'id', 'accessing_sub_component_instances');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#replacing_an_existing_element');
-          itext('Replacing an Existing Element');
+            'href', '#accessing_sub_component_instances');
+          itext('Accessing Sub Component Instances');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('If you wish your component to replace an existing element on the DOM, you just need to pass it (or a selector for it) as the ');
+        itext('But what if we need to access the created instances? That\'s possible by using ');
+        ie_open('strong');
+          itext('ref');
+        ie_close('strong');
+        itext('. Let\'s add one to the previous example and see what happens:');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n{foreach $button as $buttons}\n    {call Button.render}\n        {param label: $button /}\n        {param ref: \'button\' + index($button) /}\n    {/call}\n{/foreach}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map((button, index) => {\n    return <Button label={button} ref={\'button\' + index} />;\n});', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now you\'ll be able to access your sub components through your instance\'s ');
         ie_open('code');
-          itext('element');
+          itext('refs');
         ie_close('code');
-        itext(' property of the constructor configuration, like this:');
+        itext(' property, like this:');
       ie_close('p');
-      $templateAlias2({code: '// Passsing the element itself\nnew Modal({element: elementToReplace});\n\n// Passing a selector to the element\nnew Modal({element: \'#elementToReplace\'});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'specifying_the_parent');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#specifying_the_parent');
-          itext('Specifying the Parent');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You can also specify the parent element that should receive the component\'s contents via the second constructor param, like this:');
-      ie_close('p');
-      $templateAlias2({code: '// Passing the element itself\nnew Modal(data, parentElement);\n\n// Passing a selector to the element\nnew Modal(data, \'#parentElement\');', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'modal.refs.button0 // The instance for first button\nmodal.refs.button1 // The instance for second button', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28716,11 +28735,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param728}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param678}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'cTFGs.render';
+  $render.soyTemplateName = 'TMODI.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28730,14 +28749,17 @@ return exports;
 
 });
 
-class cTFGs extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(cTFGs, templates);
+class TMODI extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TMODI, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 252 */,
+/* 253 */,
+/* 254 */,
 /* 255 */,
 /* 256 */,
 /* 257 */,
@@ -28843,8 +28865,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(cTFGs, templates);
 /* 357 */,
 /* 358 */,
 /* 359 */,
-/* 360 */,
-/* 361 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28876,9 +28897,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _renderingComponentsSoy = __webpack_require__(254);
+var _nestedComponentsSoy = __webpack_require__(251);
 
-var _renderingComponentsSoy2 = _interopRequireDefault(_renderingComponentsSoy);
+var _nestedComponentsSoy2 = _interopRequireDefault(_nestedComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28888,23 +28909,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var cTFGs = function (_Component) {
-  _inherits(cTFGs, _Component);
+var TMODI = function (_Component) {
+  _inherits(TMODI, _Component);
 
-  function cTFGs() {
-    _classCallCheck(this, cTFGs);
+  function TMODI() {
+    _classCallCheck(this, TMODI);
 
-    return _possibleConstructorReturn(this, (cTFGs.__proto__ || Object.getPrototypeOf(cTFGs)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TMODI.__proto__ || Object.getPrototypeOf(TMODI)).apply(this, arguments));
   }
 
-  return cTFGs;
+  return TMODI;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(cTFGs, _renderingComponentsSoy2.default);
+_metalSoy2.default.register(TMODI, _nestedComponentsSoy2.default);
 
-exports.default = cTFGs;
+exports.default = TMODI;
 
 /***/ })
-],[361]);
+],[360]);
