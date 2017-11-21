@@ -1847,7 +1847,7 @@ function loadLocale(name) {
         try {
             oldLocale = globalLocale._abbr;
             var aliasedRequire = require;
-            __webpack_require__(147)("./" + name);
+            __webpack_require__(144)("./" + name);
             getSetGlobalLocale(oldLocale);
         } catch (e) {}
     }
@@ -4519,7 +4519,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(148)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(145)(module)))
 
 /***/ }),
 /* 1 */,
@@ -4537,27 +4537,27 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ElectricUpdates = exports.ElectricSearchBase = exports.ElectricSearchAutocomplete = exports.ElectricSearch = exports.ElectricReadingProgress = exports.ElectricNavigation = exports.ElectricCodeTabs = exports.ElectricCode = undefined;
 
-var _ElectricCode = __webpack_require__(149);
+var _ElectricCode = __webpack_require__(146);
 
 var _ElectricCode2 = _interopRequireDefault(_ElectricCode);
 
-var _ElectricCodeTabs = __webpack_require__(150);
+var _ElectricCodeTabs = __webpack_require__(147);
 
 var _ElectricCodeTabs2 = _interopRequireDefault(_ElectricCodeTabs);
 
-var _ElectricNavigation = __webpack_require__(151);
+var _ElectricNavigation = __webpack_require__(148);
 
 var _ElectricNavigation2 = _interopRequireDefault(_ElectricNavigation);
 
-var _ElectricReadingProgress = __webpack_require__(152);
+var _ElectricReadingProgress = __webpack_require__(149);
 
 var _ElectricReadingProgress2 = _interopRequireDefault(_ElectricReadingProgress);
 
-var _ElectricSearch = __webpack_require__(153);
+var _ElectricSearch = __webpack_require__(150);
 
 var _ElectricSearch2 = _interopRequireDefault(_ElectricSearch);
 
-var _ElectricSearchAutocomplete = __webpack_require__(154);
+var _ElectricSearchAutocomplete = __webpack_require__(151);
 
 var _ElectricSearchAutocomplete2 = _interopRequireDefault(_ElectricSearchAutocomplete);
 
@@ -4565,7 +4565,7 @@ var _ElectricSearchBase = __webpack_require__(10);
 
 var _ElectricSearchBase2 = _interopRequireDefault(_ElectricSearchBase);
 
-var _ElectricUpdates = __webpack_require__(155);
+var _ElectricUpdates = __webpack_require__(152);
 
 var _ElectricUpdates2 = _interopRequireDefault(_ElectricUpdates);
 
@@ -4582,39 +4582,7 @@ exports.ElectricUpdates = _ElectricUpdates2.default;
 exports.default = _ElectricNavigation2.default;
 
 /***/ }),
-/* 6 */,
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.State = exports.Config = exports.validators = undefined;
-
-var _validators = __webpack_require__(11);
-
-var _validators2 = _interopRequireDefault(_validators);
-
-var _Config = __webpack_require__(145);
-
-var _Config2 = _interopRequireDefault(_Config);
-
-var _State = __webpack_require__(146);
-
-var _State2 = _interopRequireDefault(_State);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _State2.default;
-exports.validators = _validators2.default;
-exports.Config = _Config2.default;
-exports.State = _State2.default;
-
-/***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5547,6 +5515,8 @@ exports.CancellablePromise = CancellablePromise;
 exports.default = CancellablePromise;
 
 /***/ }),
+/* 7 */,
+/* 8 */,
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5558,15 +5528,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Position = exports.Geometry = exports.Align = undefined;
 
-var _Align = __webpack_require__(179);
+var _Align = __webpack_require__(176);
 
 var _Align2 = _interopRequireDefault(_Align);
 
-var _Geometry = __webpack_require__(136);
+var _Geometry = __webpack_require__(135);
 
 var _Geometry2 = _interopRequireDefault(_Geometry);
 
-var _Position = __webpack_require__(137);
+var _Position = __webpack_require__(136);
 
 var _Position2 = _interopRequireDefault(_Position);
 
@@ -5590,7 +5560,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalAjax = __webpack_require__(133);
+var _metalAjax = __webpack_require__(132);
 
 var _metalAjax2 = _interopRequireDefault(_metalAjax);
 
@@ -5602,7 +5572,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalPromise = __webpack_require__(8);
+var _metalPromise = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5815,268 +5785,6 @@ exports.default = ElectricSearchBase;
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _metal = __webpack_require__(3);
-
-var ERROR_ARRAY_OF_TYPE = 'Expected an array of single type.';
-var ERROR_OBJECT_OF_TYPE = 'Expected object of one type.';
-var ERROR_ONE_OF = 'Expected one of given values.';
-var ERROR_ONE_OF_TYPE = 'Expected one of given types.';
-var ERROR_SHAPE_OF = 'Expected object with a specific shape.';
-
-/**
- * Provides access to various type validators that will return an
- * instance of Error when validation fails. Note that all type validators
- * will also accept null or undefined values. To not accept these you should
- * instead make your state property required.
- */
-var validators = {
-	any: function any() {
-		return function () {
-			return true;
-		};
-	},
-	array: buildTypeValidator('array'),
-	bool: buildTypeValidator('boolean'),
-	func: buildTypeValidator('function'),
-	number: buildTypeValidator('number'),
-	object: buildTypeValidator('object'),
-	string: buildTypeValidator('string'),
-
-	/**
-  * Creates a validator that checks that the value it receives is an array
-  * of items, and that all of the items pass the given validator.
-  * @param {!function()} validator Validator to check each item against.
-  * @return {!function()}
-  */
-	arrayOf: function arrayOf(validator) {
-		return maybe(function (value, name, context) {
-			var result = validators.array(value, name, context);
-			if (isInvalid(result)) {
-				return result;
-			}
-			return validateArrayItems(validator, value, name, context);
-		});
-	},
-
-	/**
-  * Creates a validator that checks if a value is an instance of a given class.
-  * @param {!function()} expectedClass Class to check value against.
-  * @return {!function()}
-  */
-	instanceOf: function instanceOf(expectedClass) {
-		return maybe(function (value, name, context) {
-			if (value instanceof expectedClass) {
-				return true;
-			}
-			var msg = 'Expected instance of ' + expectedClass;
-			return composeError(msg, name, context);
-		});
-	},
-
-	/**
-  * Creates a validator that checks that the value it receives is an object,
-  * and that all values within that object pass the given validator.
-  * @param {!function()} validator Validator to check each object value against.
-  * @return {!function()}
-  */
-	objectOf: function objectOf(validator) {
-		return maybe(function (value, name, context) {
-			for (var key in value) {
-				if (isInvalid(validator(value[key]))) {
-					return composeError(ERROR_OBJECT_OF_TYPE, name, context);
-				}
-			}
-			return true;
-		});
-	},
-
-	/**
-  * Creates a validator that checks if the received value matches one of the
-  * given values.
-  * @param {!Array} arrayOfValues Array of values to check equality against.
-  * @return {!function()}
-  */
-	oneOf: function oneOf(arrayOfValues) {
-		return maybe(function (value, name, context) {
-			var result = validators.array(arrayOfValues, name, context);
-			if (isInvalid(result)) {
-				return result;
-			}
-			return arrayOfValues.indexOf(value) === -1 ? composeError(ERROR_ONE_OF, name, context) : true;
-		});
-	},
-
-	/**
-  * Creates a validator that checks if the received value matches one of the
-  * given types.
-  * @param {!Array} arrayOfTypeValidators Array of validators to check value
-  *     against.
-  * @return {!function()}
-  */
-	oneOfType: function oneOfType(arrayOfTypeValidators) {
-		return maybe(function (value, name, context) {
-			var result = validators.array(arrayOfTypeValidators, name, context);
-			if (isInvalid(result)) {
-				return result;
-			}
-
-			for (var i = 0; i < arrayOfTypeValidators.length; i++) {
-				if (!isInvalid(arrayOfTypeValidators[i](value, name, context))) {
-					return true;
-				}
-			}
-			return composeError(ERROR_ONE_OF_TYPE, name, context);
-		});
-	},
-
-	/**
-  * Creates a validator that checks if the received value is an object, and
-  * that its contents match the given shape.
-  * @param {!Object} shape An object containing validators for each key.
-  * @return {!function()}
-  */
-	shapeOf: function shapeOf(shape) {
-		return maybe(function (value, name, context) {
-			var result = validators.object(shape, name, context);
-			if (isInvalid(result)) {
-				return result;
-			}
-
-			for (var key in shape) {
-				var validator = shape[key];
-				var required = false;
-				if (validator.config) {
-					required = validator.config.required;
-					validator = validator.config.validator;
-				}
-				if (required && !(0, _metal.isDefAndNotNull)(value[key]) || isInvalid(validator(value[key]))) {
-					return composeError(ERROR_SHAPE_OF, name, context);
-				}
-			}
-			return true;
-		});
-	}
-};
-
-/**
- * Creates a validator that checks against a specific primitive type.
- * @param {string} expectedType Type to check against.
- * @return {!function()} Function that runs the validator if called with
- *     arguments, or just returns it otherwise. This means that when using a
- *     type validator in `State` it may be just passed directly (like
- *     `validators.bool`), or called with no args (like `validators.bool()`).
- *     That's done to allow all validators to be used consistently, since some
- *     (like `arrayOf`) always require that you call the function before
- *     receiving the actual validator. Type validators don't need the call, but
- *     work if it's made anyway.
- */
-function buildTypeValidator(expectedType) {
-	var validatorFn = maybe(validateType.bind(null, expectedType));
-	return function () {
-		if (arguments.length === 0) {
-			return validatorFn;
-		} else {
-			return validatorFn.apply(undefined, arguments);
-		}
-	};
-}
-
-/**
- * Composes a warning a warning message.
- * @param {string} error Error message to display to console.
- * @param {?string} name Name of state property that is giving the error.
- * @param {Object} context The property's owner.
- * @return {!Error}
- */
-function composeError(error, name, context) {
-	var compName = context ? (0, _metal.getFunctionName)(context.constructor) : null;
-	var renderer = context && context.getRenderer && context.getRenderer();
-	var parent = renderer && renderer.getParent && renderer.getParent();
-	var parentName = parent ? (0, _metal.getFunctionName)(parent.constructor) : null;
-	var location = parentName ? 'Check render method of \'' + parentName + '\'.' : '';
-	return new Error('Warning: Invalid state passed to \'' + name + '\'. ' + (error + ' Passed to \'' + compName + '\'. ' + location));
-}
-
-/**
- * Returns the type of the given value.
- * @param {*} value Any value.
- * @return {string} Type of value.
- */
-function getType(value) {
-	return Array.isArray(value) ? 'array' : typeof value === 'undefined' ? 'undefined' : _typeof(value);
-}
-
-/**
- * Checks if the given validator result says that the value is invalid.
- * @param {boolean|!Error} result
- * @return {boolean}
- */
-function isInvalid(result) {
-	return result instanceof Error;
-}
-
-/**
- * Wraps the given validator so that it also accepts null/undefined values.
- *   a validator that checks a value against a single type, null, or
- * undefined.
- * @param {!function()} typeValidator Validator to wrap.
- * @return {!function()} Wrapped validator.
- */
-function maybe(typeValidator) {
-	return function (value, name, context) {
-		return (0, _metal.isDefAndNotNull)(value) ? typeValidator(value, name, context) : true;
-	};
-}
-
-/**
- * Checks if all the items of the given array pass the given validator.
- * @param {!function()} validator
- * @param {*} value The array to validate items for.
- * @param {string} name The name of the array property being checked.
- * @param {!Object} context Owner of the array property being checked.
- * @return {!Error|boolean} `true` if the type matches, or an error otherwise.
- */
-function validateArrayItems(validator, value, name, context) {
-	for (var i = 0; i < value.length; i++) {
-		if (isInvalid(validator(value[i], name, context))) {
-			return composeError(ERROR_ARRAY_OF_TYPE, name, context);
-		}
-	}
-	return true;
-}
-
-/**
- * Checks if the given value matches the expected type.
- * @param {string} expectedType String representing the expected type.
- * @param {*} value The value to match the type of.
- * @param {string} name The name of the property being checked.
- * @param {!Object} context Owner of the property being checked.
- * @return {!Error|boolean} `true` if the type matches, or an error otherwise.
- */
-function validateType(expectedType, value, name, context) {
-	var type = getType(value);
-	if (type !== expectedType) {
-		var msg = 'Expected type \'' + expectedType + '\', but received type \'' + type + '\'.';
-		return composeError(msg, name, context);
-	}
-	return true;
-}
-
-exports.default = validators;
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
 //! moment.js locale configuration
 //! locale : Afrikaans [af]
 //! author : Werner Mollentze : https://github.com/wernerm
@@ -6152,7 +5860,7 @@ return af;
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6216,7 +5924,7 @@ return arDz;
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6280,7 +5988,7 @@ return arKw;
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6411,7 +6119,7 @@ return arLy;
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6476,7 +6184,7 @@ return arMa;
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6586,7 +6294,7 @@ return arSa;
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6650,7 +6358,7 @@ return arTn;
 
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6797,7 +6505,7 @@ return ar;
 
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6907,7 +6615,7 @@ return az;
 
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7046,7 +6754,7 @@ return be;
 
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7141,7 +6849,7 @@ return bg;
 
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7205,7 +6913,7 @@ return bm;
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7329,7 +7037,7 @@ return bn;
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7453,7 +7161,7 @@ return bo;
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7566,7 +7274,7 @@ return br;
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7714,7 +7422,7 @@ return bs;
 
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7807,7 +7515,7 @@ return ca;
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7984,7 +7692,7 @@ return cs;
 
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8052,7 +7760,7 @@ return cv;
 
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8138,7 +7846,7 @@ return cy;
 
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8203,7 +7911,7 @@ return da;
 
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8287,7 +7995,7 @@ return deAt;
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8370,7 +8078,7 @@ return deCh;
 
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8453,7 +8161,7 @@ return de;
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8558,7 +8266,7 @@ return dv;
 
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8663,7 +8371,7 @@ return el;
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8735,7 +8443,7 @@ return enAu;
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8803,7 +8511,7 @@ return enCa;
 
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8875,7 +8583,7 @@ return enGb;
 
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8947,7 +8655,7 @@ return enIe;
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9019,7 +8727,7 @@ return enNz;
 
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9097,7 +8805,7 @@ return eo;
 
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9193,7 +8901,7 @@ return esDo;
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9281,7 +8989,7 @@ return esUs;
 
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9378,7 +9086,7 @@ return es;
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9463,7 +9171,7 @@ return et;
 
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9534,7 +9242,7 @@ return eu;
 
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9646,7 +9354,7 @@ return fa;
 
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9758,7 +9466,7 @@ return fi;
 
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9823,7 +9531,7 @@ return fo;
 
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9902,7 +9610,7 @@ return frCa;
 
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9985,7 +9693,7 @@ return frCh;
 
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10073,7 +9781,7 @@ return fr;
 
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10153,7 +9861,7 @@ return fy;
 
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10234,7 +9942,7 @@ return gd;
 
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10316,7 +10024,7 @@ return gl;
 
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10443,7 +10151,7 @@ return gomLatn;
 
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10572,7 +10280,7 @@ return gu;
 
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10676,7 +10384,7 @@ return he;
 
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10805,7 +10513,7 @@ return hi;
 
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10955,7 +10663,7 @@ return hr;
 
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11069,7 +10777,7 @@ return hu;
 
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11169,7 +10877,7 @@ return hyAm;
 
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11257,7 +10965,7 @@ return id;
 
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11389,7 +11097,7 @@ return is;
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11464,7 +11172,7 @@ return it;
 
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11549,7 +11257,7 @@ return ja;
 
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11637,7 +11345,7 @@ return jv;
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11731,7 +11439,7 @@ return ka;
 
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11823,7 +11531,7 @@ return kk;
 
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11886,7 +11594,7 @@ return km;
 
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12017,7 +11725,7 @@ return kn;
 
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12105,7 +11813,7 @@ return ko;
 
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12198,7 +11906,7 @@ return ky;
 
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12340,7 +12048,7 @@ return lb;
 
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12415,7 +12123,7 @@ return lo;
 
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12537,7 +12245,7 @@ return lt;
 
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12639,7 +12347,7 @@ return lv;
 
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12755,7 +12463,7 @@ return me;
 
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12824,7 +12532,7 @@ return mi;
 
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12919,7 +12627,7 @@ return mk;
 
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13005,7 +12713,7 @@ return ml;
 
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13169,7 +12877,7 @@ return mr;
 
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13257,7 +12965,7 @@ return msMy;
 
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13344,7 +13052,7 @@ return ms;
 
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13445,7 +13153,7 @@ return my;
 
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13513,7 +13221,7 @@ return nb;
 
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13641,7 +13349,7 @@ return ne;
 
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13734,7 +13442,7 @@ return nlBe;
 
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13827,7 +13535,7 @@ return nl;
 
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13892,7 +13600,7 @@ return nn;
 
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14021,7 +13729,7 @@ return paIn;
 
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14150,7 +13858,7 @@ return pl;
 
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14217,7 +13925,7 @@ return ptBr;
 
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14287,7 +13995,7 @@ return pt;
 
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14367,7 +14075,7 @@ return ro;
 
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14555,7 +14263,7 @@ return ru;
 
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14658,7 +14366,7 @@ return sd;
 
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14724,7 +14432,7 @@ return se;
 
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14800,7 +14508,7 @@ return si;
 
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14955,7 +14663,7 @@ return sk;
 
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15122,7 +14830,7 @@ return sl;
 
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15197,7 +14905,7 @@ return sq;
 
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15312,7 +15020,7 @@ return srCyrl;
 
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15427,7 +15135,7 @@ return sr;
 
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15521,7 +15229,7 @@ return ss;
 
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15595,7 +15303,7 @@ return sv;
 
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15659,7 +15367,7 @@ return sw;
 
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15794,7 +15502,7 @@ return ta;
 
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15888,7 +15596,7 @@ return te;
 
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15961,7 +15669,7 @@ return tet;
 
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16033,7 +15741,7 @@ return th;
 
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16100,7 +15808,7 @@ return tlPh;
 
 
 /***/ }),
-/* 115 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16225,7 +15933,7 @@ return tlh;
 
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16320,7 +16028,7 @@ return tr;
 
 
 /***/ }),
-/* 117 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16416,7 +16124,7 @@ return tzl;
 
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16479,7 +16187,7 @@ return tzmLatn;
 
 
 /***/ }),
-/* 119 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16542,7 +16250,7 @@ return tzm;
 
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16698,7 +16406,7 @@ return uk;
 
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16802,7 +16510,7 @@ return ur;
 
 
 /***/ }),
-/* 122 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16865,7 +16573,7 @@ return uzLatn;
 
 
 /***/ }),
-/* 123 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16928,7 +16636,7 @@ return uz;
 
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17012,7 +16720,7 @@ return vi;
 
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17085,7 +16793,7 @@ return xPseudo;
 
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17150,7 +16858,7 @@ return yo;
 
 
 /***/ }),
-/* 127 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17266,7 +16974,7 @@ return zhCn;
 
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17376,7 +17084,7 @@ return zhHk;
 
 
 /***/ }),
-/* 129 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17485,7 +17193,7 @@ return zhTw;
 
 
 /***/ }),
-/* 130 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17507,9 +17215,9 @@ var _metalDom = __webpack_require__(4);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(6);
+var _metalEvents = __webpack_require__(7);
 
-var _metalState = __webpack_require__(7);
+var _metalState = __webpack_require__(8);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
@@ -17788,7 +17496,7 @@ Toggler.STATE = {
 exports.default = Toggler;
 
 /***/ }),
-/* 131 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17808,11 +17516,11 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _metalToggler = __webpack_require__(130);
+var _metalToggler = __webpack_require__(129);
 
 var _metalToggler2 = _interopRequireDefault(_metalToggler);
 
-var _Sidebar = __webpack_require__(143);
+var _Sidebar = __webpack_require__(142);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
@@ -17858,7 +17566,7 @@ _metalSoy2.default.register(Sidebar, _Sidebar2.default);
 exports.default = Sidebar;
 
 /***/ }),
-/* 132 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17884,7 +17592,7 @@ var _moment2 = _interopRequireDefault(_moment);
 
 var _metalDom = __webpack_require__(4);
 
-var _TutorialTimer = __webpack_require__(144);
+var _TutorialTimer = __webpack_require__(143);
 
 var _TutorialTimer2 = _interopRequireDefault(_TutorialTimer);
 
@@ -17983,7 +17691,7 @@ _metalSoy2.default.register(TutorialTimer, _TutorialTimer2.default);
 exports.default = TutorialTimer;
 
 /***/ }),
-/* 133 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17997,11 +17705,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _metal = __webpack_require__(3);
 
-var _metalUri = __webpack_require__(192);
+var _metalUri = __webpack_require__(189);
 
 var _metalUri2 = _interopRequireDefault(_metalUri);
 
-var _metalPromise = __webpack_require__(8);
+var _metalPromise = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18136,7 +17844,7 @@ var Ajax = function () {
 exports.default = Ajax;
 
 /***/ }),
-/* 134 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18156,7 +17864,7 @@ var _metalDom = __webpack_require__(4);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalPromise = __webpack_require__(8);
+var _metalPromise = __webpack_require__(6);
 
 var _metalPromise2 = _interopRequireDefault(_metalPromise);
 
@@ -18164,7 +17872,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(6);
+var _metalEvents = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18363,7 +18071,7 @@ AutocompleteBase.STATE = {
 exports.default = AutocompleteBase;
 
 /***/ }),
-/* 135 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18374,11 +18082,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.AutocompleteBase = exports.Autocomplete = undefined;
 
-var _Autocomplete = __webpack_require__(170);
+var _Autocomplete = __webpack_require__(167);
 
 var _Autocomplete2 = _interopRequireDefault(_Autocomplete);
 
-var _AutocompleteBase = __webpack_require__(134);
+var _AutocompleteBase = __webpack_require__(133);
 
 var _AutocompleteBase2 = _interopRequireDefault(_AutocompleteBase);
 
@@ -18389,7 +18097,7 @@ exports.Autocomplete = _Autocomplete2.default;
 exports.AutocompleteBase = _AutocompleteBase2.default;
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18450,7 +18158,7 @@ var Geometry = function () {
 exports.default = Geometry;
 
 /***/ }),
-/* 137 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18466,7 +18174,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _Geometry = __webpack_require__(136);
+var _Geometry = __webpack_require__(135);
 
 var _Geometry2 = _interopRequireDefault(_Geometry);
 
@@ -18854,7 +18562,7 @@ var Position = function () {
 exports.default = Position;
 
 /***/ }),
-/* 138 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19042,7 +18750,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(guide, templates);
 
 
 /***/ }),
-/* 139 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19130,7 +18838,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(main, templates);
 
 
 /***/ }),
-/* 140 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19354,7 +19062,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tutorial, templates);
 
 
 /***/ }),
-/* 141 */
+/* 140 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19512,7 +19220,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Topbar, templates);
 
 
 /***/ }),
-/* 142 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19523,31 +19231,31 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ElectricUpdates = exports.ElectricSearchAutocomplete = exports.ElectricSearch = exports.ElectricReadingProgress = exports.ElectricNavigation = exports.ElectricCode = exports.ElectricAPIAutocomplete = undefined;
 
-var _ElectricAPIAutocomplete = __webpack_require__(156);
+var _ElectricAPIAutocomplete = __webpack_require__(153);
 
 var _ElectricAPIAutocomplete2 = _interopRequireDefault(_ElectricAPIAutocomplete);
 
-var _ElectricCode = __webpack_require__(157);
+var _ElectricCode = __webpack_require__(154);
 
 var _ElectricCode2 = _interopRequireDefault(_ElectricCode);
 
-var _ElectricNavigation = __webpack_require__(159);
+var _ElectricNavigation = __webpack_require__(156);
 
 var _ElectricNavigation2 = _interopRequireDefault(_ElectricNavigation);
 
-var _ElectricReadingProgress = __webpack_require__(161);
+var _ElectricReadingProgress = __webpack_require__(158);
 
 var _ElectricReadingProgress2 = _interopRequireDefault(_ElectricReadingProgress);
 
-var _ElectricSearch = __webpack_require__(163);
+var _ElectricSearch = __webpack_require__(160);
 
 var _ElectricSearch2 = _interopRequireDefault(_ElectricSearch);
 
-var _ElectricSearchAutocomplete = __webpack_require__(165);
+var _ElectricSearchAutocomplete = __webpack_require__(162);
 
 var _ElectricSearchAutocomplete2 = _interopRequireDefault(_ElectricSearchAutocomplete);
 
-var _ElectricUpdates = __webpack_require__(167);
+var _ElectricUpdates = __webpack_require__(164);
 
 var _ElectricUpdates2 = _interopRequireDefault(_ElectricUpdates);
 
@@ -19563,7 +19271,7 @@ exports.ElectricUpdates = _ElectricUpdates2.default;
 exports.default = _ElectricNavigation2.default;
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19698,7 +19406,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Sidebar, templates);
 
 
 /***/ }),
-/* 144 */
+/* 143 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19785,1357 +19493,246 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TutorialTimer, templa
 
 
 /***/ }),
-/* 145 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _metal = __webpack_require__(3);
-
-var _validators = __webpack_require__(11);
-
-var _validators2 = _interopRequireDefault(_validators);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/**
- * Sugar api that can be used as an alternative for manually building `State`
- * configuration in the expected format. For example, instead of having
- * something like this:
- *
- * ```js
- * MyClass.STATE = {
- *   foo: {
- *     required: true,
- *     validator: validators.number,
- *     value: 13
- *   }
- * };
- * ```
- *
- * You could instead do:
- *
- * ```js
- * MyClass.STATE = {
- *   foo: Config.required().number().value(13)
- * };
- * ```
- */
-var Config = {
-	/**
- * An object that contains a validator function.
- * @typedef {!Object} ConfigWithValidator
- */
-
-	/**
-  * Function that creates `State` object with an `any` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	any: setPrimitiveValidators('any'),
-
-	/**
-  * Function that creates `State` object with an `array` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	array: setPrimitiveValidators('array'),
-
-	/**
-  * Function that creates `State` object with an `arrayOf` validator.
-  * @param {ConfigWithValidator} stateConfig `State` configuration object
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	arrayOf: setNestedValidators('arrayOf'),
-
-	/**
-  * Function that creates `State` object with a `bool` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	bool: setPrimitiveValidators('bool'),
-
-	/**
-  * Function that creates `State` object with a `func` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	func: setPrimitiveValidators('func'),
-
-	/**
-  * Function that creates `State` object with an `instanceOf` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	instanceOf: setExplicitValueValidators('instanceOf'),
-
-	/**
-  * Function that creates `State` object with a `number` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	number: setPrimitiveValidators('number'),
-
-	/**
-  * Function that creates `State` object with an `object` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	object: setPrimitiveValidators('object'),
-
-	/**
-  * Function that creates `State` object with an `objectOf` validator.
-  * @param {ConfigWithValidator} stateConfig `State` configuration object
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	objectOf: setNestedValidators('objectOf'),
-
-	/**
-  * Function that creates `State` object with an `oneOf` validator.
-  * @param {!Array} values `State` configuration object
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	oneOf: setExplicitValueValidators('oneOf'),
-
-	/**
-  * Creates `State` configuration object with an `oneOfType` validator.
-  * @param {ConfigWithValidator[]} validatorArray Array of `State` configuration objects.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	oneOfType: function oneOfType(validatorArray) {
-		validatorArray = validatorArray.map(function (configObj) {
-			return configObj.config.validator;
-		});
-
-		return this.validator(_validators2.default.oneOfType(validatorArray));
-	},
-
-
-	/**
-  * Creates `State` configuration object with a `shapeOf` validator.
-  * @param {!Object.<string, ConfigWithValidator>} shapeObj Values being `State` configuration objects.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	shapeOf: function shapeOf(shapeObj) {
-		shapeObj = destructShapeOfConfigs(shapeObj);
-
-		return this.validator(_validators2.default.shapeOf(shapeObj));
-	},
-
-
-	/**
-  * Function that creates `State` object with an `string` validator.
-  * @return {ConfigWithValidator} `State` configuration object.
-  */
-	string: setPrimitiveValidators('string'),
-
-	/**
-  * Adds the `internal` flag to the `State` configuration.
-  * @param {boolean} required Flag to set "internal" to. True by default.
-  * @return {!Object} `State` configuration object.
-  */
-	internal: function internal() {
-		var _internal = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
-
-		return mergeConfig(this, {
-			internal: _internal
-		});
-	},
-
-
-	/**
-  * Adds the `required` flag to the `State` configuration.
-  * @param {boolean} required Flag to set "required" to. True by default.
-  * @return {!Object} `State` configuration object.
-  */
-	required: function required() {
-		var _required = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
-
-		return mergeConfig(this, {
-			required: _required
-		});
-	},
-
-
-	/**
-  * Adds a setter to the `State` configuration.
-  * @param {!function()} setter
-  * @return {!Object} `State` configuration object.
-  */
-	setter: function setter(_setter) {
-		return mergeConfig(this, {
-			setter: _setter
-		});
-	},
-
-
-	/**
-  * Adds a validator to the `State` configuration.
-  * @param {!function()} validator
-  * @return {!Object} `State` configuration object.
-  */
-	validator: function validator(_validator) {
-		return mergeConfig(this, {
-			validator: _validator
-		});
-	},
-
-
-	/**
-  * Adds a default value to the `State` configuration.
-  * @param {*} value
-  * @return {!Object} `State` configuration object.
-  */
-	value: function value(_value) {
-		return mergeConfig(this, {
-			value: _value
-		});
-	},
-
-
-	/**
-  * Adds a valueFn that will return a default value for the `State` configuration.
-  * @param {!function()} valueFn
-  * @return {!Object} `State` configuration object.
-  */
-	valueFn: function valueFn(_valueFn) {
-		return mergeConfig(this, {
-			valueFn: _valueFn
-		});
-	}
-};
-
-/**
- * Recursively sets validators for shapeOf.
- * @param {!Object} shape The shape of specific types.
- * @return {!Object} Shape object with validators as values.
- */
-function destructShapeOfConfigs(shape) {
-	var keys = Object.keys(shape);
-
-	var retShape = {};
-
-	keys.forEach(function (key) {
-		var value = shape[key];
-
-		retShape[key] = value.config && value.config.validator ? value.config.validator : destructShapeOfConfigs(value);
-	});
-
-	return retShape;
-}
-
-/**
- * Merges the given config object into the one that has been built so far.
- * @param {!Object} context The object calling this function.
- * @param {!Object} config The object to merge to the built config.
- * @return {!Object} The final object containing the built config.
- */
-function mergeConfig(context, config) {
-	var obj = context;
-	if (obj === Config) {
-		obj = Object.create(Config);
-		obj.config = {};
-	}
-	_metal.object.mixin(obj.config, config);
-	return obj;
-}
-
-/**
-* Calls validators with provided argument.
-* @param {string} name The name of the validator.
-* @param {!function()}
-*/
-function setExplicitValueValidators(name) {
-	return function (arg) {
-		return this.validator(_validators2.default[name](arg));
-	};
-}
-
-/**
-* Calls validators with a single nested config.
-* @param {string} name The name of the validator.
-* @return {!function()}
-*/
-function setNestedValidators(name) {
-	return function (arg) {
-		return this.validator(_validators2.default[name](arg.config.validator));
-	};
-}
-
-/**
-* Adds primitive type validators to the config object.
-* @param {string} name The name of the validator.
-* @return {!function()}
-*/
-function setPrimitiveValidators(name) {
-	return function () {
-		return this.validator(_validators2.default[name]);
-	};
-}
-
-exports.default = Config;
-
-/***/ }),
-/* 146 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-var _metal = __webpack_require__(3);
-
-var _metalEvents = __webpack_require__(6);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/**
- * State adds support for having object properties that can be watched for
- * changes, as well as configured with validators, setters and other options.
- * See the `configState` method for a complete list of available configuration
- * options for each state key.
- * @extends {EventEmitter}
- */
-var State = function (_EventEmitter) {
-	_inherits(State, _EventEmitter);
-
-	/**
-  * Constructor function for `State`.
-  * @param {Object=} opt_config Optional config object with initial values to
-  *     set state properties to.
-  * @param {Object=} opt_obj Optional object that should hold the state
-  *     properties. If none is given, they will be added directly to `this`
-  *     instead.
-  * @param {Object=} opt_context Optional context to call functions (like
-  *     validators and setters) on. Defaults to `this`.
-  */
-	function State(opt_config, opt_obj, opt_context) {
-		_classCallCheck(this, State);
-
-		/**
-   * Context to call functions (like validators and setters) on.
-   * @type {!Object}
-   * @protected
-   */
-		var _this = _possibleConstructorReturn(this, (State.__proto__ || Object.getPrototypeOf(State)).call(this));
-
-		_this.context_ = opt_context || _this;
-
-		/**
-   * Map of keys that can not be used as state keys.
-   * @type {Object<string, boolean>}
-   * @protected
-   */
-		_this.keysBlacklist_ = null;
-
-		/**
-   * Object that should hold the state properties.
-   * @type {!Object}
-   * @protected
-   */
-		_this.obj_ = opt_obj || _this;
-
-		_this.eventData_ = null;
-
-		/**
-   * Object with information about the batch event that is currently
-   * scheduled, or null if none is.
-   * @type {Object}
-   * @protected
-   */
-		_this.scheduledBatchData_ = null;
-
-		/**
-   * Object that contains information about all this instance's state keys.
-   * @type {!Object<string, !Object>}
-   * @protected
-   */
-		_this.stateInfo_ = {};
-
-		_this.stateConfigs_ = {};
-
-		_this.initialValues_ = _metal.object.mixin({}, opt_config);
-
-		_this.setShouldUseFacade(true);
-		_this.configStateFromStaticHint_();
-
-		Object.defineProperty(_this.obj_, State.STATE_REF_KEY, {
-			configurable: true,
-			enumerable: false,
-			value: _this
-		});
-		return _this;
-	}
-
-	/**
-  * Logs an error if the given property is required but wasn't given.
-  * @param {string} name
-  * @protected
-  */
-
-
-	_createClass(State, [{
-		key: 'assertGivenIfRequired_',
-		value: function assertGivenIfRequired_(name) {
-			var config = this.stateConfigs_[name];
-			if (config.required) {
-				var info = this.getStateInfo(name);
-				var value = info.state === State.KeyStates.INITIALIZED ? this.get(name) : this.initialValues_[name];
-				if (!(0, _metal.isDefAndNotNull)(value)) {
-					var errorMessage = 'The property called "' + name + '" is required but didn\'t receive a value.';
-					if (this.shouldThrowValidationError()) {
-						throw new Error(errorMessage);
-					} else {
-						console.error(errorMessage);
-					}
-				}
-			}
-		}
-
-		/**
-   * Logs an error if the `validatorReturn` is instance of `Error`.
-   * @param {*} validatorReturn
-   * @protected
-   */
-
-	}, {
-		key: 'assertValidatorReturnInstanceOfError_',
-		value: function assertValidatorReturnInstanceOfError_(validatorReturn) {
-			if (validatorReturn instanceof Error) {
-				if (this.shouldThrowValidationError()) {
-					throw validatorReturn;
-				} else {
-					console.error('Warning: ' + validatorReturn);
-				}
-			}
-		}
-
-		/**
-   * Checks that the given name is a valid state key name. If it's not, an error
-   * will be thrown.
-   * @param {string} name The name to be validated.
-   * @throws {Error}
-   * @protected
-   */
-
-	}, {
-		key: 'assertValidStateKeyName_',
-		value: function assertValidStateKeyName_(name) {
-			if (this.keysBlacklist_ && this.keysBlacklist_[name]) {
-				throw new Error('It\'s not allowed to create a state key with the name "' + name + '".');
-			}
-		}
-
-		/**
-   * Builds the property definition object for the specified state key.
-   * @param {string} name The name of the key.
-   * @return {!Object}
-   * @protected
-   */
-
-	}, {
-		key: 'buildKeyPropertyDef_',
-		value: function buildKeyPropertyDef_(name) {
-			return {
-				configurable: true,
-				enumerable: true,
-				get: function get() {
-					return this[State.STATE_REF_KEY].getStateKeyValue_(name);
-				},
-				set: function set(val) {
-					this[State.STATE_REF_KEY].setStateKeyValue_(name, val);
-				}
-			};
-		}
-
-		/**
-   * Calls the requested function, running the appropriate code for when it's
-   * passed as an actual function object or just the function's name.
-   * @param {!Function|string} fn Function, or name of the function to run.
-   * @param {!Array} An optional array of parameters to be passed to the
-   *   function that will be called.
-   * @return {*} The return value of the called function.
-   * @protected
-   */
-
-	}, {
-		key: 'callFunction_',
-		value: function callFunction_(fn, args) {
-			if ((0, _metal.isString)(fn)) {
-				return this.context_[fn].apply(this.context_, args);
-			} else if ((0, _metal.isFunction)(fn)) {
-				return fn.apply(this.context_, args);
-			}
-		}
-
-		/**
-   * Calls the state key's setter, if there is one.
-   * @param {string} name The name of the key.
-   * @param {*} value The value to be set.
-   * @param {*} currentValue The current value.
-   * @return {*} The final value to be set.
-   * @protected
-   */
-
-	}, {
-		key: 'callSetter_',
-		value: function callSetter_(name, value, currentValue) {
-			var config = this.stateConfigs_[name];
-			if (config.setter) {
-				value = this.callFunction_(config.setter, [value, currentValue]);
-			}
-			return value;
-		}
-
-		/**
-   * Calls the state key's validator, if there is one. Emits console
-   * warning if validator returns a string.
-   * @param {string} name The name of the key.
-   * @param {*} value The value to be validated.
-   * @return {boolean} Flag indicating if value is valid or not.
-   * @protected
-   */
-
-	}, {
-		key: 'callValidator_',
-		value: function callValidator_(name, value) {
-			var config = this.stateConfigs_[name];
-			if (config.validator) {
-				var validatorReturn = this.callFunction_(config.validator, [value, name, this.context_]);
-				this.assertValidatorReturnInstanceOfError_(validatorReturn);
-				return validatorReturn;
-			}
-			return true;
-		}
-
-		/**
-   * Checks if the it's allowed to write on the requested state key.
-   * @param {string} name The name of the key.
-   * @return {boolean}
-   */
-
-	}, {
-		key: 'canSetState',
-		value: function canSetState(name) {
-			var info = this.getStateInfo(name);
-			return !this.stateConfigs_[name].writeOnce || !info.written;
-		}
-
-		/**
-   * Adds the given key(s) to the state, together with its(their) configs.
-   * Config objects support the given settings:
-   *     required - When set to `true`, causes errors to be printed (via
-   *     `console.error`) if no value is given for the property.
-   *
-   *     setter - Function for normalizing state key values. It receives the new
-   *     value that was set, and returns the value that should be stored.
-   *
-   *     validator - Function that validates state key values. When it returns
-   *     false, the new value is ignored. When it returns an instance of Error,
-   *     it will emit the error to the console.
-   *
-   *     value - The default value for the state key. Note that setting this to
-   *     an object will cause all class instances to use the same reference to
-   *     the object. To have each instance use a different reference for objects,
-   *     use the `valueFn` option instead.
-   *
-   *     valueFn - A function that returns the default value for a state key.
-   *
-   *     writeOnce - Ignores writes to the state key after it's been first
-   *     written to. That is, allows writes only when setting the value for the
-   *     first time.
-   * @param {!Object.<string, !Object>|string} configs An object that maps
-   *     configuration options for keys to be added to the state.
-   * @param {boolean|Object|*=} opt_context The context where the added state
-   *     keys will be defined (defaults to `this`), or false if they shouldn't
-   *     be defined at all.
-   */
-
-	}, {
-		key: 'configState',
-		value: function configState(configs, opt_context) {
-			var names = Object.keys(configs);
-			if (names.length === 0) {
-				return;
-			}
-
-			if (opt_context !== false) {
-				var props = {};
-				for (var i = 0; i < names.length; i++) {
-					var name = names[i];
-					this.assertValidStateKeyName_(name);
-					props[name] = this.buildKeyPropertyDef_(name);
-				}
-				Object.defineProperties(opt_context || this.obj_, props);
-			}
-
-			this.stateConfigs_ = configs;
-			for (var _i = 0; _i < names.length; _i++) {
-				var _name = names[_i];
-				configs[_name] = configs[_name].config ? configs[_name].config : configs[_name];
-				this.assertGivenIfRequired_(names[_i]);
-				this.validateInitialValue_(names[_i]);
-			}
-		}
-
-		/**
-   * Adds state keys from super classes static hint `MyClass.STATE = {};`.
-   * @param {Object.<string, !Object>=} opt_config An object that maps all the
-   *     configurations for state keys.
-   * @protected
-   */
-
-	}, {
-		key: 'configStateFromStaticHint_',
-		value: function configStateFromStaticHint_() {
-			var ctor = this.constructor;
-			if (ctor !== State) {
-				var defineContext = void 0;
-				if (this.obj_ === this) {
-					defineContext = ctor.hasConfiguredState_ ? false : ctor.prototype;
-					ctor.hasConfiguredState_ = true;
-				}
-				this.configState(State.getStateStatic(ctor), defineContext);
-			}
-		}
-
-		/**
-   * @inheritDoc
-   */
-
-	}, {
-		key: 'disposeInternal',
-		value: function disposeInternal() {
-			_get(State.prototype.__proto__ || Object.getPrototypeOf(State.prototype), 'disposeInternal', this).call(this);
-			this.initialValues_ = null;
-			this.stateInfo_ = null;
-			this.stateConfigs_ = null;
-			this.scheduledBatchData_ = null;
-		}
-
-		/**
-   * Emits the state change batch event.
-   * @protected
-   */
-
-	}, {
-		key: 'emitBatchEvent_',
-		value: function emitBatchEvent_() {
-			if (!this.isDisposed()) {
-				var data = this.scheduledBatchData_;
-				this.scheduledBatchData_ = null;
-				this.context_.emit('stateChanged', data);
-			}
-		}
-
-		/**
-   * Returns the value of the requested state key.
-   * Note: this can and should be accomplished by accessing the value as a
-   * regular property. This should only be used in cases where a function is
-   * actually needed.
-   * @param {string} name
-   * @return {*}
-   */
-
-	}, {
-		key: 'get',
-		value: function get(name) {
-			return this.obj_[name];
-		}
-
-		/**
-   * Returns an object that maps state keys to their values.
-   * @param {Array<string>=} opt_names A list of names of the keys that should
-   *   be returned. If none is given, the whole state will be returned.
-   * @return {Object.<string, *>}
-   */
-
-	}, {
-		key: 'getState',
-		value: function getState(opt_names) {
-			var state = {};
-			var names = opt_names || this.getStateKeys();
-
-			for (var i = 0; i < names.length; i++) {
-				state[names[i]] = this.get(names[i]);
-			}
-
-			return state;
-		}
-
-		/**
-   * Gets information about the specified state property.
-   * @param {string} name
-   * @return {!Object}
-   */
-
-	}, {
-		key: 'getStateInfo',
-		value: function getStateInfo(name) {
-			if (!this.stateInfo_[name]) {
-				this.stateInfo_[name] = {};
-			}
-			return this.stateInfo_[name];
-		}
-
-		/**
-   * Gets the config object for the requested state key.
-   * @param {string} name The key's name.
-   * @return {Object}
-   * @protected
-   */
-
-	}, {
-		key: 'getStateKeyConfig',
-		value: function getStateKeyConfig(name) {
-			return this.stateConfigs_ ? this.stateConfigs_[name] : null;
-		}
-
-		/**
-   * Returns an array with all state keys.
-   * @return {!Array.<string>}
-   */
-
-	}, {
-		key: 'getStateKeys',
-		value: function getStateKeys() {
-			return this.stateConfigs_ ? Object.keys(this.stateConfigs_) : [];
-		}
-
-		/**
-   * Gets the value of the specified state key. This is passed as that key's
-   * getter to the `Object.defineProperty` call inside the `addKeyToState` method.
-   * @param {string} name The name of the key.
-   * @return {*}
-   * @protected
-   */
-
-	}, {
-		key: 'getStateKeyValue_',
-		value: function getStateKeyValue_(name) {
-			if (!this.warnIfDisposed_(name)) {
-				this.initStateKey_(name);
-				return this.getStateInfo(name).value;
-			}
-		}
-
-		/**
-   * Merges the STATE static variable for the given constructor function.
-   * @param  {!Function} ctor Constructor function.
-   * @return {boolean} Returns true if merge happens, false otherwise.
-   * @static
-   */
-
-	}, {
-		key: 'hasBeenSet',
-
-
-		/**
-   * Checks if the value of the state key with the given name has already been
-   * set. Note that this doesn't run the key's getter.
-   * @param {string} name The name of the key.
-   * @return {boolean}
-   */
-		value: function hasBeenSet(name) {
-			var info = this.getStateInfo(name);
-			return info.state === State.KeyStates.INITIALIZED || this.hasInitialValue_(name);
-		}
-
-		/**
-   * Checks if an initial value was given to the specified state property.
-   * @param {string} name The name of the key.
-   * @return {boolean}
-   * @protected
-   */
-
-	}, {
-		key: 'hasInitialValue_',
-		value: function hasInitialValue_(name) {
-			return this.initialValues_.hasOwnProperty(name);
-		}
-
-		/**
-   * Checks if the given key is present in this instance's state.
-   * @param {string} key
-   * @return {boolean}
-   */
-
-	}, {
-		key: 'hasStateKey',
-		value: function hasStateKey(key) {
-			if (!this.warnIfDisposed_(key)) {
-				return !!this.stateConfigs_[key];
-			}
-		}
-
-		/**
-   * Informs of changes to a state key's value through an event. Won't trigger
-   * the event if the value hasn't changed or if it's being initialized.
-   * @param {string} name The name of the key.
-   * @param {*} prevVal The previous value of the key.
-   * @protected
-   */
-
-	}, {
-		key: 'informChange_',
-		value: function informChange_(name, prevVal) {
-			if (this.shouldInformChange_(name, prevVal)) {
-				var data = _metal.object.mixin({
-					key: name,
-					newVal: this.get(name),
-					prevVal: prevVal
-				}, this.eventData_);
-				this.context_.emit(name + 'Changed', data);
-				this.context_.emit('stateKeyChanged', data);
-				this.scheduleBatchEvent_(data);
-			}
-		}
-
-		/**
-   * Initializes the specified state key, giving it a first value.
-   * @param {string} name The name of the key.
-   * @protected
-   */
-
-	}, {
-		key: 'initStateKey_',
-		value: function initStateKey_(name) {
-			var info = this.getStateInfo(name);
-			if (info.state !== State.KeyStates.UNINITIALIZED) {
-				return;
-			}
-
-			info.state = State.KeyStates.INITIALIZING;
-			this.setInitialValue_(name);
-			if (!info.written) {
-				this.setDefaultValue(name);
-			}
-			info.state = State.KeyStates.INITIALIZED;
-		}
-
-		/**
-   * Merges two values for the STATE property into a single object.
-   * @param {Object} mergedVal
-   * @param {Object} currVal
-   * @return {!Object} The merged value.
-   * @static
-   */
-
-	}, {
-		key: 'removeStateKey',
-
-
-		/**
-   * Removes the requested state key.
-   * @param {string} name The name of the key.
-   */
-		value: function removeStateKey(name) {
-			this.stateInfo_[name] = null;
-			this.stateConfigs_[name] = null;
-			delete this.obj_[name];
-		}
-
-		/**
-   * Schedules a state change batch event to be emitted asynchronously.
-   * @param {!Object} changeData Information about a state key's update.
-   * @protected
-   */
-
-	}, {
-		key: 'scheduleBatchEvent_',
-		value: function scheduleBatchEvent_(changeData) {
-			if (!this.scheduledBatchData_) {
-				_metal.async.nextTick(this.emitBatchEvent_, this);
-				this.scheduledBatchData_ = _metal.object.mixin({
-					changes: {}
-				}, this.eventData_);
-			}
-
-			var name = changeData.key;
-			var changes = this.scheduledBatchData_.changes;
-			if (changes[name]) {
-				changes[name].newVal = changeData.newVal;
-			} else {
-				changes[name] = changeData;
-			}
-		}
-
-		/**
-   * Sets the value of the requested state key.
-   * Note: this can and should be accomplished by setting the state key as a
-   * regular property. This should only be used in cases where a function is
-   * actually needed.
-   * @param {string} name
-   * @param {*} value
-   * @return {*}
-   */
-
-	}, {
-		key: 'set',
-		value: function set(name, value) {
-			if (this.hasStateKey(name)) {
-				this.obj_[name] = value;
-			}
-		}
-
-		/**
-   * Sets the default value of the requested state key.
-   * @param {string} name The name of the key.
-   * @return {*}
-   */
-
-	}, {
-		key: 'setDefaultValue',
-		value: function setDefaultValue(name) {
-			var config = this.stateConfigs_[name];
-
-			if (config.value !== undefined) {
-				this.set(name, config.value);
-			} else {
-				this.set(name, this.callFunction_(config.valueFn));
-			}
-		}
-
-		/**
-   * Sets data to be sent with all events emitted from this instance.
-   * @param {Object}
-   */
-
-	}, {
-		key: 'setEventData',
-		value: function setEventData(data) {
-			this.eventData_ = data;
-		}
-
-		/**
-   * Sets the initial value of the requested state key.
-   * @param {string} name The name of the key.
-   * @return {*}
-   * @protected
-   */
-
-	}, {
-		key: 'setInitialValue_',
-		value: function setInitialValue_(name) {
-			if (this.hasInitialValue_(name)) {
-				this.set(name, this.initialValues_[name]);
-				this.initialValues_[name] = undefined;
-			}
-		}
-
-		/**
-   * Sets a map of keys that are not valid state keys.
-   * @param {!Object<string, boolean>}
-   */
-
-	}, {
-		key: 'setKeysBlacklist',
-		value: function setKeysBlacklist(blacklist) {
-			this.keysBlacklist_ = blacklist;
-		}
-
-		/**
-   * Sets the value of all the specified state keys.
-   * @param {!Object.<string,*>} values A map of state keys to the values they
-   *   should be set to.
-   * @param {function()=} opt_callback An optional function that will be run
-   *   after the next batched update is triggered.
-   */
-
-	}, {
-		key: 'setState',
-		value: function setState(values, opt_callback) {
-			var _this2 = this;
-
-			Object.keys(values).forEach(function (name) {
-				return _this2.set(name, values[name]);
-			});
-			if (opt_callback && this.scheduledBatchData_) {
-				this.context_.once('stateChanged', opt_callback);
-			}
-		}
-
-		/**
-   * Sets the value of the specified state key. This is passed as that key's
-   * setter to the `Object.defineProperty` call inside the `addKeyToState`
-   * method.
-   * @param {string} name The name of the key.
-   * @param {*} value The new value of the key.
-   * @protected
-   */
-
-	}, {
-		key: 'setStateKeyValue_',
-		value: function setStateKeyValue_(name, value) {
-			if (this.warnIfDisposed_(name) || !this.canSetState(name) || !this.validateKeyValue_(name, value)) {
-				return;
-			}
-
-			var prevVal = this.get(name);
-			var info = this.getStateInfo(name);
-			info.value = this.callSetter_(name, value, prevVal);
-			this.assertGivenIfRequired_(name);
-			info.written = true;
-			this.informChange_(name, prevVal);
-		}
-
-		/**
-   * Checks if we should inform about a state update. Updates are ignored during
-   * state initialization. Otherwise, updates to primitive values are only
-   * informed when the new value is different from the previous one. Updates to
-   * objects (which includes functions and arrays) are always informed outside
-   * initialization though, since we can't be sure if all of the internal data
-   * has stayed the same.
-   * @param {string} name The name of the key.
-   * @param {*} prevVal The previous value of the key.
-   * @return {boolean}
-   * @protected
-   */
-
-	}, {
-		key: 'shouldInformChange_',
-		value: function shouldInformChange_(name, prevVal) {
-			var info = this.getStateInfo(name);
-			return info.state === State.KeyStates.INITIALIZED && ((0, _metal.isObject)(prevVal) || prevVal !== this.get(name));
-		}
-
-		/**
-   * Returns a boolean that determines whether or not should throw error when
-   * vaildator functions returns an `Error` instance.
-   * @return {boolean} By default returns false.
-   */
-
-	}, {
-		key: 'shouldThrowValidationError',
-		value: function shouldThrowValidationError() {
-			return false;
-		}
-
-		/**
-   * Validates the initial value for the state property with the given name.
-   * @param {string} name
-   * @protected
-   */
-
-	}, {
-		key: 'validateInitialValue_',
-		value: function validateInitialValue_(name) {
-			if (this.hasInitialValue_(name) && !this.callValidator_(name, this.initialValues_[name])) {
-				delete this.initialValues_[name];
-			}
-		}
-
-		/**
-   * Validates the state key's value, which includes calling the validator
-   * defined in the key's configuration object, if there is one.
-   * @param {string} name The name of the key.
-   * @param {*} value The value to be validated.
-   * @return {boolean} Flag indicating if value is valid or not.
-   * @protected
-   */
-
-	}, {
-		key: 'validateKeyValue_',
-		value: function validateKeyValue_(name, value) {
-			var info = this.getStateInfo(name);
-			return info.state === State.KeyStates.INITIALIZING || this.callValidator_(name, value);
-		}
-
-		/**
-   * Warns if this instance has already been disposed.
-   * @param {string} name Name of the property to be accessed if not disposed.
-   * @return {boolean} True if disposed, or false otherwise.
-   * @protected
-   */
-
-	}, {
-		key: 'warnIfDisposed_',
-		value: function warnIfDisposed_(name) {
-			var disposed = this.isDisposed();
-			if (disposed) {
-				console.warn('Error. Trying to access property "' + name + '" on disposed instance');
-			}
-			return disposed;
-		}
-	}], [{
-		key: 'getStateStatic',
-		value: function getStateStatic(ctor) {
-			return (0, _metal.getStaticProperty)(ctor, 'STATE', State.mergeState);
-		}
-	}, {
-		key: 'mergeState',
-		value: function mergeState(mergedVal, currVal) {
-			return _metal.object.mixin({}, currVal, mergedVal);
-		}
-	}]);
-
-	return State;
-}(_metalEvents.EventEmitter);
-
-State.STATE_REF_KEY = '__METAL_STATE_REF_KEY__';
-
-/**
- * Constants that represent the states that a state key can be in.
- * @type {!Object}
- */
-State.KeyStates = {
-	UNINITIALIZED: undefined,
-	INITIALIZING: 1,
-	INITIALIZED: 2
-};
-
-exports.default = State;
-
-/***/ }),
-/* 147 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 12,
-	"./af.js": 12,
-	"./ar": 19,
-	"./ar-dz": 13,
-	"./ar-dz.js": 13,
-	"./ar-kw": 14,
-	"./ar-kw.js": 14,
-	"./ar-ly": 15,
-	"./ar-ly.js": 15,
-	"./ar-ma": 16,
-	"./ar-ma.js": 16,
-	"./ar-sa": 17,
-	"./ar-sa.js": 17,
-	"./ar-tn": 18,
-	"./ar-tn.js": 18,
-	"./ar.js": 19,
-	"./az": 20,
-	"./az.js": 20,
-	"./be": 21,
-	"./be.js": 21,
-	"./bg": 22,
-	"./bg.js": 22,
-	"./bm": 23,
-	"./bm.js": 23,
-	"./bn": 24,
-	"./bn.js": 24,
-	"./bo": 25,
-	"./bo.js": 25,
-	"./br": 26,
-	"./br.js": 26,
-	"./bs": 27,
-	"./bs.js": 27,
-	"./ca": 28,
-	"./ca.js": 28,
-	"./cs": 29,
-	"./cs.js": 29,
-	"./cv": 30,
-	"./cv.js": 30,
-	"./cy": 31,
-	"./cy.js": 31,
-	"./da": 32,
-	"./da.js": 32,
-	"./de": 35,
-	"./de-at": 33,
-	"./de-at.js": 33,
-	"./de-ch": 34,
-	"./de-ch.js": 34,
-	"./de.js": 35,
-	"./dv": 36,
-	"./dv.js": 36,
-	"./el": 37,
-	"./el.js": 37,
-	"./en-au": 38,
-	"./en-au.js": 38,
-	"./en-ca": 39,
-	"./en-ca.js": 39,
-	"./en-gb": 40,
-	"./en-gb.js": 40,
-	"./en-ie": 41,
-	"./en-ie.js": 41,
-	"./en-nz": 42,
-	"./en-nz.js": 42,
-	"./eo": 43,
-	"./eo.js": 43,
-	"./es": 46,
-	"./es-do": 44,
-	"./es-do.js": 44,
-	"./es-us": 45,
-	"./es-us.js": 45,
-	"./es.js": 46,
-	"./et": 47,
-	"./et.js": 47,
-	"./eu": 48,
-	"./eu.js": 48,
-	"./fa": 49,
-	"./fa.js": 49,
-	"./fi": 50,
-	"./fi.js": 50,
-	"./fo": 51,
-	"./fo.js": 51,
-	"./fr": 54,
-	"./fr-ca": 52,
-	"./fr-ca.js": 52,
-	"./fr-ch": 53,
-	"./fr-ch.js": 53,
-	"./fr.js": 54,
-	"./fy": 55,
-	"./fy.js": 55,
-	"./gd": 56,
-	"./gd.js": 56,
-	"./gl": 57,
-	"./gl.js": 57,
-	"./gom-latn": 58,
-	"./gom-latn.js": 58,
-	"./gu": 59,
-	"./gu.js": 59,
-	"./he": 60,
-	"./he.js": 60,
-	"./hi": 61,
-	"./hi.js": 61,
-	"./hr": 62,
-	"./hr.js": 62,
-	"./hu": 63,
-	"./hu.js": 63,
-	"./hy-am": 64,
-	"./hy-am.js": 64,
-	"./id": 65,
-	"./id.js": 65,
-	"./is": 66,
-	"./is.js": 66,
-	"./it": 67,
-	"./it.js": 67,
-	"./ja": 68,
-	"./ja.js": 68,
-	"./jv": 69,
-	"./jv.js": 69,
-	"./ka": 70,
-	"./ka.js": 70,
-	"./kk": 71,
-	"./kk.js": 71,
-	"./km": 72,
-	"./km.js": 72,
-	"./kn": 73,
-	"./kn.js": 73,
-	"./ko": 74,
-	"./ko.js": 74,
-	"./ky": 75,
-	"./ky.js": 75,
-	"./lb": 76,
-	"./lb.js": 76,
-	"./lo": 77,
-	"./lo.js": 77,
-	"./lt": 78,
-	"./lt.js": 78,
-	"./lv": 79,
-	"./lv.js": 79,
-	"./me": 80,
-	"./me.js": 80,
-	"./mi": 81,
-	"./mi.js": 81,
-	"./mk": 82,
-	"./mk.js": 82,
-	"./ml": 83,
-	"./ml.js": 83,
-	"./mr": 84,
-	"./mr.js": 84,
-	"./ms": 86,
-	"./ms-my": 85,
-	"./ms-my.js": 85,
-	"./ms.js": 86,
-	"./my": 87,
-	"./my.js": 87,
-	"./nb": 88,
-	"./nb.js": 88,
-	"./ne": 89,
-	"./ne.js": 89,
-	"./nl": 91,
-	"./nl-be": 90,
-	"./nl-be.js": 90,
-	"./nl.js": 91,
-	"./nn": 92,
-	"./nn.js": 92,
-	"./pa-in": 93,
-	"./pa-in.js": 93,
-	"./pl": 94,
-	"./pl.js": 94,
-	"./pt": 96,
-	"./pt-br": 95,
-	"./pt-br.js": 95,
-	"./pt.js": 96,
-	"./ro": 97,
-	"./ro.js": 97,
-	"./ru": 98,
-	"./ru.js": 98,
-	"./sd": 99,
-	"./sd.js": 99,
-	"./se": 100,
-	"./se.js": 100,
-	"./si": 101,
-	"./si.js": 101,
-	"./sk": 102,
-	"./sk.js": 102,
-	"./sl": 103,
-	"./sl.js": 103,
-	"./sq": 104,
-	"./sq.js": 104,
-	"./sr": 106,
-	"./sr-cyrl": 105,
-	"./sr-cyrl.js": 105,
-	"./sr.js": 106,
-	"./ss": 107,
-	"./ss.js": 107,
-	"./sv": 108,
-	"./sv.js": 108,
-	"./sw": 109,
-	"./sw.js": 109,
-	"./ta": 110,
-	"./ta.js": 110,
-	"./te": 111,
-	"./te.js": 111,
-	"./tet": 112,
-	"./tet.js": 112,
-	"./th": 113,
-	"./th.js": 113,
-	"./tl-ph": 114,
-	"./tl-ph.js": 114,
-	"./tlh": 115,
-	"./tlh.js": 115,
-	"./tr": 116,
-	"./tr.js": 116,
-	"./tzl": 117,
-	"./tzl.js": 117,
-	"./tzm": 119,
-	"./tzm-latn": 118,
-	"./tzm-latn.js": 118,
-	"./tzm.js": 119,
-	"./uk": 120,
-	"./uk.js": 120,
-	"./ur": 121,
-	"./ur.js": 121,
-	"./uz": 123,
-	"./uz-latn": 122,
-	"./uz-latn.js": 122,
-	"./uz.js": 123,
-	"./vi": 124,
-	"./vi.js": 124,
-	"./x-pseudo": 125,
-	"./x-pseudo.js": 125,
-	"./yo": 126,
-	"./yo.js": 126,
-	"./zh-cn": 127,
-	"./zh-cn.js": 127,
-	"./zh-hk": 128,
-	"./zh-hk.js": 128,
-	"./zh-tw": 129,
-	"./zh-tw.js": 129
+	"./af": 11,
+	"./af.js": 11,
+	"./ar": 18,
+	"./ar-dz": 12,
+	"./ar-dz.js": 12,
+	"./ar-kw": 13,
+	"./ar-kw.js": 13,
+	"./ar-ly": 14,
+	"./ar-ly.js": 14,
+	"./ar-ma": 15,
+	"./ar-ma.js": 15,
+	"./ar-sa": 16,
+	"./ar-sa.js": 16,
+	"./ar-tn": 17,
+	"./ar-tn.js": 17,
+	"./ar.js": 18,
+	"./az": 19,
+	"./az.js": 19,
+	"./be": 20,
+	"./be.js": 20,
+	"./bg": 21,
+	"./bg.js": 21,
+	"./bm": 22,
+	"./bm.js": 22,
+	"./bn": 23,
+	"./bn.js": 23,
+	"./bo": 24,
+	"./bo.js": 24,
+	"./br": 25,
+	"./br.js": 25,
+	"./bs": 26,
+	"./bs.js": 26,
+	"./ca": 27,
+	"./ca.js": 27,
+	"./cs": 28,
+	"./cs.js": 28,
+	"./cv": 29,
+	"./cv.js": 29,
+	"./cy": 30,
+	"./cy.js": 30,
+	"./da": 31,
+	"./da.js": 31,
+	"./de": 34,
+	"./de-at": 32,
+	"./de-at.js": 32,
+	"./de-ch": 33,
+	"./de-ch.js": 33,
+	"./de.js": 34,
+	"./dv": 35,
+	"./dv.js": 35,
+	"./el": 36,
+	"./el.js": 36,
+	"./en-au": 37,
+	"./en-au.js": 37,
+	"./en-ca": 38,
+	"./en-ca.js": 38,
+	"./en-gb": 39,
+	"./en-gb.js": 39,
+	"./en-ie": 40,
+	"./en-ie.js": 40,
+	"./en-nz": 41,
+	"./en-nz.js": 41,
+	"./eo": 42,
+	"./eo.js": 42,
+	"./es": 45,
+	"./es-do": 43,
+	"./es-do.js": 43,
+	"./es-us": 44,
+	"./es-us.js": 44,
+	"./es.js": 45,
+	"./et": 46,
+	"./et.js": 46,
+	"./eu": 47,
+	"./eu.js": 47,
+	"./fa": 48,
+	"./fa.js": 48,
+	"./fi": 49,
+	"./fi.js": 49,
+	"./fo": 50,
+	"./fo.js": 50,
+	"./fr": 53,
+	"./fr-ca": 51,
+	"./fr-ca.js": 51,
+	"./fr-ch": 52,
+	"./fr-ch.js": 52,
+	"./fr.js": 53,
+	"./fy": 54,
+	"./fy.js": 54,
+	"./gd": 55,
+	"./gd.js": 55,
+	"./gl": 56,
+	"./gl.js": 56,
+	"./gom-latn": 57,
+	"./gom-latn.js": 57,
+	"./gu": 58,
+	"./gu.js": 58,
+	"./he": 59,
+	"./he.js": 59,
+	"./hi": 60,
+	"./hi.js": 60,
+	"./hr": 61,
+	"./hr.js": 61,
+	"./hu": 62,
+	"./hu.js": 62,
+	"./hy-am": 63,
+	"./hy-am.js": 63,
+	"./id": 64,
+	"./id.js": 64,
+	"./is": 65,
+	"./is.js": 65,
+	"./it": 66,
+	"./it.js": 66,
+	"./ja": 67,
+	"./ja.js": 67,
+	"./jv": 68,
+	"./jv.js": 68,
+	"./ka": 69,
+	"./ka.js": 69,
+	"./kk": 70,
+	"./kk.js": 70,
+	"./km": 71,
+	"./km.js": 71,
+	"./kn": 72,
+	"./kn.js": 72,
+	"./ko": 73,
+	"./ko.js": 73,
+	"./ky": 74,
+	"./ky.js": 74,
+	"./lb": 75,
+	"./lb.js": 75,
+	"./lo": 76,
+	"./lo.js": 76,
+	"./lt": 77,
+	"./lt.js": 77,
+	"./lv": 78,
+	"./lv.js": 78,
+	"./me": 79,
+	"./me.js": 79,
+	"./mi": 80,
+	"./mi.js": 80,
+	"./mk": 81,
+	"./mk.js": 81,
+	"./ml": 82,
+	"./ml.js": 82,
+	"./mr": 83,
+	"./mr.js": 83,
+	"./ms": 85,
+	"./ms-my": 84,
+	"./ms-my.js": 84,
+	"./ms.js": 85,
+	"./my": 86,
+	"./my.js": 86,
+	"./nb": 87,
+	"./nb.js": 87,
+	"./ne": 88,
+	"./ne.js": 88,
+	"./nl": 90,
+	"./nl-be": 89,
+	"./nl-be.js": 89,
+	"./nl.js": 90,
+	"./nn": 91,
+	"./nn.js": 91,
+	"./pa-in": 92,
+	"./pa-in.js": 92,
+	"./pl": 93,
+	"./pl.js": 93,
+	"./pt": 95,
+	"./pt-br": 94,
+	"./pt-br.js": 94,
+	"./pt.js": 95,
+	"./ro": 96,
+	"./ro.js": 96,
+	"./ru": 97,
+	"./ru.js": 97,
+	"./sd": 98,
+	"./sd.js": 98,
+	"./se": 99,
+	"./se.js": 99,
+	"./si": 100,
+	"./si.js": 100,
+	"./sk": 101,
+	"./sk.js": 101,
+	"./sl": 102,
+	"./sl.js": 102,
+	"./sq": 103,
+	"./sq.js": 103,
+	"./sr": 105,
+	"./sr-cyrl": 104,
+	"./sr-cyrl.js": 104,
+	"./sr.js": 105,
+	"./ss": 106,
+	"./ss.js": 106,
+	"./sv": 107,
+	"./sv.js": 107,
+	"./sw": 108,
+	"./sw.js": 108,
+	"./ta": 109,
+	"./ta.js": 109,
+	"./te": 110,
+	"./te.js": 110,
+	"./tet": 111,
+	"./tet.js": 111,
+	"./th": 112,
+	"./th.js": 112,
+	"./tl-ph": 113,
+	"./tl-ph.js": 113,
+	"./tlh": 114,
+	"./tlh.js": 114,
+	"./tr": 115,
+	"./tr.js": 115,
+	"./tzl": 116,
+	"./tzl.js": 116,
+	"./tzm": 118,
+	"./tzm-latn": 117,
+	"./tzm-latn.js": 117,
+	"./tzm.js": 118,
+	"./uk": 119,
+	"./uk.js": 119,
+	"./ur": 120,
+	"./ur.js": 120,
+	"./uz": 122,
+	"./uz-latn": 121,
+	"./uz-latn.js": 121,
+	"./uz.js": 122,
+	"./vi": 123,
+	"./vi.js": 123,
+	"./x-pseudo": 124,
+	"./x-pseudo.js": 124,
+	"./yo": 125,
+	"./yo.js": 125,
+	"./zh-cn": 126,
+	"./zh-cn.js": 126,
+	"./zh-hk": 127,
+	"./zh-hk.js": 127,
+	"./zh-tw": 128,
+	"./zh-tw.js": 128
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21151,10 +19748,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 147;
+webpackContext.id = 144;
 
 /***/ }),
-/* 148 */
+/* 145 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -21182,7 +19779,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 149 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21194,7 +19791,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalClipboard = __webpack_require__(172);
+var _metalClipboard = __webpack_require__(169);
 
 var _metalClipboard2 = _interopRequireDefault(_metalClipboard);
 
@@ -21202,7 +19799,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalTooltip = __webpack_require__(189);
+var _metalTooltip = __webpack_require__(186);
 
 var _metalTooltip2 = _interopRequireDefault(_metalTooltip);
 
@@ -21265,7 +19862,7 @@ var ElectricCode = function (_Component) {
 exports.default = ElectricCode;
 
 /***/ }),
-/* 150 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21277,7 +19874,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalTabs = __webpack_require__(187);
+var _metalTabs = __webpack_require__(184);
 
 var _metalTabs2 = _interopRequireDefault(_metalTabs);
 
@@ -21285,7 +19882,7 @@ var _metalDom = __webpack_require__(4);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalState = __webpack_require__(7);
+var _metalState = __webpack_require__(8);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
@@ -21450,7 +20047,7 @@ window.ElectricCodeTabs = ElectricCodeTabs;
 exports.default = ElectricCodeTabs;
 
 /***/ }),
-/* 151 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21496,7 +20093,7 @@ var ElectricNavigation = function (_Component) {
 exports.default = ElectricNavigation;
 
 /***/ }),
-/* 152 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21508,7 +20105,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalAffix = __webpack_require__(169);
+var _metalAffix = __webpack_require__(166);
 
 var _metalAffix2 = _interopRequireDefault(_metalAffix);
 
@@ -21524,7 +20121,7 @@ var _metalDom = __webpack_require__(4);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalReadingProgress = __webpack_require__(180);
+var _metalReadingProgress = __webpack_require__(177);
 
 var _metalReadingProgress2 = _interopRequireDefault(_metalReadingProgress);
 
@@ -21635,7 +20232,7 @@ ElectricReadingProgress.STATE = {
 exports.default = ElectricReadingProgress;
 
 /***/ }),
-/* 153 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21708,7 +20305,7 @@ ElectricSearch.STATE = {
 exports.default = ElectricSearch;
 
 /***/ }),
-/* 154 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21720,7 +20317,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalAutocomplete = __webpack_require__(135);
+var _metalAutocomplete = __webpack_require__(134);
 
 var _metalAutocomplete2 = _interopRequireDefault(_metalAutocomplete);
 
@@ -21807,7 +20404,7 @@ var ElectricSearchAutocomplete = function (_ElectricSearchBase) {
 exports.default = ElectricSearchAutocomplete;
 
 /***/ }),
-/* 155 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21864,7 +20461,7 @@ ElectricUpdates.STATE = {
 exports.default = ElectricUpdates;
 
 /***/ }),
-/* 156 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21876,11 +20473,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalAjax = __webpack_require__(133);
+var _metalAjax = __webpack_require__(132);
 
 var _metalAjax2 = _interopRequireDefault(_metalAjax);
 
-var _metalAutocomplete = __webpack_require__(135);
+var _metalAutocomplete = __webpack_require__(134);
 
 var _metalAutocomplete2 = _interopRequireDefault(_metalAutocomplete);
 
@@ -21892,7 +20489,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalPromise = __webpack_require__(8);
+var _metalPromise = __webpack_require__(6);
 
 var _metalPromise2 = _interopRequireDefault(_metalPromise);
 
@@ -22044,7 +20641,7 @@ ElectricAPIAutocomplete.STATE = {
 exports.default = ElectricAPIAutocomplete;
 
 /***/ }),
-/* 157 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22060,7 +20657,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(5);
 
-var _ElectricCode = __webpack_require__(158);
+var _ElectricCode = __webpack_require__(155);
 
 var _ElectricCode2 = _interopRequireDefault(_ElectricCode);
 
@@ -22071,7 +20668,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricCode, _ElectricCode2
 exports.default = _electricBaseComponents.ElectricCode;
 
 /***/ }),
-/* 158 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22181,7 +20778,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 159 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22193,7 +20790,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalToggler = __webpack_require__(130);
+var _metalToggler = __webpack_require__(129);
 
 var _metalToggler2 = _interopRequireDefault(_metalToggler);
 
@@ -22205,7 +20802,7 @@ var _electricBaseComponents = __webpack_require__(5);
 
 var _electricBaseComponents2 = _interopRequireDefault(_electricBaseComponents);
 
-var _ElectricNavigation = __webpack_require__(160);
+var _ElectricNavigation = __webpack_require__(157);
 
 var _ElectricNavigation2 = _interopRequireDefault(_ElectricNavigation);
 
@@ -22259,7 +20856,7 @@ _metalSoy2.default.register(ElectricNavigation, _ElectricNavigation2.default);
 exports.default = ElectricNavigation;
 
 /***/ }),
-/* 160 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22419,7 +21016,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 161 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22435,7 +21032,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(5);
 
-var _ElectricReadingProgress = __webpack_require__(162);
+var _ElectricReadingProgress = __webpack_require__(159);
 
 var _ElectricReadingProgress2 = _interopRequireDefault(_ElectricReadingProgress);
 
@@ -22446,7 +21043,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricReadingProgress, _El
 exports.default = _electricBaseComponents.ElectricReadingProgress;
 
 /***/ }),
-/* 162 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22549,7 +21146,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 163 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22565,7 +21162,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(5);
 
-var _ElectricSearch = __webpack_require__(164);
+var _ElectricSearch = __webpack_require__(161);
 
 var _ElectricSearch2 = _interopRequireDefault(_ElectricSearch);
 
@@ -22576,7 +21173,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricSearch, _ElectricSea
 exports.default = _electricBaseComponents.ElectricSearch;
 
 /***/ }),
-/* 164 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22770,7 +21367,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 165 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22786,7 +21383,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(5);
 
-var _ElectricSearchAutocomplete = __webpack_require__(166);
+var _ElectricSearchAutocomplete = __webpack_require__(163);
 
 var _ElectricSearchAutocomplete2 = _interopRequireDefault(_ElectricSearchAutocomplete);
 
@@ -22797,7 +21394,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricSearchAutocomplete, 
 exports.default = _electricBaseComponents.ElectricSearchAutocomplete;
 
 /***/ }),
-/* 166 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22907,7 +21504,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 167 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22923,7 +21520,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(5);
 
-var _ElectricUpdates = __webpack_require__(168);
+var _ElectricUpdates = __webpack_require__(165);
 
 var _ElectricUpdates2 = _interopRequireDefault(_ElectricUpdates);
 
@@ -22934,7 +21531,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricUpdates, _ElectricUp
 exports.default = _electricBaseComponents.ElectricUpdates;
 
 /***/ }),
-/* 168 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23145,7 +21742,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 169 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23161,11 +21758,11 @@ var _metal2 = _interopRequireDefault(_metal);
 
 var _metalDom = __webpack_require__(4);
 
-var _metalState = __webpack_require__(7);
+var _metalState = __webpack_require__(8);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
-var _metalEvents = __webpack_require__(6);
+var _metalEvents = __webpack_require__(7);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -23348,7 +21945,7 @@ Affix.STATE = {
 exports.default = Affix;
 
 /***/ }),
-/* 170 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23366,7 +21963,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalDebounce = __webpack_require__(173);
+var _metalDebounce = __webpack_require__(170);
 
 var _metalDebounce2 = _interopRequireDefault(_metalDebounce);
 
@@ -23374,11 +21971,11 @@ var _metalDom = __webpack_require__(4);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalPromise = __webpack_require__(8);
+var _metalPromise = __webpack_require__(6);
 
 var _metalPosition = __webpack_require__(9);
 
-var _AutocompleteBase2 = __webpack_require__(134);
+var _AutocompleteBase2 = __webpack_require__(133);
 
 var _AutocompleteBase3 = _interopRequireDefault(_AutocompleteBase2);
 
@@ -23386,9 +21983,9 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-__webpack_require__(175);
+__webpack_require__(172);
 
-var _AutocompleteSoy = __webpack_require__(171);
+var _AutocompleteSoy = __webpack_require__(168);
 
 var _AutocompleteSoy2 = _interopRequireDefault(_AutocompleteSoy);
 
@@ -23786,7 +22383,7 @@ Autocomplete.STATE = {
 exports.default = Autocomplete;
 
 /***/ }),
-/* 171 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23891,7 +22488,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 172 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23909,7 +22506,7 @@ var _metalDom = __webpack_require__(4);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalState = __webpack_require__(7);
+var _metalState = __webpack_require__(8);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
@@ -24245,7 +22842,7 @@ ClipboardAction.STATE = {
 exports.default = Clipboard;
 
 /***/ }),
-/* 173 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24283,7 +22880,7 @@ exports.cancelDebounce = cancelDebounce;
 exports.debounce = debounce;
 
 /***/ }),
-/* 174 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24297,7 +22894,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalEvents = __webpack_require__(6);
+var _metalEvents = __webpack_require__(7);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -24556,7 +23153,7 @@ KeyboardFocusManager.REF_REGEX = /.+-(\d+)$/;
 exports.default = KeyboardFocusManager;
 
 /***/ }),
-/* 175 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24582,9 +23179,9 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-__webpack_require__(177);
+__webpack_require__(174);
 
-var _ListSoy = __webpack_require__(176);
+var _ListSoy = __webpack_require__(173);
 
 var _ListSoy2 = _interopRequireDefault(_ListSoy);
 
@@ -24676,7 +23273,7 @@ List.STATE = {
 exports.default = List;
 
 /***/ }),
-/* 176 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24808,7 +23405,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 177 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24830,7 +23427,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _ListItemSoy = __webpack_require__(178);
+var _ListItemSoy = __webpack_require__(175);
 
 var _ListItemSoy2 = _interopRequireDefault(_ListItemSoy);
 
@@ -24917,7 +23514,7 @@ ListItem.STATE = {
 exports.default = ListItem;
 
 /***/ }),
-/* 178 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25078,7 +23675,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 179 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25090,7 +23687,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _Position = __webpack_require__(137);
+var _Position = __webpack_require__(136);
 
 var _Position2 = _interopRequireDefault(_Position);
 
@@ -25335,7 +23932,7 @@ Align.Left = Align.LeftCenter;
 exports.default = Align;
 
 /***/ }),
-/* 180 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25347,7 +23944,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _metal = __webpack_require__(3);
 
-var _ReadingProgress = __webpack_require__(181);
+var _ReadingProgress = __webpack_require__(178);
 
 var _ReadingProgress2 = _interopRequireDefault(_ReadingProgress);
 
@@ -25355,7 +23952,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _ReadingProgressTracker = __webpack_require__(182);
+var _ReadingProgressTracker = __webpack_require__(179);
 
 var _ReadingProgressTracker2 = _interopRequireDefault(_ReadingProgressTracker);
 
@@ -25526,7 +24123,7 @@ ReadingProgress.STATE = {
 exports.default = ReadingProgress;
 
 /***/ }),
-/* 181 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25666,7 +24263,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 182 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25684,7 +24281,7 @@ var _metalDom = __webpack_require__(4);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalScrollspy = __webpack_require__(183);
+var _metalScrollspy = __webpack_require__(180);
 
 var _metalScrollspy2 = _interopRequireDefault(_metalScrollspy);
 
@@ -25835,7 +24432,7 @@ ReadingProgressTracker.STATE = {
 exports.default = ReadingProgressTracker;
 
 /***/ }),
-/* 183 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25857,7 +24454,7 @@ var _metalPosition = __webpack_require__(9);
 
 var _metalPosition2 = _interopRequireDefault(_metalPosition);
 
-var _metalState = __webpack_require__(7);
+var _metalState = __webpack_require__(8);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
@@ -26187,7 +24784,7 @@ Scrollspy.STATE = {
 exports.default = Scrollspy;
 
 /***/ }),
-/* 184 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26397,7 +24994,7 @@ var MultiMap = function (_Disposable) {
 exports.default = MultiMap;
 
 /***/ }),
-/* 185 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26656,7 +25253,7 @@ var assertChildHasNoParent = function assertChildHasNoParent(child) {
 exports.default = TreeNode;
 
 /***/ }),
-/* 186 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26667,11 +25264,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.TreeNode = exports.MultiMap = undefined;
 
-var _MultiMap = __webpack_require__(184);
+var _MultiMap = __webpack_require__(181);
 
 var _MultiMap2 = _interopRequireDefault(_MultiMap);
 
-var _TreeNode = __webpack_require__(185);
+var _TreeNode = __webpack_require__(182);
 
 var _TreeNode2 = _interopRequireDefault(_TreeNode);
 
@@ -26681,7 +25278,7 @@ exports.MultiMap = _MultiMap2.default;
 exports.TreeNode = _TreeNode2.default;
 
 /***/ }),
-/* 187 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26697,7 +25294,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _TabsSoy = __webpack_require__(188);
+var _TabsSoy = __webpack_require__(185);
 
 var _TabsSoy2 = _interopRequireDefault(_TabsSoy);
 
@@ -26705,7 +25302,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalKeyboardFocus = __webpack_require__(174);
+var _metalKeyboardFocus = __webpack_require__(171);
 
 var _metalKeyboardFocus2 = _interopRequireDefault(_metalKeyboardFocus);
 
@@ -27037,7 +25634,7 @@ Tabs.STATE = {
 exports.default = Tabs;
 
 /***/ }),
-/* 188 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27172,7 +25769,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 189 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27195,11 +25792,11 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _TooltipBase2 = __webpack_require__(191);
+var _TooltipBase2 = __webpack_require__(188);
 
 var _TooltipBase3 = _interopRequireDefault(_TooltipBase2);
 
-var _TooltipSoy = __webpack_require__(190);
+var _TooltipSoy = __webpack_require__(187);
 
 var _TooltipSoy2 = _interopRequireDefault(_TooltipSoy);
 
@@ -27275,7 +25872,7 @@ exports.Tooltip = Tooltip;
 exports.TooltipBase = _TooltipBase3.default;
 
 /***/ }),
-/* 190 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27396,7 +25993,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 191 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27424,7 +26021,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(6);
+var _metalEvents = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27791,7 +26388,7 @@ TooltipBase.PositionClasses = ['top', 'right', 'bottom', 'left'];
 exports.default = TooltipBase;
 
 /***/ }),
-/* 192 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27807,11 +26404,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _metal = __webpack_require__(3);
 
-var _parse = __webpack_require__(193);
+var _parse = __webpack_require__(190);
 
 var _parse2 = _interopRequireDefault(_parse);
 
-var _metalStructs = __webpack_require__(186);
+var _metalStructs = __webpack_require__(183);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28432,7 +27029,7 @@ Uri.RANDOM_PARAM = 'zx';
 exports.default = Uri;
 
 /***/ }),
-/* 193 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28444,7 +27041,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _metal = __webpack_require__(3);
 
-var _parseFromAnchor = __webpack_require__(194);
+var _parseFromAnchor = __webpack_require__(191);
 
 var _parseFromAnchor2 = _interopRequireDefault(_parseFromAnchor);
 
@@ -28480,7 +27077,7 @@ function parse(opt_uri) {
 exports.default = parse;
 
 /***/ }),
-/* 194 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28548,6 +27145,9 @@ function parseFromAnchor(opt_uri) {
 exports.default = parseFromAnchor;
 
 /***/ }),
+/* 192 */,
+/* 193 */,
+/* 194 */,
 /* 195 */,
 /* 196 */,
 /* 197 */,
@@ -28587,32 +27187,7 @@ exports.default = parseFromAnchor;
 /* 231 */,
 /* 232 */,
 /* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28824,6 +27399,31 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templa
 
 
 /***/ }),
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
 /* 260 */,
 /* 261 */,
 /* 262 */,
@@ -28864,77 +27464,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templa
 /* 297 */,
 /* 298 */,
 /* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28952,21 +27482,21 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-__webpack_require__(142);
+__webpack_require__(141);
+
+__webpack_require__(137);
 
 __webpack_require__(138);
 
 __webpack_require__(139);
 
+__webpack_require__(130);
+
 __webpack_require__(140);
 
 __webpack_require__(131);
 
-__webpack_require__(141);
-
-__webpack_require__(132);
-
-var _indexSoy = __webpack_require__(259);
+var _indexSoy = __webpack_require__(234);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28997,4 +27527,4 @@ _metalSoy2.default.register(pageDocsIndex, _indexSoy2.default);
 exports.default = pageDocsIndex;
 
 /***/ })
-],[370]);
+],[300]);
