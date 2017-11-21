@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([5,35,36],[
+webpackJsonppageComponent([27,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28597,7 +28597,212 @@ exports.default = parseFromAnchor;
 /* 241 */,
 /* 242 */,
 /* 243 */,
-/* 244 */,
+/* 244 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ohAxn", function() { return ohAxn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from building.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace ohAxn.
+ * @public
+ */
+
+goog.module('ohAxn.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param438 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('As we mentioned before, ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components are written in ES6, which means that we need a transpiling process before using it on a website.');
+      ie_close('p');
+      ie_open('p');
+        itext('This can be done via any tools that you prefer, like ');
+        ie_open('a', null, null,
+            'href', 'http://webpack.github.io/');
+          itext('webpack');
+        ie_close('a');
+        itext(' or ');
+        ie_open('a', null, null,
+            'href', 'http://browserify.org/');
+          itext('browserify');
+        ie_close('a');
+        itext(', but we\'ve also published a few tools of our own, which focuses on ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' projects, which we\'ll talk about here.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'gulp_metal');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#gulp_metal');
+          itext('gulp-metal');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('What this package offers is a a bunch of ');
+        ie_open('a', null, null,
+            'href', 'http://gulpjs.com/');
+          itext('gulp');
+        ie_close('a');
+        itext(' tasks. There are tasks that can handle not only building JavaScript, as well as Soy compilation, testing, linting and many other things.');
+      ie_close('p');
+      ie_open('p');
+        itext('The ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/');
+          itext('tutorials');
+        ie_close('a');
+        itext(' we\'ve provided are all using it, though indirectly, through some npm scripts. To learn how to use ');
+        ie_open('strong');
+          itext('gulp-metal');
+        ie_close('strong');
+        itext(' directly take a look at its ');
+        ie_open('a', null, null,
+            'href', 'http://www.npmjs.com/package/gulp-metal');
+          itext('npm page');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'metal_cli');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#metal_cli');
+          itext('metal-cli');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('If you\'re not a fan of ');
+        ie_open('strong');
+          itext('gulp');
+        ie_close('strong');
+        itext(' you can still use ');
+        ie_open('a', null, null,
+            'href', 'http://www.npmjs.com/package/metal-cli');
+          itext('metal-cli');
+        ie_close('a');
+        itext(', which offers almost the same tools, but through the command line.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'examples_using_other_tools');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#examples_using_other_tools');
+          itext('Examples Using Other Tools');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('As was mentioned before, using ');
+        ie_open('strong');
+          itext('gulp-metal');
+        ie_close('strong');
+        itext(' or ');
+        ie_open('strong');
+          itext('metal-cli');
+        ie_close('strong');
+        itext(' is not required. You can use your favorite build tool with ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' as well.');
+      ie_close('p');
+      ie_open('p');
+        itext('We\'ve created a Github repository full of different examples on how to work with ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(', and among other things it has a bunch of examples showing how to use different build tools. ');
+        ie_open('a', null, null,
+            'href', 'http://github.com/metal/metal-examples');
+          itext('Check it out');
+        ie_close('a');
+        itext(', and feel free to create an issue or send a pull request for other tools that it may be missing.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param438}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'ohAxn.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class ohAxn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ohAxn, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -28619,183 +28824,7 @@ exports.default = parseFromAnchor;
 /* 263 */,
 /* 264 */,
 /* 265 */,
-/* 266 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JDRpv", function() { return JDRpv; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from dependencies.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace JDRpv.
- * @public
- */
-
-goog.module('JDRpv.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param978 = function() {
-    ie_open('h2');
-      var dyn20 = opt_data.page.title;
-      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
-    ie_close('h2');
-    ie_open('p');
-      itext('In order to follow along with this tutorial, you\'ll need ');
-      ie_open('a', null, null,
-          'href', 'https://git-scm.com/');
-        itext('Git');
-      ie_close('a');
-      itext(', and a recent version of ');
-      ie_open('a', null, null,
-          'href', 'https://nodejs.org/');
-        itext('Node.js/npm');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Todo Boilerplate');
-    ie_close('h3');
-    ie_open('p');
-      itext('Start by cloning the boilerplate respository.');
-    ie_close('p');
-    $templateAlias2({code: 'git clone https://github.com/Robert-Frampton/metal-todo-app.git', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('p');
-      itext('Then navigate to the root of the project in your terminal and install the local npm dependencies.');
-    ie_close('p');
-    $templateAlias2({code: 'cd metal-todo-app && npm install', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('p');
-      itext('The boilerplate that you will be building off of is located in the ');
-      ie_open('strong');
-        itext('src/jsx');
-      ie_close('strong');
-      itext(' directory. You can also view the finished product in the ');
-      ie_open('strong');
-        itext('src/jsx/final');
-      ie_close('strong');
-      itext(' directory.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Building');
-    ie_close('h3');
-    ie_open('p');
-      itext('In order to test drive the boilerplate located in the ');
-      ie_open('strong');
-        itext('src/jsx');
-      ie_close('strong');
-      itext(' directory, you\'ll need to run the provided build script:');
-    ie_close('p');
-    $templateAlias2({code: 'npm run build:jsx', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('p');
-      itext('This will run babel + webpack to transpile and bundle the JavaScript into something consumable by web browsers.');
-    ie_close('p');
-    ie_open('p');
-      itext('Everything you\'ll be writing in this tutorial will be using ES6 syntax, if you\'re unfamiliar with it, take a look at ');
-      ie_open('a', null, null,
-          'href', '#');
-        itext('this guide');
-      ie_close('a');
-      itext(' first.');
-    ie_close('p');
-    ie_open('p');
-      itext('To build the finished product, run the following script:');
-    ie_close('p');
-    $templateAlias2({code: 'npm run build:jsx:final', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('h3');
-      itext('Demo');
-    ie_close('h3');
-    ie_open('p');
-      itext('Now that you\'ve built the project, go ahead and open the demo page located at ');
-      ie_open('code');
-        itext('demos/index.html');
-      ie_close('code');
-      itext('.');
-    ie_close('p');
-    ie_open('p');
-      itext('If you take a look at the file you\'ll see that the component is already being invoked.');
-    ie_close('p');
-    $templateAlias2({code: '<script type="text/javascript">\n    new metal.TodoApp();\n<\/script>', mode: 'text/xml'}, null, opt_ijData);
-    ie_open('p');
-      itext('When invoking a component this way, the component is rendered to the ');
-      ie_open('code');
-        itext('body');
-      ie_close('code');
-      itext(' element.');
-    ie_close('p');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param978}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'JDRpv.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class JDRpv extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(JDRpv, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 266 */,
 /* 267 */,
 /* 268 */,
 /* 269 */,
@@ -28889,21 +28918,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(JDRpv, templates);
 /* 357 */,
 /* 358 */,
 /* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28935,9 +28950,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _dependenciesSoy = __webpack_require__(266);
+var _buildingSoy = __webpack_require__(244);
 
-var _dependenciesSoy2 = _interopRequireDefault(_dependenciesSoy);
+var _buildingSoy2 = _interopRequireDefault(_buildingSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28947,23 +28962,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var JDRpv = function (_Component) {
-  _inherits(JDRpv, _Component);
+var ohAxn = function (_Component) {
+  _inherits(ohAxn, _Component);
 
-  function JDRpv() {
-    _classCallCheck(this, JDRpv);
+  function ohAxn() {
+    _classCallCheck(this, ohAxn);
 
-    return _possibleConstructorReturn(this, (JDRpv.__proto__ || Object.getPrototypeOf(JDRpv)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ohAxn.__proto__ || Object.getPrototypeOf(ohAxn)).apply(this, arguments));
   }
 
-  return JDRpv;
+  return ohAxn;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(JDRpv, _dependenciesSoy2.default);
+_metalSoy2.default.register(ohAxn, _buildingSoy2.default);
 
-exports.default = JDRpv;
+exports.default = ohAxn;
 
 /***/ })
-],[374]);
+],[360]);

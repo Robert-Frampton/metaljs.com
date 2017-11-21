@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,35,36],[
+webpackJsonppageComponent([2,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28615,12 +28615,19 @@ exports.default = parseFromAnchor;
 /* 259 */,
 /* 260 */,
 /* 261 */,
-/* 262 */
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "qWWNn", function() { return qWWNn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xzfQl", function() { return xzfQl; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28632,15 +28639,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from adding-todos.soy.
+// This file was automatically generated from rendering-data.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace qWWNn.
+ * @fileoverview Templates in namespace xzfQl.
  * @public
  */
 
-goog.module('qWWNn.incrementaldom');
+goog.module('xzfQl.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28674,66 +28681,35 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param879 = function() {
+  var param1046 = function() {
     ie_open('h2');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn22 = opt_data.page.title;
+      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
     ie_close('h2');
     ie_open('p');
-      itext('You almost have a fully functioning Todo App! The only missing feature is the ability to add new todos to the list. This is where the ');
-      ie_open('code');
-        itext('TodoForm');
-      ie_close('code');
-      itext(' component will come into play.');
-    ie_close('p');
-    ie_open('p');
-      itext('First, go ahead and add a couple of event listeners, one for the form submission (onsubmit), and the other for when the input value changes (onkeyup).');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    handleSubmit(event) {\n        // Prevent default browser functionality\n        event.preventDefault();\n    }\n\n    handleChange(event) {\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now you can use the ');
-      ie_open('code');
-        itext('value');
-      ie_close('code');
-      itext(' property from STATE to keep track of the changes made to the input value.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                        value={this.state.value}\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    ...\n\n    handleChange(event) {\n        this.state.value = event.target.value;\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('The value of ');
-      ie_open('code');
-        itext('this.state.value');
-      ie_close('code');
-      itext(' will now match the value in the input.');
-    ie_close('p');
-    ie_open('p');
-      itext('You can also emit a custom event when the form is submitted, similarly to what ');
+      itext('First let\'s prepare the ');
       ie_open('code');
         itext('TodoItem');
       ie_close('code');
-      itext(' does to notify the parent component that something happened.');
-    ie_close('p');
-    $templateAlias2({code: 'handleSubmit(event) {\n    event.preventDefault();\n\n    if (this.state.value) {\n        this.emit(\'todoAdd\', {\n            title: this.state.value\n        });\n\n        // Clears the input value\n        this.state.value = \'\';\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Then in the ');
+      itext(' for consuming the data being passed from ');
       ie_open('code');
         itext('TodoApp');
       ie_close('code');
-      itext(' component, you can listen to this event and add a new todo.');
+      itext('.');
     ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                ...\n\n                <TodoForm\n                    events={{\n                        todoAdd: this.handleTodoAdd.bind(this)\n                    }}\n                 />\n            </div>\n        );\n    }\n\n    addTodo(title) {\n        // Creates a new array with all of the elements\n        // from the previous array, with the newly added item\n        this.state.todos = [...this.state.todos, {\n            done: false,\n            title\n        }];\n    }\n\n    handleTodoAdd(event) {\n        this.addTodo(event.title);\n    }\n\n    ...\n}', mode: 'text/jsx'}, null, opt_ijData);
+    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        // Conditionally adding the \'todo-item-done\' class if\n        // the todo is done\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('Now when you add some text to the input and submit the form, a new todo will automatically be added to the list.');
+      itext('Now that you have some data that needs rendering, and the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' is ready to consume it, you need to iterate over the todos and pass them to the child components.');
     ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('That\'s it! You\'ve successfully created a simple Todo App with Metal.js. Now that you are comfortable with the basics, check out the guides for more advanced documentation.');
+      itext('This will result in the following markup.');
     ie_close('p');
-    ie_open('p');
-      ie_open('img', null, null,
-          'src', '/images/tutorials/todo-app/finished_todo_anim.gif',
-          'alt', 'Finished GIF',
-          'title', 'Finished GIF');
-      ie_close('img');
-    ie_close('p');
+    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28743,11 +28719,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param879}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'qWWNn.render';
+  $render.soyTemplateName = 'xzfQl.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28757,21 +28733,14 @@ return exports;
 
 });
 
-class qWWNn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qWWNn, templates);
+class xzfQl extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xzfQl, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
 /* 270 */,
 /* 271 */,
 /* 272 */,
@@ -28882,7 +28851,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qWWNn, templates);
 /* 377 */,
 /* 378 */,
 /* 379 */,
-/* 380 */
+/* 380 */,
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28914,9 +28884,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _addingTodosSoy = __webpack_require__(262);
+var _renderingDataSoy = __webpack_require__(269);
 
-var _addingTodosSoy2 = _interopRequireDefault(_addingTodosSoy);
+var _renderingDataSoy2 = _interopRequireDefault(_renderingDataSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28926,23 +28896,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var qWWNn = function (_Component) {
-  _inherits(qWWNn, _Component);
+var xzfQl = function (_Component) {
+  _inherits(xzfQl, _Component);
 
-  function qWWNn() {
-    _classCallCheck(this, qWWNn);
+  function xzfQl() {
+    _classCallCheck(this, xzfQl);
 
-    return _possibleConstructorReturn(this, (qWWNn.__proto__ || Object.getPrototypeOf(qWWNn)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (xzfQl.__proto__ || Object.getPrototypeOf(xzfQl)).apply(this, arguments));
   }
 
-  return qWWNn;
+  return xzfQl;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(qWWNn, _addingTodosSoy2.default);
+_metalSoy2.default.register(xzfQl, _renderingDataSoy2.default);
 
-exports.default = qWWNn;
+exports.default = xzfQl;
 
 /***/ })
-],[380]);
+],[381]);

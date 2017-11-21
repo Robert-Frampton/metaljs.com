@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([16,35,36],[
+webpackJsonppageComponent([29,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28595,25 +28595,12 @@ exports.default = parseFromAnchor;
 /* 239 */,
 /* 240 */,
 /* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */
+/* 242 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kIKHZ", function() { return kIKHZ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ePDcn", function() { return ePDcn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28625,15 +28612,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from soy-components.soy.
+// This file was automatically generated from modal_updates.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace kIKHZ.
+ * @fileoverview Templates in namespace ePDcn.
  * @public
  */
 
-goog.module('kIKHZ.incrementaldom');
+goog.module('ePDcn.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28667,193 +28654,256 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param747 = function() {
+  var param372 = function() {
     ie_open('article');
       ie_open('p');
-        itext('For a full tutorial on how to build components using Soy templates, make sure to follow the ');
+        itext('In the ');
         ie_open('a', null, null,
-            'href', '/docs/getting-started/modal.html');
-          itext('Modal tutorial');
+            'href', '/docs/getting-started/modal_events.html');
+          itext('previous section');
         ie_close('a');
-        itext(' section.');
+        itext(' we learned how to add inline listeners, by making the ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('\'s close button work.');
       ie_close('p');
       ie_open('p');
-        itext('This guide will explain some details about the integration between ');
+        itext('We first implemented this feature by disposing of the entire ');
         ie_open('strong');
-          itext('Metal.js');
+          itext('Modal');
         ie_close('strong');
-        itext(' components and ');
-        ie_open('a', null, null,
-            'href', 'http://developers.google.com/closure/templates/');
-          itext('Soy templates');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('Note that ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' is template agnostic, so it\'s not necessary to use Soy at all. That said, we already provide a very good integration between Metal.js components and Soy, so if you like this template language you should give it a try.');
+        itext(' instance when it was closed. It\'d be best to have the modal just hide itself so it could be shown again afterwards though.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'soy_register');
+        'id', 'state');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#soy_register');
-          itext('Soy.register');
+            'href', '#state');
+          itext('State');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('The only thing you need to do to use Soy templates in your ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' component is to call ');
-        ie_open('code');
-          itext('Soy.register');
-        ie_close('code');
-        itext(', passing it your component class and the Soy templates you\'re going to use, like this:');
-      ie_close('p');
-      $templateAlias2({code: 'import templates from \'./MyComponent.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass MyComponent extends Component {\n}\n\nSoy.register(MyComponent, templates);\n\nexport default MyComponent;', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('By default, ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' will use the Soy template called ');
-        ie_open('strong');
-          itext('render');
-        ie_close('strong');
-        itext(' as the entry point for rendering. But you can tell us to use a different one if you prefer by passing the name as the last param to the ');
-        ie_open('code');
-          itext('Soy.register');
-        ie_close('code');
-        itext(' call, like this:');
-      ie_close('p');
-      $templateAlias2({code: 'Soy.register(MyComponent, templates, \'templateName\');', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'template_file');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#template_file');
-          itext('Template File');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Make sure that your Soy file has the entry point template (');
-        ie_open('strong');
-          itext('render');
-        ie_close('strong');
-        itext(' by default), otherwise nothing will be rendered.');
+        itext('We\'ve seen that it\'s possible to pass data to components via the constructor. By default this kind of data is read-only for the component though, that is, it can be received from the outside but not changed from the inside.');
       ie_close('p');
       ie_open('p');
-        itext('This main template will receive as data a combination of:');
+        itext('When you need to be able to change a component\'s data, as well as have that change cause its HTML contents to update, you should indicate that it\'ll be part of the component\'s state.');
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', '/docs/guides/state.html');
-            itext('State data');
-          ie_close('a');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', '/docs/guides/state.html#configuring_state');
-            itext('Configuration data');
-          ie_close('a');
-          itext(' (accessed through ');
-          ie_open('code');
-            itext('this.config');
-          ie_close('code');
-          itext(')');
-        ie_close('li');
-        ie_open('li');
-          ie_open('a', null, null,
-              'href', '/docs/guides/inline-events.html#inline_listeners_via_function_reference');
-            itext('Component functions');
-          ie_close('a');
-        ie_close('li');
-      ie_close('ul');
       ie_open('p');
-        itext('Note that by default all params declared on the component\'s main Soy template are automatically configured as state properties as well, but without any special configurations (like initial value or validators). If they\'re ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/state.html');
-          itext('manually defined');
-        ie_close('a');
-        itext(' through the ');
+        itext('This can be done by using your component\'s ');
         ie_open('code');
           itext('STATE');
         ie_close('code');
-        itext(' property they will retain the setup specified there though.');
+        itext(' static variable, where you an also configure state properties, specifying initial values and validators for example.');
       ie_close('p');
       ie_open('p');
-        itext('Any params passed to the component but not directly declared on its main Soy template will be treated as basic configuration data, meaning that changes to them will not automatically rerender the component. They can still be passed down to other templates using ');
+        itext('So let\'s add a ');
         ie_open('code');
-          itext('data="all"');
+          itext('shown');
         ie_close('code');
-        itext(', as well be accessed via the');
-        ie_open('code');
-          itext('config');
-        ie_close('code');
-        itext(' property in the JavaScript file.');
+        itext(' property to our ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(' state, in ');
+        ie_open('strong');
+          itext('src/Modal.js');
+        ie_close('strong');
+        itext(':');
       ie_close('p');
-      $templateAlias2({code: '// Contains all the data received by the component.\nthis.config', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'Modal.STATE = {\n    shown: {\n        // The default value will be: `true`.\n        value: true\n    }\n};', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('For more details about configuring state, check out ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/state.html');
+          itext('this guide');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'soy_compilation');
+        'id', 'updating_the_template');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#soy_compilation');
-          itext('Soy Compilation');
+            'href', '#updating_the_template');
+          itext('Updating the Template');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('For the integration between ');
+        itext('Now we need to update our template to only show the modal when ');
+        ie_open('code');
+          itext('shown');
+        ie_close('code');
+        itext(' is true.');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n/**\n * State properties are passed to the "render" template in the same way as\n * config properties.\n */\n&#123;template .render&#125;\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        ...\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\n/**\n * State properties are accessed from `this.state`.\n */\nrender() {\n    var cssClass = \'modal\';\n\n    if (this.state.shown) {\n        cssClass += \'show\';\n    }\n\n    return <div class={cssClass}>\n        ...\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'updating_the_close_function');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#updating_the_close_function');
+          itext('Updating the ');
+          ie_open('code');
+            itext('close');
+          ie_close('code');
+          itext(' Function');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Now we can change our ');
+        ie_open('code');
+          itext('close');
+        ie_close('code');
+        itext(' function to just update the state property.');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\nclose() {\n  this.shown = false;\n}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nclose() {\n  this.state.shown = false;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('State changes are automatically detected by ');
         ie_open('strong');
           itext('Metal.js');
         ie_close('strong');
-        itext(' and ');
+        itext(', causing the component to be rerendered. Since ');
         ie_open('strong');
-          itext('soy');
+          itext('Metal.js');
         ie_close('strong');
-        itext(' to work, the Soy files need to be compiled via one of our available build tools. That\'s because they don\'t just compile the code, but also add some information that help with the integration (like export declarations).');
+        itext(' uses ');
+        ie_open('a', null, null,
+            'href', 'http://google.github.io/incremental-dom/');
+          itext('Incremental DOM');
+        ie_close('a');
+        itext(', rerendering will cause minimal DOM updates. In this case, the ');
+        ie_open('code');
+          itext('shown');
+        ie_close('code');
+        itext(' CSS class will be removed from the modal element.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'run_the_demo');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#run_the_demo');
+          itext('Run the Demo');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Now compile your code with ');
+        ie_open('code');
+          itext('npm run build');
+        ie_close('code');
+        itext(' and open the demo on a browser. Clicking the ');
+        ie_open('strong');
+          itext('x');
+        ie_close('strong');
+        itext(' button will close the modal as before, but inspecting the DOM you\'ll notice that it\'s just hidden, not removed from the DOM.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'playing_with_state_data');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#playing_with_state_data');
+          itext('Playing With State Data');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('State data makes it very easy to update a component\'s contents. If you want to quickly see it working you can make some experiments on your browser\'s JavaScript console for example.');
       ie_close('p');
       ie_open('p');
-        itext('The available build tools that correctly compile Soy for ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' are:');
+        itext('First let\'s hold the ');
+        ie_open('code');
+          itext('Modal(jsx)');
+        ie_close('code');
+        itext(' instance somewhere so we can access it:');
       ie_close('p');
-      ie_open('ul');
+      $templateAlias2({code: 'window.modal = new metal.Modal({\n    header: \'My Modal\',\n    body: \'Built using Metal.js\'\n});', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now run the demo again, go to the browser\'s console and type: ');
+        ie_open('code');
+          itext('modal.shown = false');
+        ie_close('code');
+        itext('. You\'ll notice that the modal will be hidden as expected. If you now type ');
+        ie_open('code');
+          itext('modal.shown = true');
+        ie_close('code');
+        itext(', it will show up again.');
+      ie_close('p');
+      ie_open('p');
+        itext('If you want you can also turn ');
+        ie_open('code');
+          itext('header');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('body');
+        ie_close('code');
+        itext(' into state properties as well. All you have to do is:');
+      ie_close('p');
+      ie_open('ol');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://npmjs.com/package/gulp-metal');
-            itext('gulp-metal');
-          ie_close('a');
-          itext(' (already included when creating project via ');
-          ie_open('a', null, null,
-              'href', '/docs/guides/yeoman-generator.html');
-            itext('generator-metal');
-          ie_close('a');
-          itext(').');
+          ie_open('p');
+            itext('Add them to ');
+            ie_open('code');
+              itext('STATE');
+            ie_close('code');
+            itext(', like this:');
+          ie_close('p');
+          $templateAlias2({code: 'Modal.STATE = {\n    body: {\n        value: \'Default body\'\n    },\n    header: {\n        value: \'Default header\'\n    },\n    shown: {\n        value: true\n    }\n};', mode: 'javascript'}, null, opt_ijData);
         ie_close('li');
         ie_open('li');
-          ie_open('a', null, null,
-              'href', 'http://npmjs.com/package/metal-cli');
-            itext('metal-cli');
-          ie_close('a');
+          ie_open('p');
+            itext('If you\'re using JSX templates, change the calls to ');
+            ie_open('code');
+              itext('this.props');
+            ie_close('code');
+            itext(' from ');
+            ie_open('code');
+              itext('this');
+            ie_close('code');
+            itext(' instead. You will also need to change your config from ');
+            ie_open('code');
+              itext('Modal.STATE = {...}');
+            ie_close('code');
+            itext(' to ');
+            ie_open('code');
+              itext('Modal.PROPS = {...}');
+            ie_close('code');
+            itext(' like this:');
+          ie_close('p');
+          $templateAlias2({code: 'render() {\n    var cssClass = \'modal\';\n    \n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    \n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <header class="modal-header">\n                    <button onClick={this.close.bind(this)} type="button" class="close">\n                        <span>\u00D7</span>\n                    </button>\n                    <h4>{this.props.header}</h4>\n                </header>\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}\n\nModal.PROPS = {\n    body: {\n        value: \'Default body\'\n    },\n    header: {\n        value: \'Default header\'\n    },\n    shown: {\n        value: true\n    }\n};', mode: 'jsx'}, null, opt_ijData);
         ie_close('li');
-        ie_open('li');
+      ie_close('ol');
+      ie_open('p');
+        itext('Now if you type something like ');
+        ie_open('code');
+          itext('modal.props.header = \'New Header\'');
+        ie_close('code');
+        itext(' on the console, the contents will also be updated automatically.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'next_steps');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#next_steps');
+          itext('Next Steps');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Our modal is working as expected now. But what if you want to split it into multiple components? How would we use them together? Check it out in the next section.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('strong');
           ie_open('a', null, null,
-              'href', 'http://npmjs.com/package/metal-tools-soy');
-            itext('metal-tools-soy');
+              'href', '/docs/getting-started/modal_nested.html');
+            itext('\u21AA Tutorial: Modal - Nested Components');
           ie_close('a');
-        ie_close('li');
-      ie_close('ul');
+        ie_close('strong');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28864,11 +28914,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param747}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param372}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'kIKHZ.render';
+  $render.soyTemplateName = 'ePDcn.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28878,14 +28928,27 @@ return exports;
 
 });
 
-class kIKHZ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kIKHZ, templates);
+class ePDcn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ePDcn, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
 /* 256 */,
 /* 257 */,
 /* 258 */,
@@ -28982,17 +29045,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kIKHZ, templates);
 /* 349 */,
 /* 350 */,
 /* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29024,9 +29077,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _soyComponentsSoy = __webpack_require__(255);
+var _modal_updatesSoy = __webpack_require__(242);
 
-var _soyComponentsSoy2 = _interopRequireDefault(_soyComponentsSoy);
+var _modal_updatesSoy2 = _interopRequireDefault(_modal_updatesSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29036,23 +29089,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var kIKHZ = function (_Component) {
-  _inherits(kIKHZ, _Component);
+var ePDcn = function (_Component) {
+  _inherits(ePDcn, _Component);
 
-  function kIKHZ() {
-    _classCallCheck(this, kIKHZ);
+  function ePDcn() {
+    _classCallCheck(this, ePDcn);
 
-    return _possibleConstructorReturn(this, (kIKHZ.__proto__ || Object.getPrototypeOf(kIKHZ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ePDcn.__proto__ || Object.getPrototypeOf(ePDcn)).apply(this, arguments));
   }
 
-  return kIKHZ;
+  return ePDcn;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(kIKHZ, _soyComponentsSoy2.default);
+_metalSoy2.default.register(ePDcn, _modal_updatesSoy2.default);
 
-exports.default = kIKHZ;
+exports.default = ePDcn;
 
 /***/ })
-],[362]);
+],[352]);

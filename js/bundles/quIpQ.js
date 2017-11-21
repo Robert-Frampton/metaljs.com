@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([13,35,36],[
+webpackJsonppageComponent([25,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28599,24 +28599,12 @@ exports.default = parseFromAnchor;
 /* 243 */,
 /* 244 */,
 /* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */
+/* 246 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XIInJ", function() { return XIInJ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "quIpQ", function() { return quIpQ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28628,15 +28616,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from yeoman-generator.soy.
+// This file was automatically generated from importing.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace XIInJ.
+ * @fileoverview Templates in namespace quIpQ.
  * @public
  */
 
-goog.module('XIInJ.incrementaldom');
+goog.module('quIpQ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28670,96 +28658,121 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param859 = function() {
+  var param485 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('There are now more libraries and frameworks available for front-end development than ever before. It\'s not uncommon to have five or more of these libraries involved in a single project. But keeping track of all these libraries and making sure they\'re up-to-date can be tricky. To solve this we can use npm, a package manager that makes it easy to manage all your application\'s dependencies.');
+      ie_close('p');
+      ie_open('p');
+        itext('In this guide you are going to learn how to get up and running with npm. You\'ll start by installing the npm command-line utility and then go on to learn about the various commands that are available for managing Metal.js components.');
+      ie_close('p');
+      ie_open('p');
+        itext('Lets get started!');
+      ie_close('p');
+    ie_close('article');
     ie_open('article', null, null,
-        'id', 'yeoman_generator');
+        'id', 'installing_node_js_npm');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#yeoman_generator');
-          itext('Yeoman Generator');
+            'href', '#installing_node_js_npm');
+          itext('Installing Node.js/NPM');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('You can organize your ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' project in any way you want, but to start out we recommend using the ');
+        itext('If you don\'t already have Node.js or npm installed, head over to the ');
         ie_open('a', null, null,
-            'href', 'http://npmjs.com/package/generator-metal');
-          itext('Yeoman generator');
+            'href', 'https://nodejs.org/en/download/');
+          itext('Node.js');
         ie_close('a');
-        itext(' we\'ve created, which prepares both the project structure as well as a basic development workflow for you.');
+        itext(' website and download the relevant copy of Node.js for your system. The npm program is included with the install of Node.js.');
       ie_close('p');
       ie_open('p');
-        itext('To use it:');
+        itext('Now that you have npm installed, we can start looking at the commands that are used to manage packages.');
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          itext('Install ');
-          ie_open('a', null, null,
-              'href', 'https://nodejs.org');
-            itext('npm');
-          ie_close('a');
-          itext(' v3.0.0 or newer (if you don\'t have it yet)');
-        ie_close('li');
-        ie_open('li');
-          itext('Install ');
-          ie_open('strong');
-            itext('Yeoman');
-          ie_close('strong');
-          itext(' and ');
-          ie_open('strong');
-            itext('generator-metal');
-          ie_close('strong');
-          itext(': ');
-          ie_open('code');
-            itext('[sudo] npm i -g yo generator-metal');
-          ie_close('code');
-        ie_close('li');
-        ie_open('li');
-          itext('Open the folder that you want to use on your terminal and type: ');
-          ie_open('code');
-            itext('yo metal');
-          ie_close('code');
-        ie_close('li');
-        ie_open('li');
-          itext('Answer the generator prompts: ');
-          ie_open('img', null, null,
-              'src', '../../images/docs/prompts.png',
-              'alt', 'Generator prompts');
-          ie_close('img');
-        ie_close('li');
-        ie_open('li');
-          itext('Wait for the generator to finish fetching dependencies');
-        ie_close('li');
-      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'finding_components');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#finding_components');
+          itext('Finding components');
+        ie_close('a');
+      ie_close('h2');
       ie_open('p');
-        itext('After those steps you\'ll get a directory tree similar to this:');
+        itext('There are two different ways that you can find npm packages. Either using the online component directory, or using the command line utility.');
       ie_close('p');
-      $templateAlias2({code: '\u2514\u2500\u2500 metal-modal\n    \u251C\u2500\u2500 demos\n    \u2502   \u2514\u2500\u2500 index.html\n    \u251C\u2500\u2500 node_modules\n    \u251C\u2500\u2500 package.json\n    \u251C\u2500\u2500 src\n    \u2502   \u251C\u2500\u2500 Modal.js\n    \u2502   \u251C\u2500\u2500 Modal.soy // Only if Soy was chosen\n    \u2502   \u2514\u2500\u2500 modal.scss\n    \u2514\u2500\u2500 test\n        \u2514\u2500\u2500 Modal.js', mode: 'text'}, null, opt_ijData);
       ie_open('p');
+        itext('To search for packages on the command line you use the search command. This should be followed by your search query.');
+      ie_close('p');
+      $templateAlias2({code: 'npm search <query>', mode: 'shell'}, null, opt_ijData);
+      ie_open('p');
+        itext('For example to search for packages that contain the word \u2018metal\u2019 you could do the following:');
+      ie_close('p');
+      $templateAlias2({code: 'npm search metal', mode: 'shell'}, null, opt_ijData);
+      ie_open('p');
+        itext('This command would return a whole bunch of results, with information about each matched module so you can pick the one you wish.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'installing_components');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#installing_components');
+          itext('Installing Components');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('To add a new npm package to your project you use the install command. This should be passed the name of the package you wish to install.');
+      ie_close('p');
+      $templateAlias2({code: 'npm install <package>', mode: 'shell'}, null, opt_ijData);
+      ie_open('p');
+        itext('In this example, we\'re going to install the ');
         ie_open('code');
-          itext('generator-metal');
+          itext('metal-position');
         ie_close('code');
-        itext(' will already include some npm scripts to help you build and test your code, as well as many gulp tasks via ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/building.html#gulp_metal');
-          itext('gulp-metal');
-        ie_close('a');
-        itext('.');
+        itext(' component.');
       ie_close('p');
+      $templateAlias2({code: 'npm install metal-position', mode: 'shell'}, null, opt_ijData);
       ie_open('p');
-        itext('By the way, the boilerplate zip provided by the ');
+        itext('Installed packages will be placed in a ');
+        ie_open('code');
+          itext('node_modules');
+        ie_close('code');
+        itext(' directory. This is created in the folder which the bower program was executed.');
+      ie_close('p');
+      $templateAlias2({code: '\u2514\u2500\u2500 node_modules\n    \u251C\u2500\u2500 metal\n    \u251C\u2500\u2500 metal-position', mode: 'text'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'importing_a_component');
+      ie_open('h2');
         ie_open('a', null, null,
-            'href', '/docs/getting-started/#boilerplate');
-          itext('getting started guide');
+            'href', '#importing_a_component');
+          itext('Importing a Component');
         ie_close('a');
-        itext(' was created using ');
-        ie_open('strong');
-          itext('generator-metal');
-        ie_close('strong');
-        itext('.');
+      ie_close('h2');
+      ie_open('p');
+        itext('With the code already available, let\'s create a ');
+        ie_open('code');
+          itext('main.js');
+        ie_close('code');
+        itext(' file that will import the ');
+        ie_open('code');
+          itext('metal-position');
+        ie_close('code');
+        itext(' module. Note that we\'re using an ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/alias.html');
+          itext('alias');
+        ie_close('a');
+        itext(' to easily import npm files.');
+      ie_close('p');
+      $templateAlias2({code: 'import position from \'metal-position\';', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('This means that you can now call any function from that module, in this example we\'ll get the viewport height.');
+      ie_close('p');
+      $templateAlias2({code: 'var viewportHeight = position.getClientHeight(window);\n\nconsole.log(viewportHeight);', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Metal.js components are written in ES6 (a.k.a ECMAScript 2015), so you can also use ES6 on your code like we did on the example. Since ES6 isn\'t fully implemented on browsers yet though, either a polyfill or a build process is necessary before using Metal on a website.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28771,11 +28784,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param859}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param485}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'XIInJ.render';
+  $render.soyTemplateName = 'quIpQ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28785,14 +28798,26 @@ return exports;
 
 });
 
-class XIInJ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XIInJ, templates);
+class quIpQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(quIpQ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
 /* 259 */,
 /* 260 */,
 /* 261 */,
@@ -28895,7 +28920,9 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XIInJ, templates);
 /* 358 */,
 /* 359 */,
 /* 360 */,
-/* 361 */
+/* 361 */,
+/* 362 */,
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28927,9 +28954,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _yeomanGeneratorSoy = __webpack_require__(258);
+var _importingSoy = __webpack_require__(246);
 
-var _yeomanGeneratorSoy2 = _interopRequireDefault(_yeomanGeneratorSoy);
+var _importingSoy2 = _interopRequireDefault(_importingSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28939,23 +28966,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var XIInJ = function (_Component) {
-  _inherits(XIInJ, _Component);
+var quIpQ = function (_Component) {
+  _inherits(quIpQ, _Component);
 
-  function XIInJ() {
-    _classCallCheck(this, XIInJ);
+  function quIpQ() {
+    _classCallCheck(this, quIpQ);
 
-    return _possibleConstructorReturn(this, (XIInJ.__proto__ || Object.getPrototypeOf(XIInJ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (quIpQ.__proto__ || Object.getPrototypeOf(quIpQ)).apply(this, arguments));
   }
 
-  return XIInJ;
+  return quIpQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(XIInJ, _yeomanGeneratorSoy2.default);
+_metalSoy2.default.register(quIpQ, _importingSoy2.default);
 
-exports.default = XIInJ;
+exports.default = quIpQ;
 
 /***/ })
-],[361]);
+],[363]);

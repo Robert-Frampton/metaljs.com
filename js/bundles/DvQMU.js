@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([22,35,36],[
+webpackJsonppageComponent([16,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28602,12 +28602,18 @@ exports.default = parseFromAnchor;
 /* 246 */,
 /* 247 */,
 /* 248 */,
-/* 249 */
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wDTbG", function() { return wDTbG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DvQMU", function() { return DvQMU; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28619,15 +28625,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from isomorphic.soy.
+// This file was automatically generated from soy-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace wDTbG.
+ * @fileoverview Templates in namespace DvQMU.
  * @public
  */
 
-goog.module('wDTbG.incrementaldom');
+goog.module('DvQMU.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28661,41 +28667,193 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param590 = function() {
+  var param747 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('For a full tutorial on how to build components using Soy templates, make sure to follow the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/modal.html');
+          itext('Modal tutorial');
+        ie_close('a');
+        itext(' section.');
+      ie_close('p');
+      ie_open('p');
+        itext('This guide will explain some details about the integration between ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components and ');
+        ie_open('a', null, null,
+            'href', 'http://developers.google.com/closure/templates/');
+          itext('Soy templates');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Note that ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' is template agnostic, so it\'s not necessary to use Soy at all. That said, we already provide a very good integration between Metal.js components and Soy, so if you like this template language you should give it a try.');
+      ie_close('p');
+    ie_close('article');
     ie_open('article', null, null,
-        'id', 'server_rendering');
+        'id', 'soy_register');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#server_rendering');
-          itext('Server Side Rendering');
+            'href', '#soy_register');
+          itext('Soy.register');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('In most cases Metal components will be rendered client side. Let\'s take the following component for example:');
-      ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return <div>{this.props.message}</div>\n    }\n}\n\nMyComponent.PROPS = {\n    message: {\n        value: \'\'\n    }\n};\n\nexport default MyComponent;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('After transpiling/bundling this component, it can be invoked in client side JavaScript:');
-      ie_close('p');
-      $templateAlias2({code: 'const component = new metal.MyComponent({\n    message: \'Hello, World!\'\n});\n\n// component.element.innerHTML === \'<div>Hello, World!</div>\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Rendering a component this way requires DOM manipulation, and the existence of various global variables/utilities that are provided by web browsers. Therefore there is no way to render the HTML of this component in a Node.js environment without the help of libraries, such as ');
+        itext('The only thing you need to do to use Soy templates in your ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' component is to call ');
         ie_open('code');
-          itext('JSDom');
+          itext('Soy.register');
         ie_close('code');
-        itext(', that emulate client functionality.');
+        itext(', passing it your component class and the Soy templates you\'re going to use, like this:');
       ie_close('p');
+      $templateAlias2({code: 'import templates from \'./MyComponent.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass MyComponent extends Component {\n}\n\nSoy.register(MyComponent, templates);\n\nexport default MyComponent;', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('However, thanks to the ');
+        itext('By default, ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' will use the Soy template called ');
+        ie_open('strong');
+          itext('render');
+        ie_close('strong');
+        itext(' as the entry point for rendering. But you can tell us to use a different one if you prefer by passing the name as the last param to the ');
         ie_open('code');
-          itext('Component.renderToString');
+          itext('Soy.register');
         ie_close('code');
-        itext(' method, out of the box server side rendering of Metal components is possible in Node.js environments:');
+        itext(' call, like this:');
       ie_close('p');
-      $templateAlias2({code: 'const Component = require(\'metal-component\').Component;\nconst MyComponent = require(\'./MyComponent\').MyComponent;\n\nconst htmlString = Component.renderToString(MyComponent, {\n    message: \'Hello, World!\'\n});\n\n// htmlString === \'<div>Hello, World!</div>\'', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'Soy.register(MyComponent, templates, \'templateName\');', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'template_file');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#template_file');
+          itext('Template File');
+        ie_close('a');
+      ie_close('h2');
       ie_open('p');
-        itext('Now all of your custom Metal components can be rendered directly to HTML on the server.');
+        itext('Make sure that your Soy file has the entry point template (');
+        ie_open('strong');
+          itext('render');
+        ie_close('strong');
+        itext(' by default), otherwise nothing will be rendered.');
       ie_close('p');
+      ie_open('p');
+        itext('This main template will receive as data a combination of:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '/docs/guides/state.html');
+            itext('State data');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '/docs/guides/state.html#configuring_state');
+            itext('Configuration data');
+          ie_close('a');
+          itext(' (accessed through ');
+          ie_open('code');
+            itext('this.config');
+          ie_close('code');
+          itext(')');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '/docs/guides/inline-events.html#inline_listeners_via_function_reference');
+            itext('Component functions');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('Note that by default all params declared on the component\'s main Soy template are automatically configured as state properties as well, but without any special configurations (like initial value or validators). If they\'re ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/state.html');
+          itext('manually defined');
+        ie_close('a');
+        itext(' through the ');
+        ie_open('code');
+          itext('STATE');
+        ie_close('code');
+        itext(' property they will retain the setup specified there though.');
+      ie_close('p');
+      ie_open('p');
+        itext('Any params passed to the component but not directly declared on its main Soy template will be treated as basic configuration data, meaning that changes to them will not automatically rerender the component. They can still be passed down to other templates using ');
+        ie_open('code');
+          itext('data="all"');
+        ie_close('code');
+        itext(', as well be accessed via the');
+        ie_open('code');
+          itext('config');
+        ie_close('code');
+        itext(' property in the JavaScript file.');
+      ie_close('p');
+      $templateAlias2({code: '// Contains all the data received by the component.\nthis.config', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'soy_compilation');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#soy_compilation');
+          itext('Soy Compilation');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('For the integration between ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('strong');
+          itext('soy');
+        ie_close('strong');
+        itext(' to work, the Soy files need to be compiled via one of our available build tools. That\'s because they don\'t just compile the code, but also add some information that help with the integration (like export declarations).');
+      ie_close('p');
+      ie_open('p');
+        itext('The available build tools that correctly compile Soy for ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' are:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://npmjs.com/package/gulp-metal');
+            itext('gulp-metal');
+          ie_close('a');
+          itext(' (already included when creating project via ');
+          ie_open('a', null, null,
+              'href', '/docs/guides/yeoman-generator.html');
+            itext('generator-metal');
+          ie_close('a');
+          itext(').');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://npmjs.com/package/metal-cli');
+            itext('metal-cli');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', 'http://npmjs.com/package/metal-tools-soy');
+            itext('metal-tools-soy');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28706,11 +28864,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param590}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param747}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'wDTbG.render';
+  $render.soyTemplateName = 'DvQMU.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28720,20 +28878,14 @@ return exports;
 
 });
 
-class wDTbG extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wDTbG, templates);
+class DvQMU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DvQMU, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
 /* 256 */,
 /* 257 */,
 /* 258 */,
@@ -28832,22 +28984,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wDTbG, templates);
 /* 351 */,
 /* 352 */,
 /* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28879,9 +29016,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _isomorphicSoy = __webpack_require__(249);
+var _soyComponentsSoy = __webpack_require__(255);
 
-var _isomorphicSoy2 = _interopRequireDefault(_isomorphicSoy);
+var _soyComponentsSoy2 = _interopRequireDefault(_soyComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28891,23 +29028,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var wDTbG = function (_Component) {
-  _inherits(wDTbG, _Component);
+var DvQMU = function (_Component) {
+  _inherits(DvQMU, _Component);
 
-  function wDTbG() {
-    _classCallCheck(this, wDTbG);
+  function DvQMU() {
+    _classCallCheck(this, DvQMU);
 
-    return _possibleConstructorReturn(this, (wDTbG.__proto__ || Object.getPrototypeOf(wDTbG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DvQMU.__proto__ || Object.getPrototypeOf(DvQMU)).apply(this, arguments));
   }
 
-  return wDTbG;
+  return DvQMU;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(wDTbG, _isomorphicSoy2.default);
+_metalSoy2.default.register(DvQMU, _soyComponentsSoy2.default);
 
-exports.default = wDTbG;
+exports.default = DvQMU;
 
 /***/ })
-],[369]);
+],[354]);

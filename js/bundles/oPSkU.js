@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([1,35,36],[
+webpackJsonppageComponent([8,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28616,19 +28616,12 @@ exports.default = parseFromAnchor;
 /* 260 */,
 /* 261 */,
 /* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */
+/* 263 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dGWvP", function() { return dGWvP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "oPSkU", function() { return oPSkU; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28640,15 +28633,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from updating-state.soy.
+// This file was automatically generated from before-we-start.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace dGWvP.
+ * @fileoverview Templates in namespace oPSkU.
  * @public
  */
 
-goog.module('dGWvP.incrementaldom');
+goog.module('oPSkU.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28669,8 +28662,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -28682,40 +28673,56 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1072 = function() {
+  var param910 = function() {
     ie_open('h2');
-      var dyn23 = opt_data.page.title;
-      if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
+      var dyn17 = opt_data.page.title;
+      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
     ie_close('h2');
     ie_open('p');
-      itext('You are now ready to update the state in ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext('. From the last step you added an event listener.');
+      itext('Before we actually make anything, let\'s discuss what Metal.js is, and what it\'s intended for.');
     ie_close('p');
-    $templateAlias2({code: 'handleTodoClick(event) {\n    alert(event.index);\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('h3');
+      itext('Data flow');
+    ie_close('h3');
     ie_open('p');
-      itext('Now all you need to do is update the state so that the template rerenders.');
+      itext('If you\'re familiar with React, you\'ll feel right at home. Metal.js is a foundation for creating UI components that automatically respond to data when it\'s updated. In other words, it\'s a framework for creating one-way data binding components.');
     ie_close('p');
-    $templateAlias2({code: 'handleTodoClick(event) {\n    this.toggleTodo(event.index);\n}\n\ntoggleTodo(clickedIndex) {\n    this.state.todos = this.state.todos.map((todo, index) => {\n        if (clickedIndex === index) {\n            todo.done = !todo.done;\n        }\n        return todo;\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('This will toggle the ');
-      ie_open('code');
-        itext('done');
-      ie_close('code');
-      itext(' property of the todo that was clicked. Simply setting the ');
-      ie_open('code');
-        itext('this.state.todos');
-      ie_close('code');
-      itext(' property to a new array of todos will trigger a rerender, passing the data to the child components. Now your markup should look something like this.');
+      itext('This is different than frameworks like Angular, which provide a two-way data binding solution.');
     ie_close('p');
-    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item todo-item-done">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('h3');
+      itext('Templating');
+    ie_close('h3');
+    ie_open('p');
+      itext('Metal.js is template agnostic, and comes with out of the box support for two templating languages, Soy (Google Closure) and JSX (React).');
+    ie_close('p');
+    ie_open('p');
+      itext('When the data being passed to your component changes, your component\'s template will be used to rerender just the parts of your component that need to be updated. Therefore, you don\'t need to worry about manual DOM manipulation.');
+    ie_close('p');
+    ie_open('p');
+      itext('Behind the scenes Metal.js is using Google\'s ');
+      ie_open('a', null, null,
+          'href', 'https://google.github.io/incremental-dom');
+        itext('Incremental DOM');
+      ie_close('a');
+      itext(' for updating DOM elements.');
+    ie_close('p');
+    ie_open('h3');
+      itext('What are we making?');
+    ie_close('h3');
+    ie_open('p');
+      itext('In this tutorial we\'ll be making a simple Todo App that let\'s you mark items as completed, and add new items to the list. If you would like to see the finished product check out the ');
+      ie_open('a', null, null,
+          'href', '#');
+        itext('metal-todo-app repsitory');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
     ie_open('p');
       ie_open('img', null, null,
-          'src', '/images/tutorials/todo-app/completed_todo.png',
-          'alt', 'Completed Todo',
-          'title', 'Completed Todo');
+          'src', '/images/tutorials/todo-app/finished_todo_app.png',
+          'alt', 'Finished Todo App',
+          'title', 'Finished Todo App');
       ie_close('img');
     ie_close('p');
     ie_open('input', null, null,
@@ -28727,11 +28734,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param1072}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param910}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'dGWvP.render';
+  $render.soyTemplateName = 'oPSkU.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28741,14 +28748,21 @@ return exports;
 
 });
 
-class dGWvP extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dGWvP, templates);
+class oPSkU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(oPSkU, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
 /* 271 */,
 /* 272 */,
 /* 273 */,
@@ -28853,7 +28867,10 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dGWvP, templates);
 /* 372 */,
 /* 373 */,
 /* 374 */,
-/* 375 */
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28885,9 +28902,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _updatingStateSoy = __webpack_require__(270);
+var _beforeWeStartSoy = __webpack_require__(263);
 
-var _updatingStateSoy2 = _interopRequireDefault(_updatingStateSoy);
+var _beforeWeStartSoy2 = _interopRequireDefault(_beforeWeStartSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28897,23 +28914,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var dGWvP = function (_Component) {
-  _inherits(dGWvP, _Component);
+var oPSkU = function (_Component) {
+  _inherits(oPSkU, _Component);
 
-  function dGWvP() {
-    _classCallCheck(this, dGWvP);
+  function oPSkU() {
+    _classCallCheck(this, oPSkU);
 
-    return _possibleConstructorReturn(this, (dGWvP.__proto__ || Object.getPrototypeOf(dGWvP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (oPSkU.__proto__ || Object.getPrototypeOf(oPSkU)).apply(this, arguments));
   }
 
-  return dGWvP;
+  return oPSkU;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(dGWvP, _updatingStateSoy2.default);
+_metalSoy2.default.register(oPSkU, _beforeWeStartSoy2.default);
 
-exports.default = dGWvP;
+exports.default = oPSkU;
 
 /***/ })
-],[375]);
+],[378]);

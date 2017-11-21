@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([20,35,36],[
+webpackJsonppageComponent([19,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28604,12 +28604,13 @@ exports.default = parseFromAnchor;
 /* 248 */,
 /* 249 */,
 /* 250 */,
-/* 251 */
+/* 251 */,
+/* 252 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TMODI", function() { return TMODI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "uxnui", function() { return uxnui; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28621,15 +28622,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from nested-components.soy.
+// This file was automatically generated from performance.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace TMODI.
+ * @fileoverview Templates in namespace uxnui.
  * @public
  */
 
-goog.module('TMODI.incrementaldom');
+goog.module('uxnui.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28650,8 +28651,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -28663,68 +28662,65 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param678 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('The ability to reference components inside templates can be very useful. It enables the developer to correctly place the child component at the right position inside the parent in an intuitive way.');
-      ie_close('p');
-      ie_open('p');
-        itext('This can certainly be done with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' components. For example, let\'s say we\'ve already built a simple component called ');
-        ie_open('strong');
-          itext('Button');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('Now we\'re building a ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' component, and we want it to render some buttons inside the footer. In ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('\'s template file we could do the following:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n<div class="footer">\n    {foreach $button in $buttons}\n        {call Button.render}\n            {param label: $button /}\n        {/call}\n    {/foreach}\n</div>', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map(button => {\n  return <Button label={button} />;\n});\n\nreturn <div class="footer">{buttons}</div>;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('When Modal is rendered, the buttons also will be, at the specified position. Besides this, ');
-        ie_open('strong');
-          itext('Button');
-        ie_close('strong');
-        itext(' components will be automatically instantiated for these elements.');
-      ie_close('p');
-    ie_close('article');
+  var param710 = function() {
     ie_open('article', null, null,
-        'id', 'accessing_sub_component_instances');
+        'id', 'performance');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#accessing_sub_component_instances');
-          itext('Accessing Sub Component Instances');
+            'href', '#performance');
+          itext('Performance');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('But what if we need to access the created instances? That\'s possible by using ');
         ie_open('strong');
-          itext('ref');
+          itext('Metal.js');
         ie_close('strong');
-        itext('. Let\'s add one to the previous example and see what happens:');
+        itext(' was built from the first with performance in mind. We\'ve run performance tests to compare it with other libraries and got really good results that show the benefits of using it.');
       ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n{foreach $button as $buttons}\n    {call Button.render}\n        {param label: $button /}\n        {param ref: \'button\' + index($button) /}\n    {/call}\n{/foreach}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map((button, index) => {\n    return <Button label={button} ref={\'button\' + index} />;\n});', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('Now you\'ll be able to access your sub components through your instance\'s ');
-        ie_open('code');
-          itext('refs');
-        ie_close('code');
-        itext(' property, like this:');
+        itext('In one of the tests we made, we built a simple list widget on three different libraries: ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(', ');
+        ie_open('strong');
+          itext('YUI');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('strong');
+          itext('React');
+        ie_close('strong');
+        itext('. We then measured the time it took to render those widgets with 1000 items each on three different situations:');
       ie_close('p');
-      $templateAlias2({code: 'modal.refs.button0 // The instance for first button\nmodal.refs.button1 // The instance for second button', mode: 'javascript'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('First Render -');
+          ie_close('strong');
+          itext(' Creating and rendering the list for the first time, on a blank element.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Decorate -');
+          ie_close('strong');
+          itext(' Creating and decorating a list that was previously rendered on the DOM.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Update -');
+          ie_close('strong');
+          itext(' Changing the contents of the first item of the list, causing a rerender.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('The chart below shows the results we obtained on Chrome (the higher the bar, the faster it runs):');
+      ie_close('p');
+      ie_open('p');
+        ie_open('img', null, null,
+            'src', '../../images/docs/perf.png',
+            'alt', 'Performance Test - List');
+        ie_close('img');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28735,11 +28731,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param678}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param710}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'TMODI.render';
+  $render.soyTemplateName = 'uxnui.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28749,15 +28745,14 @@ return exports;
 
 });
 
-class TMODI extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TMODI, templates);
+class uxnui extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(uxnui, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 252 */,
 /* 253 */,
 /* 254 */,
 /* 255 */,
@@ -28865,7 +28860,14 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TMODI, templates);
 /* 357 */,
 /* 358 */,
 /* 359 */,
-/* 360 */
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28897,9 +28899,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _nestedComponentsSoy = __webpack_require__(251);
+var _performanceSoy = __webpack_require__(252);
 
-var _nestedComponentsSoy2 = _interopRequireDefault(_nestedComponentsSoy);
+var _performanceSoy2 = _interopRequireDefault(_performanceSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28909,23 +28911,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var TMODI = function (_Component) {
-  _inherits(TMODI, _Component);
+var uxnui = function (_Component) {
+  _inherits(uxnui, _Component);
 
-  function TMODI() {
-    _classCallCheck(this, TMODI);
+  function uxnui() {
+    _classCallCheck(this, uxnui);
 
-    return _possibleConstructorReturn(this, (TMODI.__proto__ || Object.getPrototypeOf(TMODI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (uxnui.__proto__ || Object.getPrototypeOf(uxnui)).apply(this, arguments));
   }
 
-  return TMODI;
+  return uxnui;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(TMODI, _nestedComponentsSoy2.default);
+_metalSoy2.default.register(uxnui, _performanceSoy2.default);
 
-exports.default = TMODI;
+exports.default = uxnui;
 
 /***/ })
-],[360]);
+],[367]);

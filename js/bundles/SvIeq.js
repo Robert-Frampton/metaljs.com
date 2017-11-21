@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([18,35,36],[
+webpackJsonppageComponent([31,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28593,25 +28593,12 @@ exports.default = parseFromAnchor;
 /* 237 */,
 /* 238 */,
 /* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */
+/* 240 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mPaVS", function() { return mPaVS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SvIeq", function() { return SvIeq; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28623,15 +28610,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from progressive-enhancement.soy.
+// This file was automatically generated from modal_nested.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace mPaVS.
+ * @fileoverview Templates in namespace SvIeq.
  * @public
  */
 
-goog.module('mPaVS.incrementaldom');
+goog.module('SvIeq.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28652,6 +28639,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -28663,33 +28652,116 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param719 = function() {
+  var param317 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('In the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/modal_updates.html');
+          itext('previous section');
+        ie_close('a');
+        itext(' we finished working on our component\'s behavior.');
+      ie_close('p');
+      ie_open('p');
+        itext('But what if our ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(' header\'s markup was very similar to one that is used in other places though? Ideally we\'d move it into a separate component that can be reused. That\'s what we\'ll be doing in this section.');
+      ie_close('p');
+    ie_close('article');
     ie_open('article', null, null,
-        'id', 'progressive_enhancement');
+        'id', 'creating_closeheader');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#progressive_enhancement');
-          itext('Progressive Enhancement');
+            'href', '#creating_closeheader');
+          itext('Creating ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        ie_open('a', null, null,
-            'href', 'http://en.wikipedia.org/wiki/Progressive_enhancement');
-          itext('Progressive enhancement');
-        ie_close('a');
-        itext(' is a feature that is very important for a lot of people. Knowing about this, ');
+        itext('First let\'s create the new component. Add a ');
+        ie_open('code');
+          itext('src/CloseHeader.js');
+        ie_close('code');
+        itext(' file to your project:');
+      ie_close('p');
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport templates from \'./CloseHeader.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass CloseHeader extends Component {\n}\n\nSoy.register(CloseHeader, templates);\n\nexport default CloseHeader;', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass CloseHeader extends JSXComponent {\n    render() {\n    }\n}\n\nexport default CloseHeader;', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now let\'s prepare the template to be similar to the one used by ');
         ie_open('strong');
-          itext('Metal.js');
+          itext('Modal');
         ie_close('strong');
-        itext(' is prepared to deal with content that already comes rendered from the server. Since Metal.js components use ');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '// src/CloseHeader.soy\n\n&#123;namespace CloseHeader&#125;\n\n&#123;template .render&#125;\n    {@param cssClass: string}\n    {@param onClick: any}\n    {@param title: string}\n\n    <header class="{$cssClass}">\n        <button onClick="{$onClick}" type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{$title}</h4>\n    </header>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nrender() {\n    return <header class={this.props.cssClass}>\n        <button onClick={this.props.onClick} type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{this.props.title}</h4>\n    </header>;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Done! Our new component is ready to be used by ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'using_closeheader');
+      ie_open('h2');
         ie_open('a', null, null,
-            'href', 'http://google.github.io/incremental-dom');
-          itext('Incremental DOM');
+            'href', '#using_closeheader');
+          itext('Using ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
         ie_close('a');
-        itext(' by default, rendering on an element with existing content will reuse it instead of repainting everything.');
+      ie_close('h2');
+      ie_open('p');
+        itext('All we have to do is to replace the header markup from ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('\'s template with a call to ');
+        ie_open('strong');
+          itext('CloseHeader');
+        ie_close('strong');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n&#123;template .render&#125;\n    {@param body: string}\n    {@param close: string}\n    {@param header: string}\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                {call CloseHeader.render}\n                    {param cssClass: \'modal-header\' /}\n                    {param onClick: $close /}\n                    {param title: $header /}\n                {/call}\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nrender() {\n    var cssClass = \'modal\';\n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <CloseHeader\n                    cssClass="modal-header"\n                    onClick={this.close.bind(this)}\n                    title={this.props.header}\n                />\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('This will not only render ');
+        ie_open('strong');
+          itext('CloseHeader');
+        ie_close('strong');
+        itext(' at the right position, but also instantiate it for you. For more details on nested components, check out the ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/nested-components.html');
+          itext('guide about it');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'next_steps');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#next_steps');
+          itext('Next Steps');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Now that we have learned how to properly create a new component, it\'d good to also know how to test it. The next section will focus on that.');
       ie_close('p');
       ie_open('p');
-        itext('It\'s important to note that building components with Soy also helps with progressive enhancement in another way: by providing a faithful template that can be run by the server without having to duplicate the rendering code or run JavaScript at all.');
+        ie_open('strong');
+          ie_open('a', null, null,
+              'href', '/docs/getting-started/modal_testing.html');
+            itext('\u21AA Tutorial: Modal - Testing');
+          ie_close('a');
+        ie_close('strong');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28701,28 +28773,41 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param719}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param317}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'mPaVS.render';
+  $render.soyTemplateName = 'SvIeq.render';
 }
 
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
+exports.render.params = ["cssClass","onClick","title","body","close","header","shown","page","site"];
+exports.render.types = {"cssClass":"string","onClick":"any","title":"string","body":"string","close":"string","header":"string","shown":"bool","page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class mPaVS extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(mPaVS, templates);
+class SvIeq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SvIeq, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
 /* 254 */,
 /* 255 */,
 /* 256 */,
@@ -28819,20 +28904,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(mPaVS, templates);
 /* 347 */,
 /* 348 */,
 /* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28864,9 +28936,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _progressiveEnhancementSoy = __webpack_require__(253);
+var _modal_nestedSoy = __webpack_require__(240);
 
-var _progressiveEnhancementSoy2 = _interopRequireDefault(_progressiveEnhancementSoy);
+var _modal_nestedSoy2 = _interopRequireDefault(_modal_nestedSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28876,23 +28948,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var mPaVS = function (_Component) {
-  _inherits(mPaVS, _Component);
+var SvIeq = function (_Component) {
+  _inherits(SvIeq, _Component);
 
-  function mPaVS() {
-    _classCallCheck(this, mPaVS);
+  function SvIeq() {
+    _classCallCheck(this, SvIeq);
 
-    return _possibleConstructorReturn(this, (mPaVS.__proto__ || Object.getPrototypeOf(mPaVS)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SvIeq.__proto__ || Object.getPrototypeOf(SvIeq)).apply(this, arguments));
   }
 
-  return mPaVS;
+  return SvIeq;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(mPaVS, _progressiveEnhancementSoy2.default);
+_metalSoy2.default.register(SvIeq, _modal_nestedSoy2.default);
 
-exports.default = mPaVS;
+exports.default = SvIeq;
 
 /***/ })
-],[363]);
+],[350]);

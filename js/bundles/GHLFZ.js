@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,35,36],[
+webpackJsonppageComponent([4,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19466,8 +19466,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
       ie_close('img');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn9 = opt_data.site.title;
-        if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+        var dyn11 = opt_data.site.title;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -19663,7 +19663,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -19672,16 +19672,16 @@ function __deltemplate_s114_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn10 = opt_data.page.title;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s114_d34389eb = __deltemplate_s114_d34389eb;
+exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s114_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s114_d34389eb';
+  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s114_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -19760,8 +19760,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn10 = opt_data.time;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn12 = opt_data.time;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     }
   ie_close('p');
 }
@@ -28617,12 +28617,15 @@ exports.default = parseFromAnchor;
 /* 261 */,
 /* 262 */,
 /* 263 */,
-/* 264 */
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gIYZP", function() { return gIYZP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GHLFZ", function() { return GHLFZ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28634,15 +28637,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from components.soy.
+// This file was automatically generated from event-listeners.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace gIYZP.
+ * @fileoverview Templates in namespace GHLFZ.
  * @public
  */
 
-goog.module('gIYZP.incrementaldom');
+goog.module('GHLFZ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28676,53 +28679,44 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param921 = function() {
+  var param1014 = function() {
     ie_open('h2');
-      var dyn18 = opt_data.page.title;
-      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
+      var dyn21 = opt_data.page.title;
+      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
     ie_close('h2');
     ie_open('p');
-      itext('In the ');
-      ie_open('code');
-        itext('metal-todo-app');
-      ie_close('code');
-      itext(' boilerplate, there are already three components defined to help get you started. Each component is defined as an ES6 class that extends from Metal\'s ');
-      ie_open('code');
-        itext('JSXComponent');
-      ie_close('code');
-      itext(' class.');
+      itext('So now you should have a static list of todo items, what now? Remember the end goal is to be able to click the todos to mark them as completed, so let\'s start with adding a click event listener to the list items.');
     ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n}', mode: 'text/jsx'}, null, opt_ijData);
+    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n                data-onclick={this.handleClick.bind(this)}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n\n    handleClick(event) {\n        alert(this.props.todo.title);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('Each component has a render function where the JSX template is defined. This will create the HTML you see in the demo page.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    return (\n        <div>Hello, World</div>\n    );\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('The ');
+      itext('Now you should see an alert with the title of the clicked todo. Now you must notify ');
       ie_open('code');
         itext('TodoApp');
       ie_close('code');
-      itext(' component will be the root level component. It will handle storing the todo data, and the rendering of the other two components.');
+      itext(' that a todo was marked as completed so that it can update the data.');
     ie_close('p');
     ie_open('p');
-      itext('The ');
+      itext('This can be done by emitting a custom event with the info needed to make the change. In this case we\'ll use the index value from PROPS.');
+    ie_close('p');
+    $templateAlias2({code: 'handleClick(event) {\n    this.emit(\'todoClick\', {\n        index: this.props.index\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now that the ');
       ie_open('code');
         itext('TodoItem');
       ie_close('code');
-      itext(' component will render each item in the list of todos.');
-    ie_close('p');
-    ie_open('p');
-      itext('The ');
+      itext(' is emitting an event, you must add a listener from the parent component ');
       ie_open('code');
-        itext('TodoItem');
+        itext('TodoApp');
       ie_close('code');
-      itext(' component will render a form for adding new todo items to the list. It will consist of a text input and add button.');
+      itext('.');
     ie_close('p');
-    ie_open('h3');
-      itext('Why more than one?');
-    ie_close('h3');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                events={{\n                                    todoClick: this.handleTodoClick.bind(this)\n                                }}\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n\n    handleTodoClick(event) {\n        alert(event.index);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('It might seem more trouble than it\'s worth splitting up the Todo App into multiple components, but it\'s absolutely necessary when creating larger applications. This tutorial aims to teach you how to handle nested components for more complex use cases.');
+      itext('At this point you should have an event handler that fires every time a todo item is clicked on. Next you will use this data to update the state in ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('.');
     ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -28733,11 +28727,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param921}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param1014}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'gIYZP.render';
+  $render.soyTemplateName = 'GHLFZ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28747,17 +28741,14 @@ return exports;
 
 });
 
-class gIYZP extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gIYZP, templates);
+class GHLFZ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GHLFZ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 265 */,
-/* 266 */,
-/* 267 */,
 /* 268 */,
 /* 269 */,
 /* 270 */,
@@ -28863,10 +28854,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gIYZP, templates);
 /* 370 */,
 /* 371 */,
 /* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28898,9 +28886,9 @@ __webpack_require__(141);
 
 __webpack_require__(132);
 
-var _componentsSoy = __webpack_require__(264);
+var _eventListenersSoy = __webpack_require__(267);
 
-var _componentsSoy2 = _interopRequireDefault(_componentsSoy);
+var _eventListenersSoy2 = _interopRequireDefault(_eventListenersSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28910,23 +28898,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var gIYZP = function (_Component) {
-  _inherits(gIYZP, _Component);
+var GHLFZ = function (_Component) {
+  _inherits(GHLFZ, _Component);
 
-  function gIYZP() {
-    _classCallCheck(this, gIYZP);
+  function GHLFZ() {
+    _classCallCheck(this, GHLFZ);
 
-    return _possibleConstructorReturn(this, (gIYZP.__proto__ || Object.getPrototypeOf(gIYZP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (GHLFZ.__proto__ || Object.getPrototypeOf(GHLFZ)).apply(this, arguments));
   }
 
-  return gIYZP;
+  return GHLFZ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(gIYZP, _componentsSoy2.default);
+_metalSoy2.default.register(GHLFZ, _eventListenersSoy2.default);
 
-exports.default = gIYZP;
+exports.default = GHLFZ;
 
 /***/ })
-],[376]);
+],[373]);
