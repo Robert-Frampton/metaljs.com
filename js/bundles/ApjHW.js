@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([34,35,36],[
+webpackJsonppageComponent([31,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn0 = opt_data.page.title;
-          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+          var dyn2 = opt_data.page.title;
+          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn1 = opt_data.content;
-            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+            var dyn3 = opt_data.content;
+            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn2 = opt_data.content;
-      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+      var dyn4 = opt_data.content;
+      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn4 = opt_data.content;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn6 = opt_data.content;
+        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
+    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy73,
+            'href', nextPageUrl__soy96,
             'class', 'btn btn-accent btn-sm');
-          var dyn5 = opt_data.page.buttonTitle;
-          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+          var dyn7 = opt_data.page.buttonTitle;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn6 = opt_data.page.weight;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      var dyn8 = opt_data.page.weight;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn7 = opt_data.page.title;
-      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+      var dyn9 = opt_data.page.title;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
+exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
+  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27165,12 +27165,15 @@ exports.default = parseFromAnchor;
 /* 209 */,
 /* 210 */,
 /* 211 */,
-/* 212 */
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tnvEF", function() { return tnvEF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApjHW", function() { return ApjHW; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27182,15 +27185,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from modal_nested.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tnvEF.
+ * @fileoverview Templates in namespace ApjHW.
  * @public
  */
 
-goog.module('tnvEF.incrementaldom');
+goog.module('ApjHW.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27224,234 +27227,96 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param230 = function() {
+  var param319 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('In the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/modal_updates.html');
+          itext('previous section');
+        ie_close('a');
+        itext(' we finished working on our component\'s behavior.');
+      ie_close('p');
+      ie_open('p');
+        itext('But what if our ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(' header\'s markup was very similar to one that is used in other places though? Ideally we\'d move it into a separate component that can be reused. That\'s what we\'ll be doing in this section.');
+      ie_close('p');
+    ie_close('article');
     ie_open('article', null, null,
-        'id', 'getting_started');
+        'id', 'creating_closeheader');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#getting_started');
-          itext('Getting Started');
+            'href', '#creating_closeheader');
+          itext('Creating ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('There are many different ways to build components using Metal.js. You can use the built-in integrations with ');
-        ie_open('a', null, null,
-            'href', 'http://developers.google.com/closure/templates/');
-          itext('Soy');
-        ie_close('a');
-        itext(' or ');
-        ie_open('a', null, null,
-            'href', 'https://facebook.github.io/jsx/');
-          itext('JSX');
-        ie_close('a');
-        itext(' templates, or even build your own template abstraction on top of Metal.js and use it instead. You can build the ES6 code using ');
-        ie_open('strong');
-          itext('Babel');
-        ie_close('strong');
-        itext(', ');
-        ie_open('strong');
-          itext('Traceur');
-        ie_close('strong');
-        itext(' or any other transpiler. You can test using ');
-        ie_open('strong');
-          itext('Karma');
-        ie_close('strong');
-        itext(', ');
-        ie_open('strong');
-          itext('Jasmine');
-        ie_close('strong');
-        itext(' or any other test framework, and can use any directory structure for your project. To sum it up, you can customize everything to your own needs. The world is your oyster.');
+        itext('First let\'s create the new component. Add a ');
+        ie_open('code');
+          itext('src/CloseHeader.js');
+        ie_close('code');
+        itext(' file to your project:');
       ie_close('p');
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport templates from \'./CloseHeader.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass CloseHeader extends Component {\n}\n\nSoy.register(CloseHeader, templates);\n\nexport default CloseHeader;', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass CloseHeader extends JSXComponent {\n    render() {\n    }\n}\n\nexport default CloseHeader;', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('This guide will focus on a quick and easy way to get started with Metal.js. But if you are excited to try it out as soon as possible you can just play around with this ');
-        ie_open('a', null, null,
-            'href', 'https://jsfiddle.net/metaljs/y1tqa7vz/');
-          itext('JSFiddle');
-        ie_close('a');
+        itext('Now let\'s prepare the template to be similar to the one used by ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '// src/CloseHeader.soy\n\n&#123;namespace CloseHeader&#125;\n\n&#123;template .render&#125;\n    {@param cssClass: string}\n    {@param onClick: any}\n    {@param title: string}\n\n    <header class="{$cssClass}">\n        <button onClick="{$onClick}" type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{$title}</h4>\n    </header>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nrender() {\n    return <header class={this.props.cssClass}>\n        <button onClick={this.props.onClick} type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{this.props.title}</h4>\n    </header>;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Done! Our new component is ready to be used by ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
         itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'boilerplate');
+        'id', 'using_closeheader');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#boilerplate');
-          itext('Boilerplate');
+            'href', '#using_closeheader');
+          itext('Using ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('You can organize your ');
+        itext('All we have to do is to replace the header markup from ');
         ie_open('strong');
-          itext('Metal.js');
+          itext('Modal');
         ie_close('strong');
-        itext(' project in any way you want, but to start out we recommend using the ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/yeoman-generator.html');
-          itext('Yeoman Generator');
-        ie_close('a');
-        itext(' we\'ve created, which prepares both the project structure as well as a basic development workflow for you.');
-      ie_close('p');
-      ie_open('p');
-        itext('You can use it if you wish, but to makes things even simpler we\'re providing a zip with the boilerplate that the generator would create for this tutorial, so you can just download it here:');
-      ie_close('p');
-      ie_open('p');
-        ie_open('a', null, null,
-            'href', '/downloads/boilerplate.zip',
-            'class', 'btn btn-accent',
-            'data-senna-off', 'true');
-          itext('Download Metal.js Boilerplate (with Soy)');
-        ie_close('a');
-      ie_close('p');
-      ie_open('p');
-        ie_open('a', null, null,
-            'href', '/downloads/boilerplate-jsx.zip',
-            'class', 'btn btn-accent',
-            'data-senna-off', 'true');
-          itext('Download Metal.js Boilerplate (with JSX)');
-        ie_close('a');
-      ie_close('p');
-      ie_open('p');
-        itext('Note that this zip you\'ve downloaded contains not only the starting boilerplate, but also a folder for each step of this tutorial guide, so that you can either code along with us or just check out the final code for each step.');
-      ie_close('p');
-      ie_open('p');
-        itext('Now that you have the boilerplate, you just need to:');
-      ie_close('p');
-      ie_open('ol');
-        ie_open('li');
-          ie_open('p');
-            itext('Install ');
-            ie_open('a', null, null,
-                'href', 'https://nodejs.org');
-              itext('npm');
-            ie_close('a');
-            itext(' v3.0.0 or newer (if you don\'t have it yet).');
-          ie_close('p');
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            ie_open('strong');
-              itext('For Soy users only');
-            ie_close('strong');
-            itext(': Install ');
-            ie_open('a', null, null,
-                'href', 'http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html');
-              itext('Java');
-            ie_close('a');
-            itext(' version 8 or newer (if you don\'t have it yet).');
-          ie_close('p');
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            itext('Enter the ');
-            ie_open('code');
-              itext('1. Hello World/');
-            ie_close('code');
-            itext(' folder in your terminal and install its npm dependencies, by typing:');
-          ie_close('p');
-          $templateAlias2({code: '[sudo] npm install', mode: 'shell'}, null, opt_ijData);
-        ie_close('li');
-      ie_close('ol');
-      ie_open('p');
-        itext('Once the dependency installation ends, you\'ll get a directory tree similar to this:');
-      ie_close('p');
-      $templateAlias2({code: '\u251C\u2500\u2500 demos\n\u2502   \u2514\u2500\u2500 index.html\n\u251C\u2500\u2500 node_modules\n\u251C\u2500\u2500 package.json\n\u251C\u2500\u2500 src\n\u2502   \u251C\u2500\u2500 Modal.js\n\u2502   \u251C\u2500\u2500 Modal.soy // Only if Soy was chosen\n\u2502   \u2514\u2500\u2500 modal.scss\n\u2514\u2500\u2500 test\n    \u2514\u2500\u2500 Modal.js', mode: 'text'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'build');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#build');
-          itext('Build');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('If you open the generated ');
+        itext('\'s template with a call to ');
         ie_open('strong');
-          itext('src/Modal.js');
+          itext('CloseHeader');
         ie_close('strong');
-        itext(' file you may notice that it\'s using ');
-        ie_open('a', null, null,
-            'href', 'https://babeljs.io/docs/learn-es2015/');
-          itext(' ES6');
-        ie_close('a');
-        itext(' syntax:');
+        itext(':');
       ie_close('p');
-      $templateAlias2({code: 'class Modal extends ...', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.soy\n\n&#123;template .render&#125;\n    {@param body: string}\n    {@param close: string}\n    {@param header: string}\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                {call CloseHeader.render}\n                    {param cssClass: \'modal-header\' /}\n                    {param onClick: $close /}\n                    {param title: $header /}\n                {/call}\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nrender() {\n    var cssClass = \'modal\';\n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <CloseHeader\n                    cssClass="modal-header"\n                    onClick={this.close.bind(this)}\n                    title={this.props.header}\n                />\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('That means that it\'ll need to go through a build process, since browsers haven\'t fully implemented all ES6 features yet.');
-      ie_close('p');
-      ie_open('p');
+        itext('This will not only render ');
         ie_open('strong');
-          itext('generator-metal');
+          itext('CloseHeader');
         ie_close('strong');
-        itext(' already prepares some useful scripts that you can use, including a build script. By default, this script will build everything into global variables. To use it, simply type:');
-      ie_close('p');
-      $templateAlias2({code: 'npm run build', mode: 'shell'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'demo_page');
-      ie_open('h2');
+        itext(' at the right position, but also instantiate it for you. For more details on nested components, check out the ');
         ie_open('a', null, null,
-            'href', '#demo_page');
-          itext('Demo Page');
+            'href', '/docs/guides/nested-components.html');
+          itext('guide about it');
         ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now that the code was built, just open the generated ');
-        ie_open('code');
-          itext('demos/index.html');
-        ie_close('code');
-        itext(' file on your browser. It should display a nice ');
-        ie_open('strong');
-          itext('Hello World');
-        ie_close('strong');
-        itext(' message, like this:');
-      ie_close('p');
-      ie_open('p');
-        ie_open('img', null, null,
-            'src', '../../images/docs/hello_world.png',
-            'alt', 'Hello World screenshot');
-        ie_close('img');
-      ie_close('p');
-      ie_open('p');
-        itext('If you look at the contents of ');
-        ie_open('code');
-          itext('demos/index.html');
-        ie_close('code');
-        itext(', you\'ll see how the component is being rendered. In this example, it\'s simply being instantiated directly by calling ');
-        ie_open('code');
-          itext('new metal.Modal();');
-        ie_close('code');
         itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('By default this will append the component to the document\'s body. If you want though, you can specify where it should be rendered. Check the guide about ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/rendering-components.html');
-          itext('rendering components');
-        ie_close('a');
-        itext(' to find out how.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'hello_world');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#hello_world');
-          itext('Hello World');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('As you\'ve noticed, the generated project automatically renders ');
-        ie_open('strong');
-          itext('Hello World');
-        ie_close('strong');
-        itext(' for you. Curious to see how that\'s done? It\'s simple, just take a look at the generated template:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n&#123;namespace Modal&#125;\n\n/**\n * This renders the component\'s whole content.\n * Note: has to be called ".render".\n */\n&#123;template .render&#125;\n    <div>Hello World</div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass Modal extends JSXComponent {\n    render() {\n        return <div>Hello World</div>;\n    }\n}\n\nexport default Modal;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('You can replace the default content with any other to change what your component renders. Just make sure to build the code again after making your changes.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
@@ -27463,21 +27328,13 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('Now that you have gone through running a simple ');
-        ie_open('strong');
-          itext('Hello World');
-        ie_close('strong');
-        itext(' component, let\'s actually turn it into a ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('.');
+        itext('Now that we have learned how to properly create a new component, it\'d good to also know how to test it. The next section will focus on that.');
       ie_close('p');
       ie_open('p');
         ie_open('strong');
           ie_open('a', null, null,
-              'href', '/docs/getting-started/modal.html');
-            itext('\u21AA Tutorial: Modal');
+              'href', '/docs/getting-started/modal_testing.html');
+            itext('\u21AA Tutorial: Modal - Testing');
           ie_close('a');
         ie_close('strong');
       ie_close('p');
@@ -27491,31 +27348,28 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param230}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param319}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tnvEF.render';
+  $render.soyTemplateName = 'ApjHW.render';
 }
 
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
+exports.render.params = ["cssClass","onClick","title","body","close","header","shown","page","site"];
+exports.render.types = {"cssClass":"string","onClick":"any","title":"string","body":"string","close":"string","header":"string","shown":"bool","page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class tnvEF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tnvEF, templates);
+class ApjHW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ApjHW, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 213 */,
-/* 214 */,
-/* 215 */,
 /* 216 */,
 /* 217 */,
 /* 218 */,
@@ -27578,11 +27432,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tnvEF, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27614,9 +27464,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _indexSoy = __webpack_require__(212);
+var _modal_nestedSoy = __webpack_require__(215);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _modal_nestedSoy2 = _interopRequireDefault(_modal_nestedSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27626,23 +27476,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tnvEF = function (_Component) {
-  _inherits(tnvEF, _Component);
+var ApjHW = function (_Component) {
+  _inherits(ApjHW, _Component);
 
-  function tnvEF() {
-    _classCallCheck(this, tnvEF);
+  function ApjHW() {
+    _classCallCheck(this, ApjHW);
 
-    return _possibleConstructorReturn(this, (tnvEF.__proto__ || Object.getPrototypeOf(tnvEF)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ApjHW.__proto__ || Object.getPrototypeOf(ApjHW)).apply(this, arguments));
   }
 
-  return tnvEF;
+  return ApjHW;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tnvEF, _indexSoy2.default);
+_metalSoy2.default.register(ApjHW, _modal_nestedSoy2.default);
 
-exports.default = tnvEF;
+exports.default = ApjHW;
 
 /***/ })
-],[282]);
+],[278]);

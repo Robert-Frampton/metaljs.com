@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([5,35,36],[
+webpackJsonppageComponent([2,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn0 = opt_data.page.title;
-          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+          var dyn2 = opt_data.page.title;
+          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn1 = opt_data.content;
-            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+            var dyn3 = opt_data.content;
+            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn2 = opt_data.content;
-      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+      var dyn4 = opt_data.content;
+      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn4 = opt_data.content;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn6 = opt_data.content;
+        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
+    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy73,
+            'href', nextPageUrl__soy96,
             'class', 'btn btn-accent btn-sm');
-          var dyn5 = opt_data.page.buttonTitle;
-          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+          var dyn7 = opt_data.page.buttonTitle;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn6 = opt_data.page.weight;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      var dyn8 = opt_data.page.weight;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn7 = opt_data.page.title;
-      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+      var dyn9 = opt_data.page.title;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
+exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
+  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27194,12 +27194,15 @@ exports.default = parseFromAnchor;
 /* 238 */,
 /* 239 */,
 /* 240 */,
-/* 241 */
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UaXHT", function() { return UaXHT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WfRxF", function() { return WfRxF; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27211,15 +27214,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from dependencies.soy.
+// This file was automatically generated from rendering-data.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace UaXHT.
+ * @fileoverview Templates in namespace WfRxF.
  * @public
  */
 
-goog.module('UaXHT.incrementaldom');
+goog.module('WfRxF.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27253,93 +27256,35 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param980 = function() {
+  var param1048 = function() {
     ie_open('h2');
-      var dyn20 = opt_data.page.title;
-      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
+      var dyn22 = opt_data.page.title;
+      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
     ie_close('h2');
     ie_open('p');
-      itext('In order to follow along with this tutorial, you\'ll need ');
-      ie_open('a', null, null,
-          'href', 'https://git-scm.com/');
-        itext('Git');
-      ie_close('a');
-      itext(', and a recent version of ');
-      ie_open('a', null, null,
-          'href', 'https://nodejs.org/');
-        itext('Node.js/npm');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Todo Boilerplate');
-    ie_close('h3');
-    ie_open('p');
-      itext('Start by cloning the boilerplate respository.');
-    ie_close('p');
-    $templateAlias2({code: 'git clone https://github.com/Robert-Frampton/metal-todo-app.git', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('p');
-      itext('Then navigate to the root of the project in your terminal and install the local npm dependencies.');
-    ie_close('p');
-    $templateAlias2({code: 'cd metal-todo-app && npm install', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('p');
-      itext('The boilerplate that you will be building off of is located in the ');
-      ie_open('strong');
-        itext('src/jsx');
-      ie_close('strong');
-      itext(' directory. You can also view the finished product in the ');
-      ie_open('strong');
-        itext('src/jsx/final');
-      ie_close('strong');
-      itext(' directory.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Building');
-    ie_close('h3');
-    ie_open('p');
-      itext('In order to test drive the boilerplate located in the ');
-      ie_open('strong');
-        itext('src/jsx');
-      ie_close('strong');
-      itext(' directory, you\'ll need to run the provided build script:');
-    ie_close('p');
-    $templateAlias2({code: 'npm run build:jsx', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('p');
-      itext('This will run babel + webpack to transpile and bundle the JavaScript into something consumable by web browsers.');
-    ie_close('p');
-    ie_open('p');
-      itext('Everything you\'ll be writing in this tutorial will be using ES6 syntax, if you\'re unfamiliar with it, take a look at ');
-      ie_open('a', null, null,
-          'href', '#');
-        itext('this guide');
-      ie_close('a');
-      itext(' first.');
-    ie_close('p');
-    ie_open('p');
-      itext('To build the finished product, run the following script:');
-    ie_close('p');
-    $templateAlias2({code: 'npm run build:jsx:final', mode: 'text/x-sh'}, null, opt_ijData);
-    ie_open('h3');
-      itext('Demo');
-    ie_close('h3');
-    ie_open('p');
-      itext('Now that you\'ve built the project, go ahead and open the demo page located at ');
+      itext('First let\'s prepare the ');
       ie_open('code');
-        itext('demos/index.html');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' for consuming the data being passed from ');
+      ie_open('code');
+        itext('TodoApp');
       ie_close('code');
       itext('.');
     ie_close('p');
+    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        // Conditionally adding the \'todo-item-done\' class if\n        // the todo is done\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('If you take a look at the file you\'ll see that the component is already being invoked.');
-    ie_close('p');
-    $templateAlias2({code: '<script type="text/javascript">\n    new metal.TodoApp();\n<\/script>', mode: 'text/xml'}, null, opt_ijData);
-    ie_open('p');
-      itext('When invoking a component this way, the component is rendered to the ');
+      itext('Now that you have some data that needs rendering, and the ');
       ie_open('code');
-        itext('body');
+        itext('TodoItem');
       ie_close('code');
-      itext(' element.');
+      itext(' is ready to consume it, you need to iterate over the todos and pass them to the child components.');
     ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('This will result in the following markup.');
+    ie_close('p');
+    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27349,11 +27294,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param980}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param1048}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'UaXHT.render';
+  $render.soyTemplateName = 'WfRxF.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27363,17 +27308,14 @@ return exports;
 
 });
 
-class UaXHT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UaXHT, templates);
+class WfRxF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WfRxF, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 242 */,
-/* 243 */,
-/* 244 */,
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -27434,7 +27376,10 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UaXHT, templates);
 /* 302 */,
 /* 303 */,
 /* 304 */,
-/* 305 */
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27466,9 +27411,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _dependenciesSoy = __webpack_require__(241);
+var _renderingDataSoy = __webpack_require__(244);
 
-var _dependenciesSoy2 = _interopRequireDefault(_dependenciesSoy);
+var _renderingDataSoy2 = _interopRequireDefault(_renderingDataSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27478,23 +27423,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UaXHT = function (_Component) {
-  _inherits(UaXHT, _Component);
+var WfRxF = function (_Component) {
+  _inherits(WfRxF, _Component);
 
-  function UaXHT() {
-    _classCallCheck(this, UaXHT);
+  function WfRxF() {
+    _classCallCheck(this, WfRxF);
 
-    return _possibleConstructorReturn(this, (UaXHT.__proto__ || Object.getPrototypeOf(UaXHT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WfRxF.__proto__ || Object.getPrototypeOf(WfRxF)).apply(this, arguments));
   }
 
-  return UaXHT;
+  return WfRxF;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(UaXHT, _dependenciesSoy2.default);
+_metalSoy2.default.register(WfRxF, _renderingDataSoy2.default);
 
-exports.default = UaXHT;
+exports.default = WfRxF;
 
 /***/ })
-],[305]);
+],[308]);
