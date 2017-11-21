@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([17,35,36],[
+webpackJsonppageComponent([9,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27182,12 +27182,20 @@ exports.default = parseFromAnchor;
 /* 226 */,
 /* 227 */,
 /* 228 */,
-/* 229 */
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kuiFb", function() { return kuiFb; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dFNik", function() { return dFNik; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27199,15 +27207,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from rendering-components.soy.
+// This file was automatically generated from adding-todos.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace kuiFb.
+ * @fileoverview Templates in namespace dFNik.
  * @public
  */
 
-goog.module('kuiFb.incrementaldom');
+goog.module('dFNik.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27230,7 +27238,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27241,47 +27249,66 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param728 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('The ');
-        ie_open('a', null, null,
-            'href', '/docs');
-          itext('quick start tutorial');
-        ie_close('a');
-        itext(' explains how to create and render a new component. In its examples components are always being appended directly to the document\'s body though, but what\'s usually necessary is to render in a specific position.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'replacing_an_existing_element');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#replacing_an_existing_element');
-          itext('Replacing an Existing Element');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('If you wish your component to replace an existing element on the DOM, you just need to pass it (or a selector for it) as the ');
-        ie_open('code');
-          itext('element');
-        ie_close('code');
-        itext(' property of the constructor configuration, like this:');
-      ie_close('p');
-      $templateAlias2({code: '// Passsing the element itself\nnew Modal({element: elementToReplace});\n\n// Passing a selector to the element\nnew Modal({element: \'#elementToReplace\'});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'specifying_the_parent');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#specifying_the_parent');
-          itext('Specifying the Parent');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You can also specify the parent element that should receive the component\'s contents via the second constructor param, like this:');
-      ie_close('p');
-      $templateAlias2({code: '// Passing the element itself\nnew Modal(data, parentElement);\n\n// Passing a selector to the element\nnew Modal(data, \'#parentElement\');', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
+  var param879 = function() {
+    ie_open('h2');
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+    ie_close('h2');
+    ie_open('p');
+      itext('You almost have a fully functioning Todo App! The only missing feature is the ability to add new todos to the list. This is where the ');
+      ie_open('code');
+        itext('TodoForm');
+      ie_close('code');
+      itext(' component will come into play.');
+    ie_close('p');
+    ie_open('p');
+      itext('First, go ahead and add a couple of event listeners, one for the form submission (onsubmit), and the other for when the input value changes (onkeyup).');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    handleSubmit(event) {\n        // Prevent default browser functionality\n        event.preventDefault();\n    }\n\n    handleChange(event) {\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now you can use the ');
+      ie_open('code');
+        itext('value');
+      ie_close('code');
+      itext(' property from STATE to keep track of the changes made to the input value.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                        value={this.state.value}\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    ...\n\n    handleChange(event) {\n        this.state.value = event.target.value;\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('The value of ');
+      ie_open('code');
+        itext('this.state.value');
+      ie_close('code');
+      itext(' will now match the value in the input.');
+    ie_close('p');
+    ie_open('p');
+      itext('You can also emit a custom event when the form is submitted, similarly to what ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' does to notify the parent component that something happened.');
+    ie_close('p');
+    $templateAlias2({code: 'handleSubmit(event) {\n    event.preventDefault();\n\n    if (this.state.value) {\n        this.emit(\'todoAdd\', {\n            title: this.state.value\n        });\n\n        // Clears the input value\n        this.state.value = \'\';\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Then in the ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' component, you can listen to this event and add a new todo.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                ...\n\n                <TodoForm\n                    events={{\n                        todoAdd: this.handleTodoAdd.bind(this)\n                    }}\n                 />\n            </div>\n        );\n    }\n\n    addTodo(title) {\n        // Creates a new array with all of the elements\n        // from the previous array, with the newly added item\n        this.state.todos = [...this.state.todos, {\n            done: false,\n            title\n        }];\n    }\n\n    handleTodoAdd(event) {\n        this.addTodo(event.title);\n    }\n\n    ...\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now when you add some text to the input and submit the form, a new todo will automatically be added to the list.');
+    ie_close('p');
+    ie_open('p');
+      itext('That\'s it! You\'ve successfully created a simple Todo App with Metal.js. Now that you are comfortable with the basics, check out the guides for more advanced documentation.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('img', null, null,
+          'src', '/images/tutorials/todo-app/finished_todo_anim.gif',
+          'alt', 'Finished GIF',
+          'title', 'Finished GIF');
+      ie_close('img');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27291,11 +27318,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param728}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param879}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'kuiFb.render';
+  $render.soyTemplateName = 'dFNik.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27305,22 +27332,14 @@ return exports;
 
 });
 
-class kuiFb extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kuiFb, templates);
+class dFNik extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dFNik, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
 /* 238 */,
 /* 239 */,
 /* 240 */,
@@ -27379,7 +27398,17 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kuiFb, templates);
 /* 293 */,
 /* 294 */,
 /* 295 */,
-/* 296 */
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27411,9 +27440,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _renderingComponentsSoy = __webpack_require__(229);
+var _addingTodosSoy = __webpack_require__(237);
 
-var _renderingComponentsSoy2 = _interopRequireDefault(_renderingComponentsSoy);
+var _addingTodosSoy2 = _interopRequireDefault(_addingTodosSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27423,23 +27452,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var kuiFb = function (_Component) {
-  _inherits(kuiFb, _Component);
+var dFNik = function (_Component) {
+  _inherits(dFNik, _Component);
 
-  function kuiFb() {
-    _classCallCheck(this, kuiFb);
+  function dFNik() {
+    _classCallCheck(this, dFNik);
 
-    return _possibleConstructorReturn(this, (kuiFb.__proto__ || Object.getPrototypeOf(kuiFb)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (dFNik.__proto__ || Object.getPrototypeOf(dFNik)).apply(this, arguments));
   }
 
-  return kuiFb;
+  return dFNik;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(kuiFb, _renderingComponentsSoy2.default);
+_metalSoy2.default.register(dFNik, _addingTodosSoy2.default);
 
-exports.default = kuiFb;
+exports.default = dFNik;
 
 /***/ })
-],[296]);
+],[306]);

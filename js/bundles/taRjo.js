@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([31,35,36],[
+webpackJsonppageComponent([17,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27168,12 +27168,26 @@ exports.default = parseFromAnchor;
 /* 212 */,
 /* 213 */,
 /* 214 */,
-/* 215 */
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HsRDE", function() { return HsRDE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "taRjo", function() { return taRjo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27185,15 +27199,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from modal_nested.soy.
+// This file was automatically generated from rendering-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace HsRDE.
+ * @fileoverview Templates in namespace taRjo.
  * @public
  */
 
-goog.module('HsRDE.incrementaldom');
+goog.module('taRjo.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27227,117 +27241,46 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param317 = function() {
+  var param728 = function() {
     ie_open('article');
       ie_open('p');
-        itext('In the ');
+        itext('The ');
         ie_open('a', null, null,
-            'href', '/docs/getting-started/modal_updates.html');
-          itext('previous section');
+            'href', '/docs');
+          itext('quick start tutorial');
         ie_close('a');
-        itext(' we finished working on our component\'s behavior.');
-      ie_close('p');
-      ie_open('p');
-        itext('But what if our ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' header\'s markup was very similar to one that is used in other places though? Ideally we\'d move it into a separate component that can be reused. That\'s what we\'ll be doing in this section.');
+        itext(' explains how to create and render a new component. In its examples components are always being appended directly to the document\'s body though, but what\'s usually necessary is to render in a specific position.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'creating_closeheader');
+        'id', 'replacing_an_existing_element');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#creating_closeheader');
-          itext('Creating ');
-          ie_open('strong');
-            itext('CloseHeader');
-          ie_close('strong');
+            'href', '#replacing_an_existing_element');
+          itext('Replacing an Existing Element');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('First let\'s create the new component. Add a ');
+        itext('If you wish your component to replace an existing element on the DOM, you just need to pass it (or a selector for it) as the ');
         ie_open('code');
-          itext('src/CloseHeader.js');
+          itext('element');
         ie_close('code');
-        itext(' file to your project:');
+        itext(' property of the constructor configuration, like this:');
       ie_close('p');
-      $templateAlias2({code: '// src/CloseHeader.js\n\nimport templates from \'./CloseHeader.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass CloseHeader extends Component {\n}\n\nSoy.register(CloseHeader, templates);\n\nexport default CloseHeader;', mode: 'javascript'}, null, opt_ijData);
-      $templateAlias2({code: '// src/CloseHeader.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass CloseHeader extends JSXComponent {\n    render() {\n    }\n}\n\nexport default CloseHeader;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now let\'s prepare the template to be similar to the one used by ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: '// src/CloseHeader.soy\n\n&#123;namespace CloseHeader&#125;\n\n&#123;template .render&#125;\n    {@param cssClass: string}\n    {@param onClick: any}\n    {@param title: string}\n\n    <header class="{$cssClass}">\n        <button onClick="{$onClick}" type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{$title}</h4>\n    </header>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/CloseHeader.js\n\nrender() {\n    return <header class={this.props.cssClass}>\n        <button onClick={this.props.onClick} type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{this.props.title}</h4>\n    </header>;\n}', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Done! Our new component is ready to be used by ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
+      $templateAlias2({code: '// Passsing the element itself\nnew Modal({element: elementToReplace});\n\n// Passing a selector to the element\nnew Modal({element: \'#elementToReplace\'});', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'using_closeheader');
+        'id', 'specifying_the_parent');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#using_closeheader');
-          itext('Using ');
-          ie_open('strong');
-            itext('CloseHeader');
-          ie_close('strong');
+            'href', '#specifying_the_parent');
+          itext('Specifying the Parent');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('All we have to do is to replace the header markup from ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('\'s template with a call to ');
-        ie_open('strong');
-          itext('CloseHeader');
-        ie_close('strong');
-        itext(':');
+        itext('You can also specify the parent element that should receive the component\'s contents via the second constructor param, like this:');
       ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n&#123;template .render&#125;\n    {@param body: string}\n    {@param close: string}\n    {@param header: string}\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                {call CloseHeader.render}\n                    {param cssClass: \'modal-header\' /}\n                    {param onClick: $close /}\n                    {param title: $header /}\n                {/call}\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nrender() {\n    var cssClass = \'modal\';\n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <CloseHeader\n                    cssClass="modal-header"\n                    onClick={this.close.bind(this)}\n                    title={this.props.header}\n                />\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('This will not only render ');
-        ie_open('strong');
-          itext('CloseHeader');
-        ie_close('strong');
-        itext(' at the right position, but also instantiate it for you. For more details on nested components, check out the ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/nested-components.html');
-          itext('guide about it');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'next_steps');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next Steps');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now that we have learned how to properly create a new component, it\'d good to also know how to test it. The next section will focus on that.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/docs/getting-started/modal_testing.html');
-            itext('\u21AA Tutorial: Modal - Testing');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('p');
+      $templateAlias2({code: '// Passing the element itself\nnew Modal(data, parentElement);\n\n// Passing a selector to the element\nnew Modal(data, \'#parentElement\');', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27348,42 +27291,28 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param317}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param728}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'HsRDE.render';
+  $render.soyTemplateName = 'taRjo.render';
 }
 
-exports.render.params = ["cssClass","onClick","title","body","close","header","shown","page","site"];
-exports.render.types = {"cssClass":"string","onClick":"any","title":"string","body":"string","close":"string","header":"string","shown":"bool","page":"any","site":"any"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class HsRDE extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(HsRDE, templates);
+class taRjo extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(taRjo, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
 /* 230 */,
 /* 231 */,
 /* 232 */,
@@ -27432,7 +27361,27 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(HsRDE, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27464,9 +27413,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _modal_nestedSoy = __webpack_require__(215);
+var _renderingComponentsSoy = __webpack_require__(229);
 
-var _modal_nestedSoy2 = _interopRequireDefault(_modal_nestedSoy);
+var _renderingComponentsSoy2 = _interopRequireDefault(_renderingComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27476,23 +27425,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var HsRDE = function (_Component) {
-  _inherits(HsRDE, _Component);
+var taRjo = function (_Component) {
+  _inherits(taRjo, _Component);
 
-  function HsRDE() {
-    _classCallCheck(this, HsRDE);
+  function taRjo() {
+    _classCallCheck(this, taRjo);
 
-    return _possibleConstructorReturn(this, (HsRDE.__proto__ || Object.getPrototypeOf(HsRDE)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (taRjo.__proto__ || Object.getPrototypeOf(taRjo)).apply(this, arguments));
   }
 
-  return HsRDE;
+  return taRjo;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(HsRDE, _modal_nestedSoy2.default);
+_metalSoy2.default.register(taRjo, _renderingComponentsSoy2.default);
 
-exports.default = HsRDE;
+exports.default = taRjo;
 
 /***/ })
-],[278]);
+],[298]);

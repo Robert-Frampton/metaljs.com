@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,35,36],[
+webpackJsonppageComponent([7,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27192,13 +27192,12 @@ exports.default = parseFromAnchor;
 /* 236 */,
 /* 237 */,
 /* 238 */,
-/* 239 */,
-/* 240 */
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "iEZfa", function() { return iEZfa; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnYhH", function() { return UnYhH; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27210,15 +27209,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from configurating-state.soy.
+// This file was automatically generated from components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace iEZfa.
+ * @fileoverview Templates in namespace UnYhH.
  * @public
  */
 
-goog.module('iEZfa.incrementaldom');
+goog.module('UnYhH.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27252,79 +27251,54 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param942 = function() {
+  var param921 = function() {
     ie_open('h2');
-      var dyn19 = opt_data.page.title;
-      if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
+      var dyn18 = opt_data.page.title;
+      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
     ie_close('h2');
     ie_open('p');
-      itext('As previously mentioned, Metal components automatically respond to the data passed to them and rerender. However, in order for a component to take advantage of this behavior, it needs to be told what data to respond to. This is where state comes in.');
+      itext('In the ');
+      ie_open('code');
+        itext('metal-todo-app');
+      ie_close('code');
+      itext(' boilerplate, there are already three components defined to help get you started. Each component is defined as an ES6 class that extends from Metal\'s ');
+      ie_open('code');
+        itext('JSXComponent');
+      ie_close('code');
+      itext(' class.');
     ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('JSX components have two state managers, one for internal state (STATE), and one for external properties that are passed down to it (PROPS).');
+      itext('Each component has a render function where the JSX template is defined. This will create the HTML you see in the demo page.');
     ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    return (\n        <div>Hello, World</div>\n    );\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('Soy components on the other hand only have one state manager that is used for both internal and external properties (STATE).');
-    ie_close('p');
-    ie_open('h3');
-      itext('Storing The Todos');
-    ie_close('h3');
-    ie_open('p');
-      itext('Let\'s configure the ');
+      itext('The ');
       ie_open('code');
         itext('TodoApp');
       ie_close('code');
-      itext(' component to store an array of todos with a default value.');
+      itext(' component will be the root level component. It will handle storing the todo data, and the rendering of the other two components.');
     ie_close('p');
-    $templateAlias2({code: 'TodoApp.STATE = {\n    todos: {\n        // Default value\n        value: [\n            {\n                done: false,\n                title: \'Todo 1\'\n            },\n            {\n                done: false,\n                title: \'Todo 2\'\n            }\n        ]\n    }\n};', mode: 'text/javascript'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now that there is a default value set, you can access the value in the render function using ');
-      ie_open('code');
-        itext('this.props');
-      ie_close('code');
-      itext('.');
-    ie_close('p');
-    $templateAlias2({code: 'render() {\n    return (\n        <div>Todo: {this.props.todos[0].title}</div>\n    );\n}', mode: 'text/javascript'}, null, opt_ijData);
-    ie_open('p');
-      itext('Which would result in the following markup.');
-    ie_close('p');
-    $templateAlias2({code: '<div>Todo: Todo 1</div>', mode: 'text/xml'}, null, opt_ijData);
-    ie_open('p');
-      itext('Obviously this markup isn\'t very useful, we\'ll get to rendering the entire list in a minute.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Item');
-    ie_close('h3');
     ie_open('p');
       itext('The ');
       ie_open('code');
         itext('TodoItem');
       ie_close('code');
-      itext(' component will need two PROPS, one for keeping track of it\'s index inside the list, and one for containing the todo data itself.');
+      itext(' component will render each item in the list of todos.');
     ie_close('p');
-    $templateAlias2({code: 'TodoItem.PROPS = {\n    index: {\n        value: null\n    },\n\n    todo: {\n        value: null\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Remember that PROPS are used for external data, or data that is passed to the component from a parent. Therefore these values will be read-only for the ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' component.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Form');
-    ie_close('h3');
     ie_open('p');
       itext('The ');
       ie_open('code');
-        itext('TodoForm');
+        itext('TodoItem');
       ie_close('code');
-      itext(' only needs one property that will only ever be set internally, therefore it\'s set on ');
-      ie_open('code');
-        itext('STATE');
-      ie_close('code');
-      itext('.');
+      itext(' component will render a form for adding new todo items to the list. It will consist of a text input and add button.');
     ie_close('p');
-    $templateAlias2({code: 'TodoForm.STATE = {\n    value: {\n        value: \'\'\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('h3');
+      itext('Why more than one?');
+    ie_close('h3');
+    ie_open('p');
+      itext('It might seem more trouble than it\'s worth splitting up the Todo App into multiple components, but it\'s absolutely necessary when creating larger applications. This tutorial aims to teach you how to handle nested components for more complex use cases.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27334,11 +27308,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param942}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param921}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'iEZfa.render';
+  $render.soyTemplateName = 'UnYhH.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27348,14 +27322,15 @@ return exports;
 
 });
 
-class iEZfa extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(iEZfa, templates);
+class UnYhH extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UnYhH, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 240 */,
 /* 241 */,
 /* 242 */,
 /* 243 */,
@@ -27420,8 +27395,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(iEZfa, templates);
 /* 302 */,
 /* 303 */,
 /* 304 */,
-/* 305 */,
-/* 306 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27453,9 +27427,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _configuratingStateSoy = __webpack_require__(240);
+var _componentsSoy = __webpack_require__(239);
 
-var _configuratingStateSoy2 = _interopRequireDefault(_configuratingStateSoy);
+var _componentsSoy2 = _interopRequireDefault(_componentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27465,23 +27439,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iEZfa = function (_Component) {
-  _inherits(iEZfa, _Component);
+var UnYhH = function (_Component) {
+  _inherits(UnYhH, _Component);
 
-  function iEZfa() {
-    _classCallCheck(this, iEZfa);
+  function UnYhH() {
+    _classCallCheck(this, UnYhH);
 
-    return _possibleConstructorReturn(this, (iEZfa.__proto__ || Object.getPrototypeOf(iEZfa)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (UnYhH.__proto__ || Object.getPrototypeOf(UnYhH)).apply(this, arguments));
   }
 
-  return iEZfa;
+  return UnYhH;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(iEZfa, _configuratingStateSoy2.default);
+_metalSoy2.default.register(UnYhH, _componentsSoy2.default);
 
-exports.default = iEZfa;
+exports.default = UnYhH;
 
 /***/ })
-],[306]);
+],[305]);

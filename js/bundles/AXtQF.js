@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([27,35,36],[
+webpackJsonppageComponent([13,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27172,12 +27172,26 @@ exports.default = parseFromAnchor;
 /* 216 */,
 /* 217 */,
 /* 218 */,
-/* 219 */
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WQNEK", function() { return WQNEK; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AXtQF", function() { return AXtQF; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27189,15 +27203,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from building.soy.
+// This file was automatically generated from yeoman-generator.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace WQNEK.
+ * @fileoverview Templates in namespace AXtQF.
  * @public
  */
 
-goog.module('WQNEK.incrementaldom');
+goog.module('AXtQF.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27218,6 +27232,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -27229,122 +27245,96 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param438 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('As we mentioned before, ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' components are written in ES6, which means that we need a transpiling process before using it on a website.');
-      ie_close('p');
-      ie_open('p');
-        itext('This can be done via any tools that you prefer, like ');
-        ie_open('a', null, null,
-            'href', 'http://webpack.github.io/');
-          itext('webpack');
-        ie_close('a');
-        itext(' or ');
-        ie_open('a', null, null,
-            'href', 'http://browserify.org/');
-          itext('browserify');
-        ie_close('a');
-        itext(', but we\'ve also published a few tools of our own, which focuses on ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' projects, which we\'ll talk about here.');
-      ie_close('p');
-    ie_close('article');
+  var param859 = function() {
     ie_open('article', null, null,
-        'id', 'gulp_metal');
+        'id', 'yeoman_generator');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#gulp_metal');
-          itext('gulp-metal');
+            'href', '#yeoman_generator');
+          itext('Yeoman Generator');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('What this package offers is a a bunch of ');
+        itext('You can organize your ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' project in any way you want, but to start out we recommend using the ');
         ie_open('a', null, null,
-            'href', 'http://gulpjs.com/');
-          itext('gulp');
+            'href', 'http://npmjs.com/package/generator-metal');
+          itext('Yeoman generator');
         ie_close('a');
-        itext(' tasks. There are tasks that can handle not only building JavaScript, as well as Soy compilation, testing, linting and many other things.');
+        itext(' we\'ve created, which prepares both the project structure as well as a basic development workflow for you.');
       ie_close('p');
       ie_open('p');
-        itext('The ');
+        itext('To use it:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          itext('Install ');
+          ie_open('a', null, null,
+              'href', 'https://nodejs.org');
+            itext('npm');
+          ie_close('a');
+          itext(' v3.0.0 or newer (if you don\'t have it yet)');
+        ie_close('li');
+        ie_open('li');
+          itext('Install ');
+          ie_open('strong');
+            itext('Yeoman');
+          ie_close('strong');
+          itext(' and ');
+          ie_open('strong');
+            itext('generator-metal');
+          ie_close('strong');
+          itext(': ');
+          ie_open('code');
+            itext('[sudo] npm i -g yo generator-metal');
+          ie_close('code');
+        ie_close('li');
+        ie_open('li');
+          itext('Open the folder that you want to use on your terminal and type: ');
+          ie_open('code');
+            itext('yo metal');
+          ie_close('code');
+        ie_close('li');
+        ie_open('li');
+          itext('Answer the generator prompts: ');
+          ie_open('img', null, null,
+              'src', '../../images/docs/prompts.png',
+              'alt', 'Generator prompts');
+          ie_close('img');
+        ie_close('li');
+        ie_open('li');
+          itext('Wait for the generator to finish fetching dependencies');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('After those steps you\'ll get a directory tree similar to this:');
+      ie_close('p');
+      $templateAlias2({code: '\u2514\u2500\u2500 metal-modal\n    \u251C\u2500\u2500 demos\n    \u2502   \u2514\u2500\u2500 index.html\n    \u251C\u2500\u2500 node_modules\n    \u251C\u2500\u2500 package.json\n    \u251C\u2500\u2500 src\n    \u2502   \u251C\u2500\u2500 Modal.js\n    \u2502   \u251C\u2500\u2500 Modal.soy // Only if Soy was chosen\n    \u2502   \u2514\u2500\u2500 modal.scss\n    \u2514\u2500\u2500 test\n        \u2514\u2500\u2500 Modal.js', mode: 'text'}, null, opt_ijData);
+      ie_open('p');
+        ie_open('code');
+          itext('generator-metal');
+        ie_close('code');
+        itext(' will already include some npm scripts to help you build and test your code, as well as many gulp tasks via ');
         ie_open('a', null, null,
-            'href', '/docs/getting-started/');
-          itext('tutorials');
-        ie_close('a');
-        itext(' we\'ve provided are all using it, though indirectly, through some npm scripts. To learn how to use ');
-        ie_open('strong');
+            'href', '/docs/guides/building.html#gulp_metal');
           itext('gulp-metal');
-        ie_close('strong');
-        itext(' directly take a look at its ');
-        ie_open('a', null, null,
-            'href', 'http://www.npmjs.com/package/gulp-metal');
-          itext('npm page');
         ie_close('a');
         itext('.');
       ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'metal_cli');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#metal_cli');
-          itext('metal-cli');
-        ie_close('a');
-      ie_close('h2');
       ie_open('p');
-        itext('If you\'re not a fan of ');
-        ie_open('strong');
-          itext('gulp');
-        ie_close('strong');
-        itext(' you can still use ');
+        itext('By the way, the boilerplate zip provided by the ');
         ie_open('a', null, null,
-            'href', 'http://www.npmjs.com/package/metal-cli');
-          itext('metal-cli');
+            'href', '/docs/getting-started/#boilerplate');
+          itext('getting started guide');
         ie_close('a');
-        itext(', which offers almost the same tools, but through the command line.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'examples_using_other_tools');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#examples_using_other_tools');
-          itext('Examples Using Other Tools');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('As was mentioned before, using ');
+        itext(' was created using ');
         ie_open('strong');
-          itext('gulp-metal');
+          itext('generator-metal');
         ie_close('strong');
-        itext(' or ');
-        ie_open('strong');
-          itext('metal-cli');
-        ie_close('strong');
-        itext(' is not required. You can use your favorite build tool with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' as well.');
-      ie_close('p');
-      ie_open('p');
-        itext('We\'ve created a Github repository full of different examples on how to work with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(', and among other things it has a bunch of examples showing how to use different build tools. ');
-        ie_open('a', null, null,
-            'href', 'http://github.com/metal/metal-examples');
-          itext('Check it out');
-        ie_close('a');
-        itext(', and feel free to create an issue or send a pull request for other tools that it may be missing.');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -27356,11 +27346,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param438}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param859}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'WQNEK.render';
+  $render.soyTemplateName = 'AXtQF.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27370,28 +27360,14 @@ return exports;
 
 });
 
-class WQNEK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WQNEK, templates);
+class AXtQF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AXtQF, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
@@ -27443,15 +27419,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WQNEK, templates);
 /* 282 */,
 /* 283 */,
 /* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27483,9 +27451,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _buildingSoy = __webpack_require__(219);
+var _yeomanGeneratorSoy = __webpack_require__(233);
 
-var _buildingSoy2 = _interopRequireDefault(_buildingSoy);
+var _yeomanGeneratorSoy2 = _interopRequireDefault(_yeomanGeneratorSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27495,23 +27463,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var WQNEK = function (_Component) {
-  _inherits(WQNEK, _Component);
+var AXtQF = function (_Component) {
+  _inherits(AXtQF, _Component);
 
-  function WQNEK() {
-    _classCallCheck(this, WQNEK);
+  function AXtQF() {
+    _classCallCheck(this, AXtQF);
 
-    return _possibleConstructorReturn(this, (WQNEK.__proto__ || Object.getPrototypeOf(WQNEK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AXtQF.__proto__ || Object.getPrototypeOf(AXtQF)).apply(this, arguments));
   }
 
-  return WQNEK;
+  return AXtQF;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(WQNEK, _buildingSoy2.default);
+_metalSoy2.default.register(AXtQF, _yeomanGeneratorSoy2.default);
 
-exports.default = WQNEK;
+exports.default = AXtQF;
 
 /***/ })
-],[293]);
+],[285]);

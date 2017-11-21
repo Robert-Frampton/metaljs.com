@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([26,35,36],[
+webpackJsonppageComponent([27,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27172,13 +27172,12 @@ exports.default = parseFromAnchor;
 /* 216 */,
 /* 217 */,
 /* 218 */,
-/* 219 */,
-/* 220 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Yxwoi", function() { return Yxwoi; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "uciPV", function() { return uciPV; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27190,15 +27189,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from component-lifecycle.soy.
+// This file was automatically generated from building.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace Yxwoi.
+ * @fileoverview Templates in namespace uciPV.
  * @public
  */
 
-goog.module('Yxwoi.incrementaldom');
+goog.module('uciPV.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27219,8 +27218,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -27232,78 +27229,123 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param447 = function() {
-    ie_open('article', null, null,
-        'id', 'component_lifecycle');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#component_lifecycle');
-          itext('Component Lifecycle');
-        ie_close('a');
-      ie_close('h2');
+  var param438 = function() {
+    ie_open('article');
       ie_open('p');
-        itext('Components built with Metal.js provide lifecycle methods that can be called when needed. The following example lists all available lifecycle methods, in the order in which they\'re called');
+        itext('As we mentioned before, ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components are written in ES6, which means that we need a transpiling process before using it on a website.');
       ie_close('p');
-      $templateAlias2({code: 'class MyComponent extends Component {\n    /**\n     * Called when the component is first created,\n     * but before it\'s first rendered.\n     */\n    created() {\n    }\n\n    /**\n     * Called whenever the component is rendered.\n     * @param {boolean} firstRender Flag indicating if\n     * this was the component\'s first render.\n     */\n    rendered(firstRender) {\n    }\n\n    /**\n     * Called before the component is about to attach\n     * to the DOM.\n     */\n    willAttach() {\n    }\n\n    /**\n     * Called when the component is attached to the\n     * DOM. The component will automatically be\n     * attached when first rendered, but can also\n     * be attached (without rerendering the\n     * component) by calling the `attach` method\n     * directly. This is a good place to attach event\n     * listeners, since the component is available\n     * in the page.\n     */\n    attached() {\n    }\n\n    /**\n     * Soy components only.\n     *\n     * Called when state data is about to be passed\n     * to the component\'s renderer.\n     * @param {!object} changes object literal with\n     * info on state changes.\n     */\n    willReceiveState(changes) {\n    }\n\n    /**\n     * JSX components only.\n     *\n     * Called when props data is about to be passed to\n     * the component\'s renderer.\n     * @param {!object} propsChanges object literal\n     * with info on props changes.\n     */\n    willReceiveProps(propsChanges) {\n    }\n\n    /**\n     * Called when the renderer is about to rerender\n     * the component. If it returns false it will not\n     * rerender.\n     * @param {!object} changes object literal with\n     * info on state changes.\n     * @param {?object} propsChanges object literal\n     * with info on props changes.\n     * Note: `propsChanges` is only applicable for\n     * JSX components.\n     */\n    shouldUpdate(changes, propsChanges) {\n        return true;\n    }\n\n    /**\n     * Called before the component will rerender.\n     * @param {!object} changes object literal with\n     * info on state changes.\n     * @param {?object} propsChanges object literal\n     * with info on props changes.\n     * Note: `propsChanges` is only applicable for\n     * JSX components.\n     */\n    willUpdate(changes, propsChanges) {\n    }\n\n    /**\n     * Called before the component is about to detach\n     * from the DOM.\n     */\n    willDetach() {\n    }\n\n    /**\n     * Called when the component is detached from the\n     * DOM. The component will automatically be\n     * detached when disposed, but can also be\n     * detached (without disposing the component)\n     * by calling the `detach` method directly. This\n     * is a good place to detach event listeners,\n     * since the component is not available in the\n     * page anymore.\n     */\n    detached() {\n    }\n\n    /**\n     * Called when the component is disposed. This\n     * should contain any necessary cleanup, like\n     * detaching any remaining events and disposing\n     * of sub components and local variables.\n     */\n    disposed() {\n    }\n\n    /**\n     * Called when the component is about to render.\n     * It takes the component state as an argument\n     * and you can massage the data before it is passed\n     * down to the template.\n     * This is only available for Soy Components.\n     */\n    prepareStateForRender(states) {\n        return Object.assign({}, states);\n    }\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('This can be done via any tools that you prefer, like ');
+        ie_open('a', null, null,
+            'href', 'http://webpack.github.io/');
+          itext('webpack');
+        ie_close('a');
+        itext(' or ');
+        ie_open('a', null, null,
+            'href', 'http://browserify.org/');
+          itext('browserify');
+        ie_close('a');
+        itext(', but we\'ve also published a few tools of our own, which focuses on ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' projects, which we\'ll talk about here.');
+      ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'will_receive_state');
+        'id', 'gulp_metal');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#will_receive_state');
-          itext('willReceiveState - Soy');
+            'href', '#gulp_metal');
+          itext('gulp-metal');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('The ');
-        ie_open('code');
-          itext('willReceiveState');
-        ie_close('code');
-        itext(' lifecycle method allows for hooking into the state lifecycle of Soy components. Let\'s take the following component for example.');
+        itext('What this package offers is a a bunch of ');
+        ie_open('a', null, null,
+            'href', 'http://gulpjs.com/');
+          itext('gulp');
+        ie_close('a');
+        itext(' tasks. There are tasks that can handle not only building JavaScript, as well as Soy compilation, testing, linting and many other things.');
       ie_close('p');
-      $templateAlias2({code: 'import Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nimport templates from \'./MySoyComponent.soy\';\n\nclass MySoyComponent extends Component {\n    willReceiveState(changes) {\n        if (changes.foo && changes.foo.newVal !== changes.foo.prevVal) {\n            // This will available in the next render\n            this.bar = \'bar1\';\n        }\n    }\n}\n\nMySoyComponent.STATE = {\n    foo: {\n        value: \'foo\'\n    },\n\n    bar: {\n        value: \'bar\'\n    }\n};\n\nSoy.register(MySoyComponent, templates);\nexport default MySoyComponent;', mode: 'javascript'}, null, opt_ijData);
-      $templateAlias2({code: '&#123;namespace MySoyComponent&#125;\n\n/**\n *\n */\n&#123;template. render&#125;\n    {@param foo: string}\n    {@param bar: string}\n\n    <div>{$foo}:{$bar}</div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
       ie_open('p');
-        itext('If we render this component and change the value of the ');
-        ie_open('code');
-          itext('foo');
-        ie_close('code');
-        itext(' state, the');
-        ie_open('code');
-          itext('willReceiveState');
-        ie_close('code');
-        itext(' method will be invoked before the component renders allowing us to also set the value of other state values that will also be passed to the next render.');
+        itext('The ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/');
+          itext('tutorials');
+        ie_close('a');
+        itext(' we\'ve provided are all using it, though indirectly, through some npm scripts. To learn how to use ');
+        ie_open('strong');
+          itext('gulp-metal');
+        ie_close('strong');
+        itext(' directly take a look at its ');
+        ie_open('a', null, null,
+            'href', 'http://www.npmjs.com/package/gulp-metal');
+          itext('npm page');
+        ie_close('a');
+        itext('.');
       ie_close('p');
-      $templateAlias2({code: 'import MySoyComponent from \'./MySoyComponent\';\n\nconst component = new MySoyComponnet();\n\ncomponent.foo = \'foo1\';\n\ncomponent.once(\'rendered\', function() {\n    console.log(component.element.innerHTML);\n\n    // component.element.innerHTML === \'foo1:bar1\';\n});', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'will_receive_props');
+        'id', 'metal_cli');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#will_receive_props');
-          itext('willReceiveProps - JSX');
+            'href', '#metal_cli');
+          itext('metal-cli');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('The ');
-        ie_open('code');
-          itext('willReceiveProps');
-        ie_close('code');
-        itext(' lifecycle method allows for hooking into the props lifecycle of JSX components. Let\'s take the following JSX component for example.');
+        itext('If you\'re not a fan of ');
+        ie_open('strong');
+          itext('gulp');
+        ie_close('strong');
+        itext(' you can still use ');
+        ie_open('a', null, null,
+            'href', 'http://www.npmjs.com/package/metal-cli');
+          itext('metal-cli');
+        ie_close('a');
+        itext(', which offers almost the same tools, but through the command line.');
       ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyJSXComponent extends JSXComponent {\n    render() {\n        return <div>{this.props.foo}:{this.state.bar}</div>\n    }\n\n    willReceiveProps(changes) {\n        if (changes.foo && changes.foo.newVal !== changes.foo.prevVal) {\n            // This will available in the next render\n            this.state.bar = \'bar1\';\n        }\n    }\n}\n\nMyJSXComponent.STATE = {\n    bar: {\n        value: \'bar\'\n    }\n};\n\nMyJSXComponent.PROPS = {\n    foo: {\n        value: \'foo\'\n    }\n};\n\nexport default MyJSXComponent;', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'examples_using_other_tools');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#examples_using_other_tools');
+          itext('Examples Using Other Tools');
+        ie_close('a');
+      ie_close('h2');
       ie_open('p');
-        itext('If we render this component and change the value of the ');
-        ie_open('code');
-          itext('foo');
-        ie_close('code');
-        itext(' prop, the');
-        ie_open('code');
-          itext('willReceiveProps');
-        ie_close('code');
-        itext(' method will be invoked before the component renders allowing us to also set the value of internal state values that will also be passed to the next render.');
+        itext('As was mentioned before, using ');
+        ie_open('strong');
+          itext('gulp-metal');
+        ie_close('strong');
+        itext(' or ');
+        ie_open('strong');
+          itext('metal-cli');
+        ie_close('strong');
+        itext(' is not required. You can use your favorite build tool with ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' as well.');
       ie_close('p');
-      $templateAlias2({code: 'import MyJSXComponent from \'./MyJSXComponent\';\n\nconst component = new MyJSXComponent();\n\ncomponent.props.foo = \'foo1\';\n\ncomponent.once(\'rendered\', function() {\n    console.log(component.element.innerHTML);\n\n    // component.element.innerHTML === \'foo1:bar1\';\n});', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('We\'ve created a Github repository full of different examples on how to work with ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(', and among other things it has a bunch of examples showing how to use different build tools. ');
+        ie_open('a', null, null,
+            'href', 'http://github.com/metal/metal-examples');
+          itext('Check it out');
+        ie_close('a');
+        itext(', and feel free to create an issue or send a pull request for other tools that it may be missing.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27314,11 +27356,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param447}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param438}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'Yxwoi.render';
+  $render.soyTemplateName = 'uciPV.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27328,14 +27370,15 @@ return exports;
 
 });
 
-class Yxwoi extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Yxwoi, templates);
+class uciPV extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(uciPV, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 220 */,
 /* 221 */,
 /* 222 */,
 /* 223 */,
@@ -27410,7 +27453,11 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Yxwoi, templates);
 /* 292 */,
 /* 293 */,
 /* 294 */,
-/* 295 */
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27442,9 +27489,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _componentLifecycleSoy = __webpack_require__(220);
+var _buildingSoy = __webpack_require__(219);
 
-var _componentLifecycleSoy2 = _interopRequireDefault(_componentLifecycleSoy);
+var _buildingSoy2 = _interopRequireDefault(_buildingSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27454,23 +27501,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Yxwoi = function (_Component) {
-  _inherits(Yxwoi, _Component);
+var uciPV = function (_Component) {
+  _inherits(uciPV, _Component);
 
-  function Yxwoi() {
-    _classCallCheck(this, Yxwoi);
+  function uciPV() {
+    _classCallCheck(this, uciPV);
 
-    return _possibleConstructorReturn(this, (Yxwoi.__proto__ || Object.getPrototypeOf(Yxwoi)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (uciPV.__proto__ || Object.getPrototypeOf(uciPV)).apply(this, arguments));
   }
 
-  return Yxwoi;
+  return uciPV;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(Yxwoi, _componentLifecycleSoy2.default);
+_metalSoy2.default.register(uciPV, _buildingSoy2.default);
 
-exports.default = Yxwoi;
+exports.default = uciPV;
 
 /***/ })
-],[295]);
+],[299]);

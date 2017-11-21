@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,35,36],[
+webpackJsonppageComponent([5,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27194,15 +27194,12 @@ exports.default = parseFromAnchor;
 /* 238 */,
 /* 239 */,
 /* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */
+/* 241 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CnIVj", function() { return CnIVj; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sauXD", function() { return sauXD; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27214,15 +27211,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from rendering-data.soy.
+// This file was automatically generated from dependencies.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace CnIVj.
+ * @fileoverview Templates in namespace sauXD.
  * @public
  */
 
-goog.module('CnIVj.incrementaldom');
+goog.module('sauXD.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27256,35 +27253,93 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1046 = function() {
+  var param978 = function() {
     ie_open('h2');
-      var dyn22 = opt_data.page.title;
-      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+      var dyn20 = opt_data.page.title;
+      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
     ie_close('h2');
     ie_open('p');
-      itext('First let\'s prepare the ');
+      itext('In order to follow along with this tutorial, you\'ll need ');
+      ie_open('a', null, null,
+          'href', 'https://git-scm.com/');
+        itext('Git');
+      ie_close('a');
+      itext(', and a recent version of ');
+      ie_open('a', null, null,
+          'href', 'https://nodejs.org/');
+        itext('Node.js/npm');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Todo Boilerplate');
+    ie_close('h3');
+    ie_open('p');
+      itext('Start by cloning the boilerplate respository.');
+    ie_close('p');
+    $templateAlias2({code: 'git clone https://github.com/Robert-Frampton/metal-todo-app.git', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('Then navigate to the root of the project in your terminal and install the local npm dependencies.');
+    ie_close('p');
+    $templateAlias2({code: 'cd metal-todo-app && npm install', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('The boilerplate that you will be building off of is located in the ');
+      ie_open('strong');
+        itext('src/jsx');
+      ie_close('strong');
+      itext(' directory. You can also view the finished product in the ');
+      ie_open('strong');
+        itext('src/jsx/final');
+      ie_close('strong');
+      itext(' directory.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Building');
+    ie_close('h3');
+    ie_open('p');
+      itext('In order to test drive the boilerplate located in the ');
+      ie_open('strong');
+        itext('src/jsx');
+      ie_close('strong');
+      itext(' directory, you\'ll need to run the provided build script:');
+    ie_close('p');
+    $templateAlias2({code: 'npm run build:jsx', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('This will run babel + webpack to transpile and bundle the JavaScript into something consumable by web browsers.');
+    ie_close('p');
+    ie_open('p');
+      itext('Everything you\'ll be writing in this tutorial will be using ES6 syntax, if you\'re unfamiliar with it, take a look at ');
+      ie_open('a', null, null,
+          'href', '#');
+        itext('this guide');
+      ie_close('a');
+      itext(' first.');
+    ie_close('p');
+    ie_open('p');
+      itext('To build the finished product, run the following script:');
+    ie_close('p');
+    $templateAlias2({code: 'npm run build:jsx:final', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('h3');
+      itext('Demo');
+    ie_close('h3');
+    ie_open('p');
+      itext('Now that you\'ve built the project, go ahead and open the demo page located at ');
       ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' for consuming the data being passed from ');
-      ie_open('code');
-        itext('TodoApp');
+        itext('demos/index.html');
       ie_close('code');
       itext('.');
     ie_close('p');
-    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        // Conditionally adding the \'todo-item-done\' class if\n        // the todo is done\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('Now that you have some data that needs rendering, and the ');
+      itext('If you take a look at the file you\'ll see that the component is already being invoked.');
+    ie_close('p');
+    $templateAlias2({code: '<script type="text/javascript">\n    new metal.TodoApp();\n<\/script>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('p');
+      itext('When invoking a component this way, the component is rendered to the ');
       ie_open('code');
-        itext('TodoItem');
+        itext('body');
       ie_close('code');
-      itext(' is ready to consume it, you need to iterate over the todos and pass them to the child components.');
+      itext(' element.');
     ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('This will result in the following markup.');
-    ie_close('p');
-    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27294,11 +27349,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param978}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'CnIVj.render';
+  $render.soyTemplateName = 'sauXD.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27308,14 +27363,17 @@ return exports;
 
 });
 
-class CnIVj extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CnIVj, templates);
+class sauXD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(sauXD, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 242 */,
+/* 243 */,
+/* 244 */,
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -27375,7 +27433,12 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CnIVj, templates);
 /* 301 */,
 /* 302 */,
 /* 303 */,
-/* 304 */
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27407,9 +27470,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _renderingDataSoy = __webpack_require__(244);
+var _dependenciesSoy = __webpack_require__(241);
 
-var _renderingDataSoy2 = _interopRequireDefault(_renderingDataSoy);
+var _dependenciesSoy2 = _interopRequireDefault(_dependenciesSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27419,23 +27482,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var CnIVj = function (_Component) {
-  _inherits(CnIVj, _Component);
+var sauXD = function (_Component) {
+  _inherits(sauXD, _Component);
 
-  function CnIVj() {
-    _classCallCheck(this, CnIVj);
+  function sauXD() {
+    _classCallCheck(this, sauXD);
 
-    return _possibleConstructorReturn(this, (CnIVj.__proto__ || Object.getPrototypeOf(CnIVj)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (sauXD.__proto__ || Object.getPrototypeOf(sauXD)).apply(this, arguments));
   }
 
-  return CnIVj;
+  return sauXD;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(CnIVj, _renderingDataSoy2.default);
+_metalSoy2.default.register(sauXD, _dependenciesSoy2.default);
 
-exports.default = CnIVj;
+exports.default = sauXD;
 
 /***/ })
-],[304]);
+],[309]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([8,35,36],[
+webpackJsonppageComponent([28,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27171,32 +27171,12 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wiAxm", function() { return wiAxm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RwNQj", function() { return RwNQj; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27208,15 +27188,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from before-we-start.soy.
+// This file was automatically generated from alias.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace wiAxm.
+ * @fileoverview Templates in namespace RwNQj.
  * @public
  */
 
-goog.module('wiAxm.incrementaldom');
+goog.module('RwNQj.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27237,7 +27217,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -27248,58 +27230,40 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param910 = function() {
-    ie_open('h2');
-      var dyn17 = opt_data.page.title;
-      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
-    ie_close('h2');
-    ie_open('p');
-      itext('Before we actually make anything, let\'s discuss what Metal.js is, and what it\'s intended for.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Data flow');
-    ie_close('h3');
-    ie_open('p');
-      itext('If you\'re familiar with React, you\'ll feel right at home. Metal.js is a foundation for creating UI components that automatically respond to data when it\'s updated. In other words, it\'s a framework for creating one-way data binding components.');
-    ie_close('p');
-    ie_open('p');
-      itext('This is different than frameworks like Angular, which provide a two-way data binding solution.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Templating');
-    ie_close('h3');
-    ie_open('p');
-      itext('Metal.js is template agnostic, and comes with out of the box support for two templating languages, Soy (Google Closure) and JSX (React).');
-    ie_close('p');
-    ie_open('p');
-      itext('When the data being passed to your component changes, your component\'s template will be used to rerender just the parts of your component that need to be updated. Therefore, you don\'t need to worry about manual DOM manipulation.');
-    ie_close('p');
-    ie_open('p');
-      itext('Behind the scenes Metal.js is using Google\'s ');
-      ie_open('a', null, null,
-          'href', 'https://google.github.io/incremental-dom');
-        itext('Incremental DOM');
-      ie_close('a');
-      itext(' for updating DOM elements.');
-    ie_close('p');
-    ie_open('h3');
-      itext('What are we making?');
-    ie_close('h3');
-    ie_open('p');
-      itext('In this tutorial we\'ll be making a simple Todo App that let\'s you mark items as completed, and add new items to the list. If you would like to see the finished product check out the ');
-      ie_open('a', null, null,
-          'href', '#');
-        itext('metal-todo-app repsitory');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('img', null, null,
-          'src', '/images/tutorials/todo-app/finished_todo_app.png',
-          'alt', 'Finished Todo App',
-          'title', 'Finished Todo App');
-      ie_close('img');
-    ie_close('p');
+  var param419 = function() {
+    ie_open('article', null, null,
+        'id', 'alias');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#alias');
+          itext('Alias');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('A straightforward way to import npm dependencies into your module is to use their relative paths, like we do for any other code. For example:');
+      ie_close('p');
+      $templateAlias2({code: 'import core from \'../node_modules/metal/src/core\';', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Having to supply the relative path to node_modules is not cool though and, besides that, it may cause problems when a module doing that is imported later as an npm dependency of another project, since the paths will change.');
+      ie_close('p');
+      ie_open('p');
+        itext('Knowing that, Metal.js allows importing npm dependencies like you would from a regular node module, just by referencing their names. Note that this will only work when using Metal.js\'s ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/building.html');
+          itext('build tools');
+        ie_close('a');
+        itext(' or adding a similar logic to your build process yourself (though we provide a ');
+        ie_open('a', null, null,
+            'href', 'https://npmjs.com/package/babel-preset-metal');
+          itext('babel preset');
+        ie_close('a');
+        itext(' with this logic that you can use separately too).');
+      ie_close('p');
+      ie_open('p');
+        itext('With aliases, the previous example can be rewritten like this:');
+      ie_close('p');
+      $templateAlias2({code: 'import core from \'metal\';', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27309,11 +27273,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param910}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param419}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'wiAxm.render';
+  $render.soyTemplateName = 'RwNQj.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27323,14 +27287,34 @@ return exports;
 
 });
 
-class wiAxm extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wiAxm, templates);
+class RwNQj extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(RwNQj, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
@@ -27381,27 +27365,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wiAxm, templates);
 /* 286 */,
 /* 287 */,
 /* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27433,9 +27397,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _beforeWeStartSoy = __webpack_require__(238);
+var _aliasSoy = __webpack_require__(218);
 
-var _beforeWeStartSoy2 = _interopRequireDefault(_beforeWeStartSoy);
+var _aliasSoy2 = _interopRequireDefault(_aliasSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27445,23 +27409,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var wiAxm = function (_Component) {
-  _inherits(wiAxm, _Component);
+var RwNQj = function (_Component) {
+  _inherits(RwNQj, _Component);
 
-  function wiAxm() {
-    _classCallCheck(this, wiAxm);
+  function RwNQj() {
+    _classCallCheck(this, RwNQj);
 
-    return _possibleConstructorReturn(this, (wiAxm.__proto__ || Object.getPrototypeOf(wiAxm)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (RwNQj.__proto__ || Object.getPrototypeOf(RwNQj)).apply(this, arguments));
   }
 
-  return wiAxm;
+  return RwNQj;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(wiAxm, _beforeWeStartSoy2.default);
+_metalSoy2.default.register(RwNQj, _aliasSoy2.default);
 
-exports.default = wiAxm;
+exports.default = RwNQj;
 
 /***/ })
-],[309]);
+],[289]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,35,36],[
+webpackJsonppageComponent([19,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27180,27 +27180,12 @@ exports.default = parseFromAnchor;
 /* 224 */,
 /* 225 */,
 /* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xySmT", function() { return xySmT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bHxyQ", function() { return bHxyQ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27212,15 +27197,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from event-listeners.soy.
+// This file was automatically generated from performance.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace xySmT.
+ * @fileoverview Templates in namespace bHxyQ.
  * @public
  */
 
-goog.module('xySmT.incrementaldom');
+goog.module('bHxyQ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27241,9 +27226,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -27254,45 +27237,66 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1014 = function() {
-    ie_open('h2');
-      var dyn21 = opt_data.page.title;
-      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
-    ie_close('h2');
-    ie_open('p');
-      itext('So now you should have a static list of todo items, what now? Remember the end goal is to be able to click the todos to mark them as completed, so let\'s start with adding a click event listener to the list items.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n                data-onclick={this.handleClick.bind(this)}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n\n    handleClick(event) {\n        alert(this.props.todo.title);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now you should see an alert with the title of the clicked todo. Now you must notify ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext(' that a todo was marked as completed so that it can update the data.');
-    ie_close('p');
-    ie_open('p');
-      itext('This can be done by emitting a custom event with the info needed to make the change. In this case we\'ll use the index value from PROPS.');
-    ie_close('p');
-    $templateAlias2({code: 'handleClick(event) {\n    this.emit(\'todoClick\', {\n        index: this.props.index\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now that the ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' is emitting an event, you must add a listener from the parent component ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext('.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                events={{\n                                    todoClick: this.handleTodoClick.bind(this)\n                                }}\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n\n    handleTodoClick(event) {\n        alert(event.index);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('At this point you should have an event handler that fires every time a todo item is clicked on. Next you will use this data to update the state in ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext('.');
-    ie_close('p');
+  var param710 = function() {
+    ie_open('article', null, null,
+        'id', 'performance');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#performance');
+          itext('Performance');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' was built from the first with performance in mind. We\'ve run performance tests to compare it with other libraries and got really good results that show the benefits of using it.');
+      ie_close('p');
+      ie_open('p');
+        itext('In one of the tests we made, we built a simple list widget on three different libraries: ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(', ');
+        ie_open('strong');
+          itext('YUI');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('strong');
+          itext('React');
+        ie_close('strong');
+        itext('. We then measured the time it took to render those widgets with 1000 items each on three different situations:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('First Render -');
+          ie_close('strong');
+          itext(' Creating and rendering the list for the first time, on a blank element.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Decorate -');
+          ie_close('strong');
+          itext(' Creating and decorating a list that was previously rendered on the DOM.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Update -');
+          ie_close('strong');
+          itext(' Changing the contents of the first item of the list, causing a rerender.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('The chart below shows the results we obtained on Chrome (the higher the bar, the faster it runs):');
+      ie_close('p');
+      ie_open('p');
+        ie_open('img', null, null,
+            'src', '../../images/docs/perf.png',
+            'alt', 'Performance Test - List');
+        ie_close('img');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27302,11 +27306,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param1014}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param710}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'xySmT.render';
+  $render.soyTemplateName = 'bHxyQ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27316,14 +27320,29 @@ return exports;
 
 });
 
-class xySmT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xySmT, templates);
+class bHxyQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(bHxyQ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -27374,24 +27393,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xySmT, templates);
 /* 290 */,
 /* 291 */,
 /* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */,
-/* 310 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27423,9 +27425,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _eventListenersSoy = __webpack_require__(242);
+var _performanceSoy = __webpack_require__(227);
 
-var _eventListenersSoy2 = _interopRequireDefault(_eventListenersSoy);
+var _performanceSoy2 = _interopRequireDefault(_performanceSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27435,23 +27437,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var xySmT = function (_Component) {
-  _inherits(xySmT, _Component);
+var bHxyQ = function (_Component) {
+  _inherits(bHxyQ, _Component);
 
-  function xySmT() {
-    _classCallCheck(this, xySmT);
+  function bHxyQ() {
+    _classCallCheck(this, bHxyQ);
 
-    return _possibleConstructorReturn(this, (xySmT.__proto__ || Object.getPrototypeOf(xySmT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bHxyQ.__proto__ || Object.getPrototypeOf(bHxyQ)).apply(this, arguments));
   }
 
-  return xySmT;
+  return bHxyQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(xySmT, _eventListenersSoy2.default);
+_metalSoy2.default.register(bHxyQ, _performanceSoy2.default);
 
-exports.default = xySmT;
+exports.default = bHxyQ;
 
 /***/ })
-],[310]);
+],[293]);

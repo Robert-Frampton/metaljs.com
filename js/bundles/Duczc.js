@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,35,36],[
+webpackJsonppageComponent([31,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27168,34 +27168,12 @@ exports.default = parseFromAnchor;
 /* 212 */,
 /* 213 */,
 /* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nreri", function() { return nreri; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Duczc", function() { return Duczc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27207,15 +27185,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from adding-todos.soy.
+// This file was automatically generated from modal_nested.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace nreri.
+ * @fileoverview Templates in namespace Duczc.
  * @public
  */
 
-goog.module('nreri.incrementaldom');
+goog.module('Duczc.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27238,7 +27216,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -27249,66 +27227,118 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param879 = function() {
-    ie_open('h2');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
-    ie_close('h2');
-    ie_open('p');
-      itext('You almost have a fully functioning Todo App! The only missing feature is the ability to add new todos to the list. This is where the ');
-      ie_open('code');
-        itext('TodoForm');
-      ie_close('code');
-      itext(' component will come into play.');
-    ie_close('p');
-    ie_open('p');
-      itext('First, go ahead and add a couple of event listeners, one for the form submission (onsubmit), and the other for when the input value changes (onkeyup).');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    handleSubmit(event) {\n        // Prevent default browser functionality\n        event.preventDefault();\n    }\n\n    handleChange(event) {\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now you can use the ');
-      ie_open('code');
-        itext('value');
-      ie_close('code');
-      itext(' property from STATE to keep track of the changes made to the input value.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                        value={this.state.value}\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    ...\n\n    handleChange(event) {\n        this.state.value = event.target.value;\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('The value of ');
-      ie_open('code');
-        itext('this.state.value');
-      ie_close('code');
-      itext(' will now match the value in the input.');
-    ie_close('p');
-    ie_open('p');
-      itext('You can also emit a custom event when the form is submitted, similarly to what ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' does to notify the parent component that something happened.');
-    ie_close('p');
-    $templateAlias2({code: 'handleSubmit(event) {\n    event.preventDefault();\n\n    if (this.state.value) {\n        this.emit(\'todoAdd\', {\n            title: this.state.value\n        });\n\n        // Clears the input value\n        this.state.value = \'\';\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Then in the ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext(' component, you can listen to this event and add a new todo.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                ...\n\n                <TodoForm\n                    events={{\n                        todoAdd: this.handleTodoAdd.bind(this)\n                    }}\n                 />\n            </div>\n        );\n    }\n\n    addTodo(title) {\n        // Creates a new array with all of the elements\n        // from the previous array, with the newly added item\n        this.state.todos = [...this.state.todos, {\n            done: false,\n            title\n        }];\n    }\n\n    handleTodoAdd(event) {\n        this.addTodo(event.title);\n    }\n\n    ...\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now when you add some text to the input and submit the form, a new todo will automatically be added to the list.');
-    ie_close('p');
-    ie_open('p');
-      itext('That\'s it! You\'ve successfully created a simple Todo App with Metal.js. Now that you are comfortable with the basics, check out the guides for more advanced documentation.');
-    ie_close('p');
-    ie_open('p');
-      ie_open('img', null, null,
-          'src', '/images/tutorials/todo-app/finished_todo_anim.gif',
-          'alt', 'Finished GIF',
-          'title', 'Finished GIF');
-      ie_close('img');
-    ie_close('p');
+  var param317 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('In the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/modal_updates.html');
+          itext('previous section');
+        ie_close('a');
+        itext(' we finished working on our component\'s behavior.');
+      ie_close('p');
+      ie_open('p');
+        itext('But what if our ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(' header\'s markup was very similar to one that is used in other places though? Ideally we\'d move it into a separate component that can be reused. That\'s what we\'ll be doing in this section.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'creating_closeheader');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#creating_closeheader');
+          itext('Creating ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('First let\'s create the new component. Add a ');
+        ie_open('code');
+          itext('src/CloseHeader.js');
+        ie_close('code');
+        itext(' file to your project:');
+      ie_close('p');
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport templates from \'./CloseHeader.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass CloseHeader extends Component {\n}\n\nSoy.register(CloseHeader, templates);\n\nexport default CloseHeader;', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass CloseHeader extends JSXComponent {\n    render() {\n    }\n}\n\nexport default CloseHeader;', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now let\'s prepare the template to be similar to the one used by ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '// src/CloseHeader.soy\n\n&#123;namespace CloseHeader&#125;\n\n&#123;template .render&#125;\n    {@param cssClass: string}\n    {@param onClick: any}\n    {@param title: string}\n\n    <header class="{$cssClass}">\n        <button onClick="{$onClick}" type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{$title}</h4>\n    </header>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/CloseHeader.js\n\nrender() {\n    return <header class={this.props.cssClass}>\n        <button onClick={this.props.onClick} type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{this.props.title}</h4>\n    </header>;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Done! Our new component is ready to be used by ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'using_closeheader');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#using_closeheader');
+          itext('Using ');
+          ie_open('strong');
+            itext('CloseHeader');
+          ie_close('strong');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('All we have to do is to replace the header markup from ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('\'s template with a call to ');
+        ie_open('strong');
+          itext('CloseHeader');
+        ie_close('strong');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n&#123;template .render&#125;\n    {@param body: string}\n    {@param close: string}\n    {@param header: string}\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                {call CloseHeader.render}\n                    {param cssClass: \'modal-header\' /}\n                    {param onClick: $close /}\n                    {param title: $header /}\n                {/call}\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nrender() {\n    var cssClass = \'modal\';\n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <CloseHeader\n                    cssClass="modal-header"\n                    onClick={this.close.bind(this)}\n                    title={this.props.header}\n                />\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('This will not only render ');
+        ie_open('strong');
+          itext('CloseHeader');
+        ie_close('strong');
+        itext(' at the right position, but also instantiate it for you. For more details on nested components, check out the ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/nested-components.html');
+          itext('guide about it');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'next_steps');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#next_steps');
+          itext('Next Steps');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Now that we have learned how to properly create a new component, it\'d good to also know how to test it. The next section will focus on that.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('strong');
+          ie_open('a', null, null,
+              'href', '/docs/getting-started/modal_testing.html');
+            itext('\u21AA Tutorial: Modal - Testing');
+          ie_close('a');
+        ie_close('strong');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27318,28 +27348,50 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param879}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param317}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'nreri.render';
+  $render.soyTemplateName = 'Duczc.render';
 }
 
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
+exports.render.params = ["cssClass","onClick","title","body","close","header","shown","page","site"];
+exports.render.types = {"cssClass":"string","onClick":"any","title":"string","body":"string","close":"string","header":"string","shown":"bool","page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class nreri extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(nreri, templates);
+class Duczc extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Duczc, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
 /* 238 */,
 /* 239 */,
 /* 240 */,
@@ -27380,36 +27432,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(nreri, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27441,9 +27464,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _addingTodosSoy = __webpack_require__(237);
+var _modal_nestedSoy = __webpack_require__(215);
 
-var _addingTodosSoy2 = _interopRequireDefault(_addingTodosSoy);
+var _modal_nestedSoy2 = _interopRequireDefault(_modal_nestedSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27453,23 +27476,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var nreri = function (_Component) {
-  _inherits(nreri, _Component);
+var Duczc = function (_Component) {
+  _inherits(Duczc, _Component);
 
-  function nreri() {
-    _classCallCheck(this, nreri);
+  function Duczc() {
+    _classCallCheck(this, Duczc);
 
-    return _possibleConstructorReturn(this, (nreri.__proto__ || Object.getPrototypeOf(nreri)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Duczc.__proto__ || Object.getPrototypeOf(Duczc)).apply(this, arguments));
   }
 
-  return nreri;
+  return Duczc;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(nreri, _addingTodosSoy2.default);
+_metalSoy2.default.register(Duczc, _modal_nestedSoy2.default);
 
-exports.default = nreri;
+exports.default = Duczc;
 
 /***/ })
-],[307]);
+],[278]);

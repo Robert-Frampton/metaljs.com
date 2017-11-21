@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([22,35,36],[
+webpackJsonppageComponent([4,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27177,12 +27177,30 @@ exports.default = parseFromAnchor;
 /* 221 */,
 /* 222 */,
 /* 223 */,
-/* 224 */
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WsLuj", function() { return WsLuj; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yfCRz", function() { return yfCRz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27194,15 +27212,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from isomorphic.soy.
+// This file was automatically generated from event-listeners.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace WsLuj.
+ * @fileoverview Templates in namespace yfCRz.
  * @public
  */
 
-goog.module('WsLuj.incrementaldom');
+goog.module('yfCRz.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27225,7 +27243,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27236,42 +27254,45 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param590 = function() {
-    ie_open('article', null, null,
-        'id', 'server_rendering');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#server_rendering');
-          itext('Server Side Rendering');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('In most cases Metal components will be rendered client side. Let\'s take the following component for example:');
-      ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return <div>{this.props.message}</div>\n    }\n}\n\nMyComponent.PROPS = {\n    message: {\n        value: \'\'\n    }\n};\n\nexport default MyComponent;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('After transpiling/bundling this component, it can be invoked in client side JavaScript:');
-      ie_close('p');
-      $templateAlias2({code: 'const component = new metal.MyComponent({\n    message: \'Hello, World!\'\n});\n\n// component.element.innerHTML === \'<div>Hello, World!</div>\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Rendering a component this way requires DOM manipulation, and the existence of various global variables/utilities that are provided by web browsers. Therefore there is no way to render the HTML of this component in a Node.js environment without the help of libraries, such as ');
-        ie_open('code');
-          itext('JSDom');
-        ie_close('code');
-        itext(', that emulate client functionality.');
-      ie_close('p');
-      ie_open('p');
-        itext('However, thanks to the ');
-        ie_open('code');
-          itext('Component.renderToString');
-        ie_close('code');
-        itext(' method, out of the box server side rendering of Metal components is possible in Node.js environments:');
-      ie_close('p');
-      $templateAlias2({code: 'const Component = require(\'metal-component\').Component;\nconst MyComponent = require(\'./MyComponent\').MyComponent;\n\nconst htmlString = Component.renderToString(MyComponent, {\n    message: \'Hello, World!\'\n});\n\n// htmlString === \'<div>Hello, World!</div>\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now all of your custom Metal components can be rendered directly to HTML on the server.');
-      ie_close('p');
-    ie_close('article');
+  var param1014 = function() {
+    ie_open('h2');
+      var dyn21 = opt_data.page.title;
+      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
+    ie_close('h2');
+    ie_open('p');
+      itext('So now you should have a static list of todo items, what now? Remember the end goal is to be able to click the todos to mark them as completed, so let\'s start with adding a click event listener to the list items.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n                data-onclick={this.handleClick.bind(this)}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n\n    handleClick(event) {\n        alert(this.props.todo.title);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now you should see an alert with the title of the clicked todo. Now you must notify ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' that a todo was marked as completed so that it can update the data.');
+    ie_close('p');
+    ie_open('p');
+      itext('This can be done by emitting a custom event with the info needed to make the change. In this case we\'ll use the index value from PROPS.');
+    ie_close('p');
+    $templateAlias2({code: 'handleClick(event) {\n    this.emit(\'todoClick\', {\n        index: this.props.index\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now that the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' is emitting an event, you must add a listener from the parent component ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                events={{\n                                    todoClick: this.handleTodoClick.bind(this)\n                                }}\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n\n    handleTodoClick(event) {\n        alert(event.index);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('At this point you should have an event handler that fires every time a todo item is clicked on. Next you will use this data to update the state in ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27281,11 +27302,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param590}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param1014}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'WsLuj.render';
+  $render.soyTemplateName = 'yfCRz.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27295,32 +27316,14 @@ return exports;
 
 });
 
-class WsLuj extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WsLuj, templates);
+class yfCRz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(yfCRz, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -27372,7 +27375,23 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WsLuj, templates);
 /* 291 */,
 /* 292 */,
 /* 293 */,
-/* 294 */
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27404,9 +27423,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _isomorphicSoy = __webpack_require__(224);
+var _eventListenersSoy = __webpack_require__(242);
 
-var _isomorphicSoy2 = _interopRequireDefault(_isomorphicSoy);
+var _eventListenersSoy2 = _interopRequireDefault(_eventListenersSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27416,23 +27435,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var WsLuj = function (_Component) {
-  _inherits(WsLuj, _Component);
+var yfCRz = function (_Component) {
+  _inherits(yfCRz, _Component);
 
-  function WsLuj() {
-    _classCallCheck(this, WsLuj);
+  function yfCRz() {
+    _classCallCheck(this, yfCRz);
 
-    return _possibleConstructorReturn(this, (WsLuj.__proto__ || Object.getPrototypeOf(WsLuj)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (yfCRz.__proto__ || Object.getPrototypeOf(yfCRz)).apply(this, arguments));
   }
 
-  return WsLuj;
+  return yfCRz;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(WsLuj, _isomorphicSoy2.default);
+_metalSoy2.default.register(yfCRz, _eventListenersSoy2.default);
 
-exports.default = WsLuj;
+exports.default = yfCRz;
 
 /***/ })
-],[294]);
+],[310]);
