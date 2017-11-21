@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,35,36],[
+webpackJsonppageComponent([28,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn2 = opt_data.page.title;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn0 = opt_data.page.title;
+          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn3 = opt_data.content;
-            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+            var dyn1 = opt_data.content;
+            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn6 = opt_data.content;
-        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+        var dyn4 = opt_data.content;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
+    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy96,
+            'href', nextPageUrl__soy73,
             'class', 'btn btn-accent btn-sm');
-          var dyn7 = opt_data.page.buttonTitle;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn5 = opt_data.page.buttonTitle;
+          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn8 = opt_data.page.weight;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn6 = opt_data.page.weight;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn9 = opt_data.page.title;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn7 = opt_data.page.title;
+      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
+exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
+  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27171,7 +27171,130 @@ exports.default = parseFromAnchor;
 /* 215 */,
 /* 216 */,
 /* 217 */,
-/* 218 */,
+/* 218 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xvPBa", function() { return xvPBa; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from alias.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace xvPBa.
+ * @public
+ */
+
+goog.module('xvPBa.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param421 = function() {
+    ie_open('article', null, null,
+        'id', 'alias');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#alias');
+          itext('Alias');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('A straightforward way to import npm dependencies into your module is to use their relative paths, like we do for any other code. For example:');
+      ie_close('p');
+      $templateAlias2({code: 'import core from \'../node_modules/metal/src/core\';', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Having to supply the relative path to node_modules is not cool though and, besides that, it may cause problems when a module doing that is imported later as an npm dependency of another project, since the paths will change.');
+      ie_close('p');
+      ie_open('p');
+        itext('Knowing that, Metal.js allows importing npm dependencies like you would from a regular node module, just by referencing their names. Note that this will only work when using Metal.js\'s ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/building.html');
+          itext('build tools');
+        ie_close('a');
+        itext(' or adding a similar logic to your build process yourself (though we provide a ');
+        ie_open('a', null, null,
+            'href', 'https://npmjs.com/package/babel-preset-metal');
+          itext('babel preset');
+        ie_close('a');
+        itext(' with this logic that you can use separately too).');
+      ie_close('p');
+      ie_open('p');
+        itext('With aliases, the previous example can be rewritten like this:');
+      ie_close('p');
+      $templateAlias2({code: 'import core from \'metal\';', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param421}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'xvPBa.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class xvPBa extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xvPBa, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 219 */,
 /* 220 */,
 /* 221 */,
@@ -27195,135 +27318,7 @@ exports.default = parseFromAnchor;
 /* 239 */,
 /* 240 */,
 /* 241 */,
-/* 242 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WpTNr", function() { return WpTNr; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from event-listeners.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace WpTNr.
- * @public
- */
-
-goog.module('WpTNr.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1016 = function() {
-    ie_open('h2');
-      var dyn21 = opt_data.page.title;
-      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
-    ie_close('h2');
-    ie_open('p');
-      itext('So now you should have a static list of todo items, what now? Remember the end goal is to be able to click the todos to mark them as completed, so let\'s start with adding a click event listener to the list items.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n                data-onclick={this.handleClick.bind(this)}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n\n    handleClick(event) {\n        alert(this.props.todo.title);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now you should see an alert with the title of the clicked todo. Now you must notify ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext(' that a todo was marked as completed so that it can update the data.');
-    ie_close('p');
-    ie_open('p');
-      itext('This can be done by emitting a custom event with the info needed to make the change. In this case we\'ll use the index value from PROPS.');
-    ie_close('p');
-    $templateAlias2({code: 'handleClick(event) {\n    this.emit(\'todoClick\', {\n        index: this.props.index\n    });\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Now that the ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' is emitting an event, you must add a listener from the parent component ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext('.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                events={{\n                                    todoClick: this.handleTodoClick.bind(this)\n                                }}\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n\n    handleTodoClick(event) {\n        alert(event.index);\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('At this point you should have an event handler that fires every time a todo item is clicked on. Next you will use this data to update the state in ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext('.');
-    ie_close('p');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param1016}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'WpTNr.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class WpTNr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WpTNr, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -27380,17 +27375,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WpTNr, templates);
 /* 296 */,
 /* 297 */,
 /* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27422,9 +27407,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _eventListenersSoy = __webpack_require__(242);
+var _aliasSoy = __webpack_require__(218);
 
-var _eventListenersSoy2 = _interopRequireDefault(_eventListenersSoy);
+var _aliasSoy2 = _interopRequireDefault(_aliasSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27434,23 +27419,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var WpTNr = function (_Component) {
-  _inherits(WpTNr, _Component);
+var xvPBa = function (_Component) {
+  _inherits(xvPBa, _Component);
 
-  function WpTNr() {
-    _classCallCheck(this, WpTNr);
+  function xvPBa() {
+    _classCallCheck(this, xvPBa);
 
-    return _possibleConstructorReturn(this, (WpTNr.__proto__ || Object.getPrototypeOf(WpTNr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (xvPBa.__proto__ || Object.getPrototypeOf(xvPBa)).apply(this, arguments));
   }
 
-  return WpTNr;
+  return xvPBa;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(WpTNr, _eventListenersSoy2.default);
+_metalSoy2.default.register(xvPBa, _aliasSoy2.default);
 
-exports.default = WpTNr;
+exports.default = xvPBa;
 
 /***/ })
-],[309]);
+],[299]);

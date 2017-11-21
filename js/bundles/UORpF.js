@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,35,36],[
+webpackJsonppageComponent([20,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn2 = opt_data.page.title;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn0 = opt_data.page.title;
+          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn3 = opt_data.content;
-            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+            var dyn1 = opt_data.content;
+            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn6 = opt_data.content;
-        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+        var dyn4 = opt_data.content;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
+    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy96,
+            'href', nextPageUrl__soy73,
             'class', 'btn btn-accent btn-sm');
-          var dyn7 = opt_data.page.buttonTitle;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn5 = opt_data.page.buttonTitle;
+          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn8 = opt_data.page.weight;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn6 = opt_data.page.weight;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn9 = opt_data.page.title;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn7 = opt_data.page.title;
+      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
+exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
+  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27179,25 +27179,12 @@ exports.default = parseFromAnchor;
 /* 223 */,
 /* 224 */,
 /* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */
+/* 226 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROJqI", function() { return ROJqI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UORpF", function() { return UORpF; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27209,15 +27196,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from components.soy.
+// This file was automatically generated from nested-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace ROJqI.
+ * @fileoverview Templates in namespace UORpF.
  * @public
  */
 
-goog.module('ROJqI.incrementaldom');
+goog.module('UORpF.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27240,7 +27227,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -27251,54 +27238,69 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param923 = function() {
-    ie_open('h2');
-      var dyn18 = opt_data.page.title;
-      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
-    ie_close('h2');
-    ie_open('p');
-      itext('In the ');
-      ie_open('code');
-        itext('metal-todo-app');
-      ie_close('code');
-      itext(' boilerplate, there are already three components defined to help get you started. Each component is defined as an ES6 class that extends from Metal\'s ');
-      ie_open('code');
-        itext('JSXComponent');
-      ie_close('code');
-      itext(' class.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Each component has a render function where the JSX template is defined. This will create the HTML you see in the demo page.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    return (\n        <div>Hello, World</div>\n    );\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext(' component will be the root level component. It will handle storing the todo data, and the rendering of the other two components.');
-    ie_close('p');
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' component will render each item in the list of todos.');
-    ie_close('p');
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' component will render a form for adding new todo items to the list. It will consist of a text input and add button.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Why more than one?');
-    ie_close('h3');
-    ie_open('p');
-      itext('It might seem more trouble than it\'s worth splitting up the Todo App into multiple components, but it\'s absolutely necessary when creating larger applications. This tutorial aims to teach you how to handle nested components for more complex use cases.');
-    ie_close('p');
+  var param680 = function() {
+    ie_open('article');
+      ie_open('p');
+        itext('The ability to reference components inside templates can be very useful. It enables the developer to correctly place the child component at the right position inside the parent in an intuitive way.');
+      ie_close('p');
+      ie_open('p');
+        itext('This can certainly be done with ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components. For example, let\'s say we\'ve already built a simple component called ');
+        ie_open('strong');
+          itext('Button');
+        ie_close('strong');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('Now we\'re building a ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext(' component, and we want it to render some buttons inside the footer. In ');
+        ie_open('strong');
+          itext('Modal');
+        ie_close('strong');
+        itext('\'s template file we could do the following:');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n<div class="footer">\n    {foreach $button in $buttons}\n        {call Button.render}\n            {param label: $button /}\n        {/call}\n    {/foreach}\n</div>', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map(button => {\n  return <Button label={button} />;\n});\n\nreturn <div class="footer">{buttons}</div>;', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('When Modal is rendered, the buttons also will be, at the specified position. Besides this, ');
+        ie_open('strong');
+          itext('Button');
+        ie_close('strong');
+        itext(' components will be automatically instantiated for these elements.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'accessing_sub_component_instances');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#accessing_sub_component_instances');
+          itext('Accessing Sub Component Instances');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('But what if we need to access the created instances? That\'s possible by using ');
+        ie_open('strong');
+          itext('ref');
+        ie_close('strong');
+        itext('. Let\'s add one to the previous example and see what happens:');
+      ie_close('p');
+      $templateAlias2({code: '// src/Modal.soy\n\n{foreach $button as $buttons}\n    {call Button.render}\n        {param label: $button /}\n        {param ref: \'button\' + index($button) /}\n    {/call}\n{/foreach}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map((button, index) => {\n    return <Button label={button} ref={\'button\' + index} />;\n});', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now you\'ll be able to access your sub components through your instance\'s ');
+        ie_open('code');
+          itext('refs');
+        ie_close('code');
+        itext(' property, like this:');
+      ie_close('p');
+      $templateAlias2({code: 'modal.refs.button0 // The instance for first button\nmodal.refs.button1 // The instance for second button', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27308,11 +27310,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param923}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param680}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'ROJqI.render';
+  $render.soyTemplateName = 'UORpF.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27322,14 +27324,27 @@ return exports;
 
 });
 
-class ROJqI extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ROJqI, templates);
+class UORpF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UORpF, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
 /* 240 */,
 /* 241 */,
 /* 242 */,
@@ -27382,20 +27397,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ROJqI, templates);
 /* 289 */,
 /* 290 */,
 /* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27427,9 +27429,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _componentsSoy = __webpack_require__(239);
+var _nestedComponentsSoy = __webpack_require__(226);
 
-var _componentsSoy2 = _interopRequireDefault(_componentsSoy);
+var _nestedComponentsSoy2 = _interopRequireDefault(_nestedComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27439,23 +27441,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ROJqI = function (_Component) {
-  _inherits(ROJqI, _Component);
+var UORpF = function (_Component) {
+  _inherits(UORpF, _Component);
 
-  function ROJqI() {
-    _classCallCheck(this, ROJqI);
+  function UORpF() {
+    _classCallCheck(this, UORpF);
 
-    return _possibleConstructorReturn(this, (ROJqI.__proto__ || Object.getPrototypeOf(ROJqI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (UORpF.__proto__ || Object.getPrototypeOf(UORpF)).apply(this, arguments));
   }
 
-  return ROJqI;
+  return UORpF;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ROJqI, _componentsSoy2.default);
+_metalSoy2.default.register(UORpF, _nestedComponentsSoy2.default);
 
-exports.default = ROJqI;
+exports.default = UORpF;
 
 /***/ })
-],[305]);
+],[292]);

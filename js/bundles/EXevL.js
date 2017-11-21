@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([19,35,36],[
+webpackJsonppageComponent([6,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn2 = opt_data.page.title;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn0 = opt_data.page.title;
+          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn3 = opt_data.content;
-            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+            var dyn1 = opt_data.content;
+            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn6 = opt_data.content;
-        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+        var dyn4 = opt_data.content;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
+    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy96,
+            'href', nextPageUrl__soy73,
             'class', 'btn btn-accent btn-sm');
-          var dyn7 = opt_data.page.buttonTitle;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn5 = opt_data.page.buttonTitle;
+          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn8 = opt_data.page.weight;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn6 = opt_data.page.weight;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn9 = opt_data.page.title;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn7 = opt_data.page.title;
+      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
+exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
+  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27180,12 +27180,25 @@ exports.default = parseFromAnchor;
 /* 224 */,
 /* 225 */,
 /* 226 */,
-/* 227 */
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "qCrGX", function() { return qCrGX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EXevL", function() { return EXevL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27197,15 +27210,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from performance.soy.
+// This file was automatically generated from configurating-state.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace qCrGX.
+ * @fileoverview Templates in namespace EXevL.
  * @public
  */
 
-goog.module('qCrGX.incrementaldom');
+goog.module('EXevL.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27226,7 +27239,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27237,66 +27252,79 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param718 = function() {
-    ie_open('article', null, null,
-        'id', 'performance');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#performance');
-          itext('Performance');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' was built from the first with performance in mind. We\'ve run performance tests to compare it with other libraries and got really good results that show the benefits of using it.');
-      ie_close('p');
-      ie_open('p');
-        itext('In one of the tests we made, we built a simple list widget on three different libraries: ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(', ');
-        ie_open('strong');
-          itext('YUI');
-        ie_close('strong');
-        itext(' and ');
-        ie_open('strong');
-          itext('React');
-        ie_close('strong');
-        itext('. We then measured the time it took to render those widgets with 1000 items each on three different situations:');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('strong');
-            itext('First Render -');
-          ie_close('strong');
-          itext(' Creating and rendering the list for the first time, on a blank element.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('Decorate -');
-          ie_close('strong');
-          itext(' Creating and decorating a list that was previously rendered on the DOM.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('Update -');
-          ie_close('strong');
-          itext(' Changing the contents of the first item of the list, causing a rerender.');
-        ie_close('li');
-      ie_close('ul');
-      ie_open('p');
-        itext('The chart below shows the results we obtained on Chrome (the higher the bar, the faster it runs):');
-      ie_close('p');
-      ie_open('p');
-        ie_open('img', null, null,
-            'src', '../../images/docs/perf.png',
-            'alt', 'Performance Test - List');
-        ie_close('img');
-      ie_close('p');
-    ie_close('article');
+  var param944 = function() {
+    ie_open('h2');
+      var dyn19 = opt_data.page.title;
+      if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
+    ie_close('h2');
+    ie_open('p');
+      itext('As previously mentioned, Metal components automatically respond to the data passed to them and rerender. However, in order for a component to take advantage of this behavior, it needs to be told what data to respond to. This is where state comes in.');
+    ie_close('p');
+    ie_open('p');
+      itext('JSX components have two state managers, one for internal state (STATE), and one for external properties that are passed down to it (PROPS).');
+    ie_close('p');
+    ie_open('p');
+      itext('Soy components on the other hand only have one state manager that is used for both internal and external properties (STATE).');
+    ie_close('p');
+    ie_open('h3');
+      itext('Storing The Todos');
+    ie_close('h3');
+    ie_open('p');
+      itext('Let\'s configure the ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' component to store an array of todos with a default value.');
+    ie_close('p');
+    $templateAlias2({code: 'TodoApp.STATE = {\n    todos: {\n        // Default value\n        value: [\n            {\n                done: false,\n                title: \'Todo 1\'\n            },\n            {\n                done: false,\n                title: \'Todo 2\'\n            }\n        ]\n    }\n};', mode: 'text/javascript'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now that there is a default value set, you can access the value in the render function using ');
+      ie_open('code');
+        itext('this.props');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'render() {\n    return (\n        <div>Todo: {this.props.todos[0].title}</div>\n    );\n}', mode: 'text/javascript'}, null, opt_ijData);
+    ie_open('p');
+      itext('Which would result in the following markup.');
+    ie_close('p');
+    $templateAlias2({code: '<div>Todo: Todo 1</div>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('p');
+      itext('Obviously this markup isn\'t very useful, we\'ll get to rendering the entire list in a minute.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Item');
+    ie_close('h3');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component will need two PROPS, one for keeping track of it\'s index inside the list, and one for containing the todo data itself.');
+    ie_close('p');
+    $templateAlias2({code: 'TodoItem.PROPS = {\n    index: {\n        value: null\n    },\n\n    todo: {\n        value: null\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Remember that PROPS are used for external data, or data that is passed to the component from a parent. Therefore these values will be read-only for the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Form');
+    ie_close('h3');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoForm');
+      ie_close('code');
+      itext(' only needs one property that will only ever be set internally, therefore it\'s set on ');
+      ie_open('code');
+        itext('STATE');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'TodoForm.STATE = {\n    value: {\n        value: \'\'\n    }\n};', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27306,11 +27334,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param718}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param944}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'qCrGX.render';
+  $render.soyTemplateName = 'EXevL.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27320,27 +27348,14 @@ return exports;
 
 });
 
-class qCrGX extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qCrGX, templates);
+class EXevL extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(EXevL, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
 /* 241 */,
 /* 242 */,
 /* 243 */,
@@ -27398,7 +27413,12 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qCrGX, templates);
 /* 295 */,
 /* 296 */,
 /* 297 */,
-/* 298 */
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27430,9 +27450,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _performanceSoy = __webpack_require__(227);
+var _configuratingStateSoy = __webpack_require__(240);
 
-var _performanceSoy2 = _interopRequireDefault(_performanceSoy);
+var _configuratingStateSoy2 = _interopRequireDefault(_configuratingStateSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27442,23 +27462,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var qCrGX = function (_Component) {
-  _inherits(qCrGX, _Component);
+var EXevL = function (_Component) {
+  _inherits(EXevL, _Component);
 
-  function qCrGX() {
-    _classCallCheck(this, qCrGX);
+  function EXevL() {
+    _classCallCheck(this, EXevL);
 
-    return _possibleConstructorReturn(this, (qCrGX.__proto__ || Object.getPrototypeOf(qCrGX)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (EXevL.__proto__ || Object.getPrototypeOf(EXevL)).apply(this, arguments));
   }
 
-  return qCrGX;
+  return EXevL;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(qCrGX, _performanceSoy2.default);
+_metalSoy2.default.register(EXevL, _configuratingStateSoy2.default);
 
-exports.default = qCrGX;
+exports.default = EXevL;
 
 /***/ })
-],[298]);
+],[303]);

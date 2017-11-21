@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([15,35,36],[
+webpackJsonppageComponent([21,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn2 = opt_data.page.title;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn0 = opt_data.page.title;
+          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn3 = opt_data.content;
-            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+            var dyn1 = opt_data.content;
+            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn6 = opt_data.content;
-        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+        var dyn4 = opt_data.content;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
+    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy96,
+            'href', nextPageUrl__soy73,
             'class', 'btn btn-accent btn-sm');
-          var dyn7 = opt_data.page.buttonTitle;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn5 = opt_data.page.buttonTitle;
+          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn8 = opt_data.page.weight;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn6 = opt_data.page.weight;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn9 = opt_data.page.title;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn7 = opt_data.page.title;
+      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
+exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
+  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27178,18 +27178,12 @@ exports.default = parseFromAnchor;
 /* 222 */,
 /* 223 */,
 /* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gDOiK", function() { return gDOiK; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SwolH", function() { return SwolH; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27201,15 +27195,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from state.soy.
+// This file was automatically generated from jsx-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace gDOiK.
+ * @fileoverview Templates in namespace SwolH.
  * @public
  */
 
-goog.module('gDOiK.incrementaldom');
+goog.module('SwolH.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27243,176 +27237,234 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param779 = function() {
+  var param616 = function() {
     ie_open('article');
       ie_open('p');
-        itext('The ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' class provides a way of defining state properties for the classes that extend it, as well as watching these properties for value changes.');
-      ie_close('p');
-      ie_open('p');
-        itext('The ');
-        ie_open('strong');
-          itext('Component');
-        ie_close('strong');
-        itext(' class already extends from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' by default, besides automatically rerendering when there is a change.');
-      ie_close('p');
-      ie_open('p');
-        itext('If your class doesn\'t need to render anything it\'s best to extend from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' directly though. That way you\'ll have access to its features without also inheriting logic you won\'t need.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'configuring_state');
-      ie_open('h2');
+        itext('For a practical tutorial on how to build components using JSX templates, make sure to follow the ');
         ie_open('a', null, null,
-            'href', '#configuring_state');
-          itext('Configuring State');
+            'href', '/docs/getting-started/modal.html');
+          itext('Modal tutorial');
         ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('The following example is a class that extends directly from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' and defines a state property named ');
-        ie_open('code');
-          itext('number');
-        ie_close('code');
-        itext(' on itself:');
+        itext(' section.');
       ie_close('p');
-      $templateAlias2({code: 'import core from \'metal\';\nimport State from \'metal-state\';\n\nclass Calculator extends State {\n    /**\n     * Coverts string numbers to the number type.\n     */\n    setNumber(val) {\n        if (core.isString(val)) {\n            val = parseInt(val, 10);\n        }\n        return val;\n    }\n}\n\nCalculator.STATE = {\n    number: {\n        // Called whenever a new value is set. Useful when normalizing your\n        // state data.\n        setter: \'setNumber\',\n\n        // Accepts either number or string types. If the validator check fails,\n        // the new value is discarded, and the current value kept.\n        validator: val => core.isNumber(val) || core.isString(val),\n\n        // Initial value\n        value: 0,\n\n        // You can, instead of the `value` option above, use a function to \n        // return the initial value for the state.\n        valueFn: val => 0,\n\n        // It\'s also possible to define that a property can only receive a \n        // value once, and later behave as read-only.\n        writeOnce: false\n    }\n}', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('If you\'re familiar with ');
+        itext('This guide will explain some details about the integration between ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' components and ');
         ie_open('a', null, null,
-            'href', 'http://yuilibrary.com/');
-          itext('YUI');
-        ie_close('a');
-        itext(', you may recognize this feature and notice that it\'s very similar to how attributes are defined there. You basically just need to list all attributes you\'ll be using on the ');
-        ie_open('strong');
-          itext('STATE');
-        ie_close('strong');
-        itext(' static variable (on YUI it would be on ');
-        ie_open('strong');
-          itext('ATTRS');
-        ie_close('strong');
-        itext('), and provide their configuration options, like initial value and validator. For a list of all valid options, take a look at ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext('\'s ');
-        ie_open('a', null, null,
-            'href', 'http://github.com/metal/metal-state/blob/c87ac15b8a9fa3ee64c421f22411f97cd376024a/src/State.js#L61');
-          itext('docs');
+            'href', 'https://facebook.github.io/jsx/');
+          itext('JSX templates');
         ie_close('a');
         itext('.');
       ie_close('p');
+      ie_open('p');
+        itext('Note that ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' is template agnostic, so it\'s not necessary to use JSX at all. That said, we already provide a very good integration between metal components and JSX, so if you like using it you should give it a try.');
+      ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'internal_states');
+        'id', 'jsxcomponent');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#internal_states');
-          itext('Internal States');
+            'href', '#jsxcomponent');
+          itext('JSXComponent');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('You can define a state as internal, for use in your component only. Just add the attribute ');
-        ie_open('code');
-          itext('internal');
-        ie_close('code');
-        itext(' to the configuration object.');
+        itext('The only thing you need to do to use JSX in your ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' component is to extend from ');
+        ie_open('strong');
+          itext('JSXComponent');
+        ie_close('strong');
+        itext(', like this:');
       ie_close('p');
+      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyComponent extends JSXComponent {\n}\n\nexport default MyComponent;', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'render_function');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#render_function');
+          ie_open('code');
+            itext('render');
+          ie_close('code');
+          itext(' Function');
+        ie_close('a');
+      ie_close('h2');
       ie_open('p');
-        itext('By doing this, the state will behave exactly as expected, including re-rendering the component. The only difference being, internal states can not be accessed by parent components.');
+        itext('Now that we\'ve extended from ');
+        ie_open('strong');
+          itext('JSXComponent');
+        ie_close('strong');
+        itext(' we can use jsx in the ');
+        ie_open('code');
+          itext('render');
+        ie_close('code');
+        itext(' method to specify what our component should render.');
       ie_close('p');
+      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return (\n            <div>\n                Hello {this.state.name}\n                Hello {this.props.location}\n            </div>;\n        );\n    }\n}\n\nMyComponent.PROPS = {\n    location: {\n        validator: core.isString,\n        value: \'Mars\'\n    }\n};\n\nMyComponent.STATE = {\n    name: {\n        validator: core.isString,\n        value: \'World\'\n    }\n};\n\nexport default MyComponent;', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('This is not necessary for JSX components, since Metal.js JSX components have their own State Manager implementation. For that reason, two static properties are used, ');
-        ie_open('code');
-          itext('STATE');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('PROPS');
-        ie_close('code');
-        itext(', that behave much closer to React\'s ');
-        ie_open('code');
+        itext('Note that your component can have two different types of data: ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/state.html');
           itext('state');
-        ie_close('code');
+        ie_close('a');
         itext(' and ');
-        ie_open('code');
+        ie_open('a', null, null,
+            'href', '/docs/guides/state.html#configuring_state');
           itext('props');
-        ie_close('code');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('To see exactly how it works read ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/jsx-components.html');
-          itext('JSX components section');
         ie_close('a');
-        itext('.');
+        itext('. The main difference is that props is accessed via ');
+        ie_open('code');
+          itext('this.props');
+        ie_close('code');
+        itext(' and will be the original data received from parent components or the constructor. State is accessed from ');
+        ie_open('code');
+          itext('this.state');
+        ie_close('code');
+        itext(' though, like ');
+        ie_open('code');
+          itext('this.state.name');
+        ie_close('code');
+        itext(' in the previous example, and can be configured to use validators, setters, initial values and other features. Check out the guide about ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/state.html');
+          itext('state');
+        ie_close('a');
+        itext(' to learn more about this.');
       ie_close('p');
-      $templateAlias2({code: 'Calculator.STATE = {\n  number: {\n    ...\n    internal: true\n  }\n}', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'accessing_and_updating_state');
+        'id', 'children_props');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#accessing_and_updating_state');
-          itext('Accessing and Updating State');
+            'href', '#children_props');
+          itext('Children Props');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('The constructor can receive a configuration object with initial values to use for its state properties. You can access or change an object\'s state in the same way you\'d access or change any object property. Or you can also call the ');
+        itext('Whenever content is passed inside a component\'s jsx tag, it will be received through the ');
         ie_open('code');
-          itext('setState');
+          itext('children');
         ie_close('code');
-        itext(' function, which updates the properties specified by the given object.');
+        itext(' props property. That way the component can decide if this content will be rendered at all, and where exactly it should go.');
       ie_close('p');
-      $templateAlias2({code: 'var obj = new Calculator();\nconsole.log(obj.number); // Prints 0\n\nobj.number = \'1\';\nconsole.log(obj.number); // Prints 1\n\nobj.setState({number: 2});\nconsole.log(obj.number); // Prints 2', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('You can also track state value changes by listening to the appropriate event.');
+        itext('For example, imagine a simple list component that receives its items as its content, like this:');
       ie_close('p');
-      $templateAlias2({code: 'obj.on(\'numberChanged\', function(event) {\n    // event.prevVal has the previous value.\n    // event.newVal has the new value.\n});', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '<List>\n    <li>Item 1</li>\n    <li>Item 2</li>\n    <li>Item 3</li>\n</List>', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('To see all features of the ');
+        itext('This could be implemented by using the ');
+        ie_open('code');
+          itext('children');
+        ie_close('code');
+        itext(' props:');
+      ie_close('p');
+      $templateAlias2({code: 'class List extends JSXComponent {\n    render() {\n        return <ul>{this.props.children}</ul>\n    }\n}', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('If you inspect ');
+        ie_open('code');
+          itext('this.props.children');
+        ie_close('code');
+        itext(' you\'ll notice that it\'s an array of objects. That gives you a lot of power when handling your component\'s contents. For example, you can choose to render only part of your children, like this:');
+      ie_close('p');
+      $templateAlias2({code: '// Renders only the second item.\nreturn <ul>{this.props.children[1]}</ul>', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Or even change the data that they should receive before being rendered:');
+      ie_close('p');
+      $templateAlias2({code: '// Forces all items to use the \'my-list-item-class\' CSS class.\nthis.props.children.forEach(child => {\n    child.class = \'my-list-item-class\';\n};\n\nreturn <ul>{this.props.children}</ul>', mode: 'jsx'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'functional_components');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#functional_components');
+          itext('Functional Components');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Sometimes you\'ll create very simple components, that have no other behavior besides rendering their own contents. In this case you can drop using classes, and instead create simple functions that just render the contents instead.');
+      ie_close('p');
+      ie_open('p');
+        itext('For example, let\'s create a simple ');
         ie_open('strong');
-          itext('State');
+          itext('Button');
         ie_close('strong');
-        itext(' class take a look at its ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/metal/metal-state/blob/master/test/State.js');
-          itext('unit tests');
-        ie_close('a');
-        itext('.');
+        itext(' component as a function:');
       ie_close('p');
+      $templateAlias2({code: '/**\n * Functional components receive the configuration\n * object as the first param.\n */\nvar Button = ({ cssClass, label }) => {\n    return <button type="button" class={cssClass}>{label}</button>;\n};', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('You can then use it from parent components in the same way that you\'d use a component class, for example:');
+      ie_close('p');
+      $templateAlias2({code: '<Button class="btn btn-primary" label="OK" />', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'configuration_data');
+        'id', 'rendering_jsx_components');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#configuration_data');
-          itext('Configuration Data');
+            'href', '#rendering_jsx_components');
+          itext('Rendering JSX Components');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('Any data passed to the constructor that has not been configured as a state property can still be accessed via ');
+        itext('JSX components can either be rendered in the ');
+        ie_open('a', null, null,
+            'href', 'rendering-components.html');
+          itext('usual way');
+        ie_close('a');
+        itext(', or via the ');
         ie_open('code');
-          itext('config');
+          itext('JSXComponent.render');
         ie_close('code');
-        itext('. Changes to these properties won\'t be tracked, so it\'s usually intended for your component\'s options, which are only set from the outside.');
+        itext(' function, like this:');
       ie_close('p');
-      $templateAlias2({code: 'var obj = new Calculator({\n    number: 10,\n    foo: \'foo\'\n});\n\nconsole.log(obj.number); // Prints 2\nconsole.log(obj.foo); // Prints undefined\nconsole.log(obj.config.foo); // Prints \'foo\'', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'class Button extends JSXComponent {\n    render() {\n        // Your render logic\n    }\n}\n\nJSXComponent.render(Button, {label: \'OK\'}, parent);', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('You can also pass a functional component to it:');
+      ie_close('p');
+      $templateAlias2({code: 'var Button = props => {\n    // Your render logic\n};\n\nJSXComponent.render(Button, {label: \'OK\'}, parent);', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('Or even render directly via JSX:');
+      ie_close('p');
+      $templateAlias2({code: 'JSXComponent.render(<Button label="OK" />, parent);', mode: 'jsx'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'jsx_compilation');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#jsx_compilation');
+          itext('JSX Compilation');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('For the integration between ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('strong');
+          itext('JSX');
+        ie_close('strong');
+        itext(' to work, the JSX code needs to be compiled via a babel plugin called ');
+        ie_open('a', null, null,
+            'href', 'http://npmjs.com/package/babel-plugin-incremental-dom');
+          itext('babel-plugin-incremental-dom');
+        ie_close('a');
+        itext('. Using it directly means you\'d need to configure it manually though, so we also provide a ');
+        ie_open('a', null, null,
+            'href', 'http://npmjs.com/package/babel-preset-metal-jsx');
+          itext('babel preset');
+        ie_close('a');
+        itext(' that you can use instead.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27423,11 +27475,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param779}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param616}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'gDOiK.render';
+  $render.soyTemplateName = 'SwolH.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27437,14 +27489,20 @@ return exports;
 
 });
 
-class gDOiK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gDOiK, templates);
+class SwolH extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SwolH, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
 /* 232 */,
 /* 233 */,
 /* 234 */,
@@ -27536,9 +27594,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _stateSoy = __webpack_require__(231);
+var _jsxComponentsSoy = __webpack_require__(225);
 
-var _stateSoy2 = _interopRequireDefault(_stateSoy);
+var _jsxComponentsSoy2 = _interopRequireDefault(_jsxComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27548,23 +27606,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var gDOiK = function (_Component) {
-  _inherits(gDOiK, _Component);
+var SwolH = function (_Component) {
+  _inherits(SwolH, _Component);
 
-  function gDOiK() {
-    _classCallCheck(this, gDOiK);
+  function SwolH() {
+    _classCallCheck(this, SwolH);
 
-    return _possibleConstructorReturn(this, (gDOiK.__proto__ || Object.getPrototypeOf(gDOiK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SwolH.__proto__ || Object.getPrototypeOf(SwolH)).apply(this, arguments));
   }
 
-  return gDOiK;
+  return SwolH;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(gDOiK, _stateSoy2.default);
+_metalSoy2.default.register(SwolH, _jsxComponentsSoy2.default);
 
-exports.default = gDOiK;
+exports.default = SwolH;
 
 /***/ })
 ],[291]);

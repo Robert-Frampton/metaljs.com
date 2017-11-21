@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([27,35,36],[
+webpackJsonppageComponent([8,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn2 = opt_data.page.title;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn0 = opt_data.page.title;
+          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn3 = opt_data.content;
-            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+            var dyn1 = opt_data.content;
+            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn6 = opt_data.content;
-        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+        var dyn4 = opt_data.content;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
+    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy96,
+            'href', nextPageUrl__soy73,
             'class', 'btn btn-accent btn-sm');
-          var dyn7 = opt_data.page.buttonTitle;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn5 = opt_data.page.buttonTitle;
+          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn8 = opt_data.page.weight;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn6 = opt_data.page.weight;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn9 = opt_data.page.title;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn7 = opt_data.page.title;
+      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
+exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
+  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27172,12 +27172,31 @@ exports.default = parseFromAnchor;
 /* 216 */,
 /* 217 */,
 /* 218 */,
-/* 219 */
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IwYam", function() { return IwYam; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eskje", function() { return eskje; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27189,15 +27208,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from building.soy.
+// This file was automatically generated from before-we-start.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace IwYam.
+ * @fileoverview Templates in namespace eskje.
  * @public
  */
 
-goog.module('IwYam.incrementaldom');
+goog.module('eskje.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27218,7 +27237,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27229,124 +27248,58 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param446 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('As we mentioned before, ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' components are written in ES6, which means that we need a transpiling process before using it on a website.');
-      ie_close('p');
-      ie_open('p');
-        itext('This can be done via any tools that you prefer, like ');
-        ie_open('a', null, null,
-            'href', 'http://webpack.github.io/');
-          itext('webpack');
-        ie_close('a');
-        itext(' or ');
-        ie_open('a', null, null,
-            'href', 'http://browserify.org/');
-          itext('browserify');
-        ie_close('a');
-        itext(', but we\'ve also published a few tools of our own, which focuses on ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' projects, which we\'ll talk about here.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'gulp_metal');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#gulp_metal');
-          itext('gulp-metal');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('What this package offers is a a bunch of ');
-        ie_open('a', null, null,
-            'href', 'http://gulpjs.com/');
-          itext('gulp');
-        ie_close('a');
-        itext(' tasks. There are tasks that can handle not only building JavaScript, as well as Soy compilation, testing, linting and many other things.');
-      ie_close('p');
-      ie_open('p');
-        itext('The ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/');
-          itext('tutorials');
-        ie_close('a');
-        itext(' we\'ve provided are all using it, though indirectly, through some npm scripts. To learn how to use ');
-        ie_open('strong');
-          itext('gulp-metal');
-        ie_close('strong');
-        itext(' directly take a look at its ');
-        ie_open('a', null, null,
-            'href', 'http://www.npmjs.com/package/gulp-metal');
-          itext('npm page');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'metal_cli');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#metal_cli');
-          itext('metal-cli');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('If you\'re not a fan of ');
-        ie_open('strong');
-          itext('gulp');
-        ie_close('strong');
-        itext(' you can still use ');
-        ie_open('a', null, null,
-            'href', 'http://www.npmjs.com/package/metal-cli');
-          itext('metal-cli');
-        ie_close('a');
-        itext(', which offers almost the same tools, but through the command line.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'examples_using_other_tools');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#examples_using_other_tools');
-          itext('Examples Using Other Tools');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('As was mentioned before, using ');
-        ie_open('strong');
-          itext('gulp-metal');
-        ie_close('strong');
-        itext(' or ');
-        ie_open('strong');
-          itext('metal-cli');
-        ie_close('strong');
-        itext(' is not required. You can use your favorite build tool with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' as well.');
-      ie_close('p');
-      ie_open('p');
-        itext('We\'ve created a Github repository full of different examples on how to work with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(', and among other things it has a bunch of examples showing how to use different build tools. ');
-        ie_open('a', null, null,
-            'href', 'http://github.com/metal/metal-examples');
-          itext('Check it out');
-        ie_close('a');
-        itext(', and feel free to create an issue or send a pull request for other tools that it may be missing.');
-      ie_close('p');
-    ie_close('article');
+  var param912 = function() {
+    ie_open('h2');
+      var dyn17 = opt_data.page.title;
+      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
+    ie_close('h2');
+    ie_open('p');
+      itext('Before we actually make anything, let\'s discuss what Metal.js is, and what it\'s intended for.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Data flow');
+    ie_close('h3');
+    ie_open('p');
+      itext('If you\'re familiar with React, you\'ll feel right at home. Metal.js is a foundation for creating UI components that automatically respond to data when it\'s updated. In other words, it\'s a framework for creating one-way data binding components.');
+    ie_close('p');
+    ie_open('p');
+      itext('This is different than frameworks like Angular, which provide a two-way data binding solution.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Templating');
+    ie_close('h3');
+    ie_open('p');
+      itext('Metal.js is template agnostic, and comes with out of the box support for two templating languages, Soy (Google Closure) and JSX (React).');
+    ie_close('p');
+    ie_open('p');
+      itext('When the data being passed to your component changes, your component\'s template will be used to rerender just the parts of your component that need to be updated. Therefore, you don\'t need to worry about manual DOM manipulation.');
+    ie_close('p');
+    ie_open('p');
+      itext('Behind the scenes Metal.js is using Google\'s ');
+      ie_open('a', null, null,
+          'href', 'https://google.github.io/incremental-dom');
+        itext('Incremental DOM');
+      ie_close('a');
+      itext(' for updating DOM elements.');
+    ie_close('p');
+    ie_open('h3');
+      itext('What are we making?');
+    ie_close('h3');
+    ie_open('p');
+      itext('In this tutorial we\'ll be making a simple Todo App that let\'s you mark items as completed, and add new items to the list. If you would like to see the finished product check out the ');
+      ie_open('a', null, null,
+          'href', '#');
+        itext('metal-todo-app repsitory');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('img', null, null,
+          'src', '/images/tutorials/todo-app/finished_todo_app.png',
+          'alt', 'Finished Todo App',
+          'title', 'Finished Todo App');
+      ie_close('img');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27356,11 +27309,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param446}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param912}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'IwYam.render';
+  $render.soyTemplateName = 'eskje.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27370,33 +27323,14 @@ return exports;
 
 });
 
-class IwYam extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IwYam, templates);
+class eskje extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eskje, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
@@ -27442,7 +27376,31 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IwYam, templates);
 /* 281 */,
 /* 282 */,
 /* 283 */,
-/* 284 */
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27474,9 +27432,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _buildingSoy = __webpack_require__(219);
+var _beforeWeStartSoy = __webpack_require__(238);
 
-var _buildingSoy2 = _interopRequireDefault(_buildingSoy);
+var _beforeWeStartSoy2 = _interopRequireDefault(_beforeWeStartSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27486,23 +27444,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IwYam = function (_Component) {
-  _inherits(IwYam, _Component);
+var eskje = function (_Component) {
+  _inherits(eskje, _Component);
 
-  function IwYam() {
-    _classCallCheck(this, IwYam);
+  function eskje() {
+    _classCallCheck(this, eskje);
 
-    return _possibleConstructorReturn(this, (IwYam.__proto__ || Object.getPrototypeOf(IwYam)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (eskje.__proto__ || Object.getPrototypeOf(eskje)).apply(this, arguments));
   }
 
-  return IwYam;
+  return eskje;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(IwYam, _buildingSoy2.default);
+_metalSoy2.default.register(eskje, _beforeWeStartSoy2.default);
 
-exports.default = IwYam;
+exports.default = eskje;
 
 /***/ })
-],[284]);
+],[308]);

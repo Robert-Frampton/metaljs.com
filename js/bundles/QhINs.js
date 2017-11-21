@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([17,35,36],[
+webpackJsonppageComponent([14,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18658,8 +18658,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn2 = opt_data.page.title;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn0 = opt_data.page.title;
+          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -18672,8 +18672,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn3 = opt_data.content;
-            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+            var dyn1 = opt_data.content;
+            if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -18813,8 +18813,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
     ie_close('main');
   ie_close('div');
 }
@@ -18936,14 +18936,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn5 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn3 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn6 = opt_data.content;
-        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+        var dyn4 = opt_data.content;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -18965,15 +18965,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy91 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy91.childIds.length) {
+    var tutorialObject__soy68 = opt_data.site.index.children.docs.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy68.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy96 = tutorialObject__soy91.children[tutorialObject__soy91.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy73 = tutorialObject__soy68.children[tutorialObject__soy68.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy96,
+            'href', nextPageUrl__soy73,
             'class', 'btn btn-accent btn-sm');
-          var dyn7 = opt_data.page.buttonTitle;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn5 = opt_data.page.buttonTitle;
+          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         ie_close('a');
       }
     }
@@ -19014,7 +19014,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s88_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19023,23 +19023,23 @@ function __deltemplate_s111_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn8 = opt_data.page.weight;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn6 = opt_data.page.weight;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn9 = opt_data.page.title;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn7 = opt_data.page.title;
+      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s111_88c0813b = __deltemplate_s111_88c0813b;
+exports.__deltemplate_s88_88c0813b = __deltemplate_s88_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s111_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s111_88c0813b';
+  __deltemplate_s88_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s88_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s111_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s88_88c0813b);
 
 exports.render.params = ["content","elementClasses","page","site"];
 exports.render.types = {"content":"any","elementClasses":"any","page":"any","site":"any"};
@@ -27182,12 +27182,15 @@ exports.default = parseFromAnchor;
 /* 226 */,
 /* 227 */,
 /* 228 */,
-/* 229 */
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XzrmA", function() { return XzrmA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QhINs", function() { return QhINs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27199,15 +27202,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from rendering-components.soy.
+// This file was automatically generated from web-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace XzrmA.
+ * @fileoverview Templates in namespace QhINs.
  * @public
  */
 
-goog.module('XzrmA.incrementaldom');
+goog.module('QhINs.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27241,46 +27244,116 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param736 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('The ');
-        ie_open('a', null, null,
-            'href', '/docs');
-          itext('quick start tutorial');
-        ie_close('a');
-        itext(' explains how to create and render a new component. In its examples components are always being appended directly to the document\'s body though, but what\'s usually necessary is to render in a specific position.');
-      ie_close('p');
-    ie_close('article');
+  var param807 = function() {
     ie_open('article', null, null,
-        'id', 'replacing_an_existing_element');
+        'id', 'web_components');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#replacing_an_existing_element');
-          itext('Replacing an Existing Element');
+            'href', '#web_components');
+          itext('Web Components');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('If you wish your component to replace an existing element on the DOM, you just need to pass it (or a selector for it) as the ');
+        itext('Metal components are generally invoked in one of three ways:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          itext('JavaScript');
+        ie_close('li');
+      ie_close('ul');
+      $templateAlias2({code: 'new metal.MyComponent({\n    title: \'Hello, World!\'\n}, \'#element\');', mode: 'javascript'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          itext('Soy');
+        ie_close('li');
+      ie_close('ul');
+      $templateAlias2({code: '{call MyComponent.render}\n    {param title: "Hello, World!" /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          itext('JSX');
+        ie_close('li');
+      ie_close('ul');
+      $templateAlias2({code: '<MyComponent title="Hello, World" />', mode: 'jsx'}, null, opt_ijData);
+      ie_open('p');
+        itext('However, with the help of the ');
+        ie_open('a', null, null,
+            'href', 'https://www.npmjs.com/package/metal-web-component');
+          itext('metal-web-component');
+        ie_close('a');
+        itext(' package, Metal components can be invoked as ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements');
+          itext('Custom Elements');
+        ie_close('a');
+        itext(' in plain HTML.');
+      ie_close('p');
+      $templateAlias2({code: '<my-component title="Hello, World"></my-component>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'install');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#install');
+          itext('Install');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('First you must install the ');
         ie_open('code');
-          itext('element');
+          itext('metal-web-component');
         ie_close('code');
-        itext(' property of the constructor configuration, like this:');
+        itext(' package:');
       ie_close('p');
-      $templateAlias2({code: '// Passsing the element itself\nnew Modal({element: elementToReplace});\n\n// Passing a selector to the element\nnew Modal({element: \'#elementToReplace\'});', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'npm i --save metal-web-component', mode: 'bash'}, null, opt_ijData);
+      ie_open('p');
+        itext('Currently, web components don\'t work on every browser, so a polyfill must be used. Include the ');
+        ie_open('a', null, null,
+            'href', 'https://www.webcomponents.org/polyfills');
+          itext('webcomponents-lite polyfill');
+        ie_close('a');
+        itext(' if you intend to use web components on Firefox, Edge, or IE11.');
+      ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'specifying_the_parent');
+        'id', 'define_web_components');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#specifying_the_parent');
-          itext('Specifying the Parent');
+            'href', '#define_web_components');
+          itext('Define web components');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('You can also specify the parent element that should receive the component\'s contents via the second constructor param, like this:');
+        itext('This package exposes a single helper function that can be used to wrap any Metal component in a web component. It receives two arguments: the tag name you want the web component to receive, and the constructor of the Metal component:');
       ie_close('p');
-      $templateAlias2({code: '// Passing the element itself\nnew Modal(data, parentElement);\n\n// Passing a selector to the element\nnew Modal(data, \'#parentElement\');', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\nimport defineWebComponent from \'metal-web-component\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return <h1>{this.props.message}</h1>\n    }\n}\n\nMyComponent.PROPS = {\n    message: {\n        value: \'\'\n    }\n};\n\ndefineWebComponent(\'my-component\', MyComponent);', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now that the web component is defined, it can be invoked in plain html:');
+      ie_close('p');
+      $templateAlias2({code: '<my-component message="This is a web component"></my-component>', mode: 'xml'}, null, opt_ijData);
+      ie_open('p');
+        itext('This results in the following HTML on the page:');
+      ie_close('p');
+      $templateAlias2({code: '<h1>This is a web component</h1>', mode: 'xml'}, null, opt_ijData);
+      ie_open('p');
+        itext('If you would like the component\'s markup to be rendered using the Shadow DOM, simply set the ');
+        ie_open('code');
+          itext('useshadowdom');
+        ie_close('code');
+        itext(' attribute to ');
+        ie_open('code');
+          itext('true');
+        ie_close('code');
+        itext(' when calling the web component:');
+      ie_close('p');
+      $templateAlias2({code: '<my-component message="This is a web component" useshadowdom="true"></my-component>', mode: 'xml'}, null, opt_ijData);
+      ie_open('p');
+        itext('This means that any styling on the page will not cascade to your component\'s markup. See ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM');
+          itext('MDN\'s documentation');
+        ie_close('a');
+        itext(' for more info.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27291,11 +27364,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param736}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param807}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'XzrmA.render';
+  $render.soyTemplateName = 'QhINs.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27305,17 +27378,14 @@ return exports;
 
 });
 
-class XzrmA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XzrmA, templates);
+class QhINs extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QhINs, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 230 */,
-/* 231 */,
-/* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
@@ -27370,7 +27440,10 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XzrmA, templates);
 /* 284 */,
 /* 285 */,
 /* 286 */,
-/* 287 */
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27402,9 +27475,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _renderingComponentsSoy = __webpack_require__(229);
+var _webComponentsSoy = __webpack_require__(232);
 
-var _renderingComponentsSoy2 = _interopRequireDefault(_renderingComponentsSoy);
+var _webComponentsSoy2 = _interopRequireDefault(_webComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27414,23 +27487,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var XzrmA = function (_Component) {
-  _inherits(XzrmA, _Component);
+var QhINs = function (_Component) {
+  _inherits(QhINs, _Component);
 
-  function XzrmA() {
-    _classCallCheck(this, XzrmA);
+  function QhINs() {
+    _classCallCheck(this, QhINs);
 
-    return _possibleConstructorReturn(this, (XzrmA.__proto__ || Object.getPrototypeOf(XzrmA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QhINs.__proto__ || Object.getPrototypeOf(QhINs)).apply(this, arguments));
   }
 
-  return XzrmA;
+  return QhINs;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(XzrmA, _renderingComponentsSoy2.default);
+_metalSoy2.default.register(QhINs, _webComponentsSoy2.default);
 
-exports.default = XzrmA;
+exports.default = QhINs;
 
 /***/ })
-],[287]);
+],[290]);
