@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27356,7 +27356,9 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsGuidesIndex, 
 /* 294 */,
 /* 295 */,
 /* 296 */,
-/* 297 */
+/* 297 */,
+/* 298 */,
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27419,4 +27421,4 @@ _metalSoy2.default.register(pageDocsGuidesIndex, _indexSoy2.default);
 exports.default = pageDocsGuidesIndex;
 
 /***/ })
-],[297]);
+],[299]);

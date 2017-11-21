@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([21,35,36],[
+webpackJsonppageComponent([9,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27178,12 +27178,24 @@ exports.default = parseFromAnchor;
 /* 222 */,
 /* 223 */,
 /* 224 */,
-/* 225 */
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AWIZB", function() { return AWIZB; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "argek", function() { return argek; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27195,15 +27207,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from jsx-components.soy.
+// This file was automatically generated from adding-todos.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace AWIZB.
+ * @fileoverview Templates in namespace argek.
  * @public
  */
 
-goog.module('AWIZB.incrementaldom');
+goog.module('argek.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27226,7 +27238,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27237,235 +27249,66 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param614 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('For a practical tutorial on how to build components using JSX templates, make sure to follow the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/modal.html');
-          itext('Modal tutorial');
-        ie_close('a');
-        itext(' section.');
-      ie_close('p');
-      ie_open('p');
-        itext('This guide will explain some details about the integration between ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' components and ');
-        ie_open('a', null, null,
-            'href', 'https://facebook.github.io/jsx/');
-          itext('JSX templates');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('Note that ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' is template agnostic, so it\'s not necessary to use JSX at all. That said, we already provide a very good integration between metal components and JSX, so if you like using it you should give it a try.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'jsxcomponent');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#jsxcomponent');
-          itext('JSXComponent');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('The only thing you need to do to use JSX in your ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' component is to extend from ');
-        ie_open('strong');
-          itext('JSXComponent');
-        ie_close('strong');
-        itext(', like this:');
-      ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyComponent extends JSXComponent {\n}\n\nexport default MyComponent;', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'render_function');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#render_function');
-          ie_open('code');
-            itext('render');
-          ie_close('code');
-          itext(' Function');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now that we\'ve extended from ');
-        ie_open('strong');
-          itext('JSXComponent');
-        ie_close('strong');
-        itext(' we can use jsx in the ');
-        ie_open('code');
-          itext('render');
-        ie_close('code');
-        itext(' method to specify what our component should render.');
-      ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return (\n            <div>\n                Hello {this.state.name}\n                Hello {this.props.location}\n            </div>;\n        );\n    }\n}\n\nMyComponent.PROPS = {\n    location: {\n        validator: core.isString,\n        value: \'Mars\'\n    }\n};\n\nMyComponent.STATE = {\n    name: {\n        validator: core.isString,\n        value: \'World\'\n    }\n};\n\nexport default MyComponent;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Note that your component can have two different types of data: ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/state.html');
-          itext('state');
-        ie_close('a');
-        itext(' and ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/state.html#configuring_state');
-          itext('props');
-        ie_close('a');
-        itext('. The main difference is that props is accessed via ');
-        ie_open('code');
-          itext('this.props');
-        ie_close('code');
-        itext(' and will be the original data received from parent components or the constructor. State is accessed from ');
-        ie_open('code');
-          itext('this.state');
-        ie_close('code');
-        itext(' though, like ');
-        ie_open('code');
-          itext('this.state.name');
-        ie_close('code');
-        itext(' in the previous example, and can be configured to use validators, setters, initial values and other features. Check out the guide about ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/state.html');
-          itext('state');
-        ie_close('a');
-        itext(' to learn more about this.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'children_props');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#children_props');
-          itext('Children Props');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Whenever content is passed inside a component\'s jsx tag, it will be received through the ');
-        ie_open('code');
-          itext('children');
-        ie_close('code');
-        itext(' props property. That way the component can decide if this content will be rendered at all, and where exactly it should go.');
-      ie_close('p');
-      ie_open('p');
-        itext('For example, imagine a simple list component that receives its items as its content, like this:');
-      ie_close('p');
-      $templateAlias2({code: '<List>\n    <li>Item 1</li>\n    <li>Item 2</li>\n    <li>Item 3</li>\n</List>', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('This could be implemented by using the ');
-        ie_open('code');
-          itext('children');
-        ie_close('code');
-        itext(' props:');
-      ie_close('p');
-      $templateAlias2({code: 'class List extends JSXComponent {\n    render() {\n        return <ul>{this.props.children}</ul>\n    }\n}', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('If you inspect ');
-        ie_open('code');
-          itext('this.props.children');
-        ie_close('code');
-        itext(' you\'ll notice that it\'s an array of objects. That gives you a lot of power when handling your component\'s contents. For example, you can choose to render only part of your children, like this:');
-      ie_close('p');
-      $templateAlias2({code: '// Renders only the second item.\nreturn <ul>{this.props.children[1]}</ul>', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Or even change the data that they should receive before being rendered:');
-      ie_close('p');
-      $templateAlias2({code: '// Forces all items to use the \'my-list-item-class\' CSS class.\nthis.props.children.forEach(child => {\n    child.class = \'my-list-item-class\';\n};\n\nreturn <ul>{this.props.children}</ul>', mode: 'jsx'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'functional_components');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#functional_components');
-          itext('Functional Components');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Sometimes you\'ll create very simple components, that have no other behavior besides rendering their own contents. In this case you can drop using classes, and instead create simple functions that just render the contents instead.');
-      ie_close('p');
-      ie_open('p');
-        itext('For example, let\'s create a simple ');
-        ie_open('strong');
-          itext('Button');
-        ie_close('strong');
-        itext(' component as a function:');
-      ie_close('p');
-      $templateAlias2({code: '/**\n * Functional components receive the configuration\n * object as the first param.\n */\nvar Button = ({ cssClass, label }) => {\n    return <button type="button" class={cssClass}>{label}</button>;\n};', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('You can then use it from parent components in the same way that you\'d use a component class, for example:');
-      ie_close('p');
-      $templateAlias2({code: '<Button class="btn btn-primary" label="OK" />', mode: 'jsx'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'rendering_jsx_components');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#rendering_jsx_components');
-          itext('Rendering JSX Components');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('JSX components can either be rendered in the ');
-        ie_open('a', null, null,
-            'href', 'rendering-components.html');
-          itext('usual way');
-        ie_close('a');
-        itext(', or via the ');
-        ie_open('code');
-          itext('JSXComponent.render');
-        ie_close('code');
-        itext(' function, like this:');
-      ie_close('p');
-      $templateAlias2({code: 'class Button extends JSXComponent {\n    render() {\n        // Your render logic\n    }\n}\n\nJSXComponent.render(Button, {label: \'OK\'}, parent);', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('You can also pass a functional component to it:');
-      ie_close('p');
-      $templateAlias2({code: 'var Button = props => {\n    // Your render logic\n};\n\nJSXComponent.render(Button, {label: \'OK\'}, parent);', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Or even render directly via JSX:');
-      ie_close('p');
-      $templateAlias2({code: 'JSXComponent.render(<Button label="OK" />, parent);', mode: 'jsx'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'jsx_compilation');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#jsx_compilation');
-          itext('JSX Compilation');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('For the integration between ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' and ');
-        ie_open('strong');
-          itext('JSX');
-        ie_close('strong');
-        itext(' to work, the JSX code needs to be compiled via a babel plugin called ');
-        ie_open('a', null, null,
-            'href', 'http://npmjs.com/package/babel-plugin-incremental-dom');
-          itext('babel-plugin-incremental-dom');
-        ie_close('a');
-        itext('. Using it directly means you\'d need to configure it manually though, so we also provide a ');
-        ie_open('a', null, null,
-            'href', 'http://npmjs.com/package/babel-preset-metal-jsx');
-          itext('babel preset');
-        ie_close('a');
-        itext(' that you can use instead.');
-      ie_close('p');
-    ie_close('article');
+  var param881 = function() {
+    ie_open('h2');
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+    ie_close('h2');
+    ie_open('p');
+      itext('You almost have a fully functioning Todo App! The only missing feature is the ability to add new todos to the list. This is where the ');
+      ie_open('code');
+        itext('TodoForm');
+      ie_close('code');
+      itext(' component will come into play.');
+    ie_close('p');
+    ie_open('p');
+      itext('First, go ahead and add a couple of event listeners, one for the form submission (onsubmit), and the other for when the input value changes (onkeyup).');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    handleSubmit(event) {\n        // Prevent default browser functionality\n        event.preventDefault();\n    }\n\n    handleChange(event) {\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now you can use the ');
+      ie_open('code');
+        itext('value');
+      ie_close('code');
+      itext(' property from STATE to keep track of the changes made to the input value.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoForm extends JSXComponent {\n    render() {\n        return (\n            <form class="todo-form" data-onsubmit={this.handleSubmit.bind(this)}>\n                <label for="title">\n                    Todo\n                    <input\n                        data-onkeyup={this.handleChange.bind(this)}\n                        name="title"\n                        value={this.state.value}\n                    />\n                </label>\n                <button type="submit">Add</button>\n            </form>\n        );\n    }\n\n    ...\n\n    handleChange(event) {\n        this.state.value = event.target.value;\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('The value of ');
+      ie_open('code');
+        itext('this.state.value');
+      ie_close('code');
+      itext(' will now match the value in the input.');
+    ie_close('p');
+    ie_open('p');
+      itext('You can also emit a custom event when the form is submitted, similarly to what ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' does to notify the parent component that something happened.');
+    ie_close('p');
+    $templateAlias2({code: 'handleSubmit(event) {\n    event.preventDefault();\n\n    if (this.state.value) {\n        this.emit(\'todoAdd\', {\n            title: this.state.value\n        });\n\n        // Clears the input value\n        this.state.value = \'\';\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Then in the ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' component, you can listen to this event and add a new todo.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                ...\n\n                <TodoForm\n                    events={{\n                        todoAdd: this.handleTodoAdd.bind(this)\n                    }}\n                 />\n            </div>\n        );\n    }\n\n    addTodo(title) {\n        // Creates a new array with all of the elements\n        // from the previous array, with the newly added item\n        this.state.todos = [...this.state.todos, {\n            done: false,\n            title\n        }];\n    }\n\n    handleTodoAdd(event) {\n        this.addTodo(event.title);\n    }\n\n    ...\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now when you add some text to the input and submit the form, a new todo will automatically be added to the list.');
+    ie_close('p');
+    ie_open('p');
+      itext('That\'s it! You\'ve successfully created a simple Todo App with Metal.js. Now that you are comfortable with the basics, check out the guides for more advanced documentation.');
+    ie_close('p');
+    ie_open('p');
+      ie_open('img', null, null,
+          'src', '/images/tutorials/todo-app/finished_todo_anim.gif',
+          'alt', 'Finished GIF',
+          'title', 'Finished GIF');
+      ie_close('img');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27475,11 +27318,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param614}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param881}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'AWIZB.render';
+  $render.soyTemplateName = 'argek.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27489,26 +27332,14 @@ return exports;
 
 });
 
-class AWIZB extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AWIZB, templates);
+class argek extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(argek, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
 /* 238 */,
 /* 239 */,
 /* 240 */,
@@ -27555,7 +27386,30 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AWIZB, templates);
 /* 281 */,
 /* 282 */,
 /* 283 */,
-/* 284 */
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27587,9 +27441,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _jsxComponentsSoy = __webpack_require__(225);
+var _addingTodosSoy = __webpack_require__(237);
 
-var _jsxComponentsSoy2 = _interopRequireDefault(_jsxComponentsSoy);
+var _addingTodosSoy2 = _interopRequireDefault(_addingTodosSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27599,23 +27453,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AWIZB = function (_Component) {
-  _inherits(AWIZB, _Component);
+var argek = function (_Component) {
+  _inherits(argek, _Component);
 
-  function AWIZB() {
-    _classCallCheck(this, AWIZB);
+  function argek() {
+    _classCallCheck(this, argek);
 
-    return _possibleConstructorReturn(this, (AWIZB.__proto__ || Object.getPrototypeOf(AWIZB)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (argek.__proto__ || Object.getPrototypeOf(argek)).apply(this, arguments));
   }
 
-  return AWIZB;
+  return argek;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(AWIZB, _jsxComponentsSoy2.default);
+_metalSoy2.default.register(argek, _addingTodosSoy2.default);
 
-exports.default = AWIZB;
+exports.default = argek;
 
 /***/ })
-],[284]);
+],[307]);

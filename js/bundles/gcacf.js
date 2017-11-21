@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,35,36],[
+webpackJsonppageComponent([8,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27191,18 +27191,12 @@ exports.default = parseFromAnchor;
 /* 235 */,
 /* 236 */,
 /* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TyzqA", function() { return TyzqA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gcacf", function() { return gcacf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27214,15 +27208,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from rendering-data.soy.
+// This file was automatically generated from before-we-start.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace TyzqA.
+ * @fileoverview Templates in namespace gcacf.
  * @public
  */
 
-goog.module('TyzqA.incrementaldom');
+goog.module('gcacf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27243,8 +27237,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
@@ -27256,35 +27248,58 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param1046 = function() {
+  var param912 = function() {
     ie_open('h2');
-      var dyn22 = opt_data.page.title;
-      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+      var dyn17 = opt_data.page.title;
+      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
     ie_close('h2');
     ie_open('p');
-      itext('First let\'s prepare the ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' for consuming the data being passed from ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
+      itext('Before we actually make anything, let\'s discuss what Metal.js is, and what it\'s intended for.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Data flow');
+    ie_close('h3');
+    ie_open('p');
+      itext('If you\'re familiar with React, you\'ll feel right at home. Metal.js is a foundation for creating UI components that automatically respond to data when it\'s updated. In other words, it\'s a framework for creating one-way data binding components.');
+    ie_close('p');
+    ie_open('p');
+      itext('This is different than frameworks like Angular, which provide a two-way data binding solution.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Templating');
+    ie_close('h3');
+    ie_open('p');
+      itext('Metal.js is template agnostic, and comes with out of the box support for two templating languages, Soy (Google Closure) and JSX (React).');
+    ie_close('p');
+    ie_open('p');
+      itext('When the data being passed to your component changes, your component\'s template will be used to rerender just the parts of your component that need to be updated. Therefore, you don\'t need to worry about manual DOM manipulation.');
+    ie_close('p');
+    ie_open('p');
+      itext('Behind the scenes Metal.js is using Google\'s ');
+      ie_open('a', null, null,
+          'href', 'https://google.github.io/incremental-dom');
+        itext('Incremental DOM');
+      ie_close('a');
+      itext(' for updating DOM elements.');
+    ie_close('p');
+    ie_open('h3');
+      itext('What are we making?');
+    ie_close('h3');
+    ie_open('p');
+      itext('In this tutorial we\'ll be making a simple Todo App that let\'s you mark items as completed, and add new items to the list. If you would like to see the finished product check out the ');
+      ie_open('a', null, null,
+          'href', '#');
+        itext('metal-todo-app repsitory');
+      ie_close('a');
       itext('.');
     ie_close('p');
-    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        // Conditionally adding the \'todo-item-done\' class if\n        // the todo is done\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
     ie_open('p');
-      itext('Now that you have some data that needs rendering, and the ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' is ready to consume it, you need to iterate over the todos and pass them to the child components.');
+      ie_open('img', null, null,
+          'src', '/images/tutorials/todo-app/finished_todo_app.png',
+          'alt', 'Finished Todo App',
+          'title', 'Finished Todo App');
+      ie_close('img');
     ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('This will result in the following markup.');
-    ie_close('p');
-    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27294,11 +27309,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param1046}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param912}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'TyzqA.render';
+  $render.soyTemplateName = 'gcacf.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27308,14 +27323,20 @@ return exports;
 
 });
 
-class TyzqA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TyzqA, templates);
+class gcacf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gcacf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -27375,7 +27396,11 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TyzqA, templates);
 /* 301 */,
 /* 302 */,
 /* 303 */,
-/* 304 */
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27407,9 +27432,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _renderingDataSoy = __webpack_require__(244);
+var _beforeWeStartSoy = __webpack_require__(238);
 
-var _renderingDataSoy2 = _interopRequireDefault(_renderingDataSoy);
+var _beforeWeStartSoy2 = _interopRequireDefault(_beforeWeStartSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27419,23 +27444,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var TyzqA = function (_Component) {
-  _inherits(TyzqA, _Component);
+var gcacf = function (_Component) {
+  _inherits(gcacf, _Component);
 
-  function TyzqA() {
-    _classCallCheck(this, TyzqA);
+  function gcacf() {
+    _classCallCheck(this, gcacf);
 
-    return _possibleConstructorReturn(this, (TyzqA.__proto__ || Object.getPrototypeOf(TyzqA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gcacf.__proto__ || Object.getPrototypeOf(gcacf)).apply(this, arguments));
   }
 
-  return TyzqA;
+  return gcacf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(TyzqA, _renderingDataSoy2.default);
+_metalSoy2.default.register(gcacf, _beforeWeStartSoy2.default);
 
-exports.default = TyzqA;
+exports.default = gcacf;
 
 /***/ })
-],[304]);
+],[308]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([30,35,36],[
+webpackJsonppageComponent([5,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27169,244 +27169,7 @@ exports.default = parseFromAnchor;
 /* 213 */,
 /* 214 */,
 /* 215 */,
-/* 216 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IBNlt", function() { return IBNlt; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from modal_testing.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace IBNlt.
- * @public
- */
-
-goog.module('IBNlt.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param353 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('In the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/modal_nested.html');
-          itext('previous section');
-        ie_close('a');
-        itext(' we\'ve completed our ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' component. The last thing we\'d like to show is how to use the tools that ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' offers to help you test your code.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'test_script');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#test_script');
-          itext('Test Script');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('If you look at your ');
-        ie_open('code');
-          itext('package.json');
-        ie_close('code');
-        itext(' file you\'ll notice that it already contains a test script that you can use:');
-      ie_close('p');
-      $templateAlias2({code: '{\n    "scripts": {\n        "test": "gulp test"\n    }\n}', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('If you\'re building a project without the generator, you can still get ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext('\'s test tools by using ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/building.html#gulp-metal');
-          itext('gulp-metal');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'adding_a_test');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#adding_a_test');
-          itext('Adding a Test');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Also note that your generated project directory also has a file called ');
-        ie_open('code');
-          itext('test/Modal.js');
-        ie_close('code');
-        itext(', with a failing assertion. As you can imagine, all you need to do is add your tests to this file.');
-      ie_close('p');
-      ie_open('p');
-        itext('To illustrate this let\'s start by replacing the existing test with one that checks that the given ');
-        ie_open('code');
-          itext('body');
-        ie_close('code');
-        itext(' data is being rendered correctly:');
-      ie_close('p');
-      $templateAlias2({code: 'import Modal from \'../src/Modal\';\n\ndescribe(\'Modal\', function() {\n    it(\'should render the body\', function() {\n        var component = new Modal({\n            body: \'Test Body\'\n        });\n\n        var bodyElement = component.element.querySelector(\'.modal-body\');\n\n        assert.ok(bodyElement);\n        assert.strictEqual(\'Test Body\', bodyElement.textContent);\n    });\n});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'running_the_tests');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#running_the_tests');
-          itext('Running the Tests');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('To run our tests all you need to do is type ');
-        ie_open('code');
-          itext('npm test');
-        ie_close('code');
-        itext(' on your terminal. You\'ll see something like this:');
-      ie_close('p');
-      ie_open('p');
-        ie_open('img', null, null,
-            'src', '../../images/docs/test.png',
-            'alt', 'Terminal screenshot');
-        ie_close('img');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'test_environment');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#test_environment');
-          itext('Test Environment');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('This test file we wrote uses ');
-        ie_open('a', null, null,
-            'href', 'http://mochajs.org');
-          itext('Mocha');
-        ie_close('a');
-        itext(' and ');
-        ie_open('a', null, null,
-            'href', 'http://chaijs.com/');
-          itext('Chai');
-        ie_close('a');
-        itext(' for describing tests, and ');
-        ie_open('a', null, null,
-            'href', 'http://karma-runner.github.io/0.12/index.html');
-          itext('Karma');
-        ie_close('a');
-        itext(' as the test runner. That\'s the default setup used by ');
-        ie_open('strong');
-          itext('gulp-metal');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('It\'s important to note that you don\'t have to use ');
-        ie_open('strong');
-          itext('gulp-metal');
-        ie_close('strong');
-        itext(' for you tests though. It\'s just an easy way that\'s already provided for you, but you can certainly setup your own environment if you wish.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'next_steps');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next steps');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You should now have a good knowledge of ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' basics. If you want to dive into more details and advanced topics, go ahead and check some of our guides.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param353}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'IBNlt.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class IBNlt extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IBNlt, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 216 */,
 /* 217 */,
 /* 218 */,
 /* 219 */,
@@ -27431,7 +27194,183 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IBNlt, templates);
 /* 238 */,
 /* 239 */,
 /* 240 */,
-/* 241 */,
+/* 241 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UaXHT", function() { return UaXHT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from dependencies.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace UaXHT.
+ * @public
+ */
+
+goog.module('UaXHT.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param980 = function() {
+    ie_open('h2');
+      var dyn20 = opt_data.page.title;
+      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
+    ie_close('h2');
+    ie_open('p');
+      itext('In order to follow along with this tutorial, you\'ll need ');
+      ie_open('a', null, null,
+          'href', 'https://git-scm.com/');
+        itext('Git');
+      ie_close('a');
+      itext(', and a recent version of ');
+      ie_open('a', null, null,
+          'href', 'https://nodejs.org/');
+        itext('Node.js/npm');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Todo Boilerplate');
+    ie_close('h3');
+    ie_open('p');
+      itext('Start by cloning the boilerplate respository.');
+    ie_close('p');
+    $templateAlias2({code: 'git clone https://github.com/Robert-Frampton/metal-todo-app.git', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('Then navigate to the root of the project in your terminal and install the local npm dependencies.');
+    ie_close('p');
+    $templateAlias2({code: 'cd metal-todo-app && npm install', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('The boilerplate that you will be building off of is located in the ');
+      ie_open('strong');
+        itext('src/jsx');
+      ie_close('strong');
+      itext(' directory. You can also view the finished product in the ');
+      ie_open('strong');
+        itext('src/jsx/final');
+      ie_close('strong');
+      itext(' directory.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Building');
+    ie_close('h3');
+    ie_open('p');
+      itext('In order to test drive the boilerplate located in the ');
+      ie_open('strong');
+        itext('src/jsx');
+      ie_close('strong');
+      itext(' directory, you\'ll need to run the provided build script:');
+    ie_close('p');
+    $templateAlias2({code: 'npm run build:jsx', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('p');
+      itext('This will run babel + webpack to transpile and bundle the JavaScript into something consumable by web browsers.');
+    ie_close('p');
+    ie_open('p');
+      itext('Everything you\'ll be writing in this tutorial will be using ES6 syntax, if you\'re unfamiliar with it, take a look at ');
+      ie_open('a', null, null,
+          'href', '#');
+        itext('this guide');
+      ie_close('a');
+      itext(' first.');
+    ie_close('p');
+    ie_open('p');
+      itext('To build the finished product, run the following script:');
+    ie_close('p');
+    $templateAlias2({code: 'npm run build:jsx:final', mode: 'text/x-sh'}, null, opt_ijData);
+    ie_open('h3');
+      itext('Demo');
+    ie_close('h3');
+    ie_open('p');
+      itext('Now that you\'ve built the project, go ahead and open the demo page located at ');
+      ie_open('code');
+        itext('demos/index.html');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    ie_open('p');
+      itext('If you take a look at the file you\'ll see that the component is already being invoked.');
+    ie_close('p');
+    $templateAlias2({code: '<script type="text/javascript">\n    new metal.TodoApp();\n<\/script>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('p');
+      itext('When invoking a component this way, the component is rendered to the ');
+      ie_open('code');
+        itext('body');
+      ie_close('code');
+      itext(' element.');
+    ie_close('p');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param980}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'UaXHT.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class UaXHT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UaXHT, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 242 */,
 /* 243 */,
 /* 244 */,
@@ -27470,7 +27409,32 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IBNlt, templates);
 /* 277 */,
 /* 278 */,
 /* 279 */,
-/* 280 */
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27502,9 +27466,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _modal_testingSoy = __webpack_require__(216);
+var _dependenciesSoy = __webpack_require__(241);
 
-var _modal_testingSoy2 = _interopRequireDefault(_modal_testingSoy);
+var _dependenciesSoy2 = _interopRequireDefault(_dependenciesSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27514,23 +27478,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IBNlt = function (_Component) {
-  _inherits(IBNlt, _Component);
+var UaXHT = function (_Component) {
+  _inherits(UaXHT, _Component);
 
-  function IBNlt() {
-    _classCallCheck(this, IBNlt);
+  function UaXHT() {
+    _classCallCheck(this, UaXHT);
 
-    return _possibleConstructorReturn(this, (IBNlt.__proto__ || Object.getPrototypeOf(IBNlt)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (UaXHT.__proto__ || Object.getPrototypeOf(UaXHT)).apply(this, arguments));
   }
 
-  return IBNlt;
+  return UaXHT;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(IBNlt, _modal_testingSoy2.default);
+_metalSoy2.default.register(UaXHT, _dependenciesSoy2.default);
 
-exports.default = IBNlt;
+exports.default = UaXHT;
 
 /***/ })
-],[280]);
+],[305]);

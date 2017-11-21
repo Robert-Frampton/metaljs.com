@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,35,36],[
+webpackJsonppageComponent([18,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27181,23 +27181,12 @@ exports.default = parseFromAnchor;
 /* 225 */,
 /* 226 */,
 /* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */
+/* 228 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnYhH", function() { return UnYhH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JJEWO", function() { return JJEWO; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27209,15 +27198,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from components.soy.
+// This file was automatically generated from progressive-enhancement.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace UnYhH.
+ * @fileoverview Templates in namespace JJEWO.
  * @public
  */
 
-goog.module('UnYhH.incrementaldom');
+goog.module('JJEWO.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27238,9 +27227,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -27251,54 +27238,35 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param921 = function() {
-    ie_open('h2');
-      var dyn18 = opt_data.page.title;
-      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
-    ie_close('h2');
-    ie_open('p');
-      itext('In the ');
-      ie_open('code');
-        itext('metal-todo-app');
-      ie_close('code');
-      itext(' boilerplate, there are already three components defined to help get you started. Each component is defined as an ES6 class that extends from Metal\'s ');
-      ie_open('code');
-        itext('JSXComponent');
-      ie_close('code');
-      itext(' class.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('Each component has a render function where the JSX template is defined. This will create the HTML you see in the demo page.');
-    ie_close('p');
-    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    return (\n        <div>Hello, World</div>\n    );\n}', mode: 'text/jsx'}, null, opt_ijData);
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoApp');
-      ie_close('code');
-      itext(' component will be the root level component. It will handle storing the todo data, and the rendering of the other two components.');
-    ie_close('p');
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' component will render each item in the list of todos.');
-    ie_close('p');
-    ie_open('p');
-      itext('The ');
-      ie_open('code');
-        itext('TodoItem');
-      ie_close('code');
-      itext(' component will render a form for adding new todo items to the list. It will consist of a text input and add button.');
-    ie_close('p');
-    ie_open('h3');
-      itext('Why more than one?');
-    ie_close('h3');
-    ie_open('p');
-      itext('It might seem more trouble than it\'s worth splitting up the Todo App into multiple components, but it\'s absolutely necessary when creating larger applications. This tutorial aims to teach you how to handle nested components for more complex use cases.');
-    ie_close('p');
+  var param721 = function() {
+    ie_open('article', null, null,
+        'id', 'progressive_enhancement');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#progressive_enhancement');
+          itext('Progressive Enhancement');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('a', null, null,
+            'href', 'http://en.wikipedia.org/wiki/Progressive_enhancement');
+          itext('Progressive enhancement');
+        ie_close('a');
+        itext(' is a feature that is very important for a lot of people. Knowing about this, ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' is prepared to deal with content that already comes rendered from the server. Since Metal.js components use ');
+        ie_open('a', null, null,
+            'href', 'http://google.github.io/incremental-dom');
+          itext('Incremental DOM');
+        ie_close('a');
+        itext(' by default, rendering on an element with existing content will reuse it instead of repainting everything.');
+      ie_close('p');
+      ie_open('p');
+        itext('It\'s important to note that building components with Soy also helps with progressive enhancement in another way: by providing a faithful template that can be run by the server without having to duplicate the rendering code or run JavaScript at all.');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27308,11 +27276,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param921}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param721}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'UnYhH.render';
+  $render.soyTemplateName = 'JJEWO.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27322,14 +27290,25 @@ return exports;
 
 });
 
-class UnYhH extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UnYhH, templates);
+class JJEWO extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(JJEWO, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
 /* 240 */,
 /* 241 */,
 /* 242 */,
@@ -27376,26 +27355,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UnYhH, templates);
 /* 283 */,
 /* 284 */,
 /* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27427,9 +27387,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _componentsSoy = __webpack_require__(239);
+var _progressiveEnhancementSoy = __webpack_require__(228);
 
-var _componentsSoy2 = _interopRequireDefault(_componentsSoy);
+var _progressiveEnhancementSoy2 = _interopRequireDefault(_progressiveEnhancementSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27439,23 +27399,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UnYhH = function (_Component) {
-  _inherits(UnYhH, _Component);
+var JJEWO = function (_Component) {
+  _inherits(JJEWO, _Component);
 
-  function UnYhH() {
-    _classCallCheck(this, UnYhH);
+  function JJEWO() {
+    _classCallCheck(this, JJEWO);
 
-    return _possibleConstructorReturn(this, (UnYhH.__proto__ || Object.getPrototypeOf(UnYhH)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (JJEWO.__proto__ || Object.getPrototypeOf(JJEWO)).apply(this, arguments));
   }
 
-  return UnYhH;
+  return JJEWO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(UnYhH, _componentsSoy2.default);
+_metalSoy2.default.register(JJEWO, _progressiveEnhancementSoy2.default);
 
-exports.default = UnYhH;
+exports.default = JJEWO;
 
 /***/ })
-],[305]);
+],[286]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([17,35,36],[
+webpackJsonppageComponent([19,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27180,14 +27180,12 @@ exports.default = parseFromAnchor;
 /* 224 */,
 /* 225 */,
 /* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "taRjo", function() { return taRjo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZqMHT", function() { return ZqMHT; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27199,15 +27197,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from rendering-components.soy.
+// This file was automatically generated from performance.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace taRjo.
+ * @fileoverview Templates in namespace ZqMHT.
  * @public
  */
 
-goog.module('taRjo.incrementaldom');
+goog.module('ZqMHT.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27228,8 +27226,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -27241,46 +27237,65 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param728 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('The ');
-        ie_open('a', null, null,
-            'href', '/docs');
-          itext('quick start tutorial');
-        ie_close('a');
-        itext(' explains how to create and render a new component. In its examples components are always being appended directly to the document\'s body though, but what\'s usually necessary is to render in a specific position.');
-      ie_close('p');
-    ie_close('article');
+  var param712 = function() {
     ie_open('article', null, null,
-        'id', 'replacing_an_existing_element');
+        'id', 'performance');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#replacing_an_existing_element');
-          itext('Replacing an Existing Element');
+            'href', '#performance');
+          itext('Performance');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('If you wish your component to replace an existing element on the DOM, you just need to pass it (or a selector for it) as the ');
-        ie_open('code');
-          itext('element');
-        ie_close('code');
-        itext(' property of the constructor configuration, like this:');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(' was built from the first with performance in mind. We\'ve run performance tests to compare it with other libraries and got really good results that show the benefits of using it.');
       ie_close('p');
-      $templateAlias2({code: '// Passsing the element itself\nnew Modal({element: elementToReplace});\n\n// Passing a selector to the element\nnew Modal({element: \'#elementToReplace\'});', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'specifying_the_parent');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#specifying_the_parent');
-          itext('Specifying the Parent');
-        ie_close('a');
-      ie_close('h2');
       ie_open('p');
-        itext('You can also specify the parent element that should receive the component\'s contents via the second constructor param, like this:');
+        itext('In one of the tests we made, we built a simple list widget on three different libraries: ');
+        ie_open('strong');
+          itext('Metal.js');
+        ie_close('strong');
+        itext(', ');
+        ie_open('strong');
+          itext('YUI');
+        ie_close('strong');
+        itext(' and ');
+        ie_open('strong');
+          itext('React');
+        ie_close('strong');
+        itext('. We then measured the time it took to render those widgets with 1000 items each on three different situations:');
       ie_close('p');
-      $templateAlias2({code: '// Passing the element itself\nnew Modal(data, parentElement);\n\n// Passing a selector to the element\nnew Modal(data, \'#parentElement\');', mode: 'javascript'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('First Render -');
+          ie_close('strong');
+          itext(' Creating and rendering the list for the first time, on a blank element.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Decorate -');
+          ie_close('strong');
+          itext(' Creating and decorating a list that was previously rendered on the DOM.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('Update -');
+          ie_close('strong');
+          itext(' Changing the contents of the first item of the list, causing a rerender.');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('The chart below shows the results we obtained on Chrome (the higher the bar, the faster it runs):');
+      ie_close('p');
+      ie_open('p');
+        ie_open('img', null, null,
+            'src', '../../images/docs/perf.png',
+            'alt', 'Performance Test - List');
+        ie_close('img');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27291,11 +27306,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param728}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param712}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'taRjo.render';
+  $render.soyTemplateName = 'ZqMHT.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27305,14 +27320,16 @@ return exports;
 
 });
 
-class taRjo extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(taRjo, templates);
+class ZqMHT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ZqMHT, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 228 */,
+/* 229 */,
 /* 230 */,
 /* 231 */,
 /* 232 */,
@@ -27377,11 +27394,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(taRjo, templates);
 /* 291 */,
 /* 292 */,
 /* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27413,9 +27426,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _renderingComponentsSoy = __webpack_require__(229);
+var _performanceSoy = __webpack_require__(227);
 
-var _renderingComponentsSoy2 = _interopRequireDefault(_renderingComponentsSoy);
+var _performanceSoy2 = _interopRequireDefault(_performanceSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27425,23 +27438,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var taRjo = function (_Component) {
-  _inherits(taRjo, _Component);
+var ZqMHT = function (_Component) {
+  _inherits(ZqMHT, _Component);
 
-  function taRjo() {
-    _classCallCheck(this, taRjo);
+  function ZqMHT() {
+    _classCallCheck(this, ZqMHT);
 
-    return _possibleConstructorReturn(this, (taRjo.__proto__ || Object.getPrototypeOf(taRjo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ZqMHT.__proto__ || Object.getPrototypeOf(ZqMHT)).apply(this, arguments));
   }
 
-  return taRjo;
+  return ZqMHT;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(taRjo, _renderingComponentsSoy2.default);
+_metalSoy2.default.register(ZqMHT, _performanceSoy2.default);
 
-exports.default = taRjo;
+exports.default = ZqMHT;
 
 /***/ })
-],[298]);
+],[294]);

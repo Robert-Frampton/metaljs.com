@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([20,35,36],[
+webpackJsonppageComponent([13,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27179,12 +27179,19 @@ exports.default = parseFromAnchor;
 /* 223 */,
 /* 224 */,
 /* 225 */,
-/* 226 */
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lHqOv", function() { return lHqOv; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QTrPT", function() { return QTrPT; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27196,15 +27203,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from nested-components.soy.
+// This file was automatically generated from yeoman-generator.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace lHqOv.
+ * @fileoverview Templates in namespace QTrPT.
  * @public
  */
 
-goog.module('lHqOv.incrementaldom');
+goog.module('QTrPT.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27238,68 +27245,97 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param678 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('The ability to reference components inside templates can be very useful. It enables the developer to correctly place the child component at the right position inside the parent in an intuitive way.');
-      ie_close('p');
-      ie_open('p');
-        itext('This can certainly be done with ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' components. For example, let\'s say we\'ve already built a simple component called ');
-        ie_open('strong');
-          itext('Button');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('Now we\'re building a ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' component, and we want it to render some buttons inside the footer. In ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('\'s template file we could do the following:');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n<div class="footer">\n    {foreach $button in $buttons}\n        {call Button.render}\n            {param label: $button /}\n        {/call}\n    {/foreach}\n</div>', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map(button => {\n  return <Button label={button} />;\n});\n\nreturn <div class="footer">{buttons}</div>;', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('When Modal is rendered, the buttons also will be, at the specified position. Besides this, ');
-        ie_open('strong');
-          itext('Button');
-        ie_close('strong');
-        itext(' components will be automatically instantiated for these elements.');
-      ie_close('p');
-    ie_close('article');
+  var param861 = function() {
     ie_open('article', null, null,
-        'id', 'accessing_sub_component_instances');
+        'id', 'yeoman_generator');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#accessing_sub_component_instances');
-          itext('Accessing Sub Component Instances');
+            'href', '#yeoman_generator');
+          itext('Yeoman Generator');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('But what if we need to access the created instances? That\'s possible by using ');
+        itext('You can organize your ');
         ie_open('strong');
-          itext('ref');
+          itext('Metal.js');
         ie_close('strong');
-        itext('. Let\'s add one to the previous example and see what happens:');
+        itext(' project in any way you want, but to start out we recommend using the ');
+        ie_open('a', null, null,
+            'href', 'http://npmjs.com/package/generator-metal');
+          itext('Yeoman generator');
+        ie_close('a');
+        itext(' we\'ve created, which prepares both the project structure as well as a basic development workflow for you.');
       ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n{foreach $button as $buttons}\n    {call Button.render}\n        {param label: $button /}\n        {param ref: \'button\' + index($button) /}\n    {/call}\n{/foreach}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nvar buttons = this.props.buttons.map((button, index) => {\n    return <Button label={button} ref={\'button\' + index} />;\n});', mode: 'jsx'}, null, opt_ijData);
       ie_open('p');
-        itext('Now you\'ll be able to access your sub components through your instance\'s ');
-        ie_open('code');
-          itext('refs');
-        ie_close('code');
-        itext(' property, like this:');
+        itext('To use it:');
       ie_close('p');
-      $templateAlias2({code: 'modal.refs.button0 // The instance for first button\nmodal.refs.button1 // The instance for second button', mode: 'javascript'}, null, opt_ijData);
+      ie_open('ul');
+        ie_open('li');
+          itext('Install ');
+          ie_open('a', null, null,
+              'href', 'https://nodejs.org');
+            itext('npm');
+          ie_close('a');
+          itext(' v3.0.0 or newer (if you don\'t have it yet)');
+        ie_close('li');
+        ie_open('li');
+          itext('Install ');
+          ie_open('strong');
+            itext('Yeoman');
+          ie_close('strong');
+          itext(' and ');
+          ie_open('strong');
+            itext('generator-metal');
+          ie_close('strong');
+          itext(': ');
+          ie_open('code');
+            itext('[sudo] npm i -g yo generator-metal');
+          ie_close('code');
+        ie_close('li');
+        ie_open('li');
+          itext('Open the folder that you want to use on your terminal and type: ');
+          ie_open('code');
+            itext('yo metal');
+          ie_close('code');
+        ie_close('li');
+        ie_open('li');
+          itext('Answer the generator prompts: ');
+          ie_open('img', null, null,
+              'src', '../../images/docs/prompts.png',
+              'alt', 'Generator prompts');
+          ie_close('img');
+        ie_close('li');
+        ie_open('li');
+          itext('Wait for the generator to finish fetching dependencies');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('After those steps you\'ll get a directory tree similar to this:');
+      ie_close('p');
+      $templateAlias2({code: '\u2514\u2500\u2500 metal-modal\n    \u251C\u2500\u2500 demos\n    \u2502   \u2514\u2500\u2500 index.html\n    \u251C\u2500\u2500 node_modules\n    \u251C\u2500\u2500 package.json\n    \u251C\u2500\u2500 src\n    \u2502   \u251C\u2500\u2500 Modal.js\n    \u2502   \u251C\u2500\u2500 Modal.soy // Only if Soy was chosen\n    \u2502   \u2514\u2500\u2500 modal.scss\n    \u2514\u2500\u2500 test\n        \u2514\u2500\u2500 Modal.js', mode: 'text'}, null, opt_ijData);
+      ie_open('p');
+        ie_open('code');
+          itext('generator-metal');
+        ie_close('code');
+        itext(' will already include some npm scripts to help you build and test your code, as well as many gulp tasks via ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/building.html#gulp_metal');
+          itext('gulp-metal');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('By the way, the boilerplate zip provided by the ');
+        ie_open('a', null, null,
+            'href', '/docs/getting-started/#boilerplate');
+          itext('getting started guide');
+        ie_close('a');
+        itext(' was created using ');
+        ie_open('strong');
+          itext('generator-metal');
+        ie_close('strong');
+        itext('.');
+      ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27310,11 +27346,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param678}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param861}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'lHqOv.render';
+  $render.soyTemplateName = 'QTrPT.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27324,21 +27360,14 @@ return exports;
 
 });
 
-class lHqOv extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lHqOv, templates);
+class QTrPT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QTrPT, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
@@ -27395,11 +27424,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lHqOv, templates);
 /* 287 */,
 /* 288 */,
 /* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27431,9 +27456,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _nestedComponentsSoy = __webpack_require__(226);
+var _yeomanGeneratorSoy = __webpack_require__(233);
 
-var _nestedComponentsSoy2 = _interopRequireDefault(_nestedComponentsSoy);
+var _yeomanGeneratorSoy2 = _interopRequireDefault(_yeomanGeneratorSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27443,23 +27468,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var lHqOv = function (_Component) {
-  _inherits(lHqOv, _Component);
+var QTrPT = function (_Component) {
+  _inherits(QTrPT, _Component);
 
-  function lHqOv() {
-    _classCallCheck(this, lHqOv);
+  function QTrPT() {
+    _classCallCheck(this, QTrPT);
 
-    return _possibleConstructorReturn(this, (lHqOv.__proto__ || Object.getPrototypeOf(lHqOv)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QTrPT.__proto__ || Object.getPrototypeOf(QTrPT)).apply(this, arguments));
   }
 
-  return lHqOv;
+  return QTrPT;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(lHqOv, _nestedComponentsSoy2.default);
+_metalSoy2.default.register(QTrPT, _yeomanGeneratorSoy2.default);
 
-exports.default = lHqOv;
+exports.default = QTrPT;
 
 /***/ })
-],[294]);
+],[290]);

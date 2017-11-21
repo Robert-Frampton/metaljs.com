@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([14,35,36],[
+webpackJsonppageComponent([17,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27182,15 +27182,12 @@ exports.default = parseFromAnchor;
 /* 226 */,
 /* 227 */,
 /* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlJkg", function() { return BlJkg; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hOlWR", function() { return hOlWR; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27202,15 +27199,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from web-components.soy.
+// This file was automatically generated from rendering-components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace BlJkg.
+ * @fileoverview Templates in namespace hOlWR.
  * @public
  */
 
-goog.module('BlJkg.incrementaldom');
+goog.module('hOlWR.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27244,116 +27241,46 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param805 = function() {
-    ie_open('article', null, null,
-        'id', 'web_components');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#web_components');
-          itext('Web Components');
-        ie_close('a');
-      ie_close('h2');
+  var param730 = function() {
+    ie_open('article');
       ie_open('p');
-        itext('Metal components are generally invoked in one of three ways:');
-      ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          itext('JavaScript');
-        ie_close('li');
-      ie_close('ul');
-      $templateAlias2({code: 'new metal.MyComponent({\n    title: \'Hello, World!\'\n}, \'#element\');', mode: 'javascript'}, null, opt_ijData);
-      ie_open('ul');
-        ie_open('li');
-          itext('Soy');
-        ie_close('li');
-      ie_close('ul');
-      $templateAlias2({code: '{call MyComponent.render}\n    {param title: "Hello, World!" /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      ie_open('ul');
-        ie_open('li');
-          itext('JSX');
-        ie_close('li');
-      ie_close('ul');
-      $templateAlias2({code: '<MyComponent title="Hello, World" />', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('However, with the help of the ');
+        itext('The ');
         ie_open('a', null, null,
-            'href', 'https://www.npmjs.com/package/metal-web-component');
-          itext('metal-web-component');
+            'href', '/docs');
+          itext('quick start tutorial');
         ie_close('a');
-        itext(' package, Metal components can be invoked as ');
-        ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements');
-          itext('Custom Elements');
-        ie_close('a');
-        itext(' in plain HTML.');
-      ie_close('p');
-      $templateAlias2({code: '<my-component title="Hello, World"></my-component>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'install');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#install');
-          itext('Install');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('First you must install the ');
-        ie_open('code');
-          itext('metal-web-component');
-        ie_close('code');
-        itext(' package:');
-      ie_close('p');
-      $templateAlias2({code: 'npm i --save metal-web-component', mode: 'bash'}, null, opt_ijData);
-      ie_open('p');
-        itext('Currently, web components don\'t work on every browser, so a polyfill must be used. Include the ');
-        ie_open('a', null, null,
-            'href', 'https://www.webcomponents.org/polyfills');
-          itext('webcomponents-lite polyfill');
-        ie_close('a');
-        itext(' if you intend to use web components on Firefox, Edge, or IE11.');
+        itext(' explains how to create and render a new component. In its examples components are always being appended directly to the document\'s body though, but what\'s usually necessary is to render in a specific position.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'define_web_components');
+        'id', 'replacing_an_existing_element');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#define_web_components');
-          itext('Define web components');
+            'href', '#replacing_an_existing_element');
+          itext('Replacing an Existing Element');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('This package exposes a single helper function that can be used to wrap any Metal component in a web component. It receives two arguments: the tag name you want the web component to receive, and the constructor of the Metal component:');
-      ie_close('p');
-      $templateAlias2({code: 'import JSXComponent from \'metal-jsx\';\nimport defineWebComponent from \'metal-web-component\';\n\nclass MyComponent extends JSXComponent {\n    render() {\n        return <h1>{this.props.message}</h1>\n    }\n}\n\nMyComponent.PROPS = {\n    message: {\n        value: \'\'\n    }\n};\n\ndefineWebComponent(\'my-component\', MyComponent);', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now that the web component is defined, it can be invoked in plain html:');
-      ie_close('p');
-      $templateAlias2({code: '<my-component message="This is a web component"></my-component>', mode: 'xml'}, null, opt_ijData);
-      ie_open('p');
-        itext('This results in the following HTML on the page:');
-      ie_close('p');
-      $templateAlias2({code: '<h1>This is a web component</h1>', mode: 'xml'}, null, opt_ijData);
-      ie_open('p');
-        itext('If you would like the component\'s markup to be rendered using the Shadow DOM, simply set the ');
+        itext('If you wish your component to replace an existing element on the DOM, you just need to pass it (or a selector for it) as the ');
         ie_open('code');
-          itext('useshadowdom');
+          itext('element');
         ie_close('code');
-        itext(' attribute to ');
-        ie_open('code');
-          itext('true');
-        ie_close('code');
-        itext(' when calling the web component:');
+        itext(' property of the constructor configuration, like this:');
       ie_close('p');
-      $templateAlias2({code: '<my-component message="This is a web component" useshadowdom="true"></my-component>', mode: 'xml'}, null, opt_ijData);
-      ie_open('p');
-        itext('This means that any styling on the page will not cascade to your component\'s markup. See ');
+      $templateAlias2({code: '// Passsing the element itself\nnew Modal({element: elementToReplace});\n\n// Passing a selector to the element\nnew Modal({element: \'#elementToReplace\'});', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'specifying_the_parent');
+      ie_open('h2');
         ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM');
-          itext('MDN\'s documentation');
+            'href', '#specifying_the_parent');
+          itext('Specifying the Parent');
         ie_close('a');
-        itext(' for more info.');
+      ie_close('h2');
+      ie_open('p');
+        itext('You can also specify the parent element that should receive the component\'s contents via the second constructor param, like this:');
       ie_close('p');
+      $templateAlias2({code: '// Passing the element itself\nnew Modal(data, parentElement);\n\n// Passing a selector to the element\nnew Modal(data, \'#parentElement\');', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27364,11 +27291,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param805}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param730}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'BlJkg.render';
+  $render.soyTemplateName = 'hOlWR.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27378,14 +27305,17 @@ return exports;
 
 });
 
-class BlJkg extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BlJkg, templates);
+class hOlWR extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hOlWR, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 230 */,
+/* 231 */,
+/* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
@@ -27440,7 +27370,17 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BlJkg, templates);
 /* 284 */,
 /* 285 */,
 /* 286 */,
-/* 287 */
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27472,9 +27412,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _webComponentsSoy = __webpack_require__(232);
+var _renderingComponentsSoy = __webpack_require__(229);
 
-var _webComponentsSoy2 = _interopRequireDefault(_webComponentsSoy);
+var _renderingComponentsSoy2 = _interopRequireDefault(_renderingComponentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27484,23 +27424,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BlJkg = function (_Component) {
-  _inherits(BlJkg, _Component);
+var hOlWR = function (_Component) {
+  _inherits(hOlWR, _Component);
 
-  function BlJkg() {
-    _classCallCheck(this, BlJkg);
+  function hOlWR() {
+    _classCallCheck(this, hOlWR);
 
-    return _possibleConstructorReturn(this, (BlJkg.__proto__ || Object.getPrototypeOf(BlJkg)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hOlWR.__proto__ || Object.getPrototypeOf(hOlWR)).apply(this, arguments));
   }
 
-  return BlJkg;
+  return hOlWR;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(BlJkg, _webComponentsSoy2.default);
+_metalSoy2.default.register(hOlWR, _renderingComponentsSoy2.default);
 
-exports.default = BlJkg;
+exports.default = hOlWR;
 
 /***/ })
-],[287]);
+],[297]);

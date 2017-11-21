@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([15,35,36],[
+webpackJsonppageComponent([7,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27184,12 +27184,20 @@ exports.default = parseFromAnchor;
 /* 228 */,
 /* 229 */,
 /* 230 */,
-/* 231 */
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BGkmw", function() { return BGkmw; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TjNwa", function() { return TjNwa; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27201,15 +27209,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from state.soy.
+// This file was automatically generated from components.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace BGkmw.
+ * @fileoverview Templates in namespace TjNwa.
  * @public
  */
 
-goog.module('BGkmw.incrementaldom');
+goog.module('TjNwa.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27232,7 +27240,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
 
 
 /**
@@ -27243,177 +27251,54 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param771 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('The ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' class provides a way of defining state properties for the classes that extend it, as well as watching these properties for value changes.');
-      ie_close('p');
-      ie_open('p');
-        itext('The ');
-        ie_open('strong');
-          itext('Component');
-        ie_close('strong');
-        itext(' class already extends from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' by default, besides automatically rerendering when there is a change.');
-      ie_close('p');
-      ie_open('p');
-        itext('If your class doesn\'t need to render anything it\'s best to extend from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' directly though. That way you\'ll have access to its features without also inheriting logic you won\'t need.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'configuring_state');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#configuring_state');
-          itext('Configuring State');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('The following example is a class that extends directly from ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' and defines a state property named ');
-        ie_open('code');
-          itext('number');
-        ie_close('code');
-        itext(' on itself:');
-      ie_close('p');
-      $templateAlias2({code: 'import core from \'metal\';\nimport State from \'metal-state\';\n\nclass Calculator extends State {\n    /**\n     * Coverts string numbers to the number type.\n     */\n    setNumber(val) {\n        if (core.isString(val)) {\n            val = parseInt(val, 10);\n        }\n        return val;\n    }\n}\n\nCalculator.STATE = {\n    number: {\n        // Called whenever a new value is set. Useful when normalizing your\n        // state data.\n        setter: \'setNumber\',\n\n        // Accepts either number or string types. If the validator check fails,\n        // the new value is discarded, and the current value kept.\n        validator: val => core.isNumber(val) || core.isString(val),\n\n        // Initial value\n        value: 0,\n\n        // You can, instead of the `value` option above, use a function to \n        // return the initial value for the state.\n        valueFn: val => 0,\n\n        // It\'s also possible to define that a property can only receive a \n        // value once, and later behave as read-only.\n        writeOnce: false\n    }\n}', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('If you\'re familiar with ');
-        ie_open('a', null, null,
-            'href', 'http://yuilibrary.com/');
-          itext('YUI');
-        ie_close('a');
-        itext(', you may recognize this feature and notice that it\'s very similar to how attributes are defined there. You basically just need to list all attributes you\'ll be using on the ');
-        ie_open('strong');
-          itext('STATE');
-        ie_close('strong');
-        itext(' static variable (on YUI it would be on ');
-        ie_open('strong');
-          itext('ATTRS');
-        ie_close('strong');
-        itext('), and provide their configuration options, like initial value and validator. For a list of all valid options, take a look at ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext('\'s ');
-        ie_open('a', null, null,
-            'href', 'http://github.com/metal/metal-state/blob/c87ac15b8a9fa3ee64c421f22411f97cd376024a/src/State.js#L61');
-          itext('docs');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'internal_states');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#internal_states');
-          itext('Internal States');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('You can define a state as internal, for use in your component only. Just add the attribute ');
-        ie_open('code');
-          itext('internal');
-        ie_close('code');
-        itext(' to the configuration object.');
-      ie_close('p');
-      ie_open('p');
-        itext('By doing this, the state will behave exactly as expected, including re-rendering the component. The only difference being, internal states can not be accessed by parent components.');
-      ie_close('p');
-      ie_open('p');
-        itext('This is not necessary for JSX components, since Metal.js JSX components have their own State Manager implementation. For that reason, two static properties are used, ');
-        ie_open('code');
-          itext('STATE');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('PROPS');
-        ie_close('code');
-        itext(', that behave much closer to React\'s ');
-        ie_open('code');
-          itext('state');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('props');
-        ie_close('code');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('To see exactly how it works read ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/jsx-components.html');
-          itext('JSX components section');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-      $templateAlias2({code: 'Calculator.STATE = {\n  number: {\n    ...\n    internal: true\n  }\n}', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'accessing_and_updating_state');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#accessing_and_updating_state');
-          itext('Accessing and Updating State');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('The constructor can receive a configuration object with initial values to use for its state properties. You can access or change an object\'s state in the same way you\'d access or change any object property. Or you can also call the ');
-        ie_open('code');
-          itext('setState');
-        ie_close('code');
-        itext(' function, which updates the properties specified by the given object.');
-      ie_close('p');
-      $templateAlias2({code: 'var obj = new Calculator();\nconsole.log(obj.number); // Prints 0\n\nobj.number = \'1\';\nconsole.log(obj.number); // Prints 1\n\nobj.setState({number: 2});\nconsole.log(obj.number); // Prints 2', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('You can also track state value changes by listening to the appropriate event.');
-      ie_close('p');
-      $templateAlias2({code: 'obj.on(\'numberChanged\', function(event) {\n    // event.prevVal has the previous value.\n    // event.newVal has the new value.\n});', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('To see all features of the ');
-        ie_open('strong');
-          itext('State');
-        ie_close('strong');
-        itext(' class take a look at its ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/metal/metal-state/blob/master/test/State.js');
-          itext('unit tests');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'configuration_data');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#configuration_data');
-          itext('Configuration Data');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Any data passed to the constructor that has not been configured as a state property can still be accessed via ');
-        ie_open('code');
-          itext('config');
-        ie_close('code');
-        itext('. Changes to these properties won\'t be tracked, so it\'s usually intended for your component\'s options, which are only set from the outside.');
-      ie_close('p');
-      $templateAlias2({code: 'var obj = new Calculator({\n    number: 10,\n    foo: \'foo\'\n});\n\nconsole.log(obj.number); // Prints 2\nconsole.log(obj.foo); // Prints undefined\nconsole.log(obj.config.foo); // Prints \'foo\'', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
+  var param923 = function() {
+    ie_open('h2');
+      var dyn18 = opt_data.page.title;
+      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
+    ie_close('h2');
+    ie_open('p');
+      itext('In the ');
+      ie_open('code');
+        itext('metal-todo-app');
+      ie_close('code');
+      itext(' boilerplate, there are already three components defined to help get you started. Each component is defined as an ES6 class that extends from Metal\'s ');
+      ie_open('code');
+        itext('JSXComponent');
+      ie_close('code');
+      itext(' class.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Each component has a render function where the JSX template is defined. This will create the HTML you see in the demo page.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    return (\n        <div>Hello, World</div>\n    );\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext(' component will be the root level component. It will handle storing the todo data, and the rendering of the other two components.');
+    ie_close('p');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component will render each item in the list of todos.');
+    ie_close('p');
+    ie_open('p');
+      itext('The ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' component will render a form for adding new todo items to the list. It will consist of a text input and add button.');
+    ie_close('p');
+    ie_open('h3');
+      itext('Why more than one?');
+    ie_close('h3');
+    ie_open('p');
+      itext('It might seem more trouble than it\'s worth splitting up the Todo App into multiple components, but it\'s absolutely necessary when creating larger applications. This tutorial aims to teach you how to handle nested components for more complex use cases.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -27423,11 +27308,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param771}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param923}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'BGkmw.render';
+  $render.soyTemplateName = 'TjNwa.render';
 }
 
 exports.render.params = ["page","site"];
@@ -27437,22 +27322,14 @@ return exports;
 
 });
 
-class BGkmw extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BGkmw, templates);
+class TjNwa extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TjNwa, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
 /* 240 */,
 /* 241 */,
 /* 242 */,
@@ -27499,7 +27376,25 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BGkmw, templates);
 /* 283 */,
 /* 284 */,
 /* 285 */,
-/* 286 */
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27531,9 +27426,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _stateSoy = __webpack_require__(231);
+var _componentsSoy = __webpack_require__(239);
 
-var _stateSoy2 = _interopRequireDefault(_stateSoy);
+var _componentsSoy2 = _interopRequireDefault(_componentsSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27543,23 +27438,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BGkmw = function (_Component) {
-  _inherits(BGkmw, _Component);
+var TjNwa = function (_Component) {
+  _inherits(TjNwa, _Component);
 
-  function BGkmw() {
-    _classCallCheck(this, BGkmw);
+  function TjNwa() {
+    _classCallCheck(this, TjNwa);
 
-    return _possibleConstructorReturn(this, (BGkmw.__proto__ || Object.getPrototypeOf(BGkmw)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TjNwa.__proto__ || Object.getPrototypeOf(TjNwa)).apply(this, arguments));
   }
 
-  return BGkmw;
+  return TjNwa;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(BGkmw, _stateSoy2.default);
+_metalSoy2.default.register(TjNwa, _componentsSoy2.default);
 
-exports.default = BGkmw;
+exports.default = TjNwa;
 
 /***/ })
-],[286]);
+],[304]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([31,35,36],[
+webpackJsonppageComponent([15,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27168,12 +27168,28 @@ exports.default = parseFromAnchor;
 /* 212 */,
 /* 213 */,
 /* 214 */,
-/* 215 */
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Duczc", function() { return Duczc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TcWEf", function() { return TcWEf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -27185,15 +27201,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from modal_nested.soy.
+// This file was automatically generated from state.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace Duczc.
+ * @fileoverview Templates in namespace TcWEf.
  * @public
  */
 
-goog.module('Duczc.incrementaldom');
+goog.module('TcWEf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -27227,117 +27243,176 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param317 = function() {
+  var param773 = function() {
     ie_open('article');
       ie_open('p');
-        itext('In the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/modal_updates.html');
-          itext('previous section');
-        ie_close('a');
-        itext(' we finished working on our component\'s behavior.');
+        itext('The ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' class provides a way of defining state properties for the classes that extend it, as well as watching these properties for value changes.');
       ie_close('p');
       ie_open('p');
-        itext('But what if our ');
+        itext('The ');
         ie_open('strong');
-          itext('Modal');
+          itext('Component');
         ie_close('strong');
-        itext(' header\'s markup was very similar to one that is used in other places though? Ideally we\'d move it into a separate component that can be reused. That\'s what we\'ll be doing in this section.');
+        itext(' class already extends from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' by default, besides automatically rerendering when there is a change.');
+      ie_close('p');
+      ie_open('p');
+        itext('If your class doesn\'t need to render anything it\'s best to extend from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' directly though. That way you\'ll have access to its features without also inheriting logic you won\'t need.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'creating_closeheader');
+        'id', 'configuring_state');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#creating_closeheader');
-          itext('Creating ');
-          ie_open('strong');
-            itext('CloseHeader');
-          ie_close('strong');
+            'href', '#configuring_state');
+          itext('Configuring State');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('First let\'s create the new component. Add a ');
+        itext('The following example is a class that extends directly from ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' and defines a state property named ');
         ie_open('code');
-          itext('src/CloseHeader.js');
+          itext('number');
         ie_close('code');
-        itext(' file to your project:');
+        itext(' on itself:');
       ie_close('p');
-      $templateAlias2({code: '// src/CloseHeader.js\n\nimport templates from \'./CloseHeader.soy\';\nimport Component from \'metal-component\';\nimport Soy from \'metal-soy\';\n\nclass CloseHeader extends Component {\n}\n\nSoy.register(CloseHeader, templates);\n\nexport default CloseHeader;', mode: 'javascript'}, null, opt_ijData);
-      $templateAlias2({code: '// src/CloseHeader.js\n\nimport JSXComponent from \'metal-jsx\';\n\nclass CloseHeader extends JSXComponent {\n    render() {\n    }\n}\n\nexport default CloseHeader;', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias2({code: 'import core from \'metal\';\nimport State from \'metal-state\';\n\nclass Calculator extends State {\n    /**\n     * Coverts string numbers to the number type.\n     */\n    setNumber(val) {\n        if (core.isString(val)) {\n            val = parseInt(val, 10);\n        }\n        return val;\n    }\n}\n\nCalculator.STATE = {\n    number: {\n        // Called whenever a new value is set. Useful when normalizing your\n        // state data.\n        setter: \'setNumber\',\n\n        // Accepts either number or string types. If the validator check fails,\n        // the new value is discarded, and the current value kept.\n        validator: val => core.isNumber(val) || core.isString(val),\n\n        // Initial value\n        value: 0,\n\n        // You can, instead of the `value` option above, use a function to \n        // return the initial value for the state.\n        valueFn: val => 0,\n\n        // It\'s also possible to define that a property can only receive a \n        // value once, and later behave as read-only.\n        writeOnce: false\n    }\n}', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('Now let\'s prepare the template to be similar to the one used by ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: '// src/CloseHeader.soy\n\n&#123;namespace CloseHeader&#125;\n\n&#123;template .render&#125;\n    {@param cssClass: string}\n    {@param onClick: any}\n    {@param title: string}\n\n    <header class="{$cssClass}">\n        <button onClick="{$onClick}" type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{$title}</h4>\n    </header>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/CloseHeader.js\n\nrender() {\n    return <header class={this.props.cssClass}>\n        <button onClick={this.props.onClick} type="button" class="close">\n            <span>\u00D7</span>\n        </button>\n        <h4>{this.props.title}</h4>\n    </header>;\n}', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('Done! Our new component is ready to be used by ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'using_closeheader');
-      ie_open('h2');
+        itext('If you\'re familiar with ');
         ie_open('a', null, null,
-            'href', '#using_closeheader');
-          itext('Using ');
-          ie_open('strong');
-            itext('CloseHeader');
-          ie_close('strong');
+            'href', 'http://yuilibrary.com/');
+          itext('YUI');
         ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('All we have to do is to replace the header markup from ');
+        itext(', you may recognize this feature and notice that it\'s very similar to how attributes are defined there. You basically just need to list all attributes you\'ll be using on the ');
         ie_open('strong');
-          itext('Modal');
+          itext('STATE');
         ie_close('strong');
-        itext('\'s template with a call to ');
+        itext(' static variable (on YUI it would be on ');
         ie_open('strong');
-          itext('CloseHeader');
+          itext('ATTRS');
         ie_close('strong');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n&#123;template .render&#125;\n    {@param body: string}\n    {@param close: string}\n    {@param header: string}\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        <div class="modal-dialog">\n            <div class="modal-content">\n                {call CloseHeader.render}\n                    {param cssClass: \'modal-header\' /}\n                    {param onClick: $close /}\n                    {param title: $header /}\n                {/call}\n                <section class="modal-body">\n                    {$body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nrender() {\n    var cssClass = \'modal\';\n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <CloseHeader\n                    cssClass="modal-header"\n                    onClick={this.close.bind(this)}\n                    title={this.props.header}\n                />\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('This will not only render ');
+        itext('), and provide their configuration options, like initial value and validator. For a list of all valid options, take a look at ');
         ie_open('strong');
-          itext('CloseHeader');
+          itext('State');
         ie_close('strong');
-        itext(' at the right position, but also instantiate it for you. For more details on nested components, check out the ');
+        itext('\'s ');
         ie_open('a', null, null,
-            'href', '/docs/guides/nested-components.html');
-          itext('guide about it');
+            'href', 'http://github.com/metal/metal-state/blob/c87ac15b8a9fa3ee64c421f22411f97cd376024a/src/State.js#L61');
+          itext('docs');
         ie_close('a');
         itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('article', null, null,
-        'id', 'next_steps');
+        'id', 'internal_states');
       ie_open('h2');
         ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next Steps');
+            'href', '#internal_states');
+          itext('Internal States');
         ie_close('a');
       ie_close('h2');
       ie_open('p');
-        itext('Now that we have learned how to properly create a new component, it\'d good to also know how to test it. The next section will focus on that.');
+        itext('You can define a state as internal, for use in your component only. Just add the attribute ');
+        ie_open('code');
+          itext('internal');
+        ie_close('code');
+        itext(' to the configuration object.');
       ie_close('p');
       ie_open('p');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/docs/getting-started/modal_testing.html');
-            itext('\u21AA Tutorial: Modal - Testing');
-          ie_close('a');
-        ie_close('strong');
+        itext('By doing this, the state will behave exactly as expected, including re-rendering the component. The only difference being, internal states can not be accessed by parent components.');
       ie_close('p');
+      ie_open('p');
+        itext('This is not necessary for JSX components, since Metal.js JSX components have their own State Manager implementation. For that reason, two static properties are used, ');
+        ie_open('code');
+          itext('STATE');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('PROPS');
+        ie_close('code');
+        itext(', that behave much closer to React\'s ');
+        ie_open('code');
+          itext('state');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('props');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('To see exactly how it works read ');
+        ie_open('a', null, null,
+            'href', '/docs/guides/jsx-components.html');
+          itext('JSX components section');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      $templateAlias2({code: 'Calculator.STATE = {\n  number: {\n    ...\n    internal: true\n  }\n}', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'accessing_and_updating_state');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#accessing_and_updating_state');
+          itext('Accessing and Updating State');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('The constructor can receive a configuration object with initial values to use for its state properties. You can access or change an object\'s state in the same way you\'d access or change any object property. Or you can also call the ');
+        ie_open('code');
+          itext('setState');
+        ie_close('code');
+        itext(' function, which updates the properties specified by the given object.');
+      ie_close('p');
+      $templateAlias2({code: 'var obj = new Calculator();\nconsole.log(obj.number); // Prints 0\n\nobj.number = \'1\';\nconsole.log(obj.number); // Prints 1\n\nobj.setState({number: 2});\nconsole.log(obj.number); // Prints 2', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('You can also track state value changes by listening to the appropriate event.');
+      ie_close('p');
+      $templateAlias2({code: 'obj.on(\'numberChanged\', function(event) {\n    // event.prevVal has the previous value.\n    // event.newVal has the new value.\n});', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('To see all features of the ');
+        ie_open('strong');
+          itext('State');
+        ie_close('strong');
+        itext(' class take a look at its ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/metal/metal-state/blob/master/test/State.js');
+          itext('unit tests');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'configuration_data');
+      ie_open('h2');
+        ie_open('a', null, null,
+            'href', '#configuration_data');
+          itext('Configuration Data');
+        ie_close('a');
+      ie_close('h2');
+      ie_open('p');
+        itext('Any data passed to the constructor that has not been configured as a state property can still be accessed via ');
+        ie_open('code');
+          itext('config');
+        ie_close('code');
+        itext('. Changes to these properties won\'t be tracked, so it\'s usually intended for your component\'s options, which are only set from the outside.');
+      ie_close('p');
+      $templateAlias2({code: 'var obj = new Calculator({\n    number: 10,\n    foo: \'foo\'\n});\n\nconsole.log(obj.number); // Prints 2\nconsole.log(obj.foo); // Prints undefined\nconsole.log(obj.config.foo); // Prints \'foo\'', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -27348,44 +27423,28 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param317}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param773}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'Duczc.render';
+  $render.soyTemplateName = 'TcWEf.render';
 }
 
-exports.render.params = ["cssClass","onClick","title","body","close","header","shown","page","site"];
-exports.render.types = {"cssClass":"string","onClick":"any","title":"string","body":"string","close":"string","header":"string","shown":"bool","page":"any","site":"any"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class Duczc extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Duczc, templates);
+class TcWEf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TcWEf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
 /* 232 */,
 /* 233 */,
 /* 234 */,
@@ -27432,7 +27491,21 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Duczc, templates);
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27464,9 +27537,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _modal_nestedSoy = __webpack_require__(215);
+var _stateSoy = __webpack_require__(231);
 
-var _modal_nestedSoy2 = _interopRequireDefault(_modal_nestedSoy);
+var _stateSoy2 = _interopRequireDefault(_stateSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27476,23 +27549,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Duczc = function (_Component) {
-  _inherits(Duczc, _Component);
+var TcWEf = function (_Component) {
+  _inherits(TcWEf, _Component);
 
-  function Duczc() {
-    _classCallCheck(this, Duczc);
+  function TcWEf() {
+    _classCallCheck(this, TcWEf);
 
-    return _possibleConstructorReturn(this, (Duczc.__proto__ || Object.getPrototypeOf(Duczc)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TcWEf.__proto__ || Object.getPrototypeOf(TcWEf)).apply(this, arguments));
   }
 
-  return Duczc;
+  return TcWEf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(Duczc, _modal_nestedSoy2.default);
+_metalSoy2.default.register(TcWEf, _stateSoy2.default);
 
-exports.default = Duczc;
+exports.default = TcWEf;
 
 /***/ })
-],[278]);
+],[292]);

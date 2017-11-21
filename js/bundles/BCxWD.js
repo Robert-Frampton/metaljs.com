@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([29,35,36],[
+webpackJsonppageComponent([2,35,36],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19169,7 +19169,7 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
         'href', '/');
       ie_open('img', null, null,
           'class', 'topbar-logo-image',
-          'src', '/images/logo_signature@2x.png',
+          'src', opt_data.site.basePath + '/images/logo_signature@2x.png',
           'alt', 'Metal.js Home');
       ie_close('img');
       ie_open('span', null, null,
@@ -27170,347 +27170,7 @@ exports.default = parseFromAnchor;
 /* 214 */,
 /* 215 */,
 /* 216 */,
-/* 217 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QKGIo", function() { return QKGIo; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
-/* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function(exports) {
-
-// This file was automatically generated from modal_updates.soy.
-// Please don't edit this file by hand.
-
-/**
- * @fileoverview Templates in namespace QKGIo.
- * @public
- */
-
-goog.module('QKGIo.incrementaldom');
-
-/** @suppress {extraRequire} */
-var soy = goog.require('soy');
-/** @suppress {extraRequire} */
-var soydata = goog.require('soydata');
-/** @suppress {extraRequire} */
-goog.require('goog.i18n.bidi');
-/** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('goog.string');
-var IncrementalDom = goog.require('incrementaldom');
-var ie_open = IncrementalDom.elementOpen;
-var ie_close = IncrementalDom.elementClose;
-var ie_void = IncrementalDom.elementVoid;
-var ie_open_start = IncrementalDom.elementOpenStart;
-var ie_open_end = IncrementalDom.elementOpenEnd;
-var itext = IncrementalDom.text;
-var iattr = IncrementalDom.attr;
-
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $render(opt_data, opt_ignored, opt_ijData) {
-  var param372 = function() {
-    ie_open('article');
-      ie_open('p');
-        itext('In the ');
-        ie_open('a', null, null,
-            'href', '/docs/getting-started/modal_events.html');
-          itext('previous section');
-        ie_close('a');
-        itext(' we learned how to add inline listeners, by making the ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext('\'s close button work.');
-      ie_close('p');
-      ie_open('p');
-        itext('We first implemented this feature by disposing of the entire ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' instance when it was closed. It\'d be best to have the modal just hide itself so it could be shown again afterwards though.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'state');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#state');
-          itext('State');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('We\'ve seen that it\'s possible to pass data to components via the constructor. By default this kind of data is read-only for the component though, that is, it can be received from the outside but not changed from the inside.');
-      ie_close('p');
-      ie_open('p');
-        itext('When you need to be able to change a component\'s data, as well as have that change cause its HTML contents to update, you should indicate that it\'ll be part of the component\'s state.');
-      ie_close('p');
-      ie_open('p');
-        itext('This can be done by using your component\'s ');
-        ie_open('code');
-          itext('STATE');
-        ie_close('code');
-        itext(' static variable, where you an also configure state properties, specifying initial values and validators for example.');
-      ie_close('p');
-      ie_open('p');
-        itext('So let\'s add a ');
-        ie_open('code');
-          itext('shown');
-        ie_close('code');
-        itext(' property to our ');
-        ie_open('strong');
-          itext('Modal');
-        ie_close('strong');
-        itext(' state, in ');
-        ie_open('strong');
-          itext('src/Modal.js');
-        ie_close('strong');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: 'Modal.STATE = {\n    shown: {\n        // The default value will be: `true`.\n        value: true\n    }\n};', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('For more details about configuring state, check out ');
-        ie_open('a', null, null,
-            'href', '/docs/guides/state.html');
-          itext('this guide');
-        ie_close('a');
-        itext('.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'updating_the_template');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#updating_the_template');
-          itext('Updating the Template');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now we need to update our template to only show the modal when ');
-        ie_open('code');
-          itext('shown');
-        ie_close('code');
-        itext(' is true.');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\n/**\n * State properties are passed to the "render" template in the same way as\n * config properties.\n */\n&#123;template .render&#125;\n    {@param shown: bool}\n\n    <div class="modal {$shown ? \'show\': \'\'}">\n        ...\n    </div>\n&#123;/template&#125;', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\n/**\n * State properties are accessed from `this.state`.\n */\nrender() {\n    var cssClass = \'modal\';\n\n    if (this.state.shown) {\n        cssClass += \'show\';\n    }\n\n    return <div class={cssClass}>\n        ...\n    </div>;\n}', mode: 'jsx'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'updating_the_close_function');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#updating_the_close_function');
-          itext('Updating the ');
-          ie_open('code');
-            itext('close');
-          ie_close('code');
-          itext(' Function');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now we can change our ');
-        ie_open('code');
-          itext('close');
-        ie_close('code');
-        itext(' function to just update the state property.');
-      ie_close('p');
-      $templateAlias2({code: '// src/Modal.soy\n\nclose() {\n  this.shown = false;\n}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias2({code: '// src/Modal.js\n\nclose() {\n  this.state.shown = false;\n}', mode: 'jsx'}, null, opt_ijData);
-      ie_open('p');
-        itext('State changes are automatically detected by ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(', causing the component to be rerendered. Since ');
-        ie_open('strong');
-          itext('Metal.js');
-        ie_close('strong');
-        itext(' uses ');
-        ie_open('a', null, null,
-            'href', 'http://google.github.io/incremental-dom/');
-          itext('Incremental DOM');
-        ie_close('a');
-        itext(', rerendering will cause minimal DOM updates. In this case, the ');
-        ie_open('code');
-          itext('shown');
-        ie_close('code');
-        itext(' CSS class will be removed from the modal element.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'run_the_demo');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#run_the_demo');
-          itext('Run the Demo');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Now compile your code with ');
-        ie_open('code');
-          itext('npm run build');
-        ie_close('code');
-        itext(' and open the demo on a browser. Clicking the ');
-        ie_open('strong');
-          itext('x');
-        ie_close('strong');
-        itext(' button will close the modal as before, but inspecting the DOM you\'ll notice that it\'s just hidden, not removed from the DOM.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'playing_with_state_data');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#playing_with_state_data');
-          itext('Playing With State Data');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('State data makes it very easy to update a component\'s contents. If you want to quickly see it working you can make some experiments on your browser\'s JavaScript console for example.');
-      ie_close('p');
-      ie_open('p');
-        itext('First let\'s hold the ');
-        ie_open('code');
-          itext('Modal(jsx)');
-        ie_close('code');
-        itext(' instance somewhere so we can access it:');
-      ie_close('p');
-      $templateAlias2({code: 'window.modal = new metal.Modal({\n    header: \'My Modal\',\n    body: \'Built using Metal.js\'\n});', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now run the demo again, go to the browser\'s console and type: ');
-        ie_open('code');
-          itext('modal.shown = false');
-        ie_close('code');
-        itext('. You\'ll notice that the modal will be hidden as expected. If you now type ');
-        ie_open('code');
-          itext('modal.shown = true');
-        ie_close('code');
-        itext(', it will show up again.');
-      ie_close('p');
-      ie_open('p');
-        itext('If you want you can also turn ');
-        ie_open('code');
-          itext('header');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('body');
-        ie_close('code');
-        itext(' into state properties as well. All you have to do is:');
-      ie_close('p');
-      ie_open('ol');
-        ie_open('li');
-          ie_open('p');
-            itext('Add them to ');
-            ie_open('code');
-              itext('STATE');
-            ie_close('code');
-            itext(', like this:');
-          ie_close('p');
-          $templateAlias2({code: 'Modal.STATE = {\n    body: {\n        value: \'Default body\'\n    },\n    header: {\n        value: \'Default header\'\n    },\n    shown: {\n        value: true\n    }\n};', mode: 'javascript'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            itext('If you\'re using JSX templates, change the calls to ');
-            ie_open('code');
-              itext('this.props');
-            ie_close('code');
-            itext(' from ');
-            ie_open('code');
-              itext('this');
-            ie_close('code');
-            itext(' instead. You will also need to change your config from ');
-            ie_open('code');
-              itext('Modal.STATE = {...}');
-            ie_close('code');
-            itext(' to ');
-            ie_open('code');
-              itext('Modal.PROPS = {...}');
-            ie_close('code');
-            itext(' like this:');
-          ie_close('p');
-          $templateAlias2({code: 'render() {\n    var cssClass = \'modal\';\n    \n    if (this.props.shown) {\n        cssClass += \'show\';\n    }\n    \n    return <div class={cssClass}>\n        <div class="modal-dialog">\n            <div class="modal-content">\n                <header class="modal-header">\n                    <button onClick={this.close.bind(this)} type="button" class="close">\n                        <span>\u00D7</span>\n                    </button>\n                    <h4>{this.props.header}</h4>\n                </header>\n                <section class="modal-body">\n                    {this.props.body}\n                </section>\n                <footer class="modal-footer">\n                    <button type="button" class="btn btn-primary">OK</button>\n                </footer>\n            </div>\n        </div>\n    </div>;\n}\n\nModal.PROPS = {\n    body: {\n        value: \'Default body\'\n    },\n    header: {\n        value: \'Default header\'\n    },\n    shown: {\n        value: true\n    }\n};', mode: 'jsx'}, null, opt_ijData);
-        ie_close('li');
-      ie_close('ol');
-      ie_open('p');
-        itext('Now if you type something like ');
-        ie_open('code');
-          itext('modal.props.header = \'New Header\'');
-        ie_close('code');
-        itext(' on the console, the contents will also be updated automatically.');
-      ie_close('p');
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'next_steps');
-      ie_open('h2');
-        ie_open('a', null, null,
-            'href', '#next_steps');
-          itext('Next Steps');
-        ie_close('a');
-      ie_close('h2');
-      ie_open('p');
-        itext('Our modal is working as expected now. But what if you want to split it into multiple components? How would we use them together? Check it out in the next section.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/docs/getting-started/modal_nested.html');
-            itext('\u21AA Tutorial: Modal - Nested Components');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('p');
-    ie_close('article');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.page.title);
-    ie_close('input');
-    ie_open('input', null, null,
-        'type', 'hidden',
-        'value', opt_data.site.title);
-    ie_close('input');
-  };
-  $templateAlias1(soy.$$assignDefaults({content: param372}, opt_data), null, opt_ijData);
-}
-exports.render = $render;
-if (goog.DEBUG) {
-  $render.soyTemplateName = 'QKGIo.render';
-}
-
-exports.render.params = ["page","site"];
-exports.render.types = {"page":"any","site":"any"};
-templates = exports;
-return exports;
-
-});
-
-class QKGIo extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QKGIo, templates);
-
-/* harmony default export */ __webpack_exports__["default"] = (templates);
-/* jshint ignore:end */
-
-
-/***/ }),
+/* 217 */,
 /* 218 */,
 /* 219 */,
 /* 220 */,
@@ -27537,7 +27197,125 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QKGIo, templates);
 /* 241 */,
 /* 242 */,
 /* 243 */,
-/* 244 */,
+/* 244 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BCxWD", function() { return BCxWD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
+/* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function(exports) {
+
+// This file was automatically generated from rendering-data.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace BCxWD.
+ * @public
+ */
+
+goog.module('BCxWD.incrementaldom');
+
+/** @suppress {extraRequire} */
+var soy = goog.require('soy');
+/** @suppress {extraRequire} */
+var soydata = goog.require('soydata');
+/** @suppress {extraRequire} */
+goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
+/** @suppress {extraRequire} */
+goog.require('goog.string');
+var IncrementalDom = goog.require('incrementaldom');
+var ie_open = IncrementalDom.elementOpen;
+var ie_close = IncrementalDom.elementClose;
+var ie_void = IncrementalDom.elementVoid;
+var ie_open_start = IncrementalDom.elementOpenStart;
+var ie_open_end = IncrementalDom.elementOpenEnd;
+var itext = IncrementalDom.text;
+var iattr = IncrementalDom.attr;
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+
+
+/**
+ * @param {Object<string, *>=} opt_data
+ * @param {(null|undefined)=} opt_ignored
+ * @param {Object<string, *>=} opt_ijData
+ * @return {void}
+ * @suppress {checkTypes}
+ */
+function $render(opt_data, opt_ignored, opt_ijData) {
+  var param1048 = function() {
+    ie_open('h2');
+      var dyn22 = opt_data.page.title;
+      if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
+    ie_close('h2');
+    ie_open('p');
+      itext('First let\'s prepare the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' for consuming the data being passed from ');
+      ie_open('code');
+        itext('TodoApp');
+      ie_close('code');
+      itext('.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoItem extends JSXComponent {\n    render() {\n        // Conditionally adding the \'todo-item-done\' class if\n        // the todo is done\n        let elementClasses = `todo-item${this.props.todo.done ?\n            \' todo-item-done\' : \'\'}`;\n\n        return (\n            <li\n                class={elementClasses}\n            >\n                {this.props.todo.title}\n            </li>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('Now that you have some data that needs rendering, and the ');
+      ie_open('code');
+        itext('TodoItem');
+      ie_close('code');
+      itext(' is ready to consume it, you need to iterate over the todos and pass them to the child components.');
+    ie_close('p');
+    $templateAlias2({code: 'class TodoApp extends JSXComponent {\n    render() {\n        return (\n            <div class="todo-app">\n                <ul>\n                    {this.state.todos.map((todo, index) => {\n                        return (\n                            <TodoItem\n                                index={index}\n                                todo={todo}\n                            />\n                        );\n                    })}\n                </ul>\n            </div>\n        );\n    }\n}', mode: 'text/jsx'}, null, opt_ijData);
+    ie_open('p');
+      itext('This will result in the following markup.');
+    ie_close('p');
+    $templateAlias2({code: '<div class="todo-app">\n    <ul>\n        <li class="todo-item">Todo 1</li>\n        <li class="todo-item">Todo 2</li>\n    </ul>\n</div>', mode: 'text/xml'}, null, opt_ijData);
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param1048}, opt_data), null, opt_ijData);
+}
+exports.render = $render;
+if (goog.DEBUG) {
+  $render.soyTemplateName = 'BCxWD.render';
+}
+
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
+templates = exports;
+return exports;
+
+});
+
+class BCxWD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BCxWD, templates);
+
+/* harmony default export */ __webpack_exports__["default"] = (templates);
+/* jshint ignore:end */
+
+
+/***/ }),
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -27574,7 +27352,29 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QKGIo, templates);
 /* 278 */,
 /* 279 */,
 /* 280 */,
-/* 281 */
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27606,9 +27406,9 @@ __webpack_require__(140);
 
 __webpack_require__(131);
 
-var _modal_updatesSoy = __webpack_require__(217);
+var _renderingDataSoy = __webpack_require__(244);
 
-var _modal_updatesSoy2 = _interopRequireDefault(_modal_updatesSoy);
+var _renderingDataSoy2 = _interopRequireDefault(_renderingDataSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27618,23 +27418,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var QKGIo = function (_Component) {
-  _inherits(QKGIo, _Component);
+var BCxWD = function (_Component) {
+  _inherits(BCxWD, _Component);
 
-  function QKGIo() {
-    _classCallCheck(this, QKGIo);
+  function BCxWD() {
+    _classCallCheck(this, BCxWD);
 
-    return _possibleConstructorReturn(this, (QKGIo.__proto__ || Object.getPrototypeOf(QKGIo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (BCxWD.__proto__ || Object.getPrototypeOf(BCxWD)).apply(this, arguments));
   }
 
-  return QKGIo;
+  return BCxWD;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(QKGIo, _modal_updatesSoy2.default);
+_metalSoy2.default.register(BCxWD, _renderingDataSoy2.default);
 
-exports.default = QKGIo;
+exports.default = BCxWD;
 
 /***/ })
-],[281]);
+],[303]);
