@@ -6256,6 +6256,16 @@ button.close {
         margin-left: 6px; } }
     .topbar-link.btn-transparent > object {
       vertical-align: top; }
+  .topbar-link > span {
+    background-image: linear-gradient(currentColor 25%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: calc(200% - 2px) 100%;
+    background-size: 200% 2px;
+    margin-bottom: -3px;
+    padding-bottom: 3px;
+    transition: background-position .25s; }
+  .topbar-link:hover > span, .topbar-link :focus > span {
+    background-position: 100% 100%; }
   .topbar-link .avatar-initials {
     border-radius: 50%;
     display: inline-block; }
