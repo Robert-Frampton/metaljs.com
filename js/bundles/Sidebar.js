@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([36],{
+webpackJsonppageComponent([39],{
 
-/***/ 129:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10,6 +10,7 @@ webpackJsonppageComponent([36],{
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.Toggler = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -46,10 +47,10 @@ var Toggler = function (_State) {
 	/**
   * @inheritDoc
   */
-	function Toggler(opt_config) {
+	function Toggler(config) {
 		_classCallCheck(this, Toggler);
 
-		var _this = _possibleConstructorReturn(this, (Toggler.__proto__ || Object.getPrototypeOf(Toggler)).call(this, opt_config));
+		var _this = _possibleConstructorReturn(this, (Toggler.__proto__ || Object.getPrototypeOf(Toggler)).call(this, config));
 
 		_this.headerEventHandler_ = new _metalEvents.EventHandler();
 
@@ -71,41 +72,53 @@ var Toggler = function (_State) {
 		}
 
 		/**
-  * Manually collapse the content's visibility.
-  * @param {string|!Element} header
-  */
+   * Manually collapse the content's visibility.
+   * @param {string|!Element} header
+   */
 
 	}, {
 		key: 'collapse',
 		value: function collapse(header) {
 			var headerElements = this.getHeaderElements_(header);
 			var content = this.getContentElement_(headerElements);
+
+			this.emit('headerToggled', { headerElements: headerElements, content: content });
+			this.emit('headerCollapsed', { headerElements: headerElements, content: content });
+
 			_metalDom2.default.removeClasses(content, this.expandedClasses);
 			_metalDom2.default.addClasses(content, this.collapsedClasses);
 			_metalDom2.default.removeClasses(headerElements, this.headerExpandedClasses);
 			_metalDom2.default.addClasses(headerElements, this.headerCollapsedClasses);
+			this.setAttribute_(content, 'aria-expanded', false);
+			this.setAttribute_(headerElements, 'aria-expanded', false);
 		}
 
 		/**
-  * Manually expand the content's visibility.
-  * @param {string|!Element} header
-  */
+   * Manually expand the content's visibility.
+   * @param {string|!Element} header
+   */
 
 	}, {
 		key: 'expand',
 		value: function expand(header) {
 			var headerElements = this.getHeaderElements_(header);
 			var content = this.getContentElement_(headerElements);
+
+			this.emit('headerToggled', { headerElements: headerElements, content: content });
+			this.emit('headerExpanded', { headerElements: headerElements, content: content });
+
 			_metalDom2.default.addClasses(content, this.expandedClasses);
 			_metalDom2.default.removeClasses(content, this.collapsedClasses);
 			_metalDom2.default.addClasses(headerElements, this.headerExpandedClasses);
 			_metalDom2.default.removeClasses(headerElements, this.headerCollapsedClasses);
+			this.setAttribute_(content, 'aria-expanded', true);
+			this.setAttribute_(headerElements, 'aria-expanded', true);
 		}
 
 		/**
    * Gets the content to be toggled by the given header element.
    * @param {!Element} header
-   * @returns {!Element}
+   * @return {!Element}
    * @protected
    */
 
@@ -134,7 +147,7 @@ var Toggler = function (_State) {
 		/**
    * Gets the header elements by giving a selector.
    * @param {string} header
-   * @returns {!Nodelist}
+   * @return {!Nodelist}
    * @protected
    */
 
@@ -178,8 +191,8 @@ var Toggler = function (_State) {
 
 		/**
    * Checks if there is any expanded header in the component context.
-   * @param {string|!Element} event
-   * @param {boolean}
+   * @param {string|!Element} header
+   * @return {boolean}
    * @protected
    */
 
@@ -190,6 +203,23 @@ var Toggler = function (_State) {
 				return _metalDom2.default.hasClass(header, this.headerExpandedClasses);
 			}
 			return !!this.container.querySelectorAll('.' + this.headerExpandedClasses).length;
+		}
+
+		/**
+   * Sets attribute on one or more elements.
+   * @param {!Element|NodeList} elements
+   * @param {!string} name
+   * @param {?string|boolean} value
+   */
+
+	}, {
+		key: 'setAttribute_',
+		value: function setAttribute_(elements, name, value) {
+			elements = elements instanceof NodeList ? elements : [elements];
+
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].setAttribute(name, value);
+			}
 		}
 
 		/**
@@ -253,7 +283,9 @@ Toggler.STATE = {
 		validator: function validator(value) {
 			return _metal2.default.isString(value) || _metal2.default.isElement(value);
 		},
-		value: document
+		valueFn: function valueFn() {
+			return document;
+		}
 	},
 
 	/**
@@ -301,11 +333,12 @@ Toggler.STATE = {
 	}
 };
 
+exports.Toggler = Toggler;
 exports.default = Toggler;
 
 /***/ }),
 
-/***/ 130:
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -325,11 +358,11 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _metalToggler = __webpack_require__(129);
+var _metalToggler = __webpack_require__(130);
 
 var _metalToggler2 = _interopRequireDefault(_metalToggler);
 
-var _Sidebar = __webpack_require__(142);
+var _Sidebar = __webpack_require__(143);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
@@ -376,7 +409,7 @@ exports.default = Sidebar;
 
 /***/ }),
 
-/***/ 142:
+/***/ 143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -459,7 +492,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-search');
         $templateAlias1({maxResults: 3, path: '/docs/', placeholder: 'Search Docs'}, null, opt_ijData);
       ie_close('div');
-      $templateAlias2({listClasses: 'sidebar-list sidebar-list-1', listItemClasses: 'sidebar-item', anchorVariant: 'sidebar', section: opt_data.section}, null, opt_ijData);
+      $templateAlias2({depth: 2, listClasses: 'sidebar-list sidebar-list-1', listItemClasses: 'sidebar-item', anchorVariant: 'sidebar', section: opt_data.section}, null, opt_ijData);
     ie_close('div');
   ie_close('nav');
 }
@@ -476,7 +509,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s118_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -485,16 +518,16 @@ function __deltemplate_s137_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn10 = opt_data.page.title;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s137_d34389eb = __deltemplate_s137_d34389eb;
+exports.__deltemplate_s118_d34389eb = __deltemplate_s118_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s137_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s137_d34389eb';
+  __deltemplate_s118_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s118_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s137_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s118_d34389eb);
 
 exports.render.params = ["section"];
 exports.render.types = {"section":"any"};
@@ -512,4 +545,4 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Sidebar, templates);
 
 /***/ })
 
-},[130]);
+},[131]);
